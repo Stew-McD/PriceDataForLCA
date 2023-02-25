@@ -39,7 +39,7 @@ for dbase in dbases:
 # edit each activity in the database to add the price data
     print("Adding prices to activities...")
     for i, row in df.iterrows():
-        print(i+1,"/", df.shape[0], row["name"])
+        print(dbase, i+1,"/", df.shape[0], row["name"])
         act = db.get(row.code)
         act['price'] = row.amount
         act['currency'] = row.unit
