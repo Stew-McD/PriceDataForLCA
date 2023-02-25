@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="c4f77586-11a0-5959-b4f8-6c512ea480d0" activityNameId="e695b519-46cb-47d2-93ac-45c5f5dc6e3d" parentActivityId="22f61e1d-b4a7-4044-9296-10e304f3e20e" inheritanceDepth="-1" type="1" energyValues="0">
+        <activityName xml:lang="en">shale quarry operation</activityName>
+        <includedActivitiesStart xml:lang="en">This activity start from the transformation of the land to create the shale production site (quarry).</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the transportation of the shale to the brick production facility.
+
+The dataset includes excavation by digger, transportation to the grinding machine (brick production), the land-use of the mining and the recultivation area ("recultivation, bauxite mine" has been used as Proxy).
+
+This dataset doesn't include the machinery for the site preparation and site closure.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represent the extraction of shale in Quebec in 2012. Specific data were collected from the only producer of brick (made from shale) in Quebec, with an annual production of 70'000 tons. </text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">The assumed thickness of shale on the site is 90 feet (sampling reveal the presence of shale at this depht) and because 30 feet has been used in the last 100 years, the total lifetime is estimated to 300 years.</text>
+          <text xml:lang="en" index="3"> </text>
+          <text xml:lang="en" index="4">No shale quarry construction is needed since the infrastructures are associated with the brick production. Therefore only the land transformation related to the quarry opening is accounted for in the current dataset. </text>
+          <text xml:lang="en" index="5">None</text>
+        </generalComment>
+        <tag>single enterprise data</tag>
+      </activity>
+      <classification classificationId="1569ef79-3c08-4e08-b908-a839ed48976c">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0810:Quarrying of stone, sand and clay</classificationValue>
+      </classification>
+      <classification classificationId="75bda068-8882-4e3e-847c-101ebcea2453">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">construction materials/additives</classificationValue>
+      </classification>
+      <geography geographyId="868a66d1-7428-4ba2-9125-253b07afc119">
+        <shortname xml:lang="en">CA-QC</shortname>
+        <comment>
+          <text xml:lang="en" index="0">This module represents the land use and the diesel consumption from the only producer of brick in Quebec. Estimation for the recultivation is a rough estimation based on an existing european dataset (limestone mine). Uncertainty adjusted accordingly.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Typical technology for Quebec shale mining</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2012-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">The dataset represents the activity in 2012</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="2cabdb38-797e-583a-bee1-bc10a29e3b04" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" intermediateExchangeId="e61aa011-136e-404f-ab3b-7b2462d85e35" productionVolumeAmount="70000000.0">
+        <name xml:lang="en">shale</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Measured Value. Represent the extraction of shale used for brick shale production in Quebec in 2012.</comment>
+        <property propertyId="6014982c-ef8e-4555-add0-14bc00bad6be" variableName="density_shale" amount="2000.0" isDefiningValue="false" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839" sourceId="efeb6874-be8d-49ac-b739-c64f98596010" sourceYear="2007" sourceFirstAuthor="Kellenberger D.">
+          <name xml:lang="en">bulk density</name>
+          <unitName xml:lang="en">kg/m3</unitName>
+          <uncertainty>
+            <lognormal meanValue="2000.0" mu="7.6" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Proxy. The uncertainty has been maximized.</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on clay, at mine dataset (ecoinvent v2.2)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.965" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.965" mu="-0.04" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.041" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be 30% of the price of the "shale brick".</comment>
+        </property>
+        <property propertyId="4131adc0-afda-4a73-b6b6-3ed9341ee3d9" variableName="Volume" amount="27.43" isDefiningValue="false" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+          <name xml:lang="en">volume</name>
+          <unitName xml:lang="en">m3</unitName>
+          <uncertainty>
+            <lognormal meanValue="27.43" mu="3.31" variance="0.0006" varianceWithPedigreeUncertainty="0.0086"/>
+            <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Estimation of the volume of clay per m2 assuming a clay layer of 90 feet.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0362694300518135" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.0362694300518135" mu="-3.32" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">water content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.035" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.035" mu="-3.35" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">water content on a wet matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="1.0" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Measured Value.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="70000000.0" mu="18.06" variance="0.0006" varianceWithPedigreeUncertainty="0.0006"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="4f0dc1b3-7ba0-4c0c-886a-21812ca65628">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15: Stone, sand and clay</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7200a442-2a8c-52ce-a32a-8bcfbeaf25a2" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0123962496" mathematicalRelation="(fuel_input_diesel*density_diesel_buildingmachine*1000)*Net_heat_value_diesel_buildingmachine*42.8" intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="d43a967d-20d1-56b5-b31f-f7d42b684fb7">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">EcoSpold01Location=GLO
+Calculated value. See parameters and exchange properties for details.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0123962496" mu="-4.39" variance="0.0" varianceWithPedigreeUncertainty="0.008"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables.</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="e40445b1-8aba-4282-851d-9c2d28b1a5c1" variableName="density_diesel_buildingmachine" amount="0.84" isDefiningValue="false" unitId="b06bab82-f0e8-426d-849a-ebdb5b553519" sourceId="a3e674f9-5fa4-4734-87bc-58bdc35fb86e" sourceYear="2007" sourceFirstAuthor="Frischknecht R.">
+          <name xml:lang="en">density</name>
+          <unitName xml:lang="en">kg/l</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.84" mu="-0.17" variance="0.0006" varianceWithPedigreeUncertainty="0.061"/>
+            <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Literature value. Value Taken from Table 5.1 of report "Overview and methodology, Data quality guideline for the ecoinvent database version 3" (ecoinvent report No. 1 (v3), 2011)</comment>
+        </property>
+        <property propertyId="52b3af22-c508-4ad1-9d65-bd96ac52879e" variableName="fuel_input_diesel" amount="3.448E-07" isDefiningValue="false" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+          <name xml:lang="en">fuel input in physical units, m3</name>
+          <unitName xml:lang="en">m3</unitName>
+          <uncertainty>
+            <lognormal meanValue="3.448E-07" mu="-14.88" variance="0.0006" varianceWithPedigreeUncertainty="0.0006"/>
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Measured Value.</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" variableName="Net_heat_value_diesel_buildingmachine" amount="1.0" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e" sourceId="a3e674f9-5fa4-4734-87bc-58bdc35fb86e" sourceYear="2007" sourceFirstAuthor="Frischknecht R.">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <lognormal meanValue="42.8" mu="3.76" variance="0.0006" varianceWithPedigreeUncertainty="0.061"/>
+            <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Literature value. Net (lower) heating (calorific) value. Value Taken from Table 5.1 of report "Overview and methodology, Data quality guideline for the ecoinvent database version 3" (ecoinvent report No. 1 (v3), 2011)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="16c30370-beb4-5a3a-8714-950b5faa1098" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="1.822821728035E-05" mathematicalRelation="1/(volume*density_shale)" intermediateExchangeId="b92d0439-97e3-4a11-a228-754146fb3781" activityLinkId="5e5204be-0a27-5043-bc76-386cdd96e3af">
+        <name xml:lang="en">recultivation, shale quarry</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimated value. Proxy taken directly from ecoinvent dataset ''clay pit operation, GLO, 2002''</comment>
+        <uncertainty>
+          <lognormal meanValue="1.822821728035E-05" mu="-10.91" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+          <comment xml:lang="en">Proxy. The uncertainty has been maximized.</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="29383c0e-2d26-4bce-9c23-a181c0ede6b6">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">9441: Site remediation and clean-up services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="a4fe92f8-ec87-58b6-8853-8d4407725cc9" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0.005468465184105" isCalculatedAmount="false" mathematicalRelation="surface_site*lifetime" elementaryExchangeId="379ba5c9-5c3a-43d0-8e2d-605ad9c39e46">
+        <name xml:lang="en">Occupation, mineral extraction site</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Calculated value. See parameters and exchange properties for details.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.005468465184105" mu="-5.21" variance="0.0" varianceWithPedigreeUncertainty="0.008"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables.</comment>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="lifetime" amount="300.0" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <uncertainty>
+            <lognormal meanValue="300.0" mu="5.7" variance="0.0006" varianceWithPedigreeUncertainty="0.0086"/>
+            <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on the availabilty of shale on site.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1716efd4-5f8c-5256-a61c-aec1e7210a0b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" isCalculatedAmount="false" elementaryExchangeId="9e9b6792-40e6-4d62-a3e0-ebebc0c65166">
+        <name xml:lang="en">Shale</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Measured Value given by data provider (source : questionnaire).</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.0086"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.175" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.175" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.175" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="6a098164-9f04-4f65-8104-ffab7f2677f3">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in ground</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="553a6688-05e5-51c1-be43-b1644f07c92a" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" variableName="surface_site" amount="1.822821728035E-05" isCalculatedAmount="false" mathematicalRelation="1/(volume*density_shale)" elementaryExchangeId="29630a65-f38c-48a5-9744-c0121f586640">
+        <name xml:lang="en">Transformation, from unspecified</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Calculated value. See parameters and exchange properties for details.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.822821728035E-05" mu="-10.91" variance="0.0" varianceWithPedigreeUncertainty="0.008"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables.</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="275615b2-0b1a-5964-aa45-f01ceaf4c1eb" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="1.822821728035E-05" isCalculatedAmount="false" mathematicalRelation="1/(volume*density_shale)" elementaryExchangeId="626915e9-2424-4059-8b6a-fae47161acdf">
+        <name xml:lang="en">Transformation, to mineral extraction site</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Calculated value. See parameters and exchange properties for details.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.822821728035E-05" mu="-12.1" variance="0.0" varianceWithPedigreeUncertainty="0.008"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables.</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956" percent="100.0">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Estimations from data provider and similar processes.</samplingProcedure>
+        <extrapolations xml:lang="en">Shale layer and diesel consumption based on the only Quebec brick producer. Other information is rough estimation. The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2014-04-08">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="25" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2014-04-08">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2014-04-08">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2014-04-17">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'dry mass':
+ - Input='1', Output='0,965'
+ - Input &gt; output by 0,035 kg (3,63% of output)
+
+Property 'water in wet mass':
+ - Input='0', Output='0,035'
+ - Input &lt; output by 0,035 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,175', Output='0'
+ - Input &gt; output by 0,175 kg
+
+
+- Due to the use of the reference product property(s) 'bulk density', 'volume' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (0,035) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0, carbon content, non-fossil=0, wet mass=0, water in wet mass=0, carbon content, fossil=0, carbon content, fossil=0,175, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0, carbon content, non-fossil=0, wet mass=0, water in wet mass=0, carbon content, fossil=0, carbon content, fossil=0,175, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1
+
+- A dataset with the term "operation" in its name should normally have an infrastructure input (products with a property "capacity" or "lifetime_capacity")
+- The input exchange 'recultivation, shale quarry' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="157cf758-899d-48c3-9cec-96082aa3c658" isActiveAuthor="true" personName="Catherine Reid" personEmail="catherine-2.reid@polymtl.ca"/>
+      <dataGeneratorAndPublication personId="157cf758-899d-48c3-9cec-96082aa3c658" personName="Catherine Reid" personEmail="catherine-2.reid@polymtl.ca" dataPublishedIn="0" publishedSourceIdOverwrittenByChild="true" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2014-04-08T10:46:16" lastEditTimestamp="2014-04-17T12:18:20" fileGenerator="EcoEditor 3.3.65.10874" fileTimestamp="2014-04-17T12:18:20" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

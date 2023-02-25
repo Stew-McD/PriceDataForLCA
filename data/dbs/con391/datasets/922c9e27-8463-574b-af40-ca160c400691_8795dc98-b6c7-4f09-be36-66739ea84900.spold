@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="922c9e27-8463-574b-af40-ca160c400691" activityNameId="88f2285f-3ad1-4eb4-9391-92e3f45e3ea5" parentActivityId="30487ee9-82e1-4664-8c81-e4f3a192fd5d" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">transport, freight, aircraft, all distances to generic market for transport, freight, aircraft, unspecified</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the input of the transport activities for the different flight distances. The mix is based on the production volumes of the respective transforming activities.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the supply of 1 metric ton*km of generic (i.e. unspecified) transport.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a linking activity which transfers part of the production volume of the specific transport, freight, aircraft of all distances to the generic market for transport, freight, aircraft, unspecified.</text>
+          <text xml:lang="en" index="1">The transport, freight, lorry, unspecified is meant to be used by activities, where the distance of the transport supplied is unkown. </text>
+        </generalComment>
+        <tag>linking activity</tag>
+      </activity>
+      <classification classificationId="a1976dea-79de-400a-815d-bdf9ed654d45">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">5120:Freight air transport</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2016-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="24bc65a4-4287-5be5-8b9d-2c6013bd4620" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="1.0" intermediateExchangeId="8795dc98-b6c7-4f09-be36-66739ea84900" productionVolumeAmount="84517650000.0">
+        <name xml:lang="en">transport, freight, aircraft, unspecified</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.04082304569598041" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Estimated.
+
+The production volume is calculated as a sum of all the "transport, freight, aircraft, ... haul" activities. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. 
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, aircraft, unspecified. Which means, that 50% of people using this transport do not know or do not care about the distance travelled.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b5904572-85c6-4aba-ad24-756af595a217">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">65319: Air transport services of other freight</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="953426fb-e15c-5384-947a-523875684e67" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.57343052013396" mathematicalRelation="(1.077E+11*0.9*0.5)/ transport_RP_PV" intermediateExchangeId="3317126a-4dd7-4047-9ccf-163f94382c94" activityLinkId="71dba232-438b-54dc-bafd-fa5eadfca4ad">
+        <name xml:lang="en">transport, freight, aircraft, long haul</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, aircraft, ... haul" activities. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. 
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, aircraft, unspecified. Which means, that 50% of people using this transport do not know or do not care about the distance travelled.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.57343052013396" mu="-0.5561" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="25baa4a6-196c-46cc-9824-e15c09165712">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6531: Air transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9832cfcb-21da-5e89-8a97-06ceb387b196" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.291773375147085" mathematicalRelation="(54800000000*0.9*0.5)/ transport_RP_PV" intermediateExchangeId="220fe333-5329-4a8d-b012-1db429f2383b" activityLinkId="dbf500a7-dc69-5ee0-80f0-f40853bda010">
+        <name xml:lang="en">transport, freight, aircraft, medium haul</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, aircraft, ... haul" activities. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. 
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, aircraft, unspecified. Which means, that 50% of people using this transport do not know or do not care about the distance travelled.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.291773375147085" mu="-1.232" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="25baa4a6-196c-46cc-9824-e15c09165712">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6531: Air transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6079589d-22cd-5bf3-8bce-e491a80db545" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0947731036061698" mathematicalRelation="(17800000000*0.9*0.5)/ transport_RP_PV" intermediateExchangeId="07ad9bb5-f5d3-4e09-ac39-a6dcbb13a0ba" activityLinkId="580c20bb-cb91-57db-a114-6df2b7c031d0">
+        <name xml:lang="en">transport, freight, aircraft, short haul</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, aircraft, ... haul" activities. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. 
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, aircraft, unspecified. Which means, that 50% of people using this transport do not know or do not care about the distance travelled.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0947731036061698" mu="-2.356" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="25baa4a6-196c-46cc-9824-e15c09165712">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6531: Air transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8766cdcc-6f17-5364-8148-601ac60c5433" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0400230011127853" mathematicalRelation="(7517000000*0.9*0.5)/ transport_RP_PV" intermediateExchangeId="02db23d4-0c70-4c90-98b6-2aa65ef4b268" activityLinkId="0956d877-a2cd-5e08-9002-f84030bda47a">
+        <name xml:lang="en">transport, freight, aircraft, very short haul</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, aircraft, ... haul" activities. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. 
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, aircraft, unspecified. Which means, that 50% of people using this transport do not know or do not care about the distance travelled.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0400230011127853" mu="-3.218" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="25baa4a6-196c-46cc-9824-e15c09165712">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6531: Air transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="8" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-03-22">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="8" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-03-22">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" isActiveAuthor="false" personName="Lucia Valsasina" personEmail="valsasina@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" personName="Lucia Valsasina" personEmail="valsasina@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2019-02-25T14:59:39" lastEditTimestamp="2019-03-22T13:11:45" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2019-03-22T13:11:45" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="e56d0261-7ab4-5d92-849e-12c24c61e47e" activityNameId="7acd735d-0254-4d98-a303-e052024d1914" parentActivityId="b60171b5-b811-4b76-9b77-5bcdb4e92952" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">calcium nitrate production</activityName>
+        <synonym xml:lang="en">Norge saltpeter</synonym>
+        <includedActivitiesStart xml:lang="en">The activity starts when the raw materials enter the process.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">Materials entering the process are included as well as energy uses, infrastructure and emissions.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The activity represents the production of calcium nitrate from limestone and nitric acid.</text>
+          <text xml:lang="en" index="1">Calcium carbonate in limestone reacts with nitric acid given the formula:  CaCO3 + 2 HNO3 → Ca(NO3)2 + CO2 + H2O</text>
+          <text xml:lang="en" index="2">The reaction yield is assumed to be 98.1%.</text>
+          <text xml:lang="en" index="3">Calcium nitrate has an N-content of 17%. Non-reacting nitric acid and ammonia are considered to be recycled or re-used internally and not being liberated to the environment. This is due to the toxicity of reactants.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="04d83550-7c85-44f3-916b-424730a81963">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2012:Manufacture of fertilizers and nitrogen compounds</classificationValue>
+      </classification>
+      <geography geographyId="0723d252-7e2a-11de-9820-0019e336be3a">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="0">The process described here is the generic method used for the production of calcium nitrate from limestone and nitric acid.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Limestone (CaCO3) is usually neutralized in towers of circulating 40-48% nitric acid (HNO3). Acid solutions of calcium nitrate are fed again to the tower until the residual acidity of the solution decreases to 1,5-1,9% of HNO3. Then the free nitric acid is further neutralized with ammonia. Following the application of ammonia, some amount of ammonium nitrate forms, faciliating the crystallization of Ca(NO3)2 from a melt. The filtered solution containing ca. 49% of Ca(NO3)2 and 3% of NH4NO3 is evaporated under vacuum to 75-82% of Ca(NO3)2. This production method is used by most manufacturers of calcium nitrate in the Commonwealth of Independent States (CIS). </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2010-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="451c8ca4-5799-53f2-89d0-4821d1360a9b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP" casNumber="006484-52-2" amount="1.0" mathematicalRelation="((1- 0.981)*nitric_acid)*80.04/63.01*0.349978014 " intermediateExchangeId="a498d9fb-9402-4374-b2e2-3f85f5d98f43" productionVolumeAmount="43490555.6316444">
+        <name xml:lang="en">ammonium nitrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">stoichiometric calculation. Molar weight.
+
+The produced ammonium nitrate  is calculated based on the non-reacted nitric acid.
+
+This flow is measured as kg of N. (N content in ammonium nitrate 0.3499)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0066714321566282" mu="-5.00992072596665" variance="0.0006" varianceWithPedigreeUncertainty="0.0493"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.005749599110898798" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Carbon content, fossil is calculated based on the chemical formula of the substance.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The substance has no biogenic content of carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The substance is assumed to be 100% dry.</comment>
+        </property>
+        <property propertyId="2d23d1bb-e137-4ade-83fc-fbd0421e6cd5" amount="0.0503678013872509" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">hydrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Hydrogen content (on a dry matter basis) of ammonium nitrate is calculated from the molecular formula of the substance (H4N2O3).</comment>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" amount="0.349978511603734" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Nitrogen content (on a dry matter basis) of ammonium nitrate is calculated from the molecular formula of the substance (H4N2O3).</comment>
+        </property>
+        <property propertyId="dbf41b1b-c7b8-4d5e-b39c-f858eb868df5" amount="0.599653687009015" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">oxygen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Oxygen content (on a dry matter basis) of ammonium nitrate is calculated from the molecular formula of the substance (H4N2O3).</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.41" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Prices are calculated on basis of Import/Export data (tonnes and US$) from UN Trade Statistics Database (http://data.un.org/Browse.aspx?d=ComTrade, accessed 7/7-2010). N, P2O5, or K2O content (http://www.fertilizer.org/ifa/Home-Page/STATISTICS/Conversions-factors)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.0027352871842175617" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Water content (U) is calculated by dividing dry mass (DM) with water in wet mass (WWM), U = DM/WWM</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated by subtracting dry mass (DM) from wet mass (WM). Water in wet mass (WWM) = WM - DM.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mass of the product including water (if present).</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="43490555.6316444" mu="17.5880543605705" variance="0.0006" varianceWithPedigreeUncertainty="0.1686"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="5"/>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="6c1529b6-e9c4-4c58-9d64-55725db55b18">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34613: Ammonium nitrate</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6eaa2469-263c-5350-b238-3a42feba084c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7664-41-7" amount="0.0034954602708579777" mathematicalRelation="((1- efficiency_reaction)*nitric_acid)*17.03/63.01" intermediateExchangeId="06b8d05b-e1e6-427b-929c-bb55e84e7c08" activityLinkId="2b2f21c9-420d-5921-b8c8-cd2c4ee9f7a3">
+        <name xml:lang="en">ammonia, anhydrous, liquid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Stoichiometric calculation. Molar weight.
+
+The nitric acid that does not react with limestone is 1.9% (refer to parameter efficiency). This is further neutralized with ammonia.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00405588730682352" mu="-5.50758579739297" variance="0.0006" varianceWithPedigreeUncertainty="0.057300000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Carbon content, fossil is calculated based on the chemical formula of the substance.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The substance has no biogenic content of carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The substance is assumed to be 100% dry.</comment>
+        </property>
+        <property propertyId="2d23d1bb-e137-4ade-83fc-fbd0421e6cd5" amount="0.177547209695603" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">hydrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Hydrogen content (on a dry matter basis) of ammonia, anhydrous, liquid is calculated from the molecular formula of the substance (H3N).</comment>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" amount="0.822452790304397" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Nitrogen content (on a dry matter basis) of ammonia, anhydrous, liquid is calculated from the molecular formula of the substance (H3N).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Water content (U) is calculated by dividing dry mass (DM) with water in wet mass (WWM), U = DM/WWM</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated by subtracting dry mass (DM) from wet mass (WM). Water in wet mass (WWM) = WM - DM.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mass of the product including water (if present).</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="9a1bdbed-dfaf-494d-8e68-88a41f8a9218">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34651: Ammonia, anhydrous</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="45fc7336-cb43-5436-9285-e875648b7daa" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.111752720994177E-09" sourceId="026b0ec7-c20a-43c6-806d-db5afdeb78e6" sourceYear="2000" sourceFirstAuthor="Gendorf" intermediateExchangeId="3d0fe4e0-eac9-4704-b3fd-09b8594d0fbe" activityLinkId="0340dc12-6361-522b-be31-cecee4545c11">
+        <name xml:lang="en">chemical factory, organics</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Estimation. The infrastructure is estimated based on the module 'chemical plant, organics'. This module assumes a built area of about 4.2 ha, an average output of 50'000 t/a, and plant life of fifty years.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.29E-09" mu="-20.4686236185728" variance="0.27" varianceWithPedigreeUncertainty="0.448"/>
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+          <comment xml:lang="en">E</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3806164a-a63f-5cc1-a4b3-53daffaccfaf" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="2.7578362071173377" sourceId="026b0ec7-c20a-43c6-806d-db5afdeb78e6" sourceYear="2000" sourceFirstAuthor="Gendorf" intermediateExchangeId="63ead738-2005-498c-8359-7f65c134a1a4" activityLinkId="11b37d0f-9a04-5b8e-aa03-adad67e8eff3">
+        <name xml:lang="en">heat, from steam, in chemical industry</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Estimation. These values were approximated with data from an large chemical plant site in Germany producing 2.05 Mt a-1 (intermediates included) of different chemicals. The values for the energy consumption per kg of product of this plant (3.2 MJ kg-1) were used as approximation for the energy consumption of the calcium nitrate production.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.2" mu="1.16315080980568" variance="0.04" varianceWithPedigreeUncertainty="0.1287"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="94f60518-c5e3-5a4a-8c11-a74b280085e7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="lime" casNumber="001317-65-3" amount="0.569883092531392" mathematicalRelation="0.624883547241646/0.945" intermediateExchangeId="cf8c95e1-aa88-4d23-9d83-065a935387d3" activityLinkId="3c26ad59-cdde-5d84-86b4-ceb9211f40a2">
+        <name xml:lang="en">limestone, unprocessed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Stoichiometric calculation of reactants necessary considering the yield of the reaction and  that limestone, unprocessed has a CaCO3 cintent of 94.5% in terms of mass.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.661252430943541" mu="-0.413619619531258" variance="0.0006" varianceWithPedigreeUncertainty="0.057300000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f9da385d-5b1b-4548-826c-0bf5892a9fd9" variableName="lime_Ca_content" amount="0.378378" isDefiningValue="false" mathematicalRelation="0.4004*0.945" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">calcium content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">94.5% content of CaCO3 in limestone considered</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.1131732" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.1134" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.1134" isDefiningValue="false" mathematicalRelation="0.1200*0.945" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">94.5% content of CaCO3 in limestone considered</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.998" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="0.0" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Not combustible</comment>
+        </property>
+        <property propertyId="dbf41b1b-c7b8-4d5e-b39c-f858eb868df5" variableName="lime_O_content" amount="0.453222" isDefiningValue="false" mathematicalRelation="0.4796*0.945" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">oxygen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">94.5% content of CaCO3 in limestone considered</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.00200400801603206" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.002" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="32a7d945-9669-498f-b623-03c083030c64">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15200: Gypsum; anhydrite; limestone flux; limestone and other calcareous stone, of a kind used for the manufacture of[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ee81046c-0743-5854-8ff1-8f7e5ad3afe3" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="nitric_acid" casNumber="7697-37-2" amount="0.6806840920566213" intermediateExchangeId="68db7412-ba35-488b-8a45-9a9f48448522" activityLinkId="3ba81f61-9bc9-5ebf-bcdd-16a39017e58f">
+        <name xml:lang="en">nitric acid, without water, in 50% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Stoichiometric calculation of reactants necessary considering the yield of the reaction.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.789818151259232" mu="-0.235952548297912" variance="0.0006" varianceWithPedigreeUncertainty="0.057300000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Carbon content, fossil is calculated based on the chemical formula of the substance.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The substance has no biogenic content of carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The substance is assumed to be 100% dry.</comment>
+        </property>
+        <property propertyId="2d23d1bb-e137-4ade-83fc-fbd0421e6cd5" amount="0.0159951628875403" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">hydrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Hydrogen content (on a dry matter basis) of nitric acid, without water, in 50% solution state is calculated from the molecular formula of the substance (HNO3).</comment>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" amount="0.222283409085138" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Nitrogen content (on a dry matter basis) of nitric acid, without water, in 50% solution state is calculated from the molecular formula of the substance (HNO3).</comment>
+        </property>
+        <property propertyId="dbf41b1b-c7b8-4d5e-b39c-f858eb868df5" amount="0.761721428027321" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">oxygen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Oxygen content (on a dry matter basis) of nitric acid, without water, in 50% solution state is calculated from the molecular formula of the substance (HNO3).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Water content (U) is calculated by dividing dry mass (DM) with water in wet mass (WWM), U = DM/WWM</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated by subtracting dry mass (DM) from wet mass (WM). Water in wet mass (WWM) = WM - DM.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mass of the product including water (if present).</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e097b17c-add0-4a91-965c-42d7df8ab574">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34233: Nitric acid, sulphonitric acids</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="7c0f324b-e3c4-5974-af7c-afa98a7f3ab9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000124-38-9" amount="0.23680276952246979" isCalculatedAmount="false" mathematicalRelation="lime*0.945*0.120002717638372/0.272911530465013" elementaryExchangeId="349b29d1-3e58-4c66-98b9-9d1a076efd2e">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that all carbon content in lime is tranformed into CO2 during the process and emmited to air.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.274769350158025" mu="-1.29182325994169" variance="0.0006" varianceWithPedigreeUncertainty="0.057300000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">Carbon dioxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cc7a11d4-daf6-5872-9fbe-327a8c79bbcb" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="0.008014961476934762" isCalculatedAmount="false" mathematicalRelation="water_cooling_UNO_input*fraction_CW_to_air" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0093" mu="-4.67774087882293" variance="0.04" varianceWithPedigreeUncertainty="0.04880000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4d53ec61-b1a0-5441-9ec2-02ee0db637ec" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_water_unspecified" casNumber="007732-18-5" amount="0.01266881007644527" isCalculatedAmount="false" mathematicalRelation="water_cooling_UNO_input*(1-fraction_CW_to_air)" elementaryExchangeId="2404b41a-2eed-4e9d-8ab6-783946fdf5d6">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0147" mu="-4.21990778519745" variance="0.04" varianceWithPedigreeUncertainty="0.04880000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="aa1e0a6f-5949-55cc-b365-db92c220fafb" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_cooling_UNO_input" casNumber="007732-18-5" amount="0.02068377155338003" isCalculatedAmount="false" mathematicalRelation="0.024*calcium_nitrate" sourceId="026b0ec7-c20a-43c6-806d-db5afdeb78e6" sourceYear="2000" sourceFirstAuthor="Gendorf" elementaryExchangeId="fc1c42ce-a759-49fa-b987-f1ec5e503db1">
+        <name xml:lang="en">Water, cooling, unspecified natural origin</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimation. This value was approximated with data from an large chemical plant site in Germany producing 2.05 Mt a-1 (intermediates included) of different chemicals.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.024" mu="-3.72970144863419" variance="0.0006" varianceWithPedigreeUncertainty="0.17859999999999998"/>
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+          <comment xml:lang="en">E</comment>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="6a0165c7-0fd7-47d6-bfbf-e3fee9aacc42" amount="0.981" variableName="efficiency_reaction" mathematicalRelation="(100-1.9)/100" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">efficiency</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.981" mu="-0.019182819416774" variance="0.0006" varianceWithPedigreeUncertainty="0.0412"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">output relative to input. Calculated based on technology description. Of the input HNO3, 1.9% will not be reacted.</comment>
+      </parameter>
+      <parameter parameterId="10e6c58f-94ca-4785-8f11-49f39cabf8ac" amount="0.3875" variableName="fraction_CW_to_air" mathematicalRelation="(0.5*fraction_CW_OT_to_air)+(0.5*fraction_CW_R_to_air)" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">fraction of cooling water which evaporates to air</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.3875" mu="-0.948039430188735" variance="0.04" varianceWithPedigreeUncertainty="0.092025"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated value based on literature value (see comments of the other parametres present in this dataset) and expert opinion. In the case when no industry/literature data are available about the type of cooling or directly fraction, cooling water, to air specific for the process a default assumption is applied. It is assumed that the once-through cooling system is used in 50% of all cases and recirculating system is used in another 50% of all cases. Fraction of cooling water which evaporates to air, i.e. is consumed.</comment>
+      </parameter>
+      <parameter parameterId="c20777c4-a93b-44b0-8402-1f1d086f873f" amount="0.004" variableName="fraction_CW_OT_to_air" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, once-through cooling system</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.004" mu="-5.52146091786225" variance="0.04" varianceWithPedigreeUncertainty="0.092025"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+      <parameter parameterId="d3446223-e5cc-446e-9f2d-29047f8f9832" amount="0.771" variableName="fraction_CW_R_to_air" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, recirculating cooling system</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.771" mu="-0.260066905418808" variance="0.04" varianceWithPedigreeUncertainty="0.092025"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Data have been compiled using literature and flows have been calculated using stoichiometry. Data are considered valid for the geography of Europe.</samplingProcedure>
+        <extrapolations xml:lang="en">Data have been compiled using literature and flows have been calculated using stoichiometry. Data are considered valid for the geography of Europe.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="8" reviewerId="2e8231fd-5b0d-423c-b656-50718a0540b6" reviewerName="Eric Johnson" reviewerEmail="Atlantic@ecosite.co.uk" reviewDate="2020-06-19">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="8" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-06-19">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="8" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-06-19">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0.0748360536176595', Output='0.0749890857206357'
+ - Input &lt; output by 0.000153032102976167 kg (0.2% of output)
+
+Property 'dry mass':
+ - Input='1.45644636464771', Output='1.28144078231465'
+ - Input &gt; output by 0.175005582333056 kg (13.66% of output)
+
+Property 'wet mass':
+ - Input='25.4551264695096', Output='25.2814407823147'
+ - Input &gt; output by 0.173685687194943 kg (0.69% of output)
+
+
+- Amount of property 'carbon content, fossil=0.1134' of exchange 'limestone, unprocessed' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Water, cooling, unspecified natural origin' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, nitrogen content=0.349978511603734, hydrogen content=0.0503678013872509, oxygen content=0.599653687009015, carbon content, fossil=0.272916486782489, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0.1101, water content=9081.65213442325, water in wet mass=999.8899, wet mass=1000
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, nitrogen content=0.349978511603734, hydrogen content=0.0503678013872509, oxygen content=0.599653687009015, carbon content, fossil=0.272916486782489, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0.1101, water content=9081.65213442325, water in wet mass=999.8899, wet mass=1000
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="8" reviewerId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" reviewerName="Lucia Valsasina" reviewerEmail="valsasina@ecoinvent.org" reviewDate="2020-06-19">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="847a56f5-d9e5-4a65-ab51-b056e0039130" isActiveAuthor="true" personName="Avraam Symeonidis" personEmail="Symeonidis@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="847a56f5-d9e5-4a65-ab51-b056e0039130" personName="Avraam Symeonidis" personEmail="Symeonidis@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="5" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2020-06-19T10:33:32" lastEditTimestamp="2020-06-19T12:21:10" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2020-06-19T12:21:10" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

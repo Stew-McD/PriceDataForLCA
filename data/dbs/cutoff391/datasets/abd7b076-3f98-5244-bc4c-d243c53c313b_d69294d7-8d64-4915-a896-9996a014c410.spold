@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="1" id="abd7b076-3f98-5244-bc4c-d243c53c313b" activityNameId="eec82e50-7cde-4cac-8025-c70919bd9232" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="d598cf4d-f2c1-484f-96b0-4fe4c9880b0c" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">market for electricity, low voltage</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts from 1kWh of electricity fed into the low voltage transmission network.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the transport of 1 kWh of low voltage electricity in the transmission network over aerial lines and cables.
+This dataset includes:
+- electricity inputs produced in this country and from imports and transformed to low voltage
+- the transmission network
+- direct emissions to air (SF6 from the insulation gas in the high voltage level switchgear are allocated to the electricity demand on medium voltage). 
+- electricity losses during transmission
+This dataset doesn't include
+- electricity losses during transformation from high to medium voltage or medium to low, as these are included in the dataset for transformation
+- leakage of insulation oil from cables and electro technical equipment (transformers, switchgear, circuit breakers) because this only happens in case of accidental release
+- SF6 emissions during production and deconstruction of the switchgear, as these are accounted for in the transmission network dataset.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a market activity. Each market represents the consumption mix of a product in a given geography, connecting suppliers with consumers of the same product in the same geographical area. Markets group the producers and also the imports of the product (if relevant) within the same geographical area. They also account for transport to the consumer and for the losses during that process, when relevant.</text>
+          <text xml:lang="en" index="1">This dataset describes the electricity available on the high voltage level in State Grid North China Branch. This is done by showing the transmission of 1kWh electricity at high voltage.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <classification classificationId="7cd31277-4ed1-4a72-b24b-0c0b6f16542e">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">photovoltaic/power plants</classificationValue>
+      </classification>
+      <geography geographyId="ae30ab76-bfa2-59fb-bccc-1ad0246cd7b3">
+        <shortname xml:lang="en">CN-NCGC</shortname>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="0">Average technology used to transmit and distribute electricity. Includes underground and overhead lines, as well as air-, vacuum- and SF6-insulated high-to-medium voltage switching stations. Electricity production according to related technology datasets.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2020-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">The 'Start of Period' and 'End of Period' do not refer to the year for which this market is valid. See general comment for the year for which the shares are based on.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="74a17c18-5f67-5238-9cf3-00a8ce423eef" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" mathematicalRelation="" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" productionVolumeAmount="846491870315.5198">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: IEA Key world energy statistics 2004 (www.iea.org/textbase/nppdf/free/2004/keyworld2004.pdf)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">The shares of electricity technologies on this market are valid for the year 2020. The shares been calculated by the data provider and don't correspond with the production volumes entered in the undefined datasets of the different electricity supplying technologies. The shares have been calculated based on statistics from 2020, except Inter-provincial exchanges are based on data from 2017:
+Generation Data:
+- National Bureau of Statistics Database Year 2020. Accessible via: https://data.stats.gov.cn/english/adv.htm?m=advquery&amp;cn=E0101
+Transmission and distribution losses:
+- 2020 electricity &amp; other energy statistics, translated and accessed via: https://chinaenergyportal.org/en/2020-electricity-other-energy-statistics-preliminary/
+Inter-provincial exchanges:
+- Li, W., Long, R., Zhang, L., He, Z., Chen, F. and Chen, H., 2020. Greenhouse Gas Emission Transfer of Inter-Provincial Electricity Trade in China. International Journal of Environmental Research and Public Health, 17(22), p.8375.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cb15b70f-26b7-5c92-a763-dce94f5be5ac" unitId="ae252091-811b-461b-8e89-8f3075639eb1" amount="8.74048809653223E-08" mathematicalRelation="128646/ (36796000000*40)" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." intermediateExchangeId="448b6d35-c6d6-42d9-9e63-c19b9a0a6496" activityLinkId="289c13e8-e6de-5f6a-9680-92d86c36086f">
+        <name xml:lang="en">distribution network, electricity, low voltage</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment xml:lang="en">Estimation. Data overtaken from Switzerland. 
+
+Swiss data are calculated values based on the electricity transported in this voltage level (36796 GWh) and the total low voltage power line length in Switzerland (cables and aerial lines - 128646 km). Lifetime is assumed to be 40 years. 
+
+See Itten&amp;Frischknecht 2012, Tab. 4.1 and Tab. 4.3.</comment>
+        <uncertainty>
+          <lognormal meanValue="8.74048809653223E-08" mu="-16.2527147096" variance="0.1" varianceWithPedigreeUncertainty="0.1187"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="4" geographicalCorrelation="4" furtherTechnologyCorrelation="3"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e18627be-7029-4bd2-b8a8-58d6d00ffced">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">532: Civil engineering works</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a56c3c95-14a4-51f4-a2be-2f4f12d37382" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.002065647370248338" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="29d1c055-085c-525b-a4dc-2ffcac188a73">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7e0cb196-e4f8-5fa3-85a7-77e65f26fbcf" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001851675358644049" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="2ebac235-8347-56d2-8715-be4fe1f0c8f6">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="571e15be-be66-5e59-b0e0-b0a4644477fc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001156471386353356" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="2ec00c73-7ec2-5097-889a-61f8d65be6ab">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bf72f431-d46a-5926-989d-d72783248ac4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0002866803749251022" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="39f608e7-dd78-5a44-b4f9-aed975460c46">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="88009852-6952-5caf-8c4c-8f0b984ed54f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001658675907042777" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="3f02c734-8751-5bd1-82d6-d21f2d2b5ade">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="820bee31-b978-522d-921a-baaba7747f39" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000928624727219563" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="44bf1b12-0668-5ff8-ae6e-53612240ae6a">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cf844090-b238-5a1a-8f04-a34d3c4d8707" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.004169905211610056" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="4d7c4ff9-bfdb-513e-a33b-1bdebf71a9c2">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="952a785d-4742-5b67-b3ae-ce8980a8835d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.9719898303927452" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="4e9b95d7-9ec5-52ff-8461-cea9a44b4b78">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="837c7ecf-019d-5617-ac08-b31f363cf524" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.168650432151583E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="59a2f767-0ed4-5dbf-b3a9-104de0964549">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="20397fce-a9cb-57e4-b173-af86114864b2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.007448133897811206" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="6e9657e0-e603-5bef-b174-42f4c47b8d20">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dfecfb36-e450-514f-838f-c51ed9cff53f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001486860414456139" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="9c5a81ef-c16e-598e-9bea-e30db9e292b1">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="07d279f0-d870-5c4c-a0f8-4a4f5c7cb6b5" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.38428145135785E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="a8b5af01-af99-54bb-b298-b517dfb4c35b">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="47c2ab4a-ae59-50ac-adb0-0c506853d74e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.02184220753983677" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="abd7b076-3f98-5244-bc4c-d243c53c313b">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="09fd86cd-894a-540f-a4e1-db60c4c7086b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.006676611993459662" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="b5e549d0-128f-5f22-b3da-d607d9fd65ac">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7e105281-9df9-5270-8e67-c137977e9c65" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.542811248259902E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="e0726123-f562-5867-908b-3eaa07048301">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="64994102-7829-5699-99dc-da4a46badd63" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.041829507975993E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="e8108bfd-158c-5d3f-90ff-46c7f6e945c0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="82d679db-460b-59ef-9a0d-d23806adff1a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.950723908707788E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="f3ca8d8b-5377-5c0b-b148-d97b49912ab0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0b3d7555-48d1-5510-8b76-7f3c47c24827" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="002551-62-4" amount="9.09E-09" mathematicalRelation="sf6_emissions" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." intermediateExchangeId="ab5dcfa8-e8f9-4923-84d4-51b25a898fa1" activityLinkId="45070518-9018-5a90-841c-eb0595aed419">
+        <name xml:lang="en">sulfur hexafluoride, liquid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value</comment>
+        <uncertainty>
+          <lognormal meanValue="9.09E-09" mu="-18.5160909288" variance="0.0" varianceWithPedigreeUncertainty="0.002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a611a303-a730-4721-8385-b0fa926ece41">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">342: Basic inorganic chemicals n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="26ce26c2-ca20-5e1f-95e0-6012a12fcb61" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="sf6_emissions" casNumber="002551-62-4" amount="9.09E-09" isCalculatedAmount="false" mathematicalRelation="" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." elementaryExchangeId="35d1dff5-b535-4628-9826-4a8fce08a1f2">
+        <name xml:lang="en">Sulfur hexafluoride</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature value/estimation. SF6 (sulphur hexafluoride) is used as quenching and insulation gas in gas-insulated switchgear. SF6 has physically ideal properties for the use in high and medium voltage switchgear.
+
+About 5% of SF6-emissions are caused by the medium voltage level switchgear, which are allocated to the electricity demand on low voltage.
+
+The emission rate has been taken from UBA (1999) Schwefelhexafluorid. Retrieved 14.8.2002 from: http://www.ubavie.gv.at/publikationen/uba-aktuell/archiv/1999/08/SF6.html.</comment>
+        <uncertainty>
+          <lognormal meanValue="9.09E-09" mu="-18.5160909288" variance="0.001" varianceWithPedigreeUncertainty="0.044225"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <synonym xml:lang="en">hexafluoro-lambda6-sulfane</synonym>
+        <synonym xml:lang="en">sulphur hexafluoride</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">Literature, statistics</samplingProcedure>
+        <extrapolations xml:lang="en">Assumptions for the amount of transmission network per kWh transported and emissions per kWh are based on Swiss data.
+Electricity losses data are based on IEA data and on data from Switzerland.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-07-20">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-07-20">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- The specified geography shall not overlap with the geography State Grid Corporation of China of the related dataset market for electricity, low voltage, CN-SGCC, 2014 - 2017.</text>
+          <text xml:lang="en" index="3">None</text>
+          <text xml:lang="en" index="4">- Market activities cannot have a geographical location that does not fully contain the geographical locations of its supplying transforming activities: exchange 'electricity, low voltage' is supplied by 'electricity voltage transformation from medium to low voltage, CN-SGCC, 2012 - 2012' which has an overlapping geography not fully contained in geography of dataset.</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Property 'total length of network=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+Property 'lifetime=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+
+- Non-global market activities should have a geography comment.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="52f4f2ad-0a8b-44b5-86eb-7fb567d703d4" isActiveAuthor="false" personName="Johannes Müller" personEmail="mueller@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="52f4f2ad-0a8b-44b5-86eb-7fb567d703d4" personName="Johannes Müller" personEmail="mueller@ecoinvent.org" dataPublishedIn="1" publishedSourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" publishedSourceYear="2012" publishedSourceFirstAuthor="Itten R." isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2022-07-19T10:49:57" lastEditTimestamp="2022-07-19T17:10:54" fileGenerator="EcoEditor 3.13.5000.19341" fileTimestamp="2022-07-19T17:10:54" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="86343841-bc70-571c-9e67-72446559e8dc" activityNameId="22d726dc-2a22-5ef8-a2bb-4bf4808d1b7c" parentActivityId="8a19a400-c000-51eb-92d5-cc1ff9c9ace5" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity production, cobalt industry</activityName>
+        <includedActivitiesStart xml:lang="en">This dataset does not represent a real transformation activity. Conceptually, the activity can be said to start with the production of electricity.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This dataset does not represent a real transformation activity. Conceptually, the activity can be said to end with a given amount of high voltage electricity that is supplied specifically to the cobalt industry.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The purpose of this dataset is to model the electricity mix that is used by the cobalt industry. The production volume represents the total amount of electricity that is produced for the cobalt industry. Note: Large proportion of Apline hydropower is due to limited availablity of country-specific electricity emission factors at the time the cobalt industry was first assessed (2012) and has been maintained in order to be consistent with the reference sources ("The Environmental Performance of Refined Cobalt - Life Cycle Inventory and Life Cycle Assessment of Refined Cobalt - Summary Report", CDI &amp; ERM, Novermber 2016.). Future iterations will improve this.</text>
+          <text xml:lang="en" index="1">Details on the electricity generation with each technology can be found in the datasets that supply the inputs to this dataset.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2012-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e2d4ce1b-ad00-56c1-be4c-43f33df0d12b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="d2fd5cc0-630a-5514-9c3c-5d9fce0bb70b" productionVolumeAmount="222578370744.619">
+        <name xml:lang="en">electricity, high voltage, cobalt industry</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated based on the amount of "electricity, medium voltage, cobalt industry" consumed in the dataset "cobalt production" (GLO). 2728.47 kWh of electricity is required per kg of cobalt. Additionally, the production volume is scaled to take into account the electricity losses in the datasets "market for electricity, high voltage, cobalt industry", "electricity voltage transformation from high to medium voltage, cobalt industry" and "market for electricity, medium voltage, cobalt industry".
+</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="57b1cc9f-54c3-512a-acd0-7837e0969ac7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0048739998050371346" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="03d38b23-2feb-5739-b6d4-141e64293266">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00487399980504001" mu="-5.3238" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="78b3a8c6-5910-57a2-b733-300a0866f773" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0005119999795196989" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="20cc9b2e-9927-5989-b94f-d4cdbac49edf">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000511999979520001" mu="-7.5772" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="309690d7-2552-5004-9121-b8e29db6b2b3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.99999959999412E-07" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="3250882e-8a00-56b6-a5de-7cc4c0513945">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="9.99999960000002E-07" mu="-13.8155" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9e49c439-c620-5084-b646-c14c764157dc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000355999985759791" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="32cfacc7-91f1-53eb-9cdf-dbc4aad75499">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000355999985760001" mu="-7.9406" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="30c9833d-2872-5c91-9c69-d44b034ed022" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.199999631994583E-05" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="3b91a2be-1e49-5726-9212-81ac8da8b921">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="9.19999963200001E-05" mu="-9.2937" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="80e2fe2f-6a69-5fd5-86ef-936bff90c68e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.801999847917767E-05" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="42f90506-8eff-5d2a-b9fe-1e3017591485">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.80199984792001E-05" mu="-10.1774" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="621be780-706d-569c-a568-5f4562fbde15" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0010899999563993568" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="4d529e4b-6bc0-51ff-b6bd-c6a7325369b3">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0010899999564" mu="-6.8216" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e7a7322e-f528-57d5-ba3c-6561a0a22f97" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.014416999423311495" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="6845d4e6-458a-53a2-9ee2-b4b4f90e2b33">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.01441699942332" mu="-4.2393" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e6a26f3c-d789-55f9-bc12-2efb9499d1fe" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.039212998431456966" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="69fd0084-56d3-5d4e-8142-b251e04f592b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0392129984314801" mu="-3.2387" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="45bb3697-e1b9-5044-bcc2-6dbfb3b3980d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00915199963391461" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="72807827-7152-5d10-95fd-a1319fddde32">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00915199963392001" mu="-4.6938" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5784acca-0fe3-516f-b337-a084aee09454" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0002979999880798242" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="734afae7-3cd1-52ca-9d95-c493c9041b83">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00029799998808" mu="-8.1184" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="affa3d46-dd49-53ee-a36b-58684ece4e98" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00014799999407991268" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="734fbb24-88fb-5e48-b0cf-e345c638bb5d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00014799999408" mu="-8.8183" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d70c39b0-4118-544f-bce7-79f21d6aab3d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.008516999659314997" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="75371efc-5d2d-519b-b8a7-5cb9644746d3">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eb18905e-78a7-515a-ba6d-596f88088c80" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.015770019369189894" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="7c10fe21-371b-59f0-ad76-478c62d81e9d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0157700193691992" mu="-4.1496" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3b2112b6-047a-5121-9c5c-17a4bb11f089" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0003109999875598175" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="7d947478-63d0-5d22-b660-178fdd8c0016">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000310999987560001" mu="-8.0757" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c601b50e-bdaf-53fa-b4b2-15d0416a2d24" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0004589999816397302" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="9e8c747b-2bf3-55f1-be51-324f9cd48fb0">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000458999981640001" mu="-7.6865" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5f9f7cd5-de77-58ce-82ae-5c130afb5155" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0009399999623994464" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="b94d3f66-e725-546a-8607-996291ff7c44">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000939999962400001" mu="-6.9696" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fa99386b-f010-5946-942f-0b10ffbb5a93" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.891612964334955" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="c17560a2-30ee-5019-8567-9a354b743a64">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.891612964335481" mu="-0.1147" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c1144486-b327-5084-8e2a-2d529e07709e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.005435999782556803" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="c343d9b8-5d8b-59a6-adb5-d39f847190f5">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00543599978256001" mu="-5.2147" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fae37c70-3ab5-5ec7-86ac-737d40e8c211" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00676299972947602" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f3da887c-540a-5140-a15b-bae7175679d2">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value obtained from the industry. The amount reflects the split of electricity generating technologies seen in the geographic regions covered by the sample, relative to the amount of cobalt metal produced in the regions included in the sample.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00676299972948001" mu="-4.9963" variance="0.0006" varianceWithPedigreeUncertainty="0.041925000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <samplingProcedure xml:lang="en">Grid electricity for each country where electricity use is reported was represented by datasets from ecoinvent (v3.1). Where country-specific datasets for electricity generation were not available in ecoinvent, national or regional grid electricity was modelled based on power generation by fuel type from ecoinvent (v3.1) and national statistics on electricity mixes from the International Energy Agency (IEA 2011).</samplingProcedure>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-04-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="e049b5f5-4742-4486-add7-d5fc2bf19c4d" reviewerName="Louis Brimacombe" reviewerEmail="louis.brimacombe@gmail.com" reviewDate="2020-04-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" reviewerName="Lucia Valsasina" reviewerEmail="valsasina@ecoinvent.org" reviewDate="2020-04-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-05-28">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review.
+ - electricity, high voltage, cobalt industry
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-07-03">
+        <details>
+          <text xml:lang="en" index="0">- Validation passed.</text>
+        </details>
+        <otherDetails xml:lang="en">- Validation passed.
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" reviewerName="Lucia Valsasina" reviewerEmail="valsasina@ecoinvent.org" reviewDate="2020-07-03">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="f3b75377-2c49-4482-bbc2-ee1b22627396" isActiveAuthor="true" personName="Andy Whiting" personEmail="andy.whiting@erm.com"/>
+      <dataGeneratorAndPublication personId="f3b75377-2c49-4482-bbc2-ee1b22627396" personName="Andy Whiting" personEmail="andy.whiting@erm.com" dataPublishedIn="0" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2020-02-06T14:22:14" lastEditTimestamp="2020-07-03T15:32:31" fileGenerator="EcoEditor 3.12.6000.6006" fileTimestamp="2020-07-03T15:32:31" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

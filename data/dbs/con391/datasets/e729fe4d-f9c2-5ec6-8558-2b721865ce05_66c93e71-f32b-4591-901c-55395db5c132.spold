@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="e729fe4d-f9c2-5ec6-8558-2b721865ce05" activityNameId="ed8b0d41-2983-4f9a-95c5-5275e0d73fde" parentActivityId="65ad8493-2a26-49ba-a2b7-539c9e68e199" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity, high voltage, natural gas, import from Germany</activityName>
+        <includedActivitiesStart xml:lang="en">This activity represents the point of "handing over" the electricity from one country to the other at the border.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This dataset doesn't include any electricity losses or transmission infrastructure as these are accounted for in the market datasets. </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the amount of imported electricity from natural gas power plants, from Germany to CH. The import value is valid for 2008 and includes all electricity imports, independently whether used within the importing country, or re-exported. For a discussion of different ways of modeling electricity trade in LCI, please refer to (Itten &amp; Frischknecht 2012).</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="131278d6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CH</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2010-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">The Annual Production Volume is valid for the year 2011.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="69dc81b0-679d-5002-8f80-e3425f50f088" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="1683000000.0" productionVolumeSourceId="e5c28d59-2abe-4005-ad85-433ffc9ca8e6">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Literature data/calculated data. Based on Tab. 3.7 in Stolz, P., Frischnkecht, R. 2015. Umweltbilanz Strommix Schweiz 2011. Issued by treeze Ltd. for the Federal Office for the Environment, Switzerland.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="1683000000.0" mu="21.62" variance="0.001" varianceWithPedigreeUncertainty="0.0017"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a701b2f1-6266-52b1-957c-92f8ea1eac4f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="884e3559-f213-5a96-abd8-a26817402716">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">activityLink added to better reflect the reality of the supply chain</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <extrapolations xml:lang="en"/>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2012-07-06">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-07-06">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="6" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2012-08-27">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="6" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-08-27">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2012-09-10">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-09-10">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="15" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2012-09-14">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="15" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-09-14">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="13" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2014-06-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="13" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2014-06-02">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- No GLO dataset found! Related datasets: </text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977'
+ - Input &lt; output by 0,0977 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="7" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2015-09-30">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="7" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-09-30">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- No GLO dataset found! Related datasets: </text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977'
+ - Input &lt; output by 0,0977 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="0" isCopyrightProtected="true" pageNumbers=""/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="6" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-07-06T19:17:18" lastEditTimestamp="2015-09-30T11:33:44" fileGenerator="EcoEditor 3.6.120.14104" fileTimestamp="2015-09-30T11:33:44" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

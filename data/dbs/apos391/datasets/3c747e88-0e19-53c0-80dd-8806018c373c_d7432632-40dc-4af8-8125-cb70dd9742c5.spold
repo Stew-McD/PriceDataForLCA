@@ -1,0 +1,1177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="3c747e88-0e19-53c0-80dd-8806018c373c" activityNameId="a0370aa1-2564-4cd4-a707-7b7116e981a5" parentActivityId="33bae12f-e72c-4a60-9b54-5be44797fed4" inheritanceDepth="-1" type="1" energyValues="0">
+        <activityName xml:lang="en">maintenance, tanker, for liquefied natural gas</activityName>
+        <includedActivitiesStart xml:lang="en">Maintenance of ship, starting with receiving/obtaining the material inputs required.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the maintenance of one ship. The dataset includes material consumption (paint, steel and sand), energy consumption (diesel for sandblasting) and emissions from painting (volatiles and paint) and particulates (sandblasting). The dataset does not include the consumption of liquids and oils (e.g. lubricants, refigerants etc.).</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The dataset represents the maintenance of one tanker for liquefied natural gas with a load capacity (DWT) of 23,000 tonnes.</text>
+          <text xml:lang="en" index="1">It is assumed that the ship undergoes two full maintenance regimes (stripping and repainting of all surfaces) and four smaller maintenance regimes (stripping and repainting of the hull) during an assumed 25 year lifetime (Demirel et al., 2013 and Hayman et al., N.d.). The dataset includes the quantity of paint used, emissions of volatiles, and emissions of paint to land and water from stripping and application. The dataset also includes the material and energy required for sandblasting, and emissions of particulates. A 10% replacement of steel over the ship's lifetime is assumed from Johnson &amp; Fet (1998).</text>
+          <text xml:lang="en" index="2">References: </text>
+          <text xml:lang="en" index="3">Demirel, Y., Khorasanchi, M., Turan, O. and Incecik, A. (2013) On the importance of antifouling coatings regarding ship resistance and powering, Low Carbon Shipping Conference, London, UK.</text>
+          <text xml:lang="en" index="4">Hayman, B., Dogliani, M., Kvale, I. and Fet, A. (n.d.) Technologies for reduced environmental impact from ships - Ship building, maintenance and dismantling aspects, TRESHIP Thematic Network: Brussels, Belgium</text>
+          <text xml:lang="en" index="5">Johnsen, T. and Fet, A. (1998) Screening Life Cycle Assessment of M/V Color Festival, The Research Council of Norway: Oslo, Norway.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="3ec99844-8ddd-4b2f-b1c7-bb3111d53d92">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">transport systems/ship</classificationValue>
+      </classification>
+      <classification classificationId="23f6551b-9ef0-4091-bf94-b3f502254976">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3315:Repair of transport equipment, except motor vehicles</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Data represents global conditions.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Sand blasting is the most common medium of abrasive blastive for commercial ships (OECD, 2009).</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2007-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="397ca300-4296-5ed4-a61c-cab57c9852db" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_iron" amount="1.0" intermediateExchangeId="d7432632-40dc-4af8-8125-cb70dd9742c5" productionVolumeAmount="5197786.84864">
+        <name xml:lang="en">iron scrap, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated waste associated with steel replacement over lifetime. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). 85% of ship mass estimated to be steel ( Jain et al., 2016). 10% replacement of steel during lifetime estimated by Johnson &amp; Fet (1998). Material wastage estimated by Papanikolaou (2014).</comment>
+        <uncertainty>
+          <lognormal meanValue="81215.41951" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.010205998413786735" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.149" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: estimated at 85% of sorted scrap</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="12101.097506990001" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="49a5cb0e-a492-40f3-84b9-6d06674709da">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39310: Slag, dross, scalings and other waste from the manufacture of iron or steel</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aa338dd8-f6fa-5d33-86ba-88e823192481" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.004965712041533269" intermediateExchangeId="fb4bb128-084e-4da3-8227-2ef8ad95da13" activityLinkId="2ca22d57-259c-5400-8f91-3a4efdc1217a">
+        <name xml:lang="en">alkyd paint, white, without solvent, in 60% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">EcoSpold01Location=RER
+Paint amount adjusted to be non-VOC content (asumed 45% VOC after OECD, 2009). Paint amount based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)).</comment>
+        <uncertainty>
+          <lognormal meanValue="227099.0297" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.339995648233944" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.339995648233944" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.140366564033836" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content was calculated as an addition of C content in the raw materials.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.199629084200108" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content was calculated as an addition of C content in the raw materials.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="10.3" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d4e74c86-998c-4d29-a2fb-c5898661bfad">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">35110: Paints and varnishes and related products</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="010574cb-d32e-5cec-b115-30930a50a192" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.023572862909807354" intermediateExchangeId="fb4bb128-084e-4da3-8227-2ef8ad95da13" activityLinkId="752d9f82-f725-541e-b9b8-c34b678616fd">
+        <name xml:lang="en">alkyd paint, white, without solvent, in 60% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">EcoSpold01Location=RER
+Paint amount adjusted to be non-VOC content (asumed 45% VOC after OECD, 2009). Paint amount based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)).</comment>
+        <uncertainty>
+          <lognormal meanValue="227099.0297" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.339995648233944" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.339995648233944" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.140366564033836" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content was calculated as an addition of C content in the raw materials.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.199629084200108" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content was calculated as an addition of C content in the raw materials.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="10.3" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d4e74c86-998c-4d29-a2fb-c5898661bfad">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">35110: Paints and varnishes and related products</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="17ba252e-25ba-5112-a714-6068bca60d91" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0027123023717012733" intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="d43a967d-20d1-56b5-b31f-f7d42b684fb7">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Diesel for sandblasting (compressor) approximated by "diesel burned in building machine, GLO 2001" with 0.0234 kg diesel burnt per MJ produced. Mass of diesel based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Diesel usage during sand blasting estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="21583.46161" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ec4b37eb-69dd-5cd5-b3d7-841d2f77e215" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.09525598519618063" intermediateExchangeId="9ba48284-0f03-4fec-800d-de77833b12f6" activityLinkId="3eaea3b1-17a9-54b7-aeef-8dfff62031f9">
+        <name xml:lang="en">reinforcing steel</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Steel replacement over lifetime, including estimated wastage percentage. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). 85% of ship mass estimated to be steel ( Jain et al., 2016). 10% replacement of steel during lifetime estimated by Johnson &amp; Fet (1998). Material wastage data estimated by Papanikolaou (2014).</comment>
+        <uncertainty>
+          <lognormal meanValue="758010.5821" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.004" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.004" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.004" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Mix of differently produced steels and hot rolling</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="0.0" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Non combustible products are assumed to have an LHV equal to zero (0).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="95701f23-88ae-4d9e-b43d-6e2e99ac3a1a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4124: Bars and rods, hot-rolled, of iron or steel</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="01a4d9f6-898e-5333-bb97-197bf706e2a7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000417513565287805" intermediateExchangeId="f51d7ccf-0bee-430d-98a3-8334adbe39fc" activityLinkId="0235a150-5811-503e-ad2a-56f000365322">
+        <name xml:lang="en">sand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage during maintenance estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="219588.2616" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c290f9cf-3a70-4f3e-9859-ccf1c88bcdef">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15310: Natural sands</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5f14ecb7-870b-5d19-b0e0-6d19a8bba1a8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="2.167535933470391E-06" intermediateExchangeId="f51d7ccf-0bee-430d-98a3-8334adbe39fc" activityLinkId="953d0ea8-68c0-5802-9fa0-8d3100b69bac">
+        <name xml:lang="en">sand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage during maintenance estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="219588.2616" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c290f9cf-3a70-4f3e-9859-ccf1c88bcdef">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15310: Natural sands</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8b3a0278-a067-590f-bf62-5b315a741485" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="4.998987652500504E-06" intermediateExchangeId="f51d7ccf-0bee-430d-98a3-8334adbe39fc" activityLinkId="c3d5cfa5-13f8-5187-872f-956367cc4ffa">
+        <name xml:lang="en">sand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage during maintenance estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="219588.2616" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c290f9cf-3a70-4f3e-9859-ccf1c88bcdef">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15310: Natural sands</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="81de1b38-7885-5007-b5b6-39d6013e89c5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.027170048388762653" intermediateExchangeId="f51d7ccf-0bee-430d-98a3-8334adbe39fc" activityLinkId="cab96c7a-5c32-53a6-94f6-172590c7a79d">
+        <name xml:lang="en">sand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage during maintenance estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="219588.2616" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c290f9cf-3a70-4f3e-9859-ccf1c88bcdef">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15310: Natural sands</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fb2940b6-652b-5b11-ba2e-5f9b9091d576" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_sand" amount="-0.02477123586318659" intermediateExchangeId="a4bd6ef4-202d-47c2-9939-a77e1bcf192a" activityLinkId="a7bdba0b-8bd8-588c-8983-69de7ded51de">
+        <name xml:lang="en">waste foundry sand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) data and Anink &amp; Krikke (2011) data. Sand usage during maintenance estimated by Johnson &amp; Fet (1998) and the assumption that all sand not lost to the air or water goes to waste. It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009). Foundry waste sand used as proxy for sandblasting sand waste.</comment>
+        <uncertainty>
+          <lognormal meanValue="197119.9907" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.04825" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.05" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.05" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.965" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="0.0" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Non combustible products are assumed to have an LHV equal to zero (0).</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0362694300518135" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.035" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="8ecc489b-3df7-4c7b-947f-83f773485051">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39290: Other non-metal waste or scrap</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e998525e-54fd-5560-b2c7-b0eed72e7fb9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.02691641965703349" intermediateExchangeId="cee6769c-ac58-45d5-9597-de2569031d74" activityLinkId="1e2badb6-b801-5b9f-8da9-16d3f3924bef">
+        <name xml:lang="en">waste paint</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste paint from stripping and maintenance. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). Paint emission data from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). </comment>
+        <uncertainty>
+          <lognormal meanValue="235336.3498" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="19.7" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="91f26c38-f56f-4179-9862-3c94bcfb6677">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39: Wastes or scraps</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="52ebfd53-c18b-5772-93ad-a7e68e63709e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-7.950251886374024E-06" intermediateExchangeId="cee6769c-ac58-45d5-9597-de2569031d74" activityLinkId="8db91442-b1a8-5243-adf7-cdc7d673334b">
+        <name xml:lang="en">waste paint</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste paint from stripping and maintenance. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). Paint emission data from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). </comment>
+        <uncertainty>
+          <lognormal meanValue="235336.3498" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="19.7" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="91f26c38-f56f-4179-9862-3c94bcfb6677">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39: Wastes or scraps</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aa6257db-f5bb-5c21-802b-4fb2b4c2fc12" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.0026493542343066895" intermediateExchangeId="cee6769c-ac58-45d5-9597-de2569031d74" activityLinkId="9d17acb9-9fed-5799-839a-7cbcbddbcda0">
+        <name xml:lang="en">waste paint</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste paint from stripping and maintenance. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). Paint emission data from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). </comment>
+        <uncertainty>
+          <lognormal meanValue="235336.3498" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.1292"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.65" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="19.7" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="91f26c38-f56f-4179-9862-3c94bcfb6677">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39: Wastes or scraps</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="642852bc-b225-5627-9a9b-8cb055b47190" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.023349743138578714" isCalculatedAmount="false" elementaryExchangeId="33b38ccb-593b-4b11-b965-10d747ba3556">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). VOC percentage of 45% from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). </comment>
+        <uncertainty>
+          <lognormal meanValue="185808.297" mu="10.08" variance="0.12" varianceWithPedigreeUncertainty="0.13"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">non-methane volatile organic compounds</synonym>
+        <synonym xml:lang="en">NMVOC</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.854048915548672" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.854048915548672" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.427024457774336" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The ratio C fossil/C biogenic has been estimated to 50:50 using data concerning global material uses and mass flows (J.K. Steinberger et al., Ecological Economics, 2010, 69:1148–1158). Repartition of different fossil fuels was estimated using production volumes in ecoinvent v3.)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.427024457774336" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The following list of representative NMVOC were considered following EEA definitions: benzene, xylene, propane, butane, and ethane
+The ratio C fossil/C biogenic has been estimated to 50:50 using data concerning global material uses and mass flows (J.K. Steinberger et al., Ecological Economics, 2010, 69:1148–1158). Repartition of different fossil fuels was estimated using production volumes in ecoinvent v3.)</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The ratio C fossil/C biogenic has been estimated to 50:50 using data concerning global material uses and mass flows (J.K. Steinberger et al., Ecological Economics, 2010, 69:1148–1158). Repartition of different fossil fuels was estimated using production volumes in ecoinvent v3.)
+water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a7083374-c8fb-55dc-9e77-e6c8a5d4d401" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.5131945648223256E-06" isCalculatedAmount="false" elementaryExchangeId="66f50b33-fd62-4fdd-a373-c5b0de7de00d">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Particulates to air during sandblasting. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage and loss to air during maintenance estimated by Johnson &amp; Fet (1998). Particulate size distribution from sand blasting from US EPA 1995. It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="12.04142176" mu="0.0" variance="0.3" varianceWithPedigreeUncertainty="0.4285999999999999"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">particles</synonym>
+        <synonym xml:lang="en">particulates</synonym>
+        <synonym xml:lang="en">pm2.5</synonym>
+        <synonym xml:lang="en">pm</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.922578950360014" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Soot considered CH</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="70922b69-c472-5877-95ad-d28cd4dc5f7a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="4.737462984853632E-05" isCalculatedAmount="false" elementaryExchangeId="7678cec7-b8e1-439d-8242-99cd452834b1">
+        <name xml:lang="en">Particulate Matter, &gt; 10 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Particulates to air during sandblasting. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage and loss to air during maintenance estimated by Johnson &amp; Fet (1998). Particulate size distribution from sand blasting from US EPA 1995. It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="376.9891275" mu="0.0" variance="0.12" varianceWithPedigreeUncertainty="0.24860000000000002"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">particles</synonym>
+        <synonym xml:lang="en">pm</synonym>
+        <synonym xml:lang="en">particulates</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.922578950360014" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Soot considered CH</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5de5dc20-e7e5-5f37-8e87-7a7554a4983c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.5131945648223255E-05" isCalculatedAmount="false" elementaryExchangeId="295c9740-6fdb-4676-9eb8-15e3786f713d">
+        <name xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Particulates to air during sandblasting. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage and loss to air during maintenance estimated by Johnson &amp; Fet (1998). Particulate size distribution from sand blasting from US EPA 1995. It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009).</comment>
+        <uncertainty>
+          <lognormal meanValue="120.4142176" mu="0.0" variance="0.3" varianceWithPedigreeUncertainty="0.4285999999999999"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">particulates</synonym>
+        <synonym xml:lang="en">pm</synonym>
+        <synonym xml:lang="en">particles</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.922578950360014" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.922578950360014" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Soot considered CH</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="fea045b3-6b11-5746-9b97-ba46567fa05e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0016592427611270874" isCalculatedAmount="false" elementaryExchangeId="042e5892-cd59-4e95-949e-cacce0e6a590">
+        <name xml:lang="en">Hydrocarbons, unspecified</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Paint to land from stripping and repainting. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). Paint emission data from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Unspecified hydrocarbons to land used as a proxy for paint emissions to land.</comment>
+        <uncertainty>
+          <lognormal meanValue="13203.61727" mu="0.0" variance="0.04" varianceWithPedigreeUncertainty="0.1686"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.85" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Considered as petroleum</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="dbeb0ac7-0dec-439e-887a-9924cc8005dd">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1444f53b-de86-59c0-a685-13b4927517a6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0016592427611270874" isCalculatedAmount="false" elementaryExchangeId="e620a933-c348-4e7e-8893-ab0a0f681c7e">
+        <name xml:lang="en">Hydrocarbons, unspecified</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Paint to water from stripping and repainting. Based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Paint usage data estimated by Kameyama et al. (n.d.), Harish &amp; Sunil (2014) and Nicolae et al. (2014). Paint emission data from OECD (2009). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Unspecified hydrocarbons used as a proxy for paint emissions to ocean. </comment>
+        <uncertainty>
+          <lognormal meanValue="13203.61727" mu="0.0" variance="0.3" varianceWithPedigreeUncertainty="0.4285999999999999"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4c3c002f-4b49-57df-81eb-1c167c8c5aa2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.002759472847763643" isCalculatedAmount="false" elementaryExchangeId="0b111253-26b5-4a03-97fb-ed7799c21797">
+        <name xml:lang="en">Solids, inorganic</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">10% of sand used in blasting assumed to end up in water (after Johnsen &amp; Fet (1998)). Amount of sand used in blasting based on: Ship lightweight mass calculated from IHSF data, Papanikolaou (2014) and Anink &amp; Krikke (2011). Sand usage and loss to water during maintenance estimated by Johnson &amp; Fet (1998). It is assumed that the ship undergoes 2 full maintenance regimes (stripping and repainting of all surfaces) and 4 smaller (stripping and repainting of the hull) during its 25 year lifetime (Demirel et al. (2013); Hayman et al. (N.d.)). Sand blasting assumed as abrasive blasting is most common for commercial ships OECD (2009). Inorganics solids to water used as a proxy for sand to water emissions.</comment>
+        <uncertainty>
+          <lognormal meanValue="21958.82616" mu="0.0" variance="0.04" varianceWithPedigreeUncertainty="0.1686"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Literature studies.</samplingProcedure>
+        <extrapolations xml:lang="en">None</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="12" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-05-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="16" reviewerId="50d9d3b9-313f-43bb-ba08-8a498d208034" reviewerName="Andrew Simons" reviewerEmail="andrew.simons@3sp.ch" reviewDate="2018-05-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="16" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-05-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="16" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-13">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'dry mass':
+ - Input='1204697,8734', Output='741456,36280236'
+ - Input &gt; output by 463241,51059764 kg (62,48% of output)
+
+Property 'wet mass':
+ - Input='1204697,8734', Output='748355,56247686'
+ - Input &gt; output by 456342,31092314 kg (60,98% of output)
+
+Property 'water in wet mass':
+ - Input='0', Output='6899,1996745'
+ - Input &lt; output by 6899,1996745 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='34909,1528228071', Output='264740,506574949'
+ - Input &lt; output by 229831,353752142 kg (86,81% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='45335,5713217441', Output='79344,6872763978'
+ - Input &lt; output by 34009,1159546536 kg (42,86% of output)
+
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (6899,1996745) is unbalanced.
+
+- The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review.
+ - maintenance, tanker, for liquefied natural gas
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, dry mass=0,965, water in wet mass=0,035, carbon content, non-fossil=0, water content=0,0362694300518135, carbon content, fossil=0,05, wet mass=1, carbon content, fossil=0,65, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0,427024457774336, carbon content, non-fossil=0,427024457774336, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0,922578950360014, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0,922578950360014, carbon content, non-fossil=0, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0,922578950360014, water content=0, dry mass=1, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0,85, water content=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,85, carbon content, non-fossil=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, dry mass=0,965, water in wet mass=0,035, carbon content, non-fossil=0, water content=0,0362694300518135, carbon content, fossil=0,05, wet mass=1, carbon content, fossil=0,65, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0,427024457774336, carbon content, non-fossil=0,427024457774336, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0,922578950360014, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0,922578950360014, carbon content, non-fossil=0, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0,922578950360014, water content=0, dry mass=1, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0,85, water content=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,85, carbon content, non-fossil=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="19fd67c5-a1f9-43cc-ac2c-a45863ba3f60" isActiveAuthor="true" personName="Philippa Notten" personEmail="pippa@tgh.co.za"/>
+      <dataGeneratorAndPublication personId="19fd67c5-a1f9-43cc-ac2c-a45863ba3f60" personName="Philippa Notten" personEmail="pippa@tgh.co.za" dataPublishedIn="2" publishedSourceId="22effad0-1f9a-4466-957b-a7311ea9e38f" publishedSourceYear="2018" publishedSourceFirstAuthor="Notten, P.J." isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2018-05-02T12:39:52" lastEditTimestamp="2018-06-12T16:28:48" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2018-06-12T16:28:48" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

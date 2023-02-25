@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="51d1102d-9009-55af-b1f4-7a640b6c888c" activityNameId="13b0966c-8f50-4a11-be6a-29122eff65cf" parentActivityId="118e33d3-4fbe-4360-9c15-cc16f6101aba" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">transport, passenger car, electric</activityName>
+        <includedActivitiesStart xml:lang="en">The dataset takes as input the car without battery, the battery, the  maintenance and the electric energy consumed for the journey. Both, the car and battery are considered as infrastructure even though they are expressed in kg.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The datsets returns as by-products the non-exhaust emissions caused by brake, tyre and road wear.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset describes a journey of 1 km with an electric passenger car. The dataset is parametrized with respect to mass of the vehicle, mass of the battery, consumption and lifetimes of vehicle and battery. The vehicle is described in terms of a vehicle without battery plus the battery. The amount of battery includes battery exchange due to maintenance. Currently, default values for a compact size car with a weight without battery of 918.22kg and a battery of 262kg are given. Assuming a life expectancy for the car of 150000km and an average lifetime for the battery of 100000, it is expected that about every second battery will require substitution. A default value of (150000km/100000km)*262 kg of batteries is taken into account including the maintenance. The current nominal value of battery mass has been derived assuming an energy density of 114Wh/kg and should correspond to about 120km of driving range. The construction of the datasets allows to change key parameters (like mass of the vehicle, mass of the battery, consumption, life times, etc.) in order to cover a wide spectrum of situations . However, it is important to consider that changing one parameter of a vehicle, e.g. its mass, may lead to changes in other parameters,  e.g. the consumption. When modifying the default parameters given, attention should be payed to the possible influence which one parameter may have over the other.  </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="0361351a-6b01-4f21-b29b-c752c20bc21f">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4921:Urban and suburban passenger land transport</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="2">
+        <comment>
+          <text xml:lang="en" index="0">The dataset is based on averages over modern car technologies which are  expected to be representative up to 2015.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="1722d2ee-2a2d-5a06-b3d5-26ebd2d243f6" unitId="ae252091-811b-461b-8e89-8f3075639eb1" variableName="RP_amount_1" amount="1.0" intermediateExchangeId="6fcb39b4-3030-47b1-872e-a84c23dca79b" productionVolumeAmount="2250000000.0">
+        <name xml:lang="en">transport, passenger car, electric</name>
+        <unitName xml:lang="en">km</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.271343621680198" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Very rough estimate of 45000 pure battery electric passenger cars produced in 2012 based on the projection for the USA shown in http://www1.eere.energy.gov/vehiclesandfuels/pdfs/1_million_electric_vehicles_rpt.pdf. This value has been taken as annual production volume for the last 5 years together with an annual driving performance of 10000km per vehicle.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="0d3a65bf-dfa1-4137-980b-c94e817a9470">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">64119: Other land transportation services of passengers, n.e.c.</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7d4d3365-1f26-5862-aa5e-f9b438e6b69a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="battery" amount="0.00262" mathematicalRelation="(vehicle_life/battery_life)*battery_mass/vehicle_life" sourceId="24f52afa-0312-40a2-ae1b-6b1ac570b66e" sourceYear="2011" sourceFirstAuthor="F. Habermacher" intermediateExchangeId="18c7d197-ca25-4e23-b57a-4c9e379ae1bc" activityLinkId="4748bab4-49e4-50ba-bdf6-8c6d4043d31c">
+        <name xml:lang="en">battery, Li-ion, LiMn2O4, rechargeable, prismatic</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on currently available electric passenger cars. Since the average vehicle lifetime is 150000 and the average battery lifetime is assumed to be 100000km, it is expected that an average amount of (150000/100000) of battery will be required over the entire lifetime of the vehicle.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00262" mu="-5.94" variance="0.0006" varianceWithPedigreeUncertainty="0.04300000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="932178eb-4406-413f-a951-d7ffcac30dea">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">46420: Electric accumulators</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7e41eb53-1cde-5624-b5fb-5a4e0fa08b16" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_amount_2" amount="-1.0503958E-06" mathematicalRelation="brake_wear_scaling_factor*brake_wear_emissions*(v_mass_without_battery+battery_mass)" intermediateExchangeId="5b975ec7-3bbe-46a1-88a0-d475a87a6eab" activityLinkId="ef3dbb1b-9b5e-5923-9496-d3a5bab3387c">
+        <name xml:lang="en">brake wear emissions, passenger car</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on personal communication with K. Treyer from PSI. The scaling factor takes into account that electric vehicles tend to use mechanical brakes less due to regenerative braking.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0503958E-06" mu="-1.64" variance="0.0006" varianceWithPedigreeUncertainty="0.0037999999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="4" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="95d675ce-bf35-41a9-808b-3f8a231cc74d">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">49129: Other parts and accessories n.e.c. of motor vehicles (including brakes, gear boxes, axles, road wheels, suspen[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c95a28bf-5bf7-5ddb-83d9-082f699145b7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.199" mathematicalRelation="vehicle_energy_consumption" sourceId="24f52afa-0312-40a2-ae1b-6b1ac570b66e" sourceYear="2011" sourceFirstAuthor="F. Habermacher" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="9f3692bc-a151-5cfa-a665-9c395e2817cf">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Consumption includes auxiliaries, efficiency of electric drivetrain and real world correction factor on initial value evaluated through the NEDC. Efforts due to maintenance taken from ecoinvent v2.2 passenger car maintenance dataset.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.199" mu="-1.59" variance="0.0006" varianceWithPedigreeUncertainty="0.05040000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="3"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b83f315b-052a-5d4f-87f4-c74664cf8117" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="6.66666666666667E-06" mathematicalRelation="1/vehicle_life" sourceId="24dd0a39-98dd-4c62-97bd-26bd3b144efe" sourceYear="2007" sourceFirstAuthor="Spielmann M." intermediateExchangeId="f5944d71-0b10-4275-b5e3-850cc72edcb8" activityLinkId="894f4bea-1554-56fa-ae0b-bea657c8adbb">
+        <name xml:lang="en">maintenance, passenger car, electric, without battery</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Amount of maintenance  used over 1 km of transport. Uncertainty taken from ecoinvent v2.2 electric passenger car transport dataset.</comment>
+        <uncertainty>
+          <lognormal meanValue="6.66666666666667E-06" mu="-11.92" variance="0.27" varianceWithPedigreeUncertainty="0.448"/>
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+          <comment xml:lang="en">calculated according to passenger car in ecoinvent report Nr.14</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="79c01153-cab5-4af9-a643-f37f38cca2fa">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">87141: Maintenance and repair services of motor vehicles</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="effa9f7e-1f66-5713-a304-ea8f1da00aac" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00612146666666667" mathematicalRelation="v_mass_without_battery/vehicle_life" sourceId="24f52afa-0312-40a2-ae1b-6b1ac570b66e" sourceYear="2011" sourceFirstAuthor="F. Habermacher" intermediateExchangeId="dc983030-0544-4718-a910-dbc6f52d09e7" activityLinkId="66881575-d4d1-59a0-8f04-b5b2b70a3f29">
+        <name xml:lang="en">passenger car, electric, without battery</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on currently available electric passenger cars.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00612146666666667" mu="-5.1" variance="0.0006" varianceWithPedigreeUncertainty="0.04300000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="64c679c0-6758-4923-b7dd-b3d85b85318b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">49113: Motor cars and other motor vehicles principally designed for the transport of persons (except public-transport[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0ef6372f-ba44-58e8-815e-01ea00c64334" unitId="8266bd67-ebd3-4d31-b972-eee3cf0da36f" amount="0.00048748" sourceId="24dd0a39-98dd-4c62-97bd-26bd3b144efe" sourceYear="2007" sourceFirstAuthor="Spielmann M." intermediateExchangeId="350765c0-a00b-41ef-b824-c603077e82d2" activityLinkId="f2acf84f-02e6-5c3a-b24e-a838740f97e4">
+        <name xml:lang="en">road</name>
+        <unitName xml:lang="en">m*year</unitName>
+        <comment xml:lang="en">Road - value and uncertainty taken from ecoinvent v2.2 electric passenger car transport dataset.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00048748" mu="-7.63" variance="0.31" varianceWithPedigreeUncertainty="0.3166"/>
+          <pedigreeMatrix reliability="2" completeness="4" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">calculated according to passenger car in ecoinvent report Nr.14</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2836a67d-b184-4323-be1b-8a93c340ca8f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53211: Highways (except elevated highways), streets and roads</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b9d4814b-8bcc-57b9-bf22-3ab90398bb1f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_amount_1" amount="-1.15543538E-05" mathematicalRelation="road_wear_emissions*(v_mass_without_battery+battery_mass)" intermediateExchangeId="016a27f2-6bba-45a7-a682-0ee4a9d5ac29" activityLinkId="370d632d-e79a-578e-b254-8bbe043be046">
+        <name xml:lang="en">road wear emissions, passenger car</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on personal communication with K. Treyer from PSI.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.15543538E-05" mu="-11.14" variance="0.0006" varianceWithPedigreeUncertainty="0.0037999999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="4" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="2836a67d-b184-4323-be1b-8a93c340ca8f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53211: Highways (except elevated highways), streets and roads</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c4021e44-22af-5b43-8d7b-5f6b0c4d9637" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_amount_3" amount="-6.7567595E-05" mathematicalRelation="tyre_wear_emissions*(v_mass_without_battery+battery_mass)" intermediateExchangeId="d31f63ad-5605-4fd9-ac76-ab975b489dfa" activityLinkId="d14eab06-f385-5a0a-b473-5ac87bc73347">
+        <name xml:lang="en">tyre wear emissions, passenger car</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on personal communication with K. Treyer from PSI.</comment>
+        <uncertainty>
+          <lognormal meanValue="6.7567595E-05" mu="-0.03" variance="0.0006" varianceWithPedigreeUncertainty="0.0037999999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="4" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="4d6d3ee7-1b14-4ea1-a35b-392998272c34">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39260: Used pneumatic tyres of rubber</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="67b3e847-b1d3-5020-9f98-dd6afe8eaffe" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="usedBattery" amount="-0.00262" mathematicalRelation="battery" intermediateExchangeId="e3c4c750-7765-43b6-802b-8dbe05270f05" activityLinkId="b99ee1c4-3135-5fa5-85a4-d99de9c0f18c">
+        <name xml:lang="en">used Li-ion battery</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">This exchange accounts for the treatment of the battery.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00262" mu="-5.945" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.328011302325953" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="c3fdabd5-80d0-48f8-a29f-d6afd35b4efc" amount="100000.0" variableName="battery_life" unitId="ae252091-811b-461b-8e89-8f3075639eb1">
+        <name xml:lang="en">battery life</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment xml:lang="en">Battery lifetime in km. Default value of 100000 assumed. Changing this value will alter the amount of battery considered in the maintenance.</comment>
+      </parameter>
+      <parameter parameterId="196a4af2-29b1-428d-94ba-d7054264fa78" amount="262.0" variableName="battery_mass" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+        <name xml:lang="en">battery mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Battery mass in kg. A default value of 262kg assumed. When changing this value it should be remembererd that varying the overall mass of the vehicle would also lead to a change in its consumption. The current nominal value has been derived assuming an energy density of 114Wh/kg and should correspond to about 120km of driving range.</comment>
+      </parameter>
+      <parameter parameterId="ded3d2e6-ec48-4feb-9861-bb1cd7c923b4" amount="0.2" variableName="brake_wear_scaling_factor" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">brake wear scaling factor</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">Scaling factor which takes into account that regenerative braking allows to reduce the use of mechanical braking. (Althaus and Gauch: "Vergleichende Ökobilanz individueller Mobilität: Elektromobilität versus konventionelle Mobilität mit Bio- und fossilen Treibstoffen.", 2010)</comment>
+      </parameter>
+      <parameter parameterId="963f7f42-4768-4a18-8d60-669973652be8" amount="4.45E-09" variableName="brake_wear_emissions" unitId="c650c950-afd4-4c20-b7bb-f7d206f0f89e">
+        <name xml:lang="en">emissions from brake friction</name>
+        <unitName xml:lang="en">kg/kg vehicle</unitName>
+        <comment xml:lang="en">average (small, medium and large weight class) emissions produced per kg vehicle. 
+
+Calculation of non-exhaust emissions (tyre, brake and road wear emissions as well as petrol evaporation emissions) are based on: Ntziachristos, L., Boulter, P. (2009). EMEP/EEA air pollutant emissions inventory guidebook 2009: Road vehicle tyre and brake wear; Road surface wear. Copenhagen, European Environment Agency
+</comment>
+      </parameter>
+      <parameter parameterId="4fe50f59-7759-4db2-8d35-c63314f2deba" amount="9.79E-09" variableName="road_wear_emissions" unitId="c650c950-afd4-4c20-b7bb-f7d206f0f89e">
+        <name xml:lang="en">emissions from road abrasion</name>
+        <unitName xml:lang="en">kg/kg vehicle</unitName>
+        <comment xml:lang="en">average (small, medium and large weight class) emissions produced per kg vehicle. 
+
+Calculation of non-exhaust emissions (tyre, brake and road wear emissions as well as petrol evaporation emissions) are based on: Ntziachristos, L., Boulter, P. (2009). EMEP/EEA air pollutant emissions inventory guidebook 2009: Road vehicle tyre and brake wear; Road surface wear. Copenhagen, European Environment Agency
+</comment>
+      </parameter>
+      <parameter parameterId="ca5b7cf8-faad-4893-beab-2f41513db7c4" amount="5.725E-08" variableName="tyre_wear_emissions" unitId="c650c950-afd4-4c20-b7bb-f7d206f0f89e">
+        <name xml:lang="en">emissions from tyre abrasion</name>
+        <unitName xml:lang="en">kg/kg vehicle</unitName>
+        <comment xml:lang="en">average (small, medium and large weight class) emissions produced per kg vehicle. 
+
+Calculation of non-exhaust emissions (tyre, brake and road wear emissions as well as petrol evaporation emissions) are based on: Ntziachristos, L., Boulter, P. (2009). EMEP/EEA air pollutant emissions inventory guidebook 2009: Road vehicle tyre and brake wear; Road surface wear. Copenhagen, European Environment Agency
+</comment>
+      </parameter>
+      <parameter parameterId="d079fc01-7aad-4689-9ca0-7188590e2d70" amount="0.199" variableName="vehicle_energy_consumption" unitId="848cdafe-0725-4376-b427-728171c79d40">
+        <name xml:lang="en">vehicle energy consumption</name>
+        <unitName xml:lang="en">kWh/km</unitName>
+        <comment xml:lang="en">Evaluated for the default set of parameters. For a different set of parameters, especially concerning the total mass of the vehicle, the consumption should be evaluated accordingly.</comment>
+      </parameter>
+      <parameter parameterId="2061882d-efb6-4725-a206-28252bb9911a" amount="150000.0" variableName="vehicle_life" unitId="ae252091-811b-461b-8e89-8f3075639eb1">
+        <name xml:lang="en">vehicle life</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment xml:lang="en">Default value of 150000km. Changing this value may influence the amount of battery resulting due to maintenance.</comment>
+      </parameter>
+      <parameter parameterId="c17d7224-f2c0-4432-a42f-34814572b267" amount="918.22" variableName="v_mass_without_battery" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+        <name xml:lang="en">vehicle mass without battery</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Deafault value of 918.22kg. When changing this value it should be remembererd that varying the overall mass of the vehicle would also lead to a change in its consumption.</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <samplingProcedure xml:lang="en">Based on modern, commercially available models.</samplingProcedure>
+        <extrapolations xml:lang="en">The data is based on modern, commercially available models and is expected to be representative up to 2015. No substancial technological changes are expected for commercially available electric passengers up to 2015.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-06-26">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'wet mass':
+ - Input='0,00292666666666667', Output='0,00262'
+ - Input &gt; output by 0,000306666666666666 kg (11,7% of output)
+
+Property 'dry mass':
+ - Input='0,00292666666666667', Output='0,00262'
+ - Input &gt; output by 0,000306666666666666 kg (11,7% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,00111597947384515', Output='0,000859389612093997'
+ - Input &gt; output by 0,000256589861751152 kg (29,86% of output)
+
+
+- Amount of property 'carbon content, non-fossil=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'water content=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'copper' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'polyethylene, high density, granulate' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'polyethylene, high density, granulate' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'polyethylene, high density, granulate' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'steel, low-alloyed, hot rolled' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'steel, low-alloyed, hot rolled' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'steel, low-alloyed, hot rolled' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'water content=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'synthetic rubber' deviates from the default amount in the master file.
+Amount of property 'water content=0' of exchange 'waste plastic, mixture' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'waste plastic, mixture' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'waste plastic, mixture' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'waste plastic, mixture' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'waste plastic, mixture' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, wet mass=0, water in wet mass=0, water content=0, dry mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0,328011302325953
+ -- Parameter(s): battery mass, vehicle life, vehicle mass without battery, battery life, brake wear scaling factor, electricity consumption for maintenance, vehicle energy consumption, brake friction emissions, road abrasion emissions, tyre abrasion emissions
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, wet mass=0, water in wet mass=0, water content=0, dry mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0,328011302325953
+ -- Parameter(s): battery mass, vehicle life, vehicle mass without battery, battery life, brake wear scaling factor, electricity consumption for maintenance, vehicle energy consumption, brake friction emissions, road abrasion emissions, tyre abrasion emissions
+
+- For by-products/wastes, a transforming activity (currently missing) must exist that has the output 'tyre wear emissions' as its positive reference product or as its negative reference product (input for treatment) and with a market activity (currently missing) for a geographical area and time for or including the location and time of the activity that supplies the output. If the transforming activity or the market dataset is not available the dataset will be put on hold at the end of its review and will remain on hold until such a transforming activity or market dataset has been accepted into the ecoinvent database.
+- The input exchange 'electric passenger car without battery' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="21" reviewerId="f2bb9b6d-0f7b-47dc-ac26-8bda20f91ff3" reviewerName="Christian Bauer" reviewerEmail="christian.bauer@psi.ch" reviewDate="2012-09-11">
+        <details>
+          <text xml:lang="en" index="0">passed</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="21" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-09-13">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'carbon content, fossil':
+ - Input='0,000859389612093997', Output='0'
+ - Input &gt; output by 0,000859389612093997 kg
+
+Property 'dry mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'wet mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'price':
+ - Input='0', Output='0,114500689715834'
+ - Input &lt; output by 0,114500689715834 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): tyre abrasion emissions, vehicle mass without battery, vehicle energy consumption, road abrasion emissions, battery life, vehicle life, brake friction emissions, brake wear scaling factor, battery mass
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): tyre abrasion emissions, vehicle mass without battery, vehicle energy consumption, road abrasion emissions, battery life, vehicle life, brake friction emissions, brake wear scaling factor, battery mass
+
+- The input exchange 'maintenance, passenger car, electric, without battery' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2012-11-26">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-11-26">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'carbon content, fossil':
+ - Input='0,000859389612093997', Output='0'
+ - Input &gt; output by 0,000859389612093997 kg
+
+Property 'dry mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'price':
+ - Input='0', Output='0,101938677905832'
+ - Input &lt; output by 0,101938677905832 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): vehicle life, brake wear scaling factor, vehicle energy consumption, battery life, vehicle mass without battery, battery mass, brake friction emissions, road abrasion emissions, tyre abrasion emissions
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): vehicle life, brake wear scaling factor, vehicle energy consumption, battery life, vehicle mass without battery, battery mass, brake friction emissions, road abrasion emissions, tyre abrasion emissions
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="9" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2013-07-30">
+        <details>
+          <text xml:lang="en" index="0">Break wear emissions were edited according to the newest modelling.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="9" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-07-30">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,101938677905832'
+ - Input &lt; output by 0,101938677905832 EUR2005 (100% of output)
+
+Property 'dry mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'wet mass':
+ - Input='0,00262', Output='0'
+ - Input &gt; output by 0,00262 kg
+
+Property 'carbon content, fossil':
+ - Input='0,000859389612093997', Output='0'
+ - Input &gt; output by 0,000859389612093997 kg
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): battery life, vehicle life, vehicle energy consumption, brake wear scaling factor, vehicle mass without battery, battery mass, emissions from brake friction, emissions from road abrasion, emissions from tyre abrasion
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Parameter(s): battery life, vehicle life, vehicle energy consumption, brake wear scaling factor, vehicle mass without battery, battery mass, emissions from brake friction, emissions from road abrasion, emissions from tyre abrasion
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="7" reviewedMinorRevision="8" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-08-24">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="7" reviewedMinorRevision="8" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-08-24">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.272'
+ - Input &lt; output by 0.272 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0.328011302325953, wet mass=1, dry mass=1
+ -- Parameter(s): vehicle energy consumption, emissions from road abrasion, emissions from tyre abrasion, vehicle mass without battery, brake wear scaling factor, vehicle life, battery mass, battery life, emissions from brake friction
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0.328011302325953, wet mass=1, dry mass=1
+ -- Parameter(s): vehicle energy consumption, emissions from road abrasion, emissions from tyre abrasion, vehicle mass without battery, brake wear scaling factor, vehicle life, battery mass, battery life, emissions from brake friction
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="df294a6d-3fed-4c6e-8482-bf45ea65c9d0" isActiveAuthor="true" personName="Andrea Del Duce" personEmail="andrea.delduce@quantis-intl.com"/>
+      <dataGeneratorAndPublication personId="cde2ac11-5e4c-4144-aa74-572a7cbb0845" personName="F. Habermacher" personEmail="fabienne.habermacher@empa.ch" dataPublishedIn="1" publishedSourceId="24f52afa-0312-40a2-ae1b-6b1ac570b66e" publishedSourceYear="2011" publishedSourceFirstAuthor="F. Habermacher" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="8" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-06-26T16:59:15" lastEditTimestamp="2022-08-24T11:43:18" fileGenerator="EcoEditor 3.13.5000.19341" fileTimestamp="2022-08-24T11:43:18" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

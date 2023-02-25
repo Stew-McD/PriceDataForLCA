@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="4bb39bd3-344d-568c-bb6e-7eaeb4f58cff" activityNameId="5f60b3c2-8968-4f53-96cc-4e24c6d6b527" parentActivityId="08eb6c99-f93f-4ce6-a4ca-fc0c29f51286" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">hard coal preparation plant construction</activityName>
+        <synonym xml:lang="en">washery</synonym>
+        <includedActivitiesStart xml:lang="en">Includes the area of the infrastructure (buildings, paved roads, etc.), the machines and buildings used for the hard coal preperation. Energy requirements for the construction as well as end of life treatment of buildings and industrial machinery are accounted for in the respective upstream activities (building construction multi-storey/hall, industrial machine construction).</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">Does not include the operation of the plant.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">"This activity describes the infrastructure required for the preparation (screening, crushing, washing etc.) of run-of-mine (R.O.M) hard coal. Data for land use is based on information from specific plants. Material requirements are based on generic estimates. </text>
+          <text xml:lang="en" index="1">The average annual capacity of coal washeries (for thermal coal) of 4.38 million metric tonnes is based on information from 9 plants. The average lifetime of the plants is estimated to be 30 years.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="d1a5808c-6d4a-4d8c-a748-b9fef65b7ed1">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4290:Construction of other civil engineering projects</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Data for land use and plant capacity are based on Indian reports. Material input data is based on generic estimates.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">The datasets represtents an average hard coal preperation plant, as operational in India in 2007/2008. Reference(s): Ministry of Environment &amp; Forests, Government of India. 2010. Environmental Impact Assessment Guidance Manual for Coal Washeries. Online from http://envfor.nic.in/sites/default/files/Coal%20washeries_may-10_0.pdf, September 8, 2017</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">Data of plants operational in 2007/2008 are used in this dataset. With an average life time of 30 years it can be assumed that this represent the current technology level at least until 2020.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="1d22ac29-736b-5b45-93c0-4e6014e80446" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.0" intermediateExchangeId="f48b45d4-0aee-4ceb-996f-1b631b9bd6c0" productionVolumeAmount="4.0">
+        <name xml:lang="en">hard coal preparation plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <synonym xml:lang="en">washery</synonym>
+        <synonym xml:lang="en">coal washery</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="lifetime_hard_coal_prep" amount="30.0" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <comment xml:lang="en">Estimation.</comment>
+        </property>
+        <property propertyId="38583c32-c20b-4553-9152-b14b0bee1e61" amount="131400000000.0" isDefiningValue="false" mathematicalRelation="lifetime_hard_coal_prep*4.38*10^9" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">lifetime capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The average annual capacity of hard coal preperation plants of 4.38 million metric tonnes (Ministry of Environment &amp; Forests, Government of India. 2010. Environmental Impact Assessment Guidance Manual for Coal Washeries. Online from http://envfor.nic.in/sites/default/files/Coal%20washeries_may-10_0.pdf, September 8, 2017) multiplied by the lifetime.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="1181473.643086072" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">This is a placeholder value.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d878361d-eb52-4d12-b697-72b65da9c379">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53261: Mining constructions</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="76c3bbba-9fdc-5d76-b105-33d31431fba0" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="3000.0" intermediateExchangeId="7aaf6060-f9b7-43bb-8aee-06aecf386798" activityLinkId="381f49bb-644a-513c-b1a1-0ac24b7a156b">
+        <name xml:lang="en">building, hall, steel construction</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimated value based on the assumptions made the ecoinvent v3.3 dataset for gravel/sand quarry construction.</comment>
+        <uncertainty>
+          <lognormal meanValue="3000.0" mu="8.006" variance="0.3" varianceWithPedigreeUncertainty="0.51"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5e31962a-cc46-538a-847b-aad55ab6345f" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="3120.0" intermediateExchangeId="006863b7-d736-4eb6-bbf8-648d292184ad" activityLinkId="6ed5bc4e-6551-58ad-a609-ca3f2700a021">
+        <name xml:lang="en">building, multi-storey</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimated value based on the assumptions made the ecoinvent v3.3 dataset for gravel/sand quarry construction: area of building 520m2, hight 6m resulting in a building volume of 3120m3.</comment>
+        <uncertainty>
+          <lognormal meanValue="3120.0" mu="8.046" variance="0.3" varianceWithPedigreeUncertainty="0.51"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="284922eb-4370-5769-9e38-602e555bb43b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="535526.118688558" intermediateExchangeId="4cc87eb6-20a4-4968-ab90-6d344d46755d" activityLinkId="1bbd889b-e23d-5cbb-ab12-3c8296f8c445">
+        <name xml:lang="en">industrial machine, heavy, unspecified</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For the lack of data available an estimate for the weight of the typical equiment found in a coal preperation plant (including screens, breakers, crushers, hydrocyclones, launders, concentration tablesm jigs) was made to be 800 metric tonnes.</comment>
+        <uncertainty>
+          <lognormal meanValue="800000.0" mu="13.59" variance="0.3" varianceWithPedigreeUncertainty="0.51"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ae8b2851-c903-4a8e-b108-345fca5733aa">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">444: Machinery for mining, quarrying and construction, and parts thereof</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3cce484f-d51f-54d6-879e-5153df941a74" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="264473.881311442" intermediateExchangeId="4cc87eb6-20a4-4968-ab90-6d344d46755d" activityLinkId="fc2a2efb-0bd9-5d7f-9699-b6a2564cbc0b">
+        <name xml:lang="en">industrial machine, heavy, unspecified</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For the lack of data available an estimate for the weight of the typical equiment found in a coal preperation plant (including screens, breakers, crushers, hydrocyclones, launders, concentration tablesm jigs) was made to be 800 metric tonnes.</comment>
+        <uncertainty>
+          <lognormal meanValue="800000.0" mu="13.59" variance="0.3" varianceWithPedigreeUncertainty="0.51"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ae8b2851-c903-4a8e-b108-345fca5733aa">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">444: Machinery for mining, quarrying and construction, and parts thereof</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="52c5b2f8-c2e8-5d56-b743-ccc501abb284" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="2013750.0" isCalculatedAmount="false" mathematicalRelation="(60750+73500)/2*lifetime_hard_coal_prep" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Based on data for occupied area from two EIA reports for coal washery plant projects in India (6.075ha with capacity of 5Mt/a and 7.35ha with capacity of 4.8Mt/a. It is assumed that land use for this type of plants is similar across geographies.  Reference(s): 
+Min Mec Consultancy Pvt. Ltd. (2008). Executive summary of rapid environmental impact assessment and environmental management plan for Binjhri Washery expansion plant at Korba, Chattisgharh
+Chattisgharh Environmental Conservation Board (n.d.) Executive Summary. Rapid Environmental Impact Assessment for Proposal of Coal Washery Plant at Jhaber, Tahsil Dipka, Korba (CG) 
+</comment>
+        <uncertainty>
+          <lognormal meanValue="2013750.0" mu="14.52" variance="0.04" varianceWithPedigreeUncertainty="0.25"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4222b2b1-7eb0-5701-a0be-6780eb222dd5" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="67125.0" isCalculatedAmount="false" mathematicalRelation="(60750+73500)/2" elementaryExchangeId="29630a65-f38c-48a5-9744-c0121f586640">
+        <name xml:lang="en">Transformation, from unspecified</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Based on data for occupied area from two EIA reports for coal washery plant projects in India (6.075ha with capacity of 5Mt/a and 7.35ha with capacity of 4.8Mt/a. It is assumed that land use for this type of plants is similar across geographies. No information available on the lifetime of the plants. An estimation had to be made to calculate the specific land transformation. A lifetime of the plant of 30 years can be assumed. 
+Reference(s): 
+Min Mec Consultancy Pvt. Ltd. (2008). Executive summary of rapid environmental impact assessment and environmental management plan for Binjhri Washery expansion plant at Korba, Chattisgharh
+Chattisgharh Environmental Conservation Board (n.d.) Executive Summary. Rapid Environmental Impact Assessment for Proposal of Coal Washery Plant at Jhaber, Tahsil Dipka, Korba (CG) 
+</comment>
+        <uncertainty>
+          <lognormal meanValue="67125.0" mu="11.11" variance="0.12" varianceWithPedigreeUncertainty="0.33"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="652bd684-5f17-5871-b45b-17fcf5b8a141" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="67125.0" isCalculatedAmount="false" mathematicalRelation="(60750+73500)/2" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Based on data for occupied area from two EIA reports for coal washery plant projects in India (6.075ha with capacity of 5Mt/a and 7.35ha with capacity of 4.8Mt/a. It is assumed that land use for this type of plants is similar across geographies. No information available on the lifetime of the plants. An estimation had to be made to calculate the specific land transformation. A lifetime of the plant of 30 years can be assumed. </comment>
+        <uncertainty>
+          <lognormal meanValue="67125.0" mu="11.11" variance="0.12" varianceWithPedigreeUncertainty="0.33"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Based on literature and estimates.</samplingProcedure>
+        <extrapolations xml:lang="en">Data are partially based on information specific to the Indian context (land use, capacity) and assumed representative also for the global dataset.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="03fc815f-122a-4300-afda-f21b141999d2" reviewerName="Sirje Vares" reviewerEmail="sirje.vares@vtt.fi" reviewDate="2017-10-12">
+        <details>
+          <text xml:lang="en" index="0">This average, steel framed, hard coal preparation plant construction dataset is accepted to the EcoInvent database submission.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2017-10-12">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2017-10-12">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-02-16">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Infrastructure activities should have at least one by-product or waste with the property lifetime exceeding one year.
+- Reference products of infrastructure activities should not have mass or energy units as units or property units.
+
+- Amount of property 'dry mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+
+- Due to the use of the reference product property(s) 'lifetime' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, dry mass=0, wet mass=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, dry mass=0, wet mass=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="ab2a5a32-7e0d-431a-9f6c-9011ff140de7" isActiveAuthor="true" personName="Florentine Brunner" personEmail="Brunner@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="ab2a5a32-7e0d-431a-9f6c-9011ff140de7" personName="Florentine Brunner" personEmail="Brunner@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2017-10-12T09:31:09" lastEditTimestamp="2017-10-12T14:48:48" fileGenerator="EcoEditor 3.8.600.15164" fileTimestamp="2017-10-12T14:48:48" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

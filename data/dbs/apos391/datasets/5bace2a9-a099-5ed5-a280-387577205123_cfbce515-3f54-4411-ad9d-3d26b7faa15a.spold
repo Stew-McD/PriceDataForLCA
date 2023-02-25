@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="5bace2a9-a099-5ed5-a280-387577205123" activityNameId="1ec576a1-0160-4ca3-8a84-8d523a2de299" parentActivityId="f8b2dade-c3c8-4550-9980-1727ec1b3df5" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">transport, freight, lorry, all sizes, EURO3 to generic market for transport, freight, lorry, unspecified</activityName>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a linking activity which transfers part of the production volume of the specific transport, freight, lorry of all sizes, EURO3 to the generic market for transport, freight, lorry, unspecified.</text>
+          <text xml:lang="en" index="1">The transport, freight, lorry, unspecified is meant to be used by activities, where the size and EURO class of the transport supplied is unkown. </text>
+          <text xml:lang="en" index="2">[This dataset is meant to replace the following datasets:</text>
+          <text xml:lang="en" index="3"> - size-specific lorry transport to generic market for lorry transport, GLO, 2005 - 2005 (2919958a-fed0-4233-9fbf-80e9ecd06f57)]</text>
+        </generalComment>
+        <tag>linking activity</tag>
+      </activity>
+      <classification classificationId="0783fec2-42b8-41e0-9944-cdba0fe68601">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4923:Freight transport by road</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+      </geography>
+      <technology technologyLevel="4"/>
+      <timePeriod startDate="2010-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="036fa2f5-6f8f-5cc5-a52a-be40a4446bce" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="transport_RP" amount="1.0" intermediateExchangeId="cfbce515-3f54-4411-ad9d-3d26b7faa15a" productionVolumeAmount="2142878557211.54">
+        <name xml:lang="en">transport, freight, lorry, unspecified</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.02447672221848497" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">The production volume is calculated as a sum of all the "transport, freight, lorry, ..., EURO3" activities. The GLO production volumes are scaled based on the regional correspondent. The scaling is based on data on total tkm reported by OECD in OECD data for freight transport (accessible at &lt;https://data.oecd.org/transport/freight-transport.htm&gt;). OECD reports total tkm for 50 locations. The year of the data taken is 2019, data from previous years has been used when data for 2019 was not available. Since BR was not included in the list of countries, the total production volume for the relevant transport in BR has been added to calculate a proxy for GLO. 
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets.
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.
+
+</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b49e1a03-3977-51b7-a64e-1a99007ae449" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="trans_04" amount="0.2967" intermediateExchangeId="f9895e44-5657-47fc-8eec-a4985e2bce2e" activityLinkId="f1f9fe92-4e00-5294-a35a-678bed9eb1ae">
+        <name xml:lang="en">transport, freight, lorry 16-32 metric ton, EURO3</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, lorry, ..., EURO3" activities. There the production volumes for Europe are taken from the TREMOVE project and the GLO production volumes are calculated using GDP scaling. If the GDP of the whole world (GLO) is 1 the GDP of Europe (RER) is 0.289.
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets.
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.2967" mu="-1.09" variance="0.0006" varianceWithPedigreeUncertainty="0.0026"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="30c8a995-4859-5a72-98e5-07ce90800ccb" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="trans_02" amount="0.0391" intermediateExchangeId="c0a7ba59-f9b5-45b5-8e1d-6e4e40ba86df" activityLinkId="380e5aef-39da-5550-8dd6-4aecec6b96ca">
+        <name xml:lang="en">transport, freight, lorry 3.5-7.5 metric ton, EURO3</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, lorry, ..., EURO3" activities. There the production volumes for Europe are taken from the TREMOVE project and the GLO production volumes are calculated using GDP scaling. If the GDP of the whole world (GLO) is 1 the GDP of Europe (RER) is 0.289.
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets.
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0391" mu="-3.41" variance="0.0006" varianceWithPedigreeUncertainty="0.0026"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2a35d8ee-48e2-5b03-9635-c5d3e0b217ca" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="trans_03" amount="0.0468" intermediateExchangeId="ae39ee61-d4d0-4cce-93b4-0745344da5fa" activityLinkId="d2af5cae-db24-59bf-9b1d-20535b1ed3f4">
+        <name xml:lang="en">transport, freight, lorry 7.5-16 metric ton, EURO3</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, lorry, ..., EURO3" activities. There the production volumes for Europe are taken from the TREMOVE project and the GLO production volumes are calculated using GDP scaling. If the GDP of the whole world (GLO) is 1 the GDP of Europe (RER) is 0.289.
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets.
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0468" mu="-3.23" variance="0.0006" varianceWithPedigreeUncertainty="0.0026"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="90ef90a2-23c2-5c75-b6ac-b6428abcf684" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="trans_01" amount="0.6175" intermediateExchangeId="b909dee2-76bd-4eae-87d5-fc831390f99b" activityLinkId="9a9ac908-8a6d-5b6b-a09a-cc2c6b16d253">
+        <name xml:lang="en">transport, freight, lorry &gt;32 metric ton, EURO3</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.
+
+The production volume is taken from the "transport, freight, lorry, ..., EURO3" activities. There the production volumes for Europe are taken from the TREMOVE project and the GLO production volumes are calculated using GDP scaling. If the GDP of the whole world (GLO) is 1 the GDP of Europe (RER) is 0.289.
+
+It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets.
+
+It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.6175" mu="-0.53" variance="0.0006" varianceWithPedigreeUncertainty="0.0026"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2015-01-13">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-02-04">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-07-08">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-07-08">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.02399'
+ - Input &lt; output by 0.02399 EUR2005 (100% of output)
+
+
+- A non-global market exists for the reference product 'transport, freight, lorry, unspecified' but is not supplied by any instances of the activity 'transport, freight, lorry, all sizes, EURO3 to generic market for transport, freight, lorry, unspecified'.
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-07-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-07-09">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.02399'
+ - Input &lt; output by 0.02399 EUR2005 (100% of output)
+
+
+- A non-global market exists for the reference product 'transport, freight, lorry, unspecified' but is not supplied by any instances of the activity 'transport, freight, lorry, all sizes, EURO3 to generic market for transport, freight, lorry, unspecified'.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" isActiveAuthor="true" personName="Tereza Levova" personEmail="levova@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" personName="Tereza Levova" personEmail="levova@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2015-01-13T15:03:18" lastEditTimestamp="2021-07-09T15:32:49" fileGenerator="EcoEditor 3.12.6000.6006" fileTimestamp="2021-07-09T15:32:49" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

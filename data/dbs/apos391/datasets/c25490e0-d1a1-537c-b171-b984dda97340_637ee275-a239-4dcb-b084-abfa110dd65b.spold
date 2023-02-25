@@ -1,0 +1,1615 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="c25490e0-d1a1-537c-b171-b984dda97340" activityNameId="fc333c1b-41d0-41f5-be55-2df940734627" parentActivityId="6f2783ca-00a2-4e1f-8aca-4095151153f5" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">treatment of sewage sludge, 70% water, WWT, WW from maize starch production, municipal incineration</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the waste being available at the gate of the treatment facility. Collection and transportation of the waste to the treatment plant is not included.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the waste being treated and waste-specific emissions from the incineration process are released to the environment (air and water).</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The process represents the treatment of a waste (sewage sludge) that is exclusively produced from another waste treatment. Municipal incineration is the controlled combustion of a waste. Sewage sludge is generated in the wastewater treatment of 'wastewater from maize starch production'. Recommended use of this dataset: to be used within the specific chain of treatments for 'wastewater from maize starch production'. Share of biogenic carbon in the sludge: 98.195%.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="9a63625a-358b-4c1d-bf95-50ba038a759b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3821:Treatment and disposal of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Modelling parameters affecting the treatment technology are not specific to this geography.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">The waste is treated in the incineration plant with flue gas cleaning. Incineration is the controlled combustion of a waste. Auxiliary material consumption for this step of air pollution control (APC) are included in the process. Infrastructure is also included in the process. Air polution control includes, electrostatic precipitator for fly ash (ESP), wet flue gas scrubber and 25% SNCR , 42.77% SCR-high dust , 32.68% SCR-low dust -DeNOx facilities and 0% without DeNOx (weighted according to mass of burnt waste). Efficiency of iron scrap separation from slag : 58%. Efficiency of aluminium scrap separation from slag : 31%. Efficiency of copper scrap separation from slag : 31%. Gross electric efficiency technology mix 15.84% and Gross thermal efficiency technology mix 28.51%</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2006-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="44a539ae-76c6-581f-be37-00122b9be0c0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="2679410.47654255">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0681047512" mu="-2.6867" variance="0.47519" varianceWithPedigreeUncertainty="0.47519"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of the reference product in proportion to the respective output amounts.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e19c415f-8000-54a7-b378-b49e3b73b3c1" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.598995550769703E-12" intermediateExchangeId="3d0fe4e0-eac9-4704-b3fd-09b8594d0fbe" activityLinkId="0340dc12-6361-522b-be31-cecee4545c11">
+        <name xml:lang="en">chemical factory, organics</name>
+        <unitName xml:lang="en">unit</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c6d49918-3941-59e4-bf7c-7d46a914b04e" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="3.4613702825732733E-10" intermediateExchangeId="3d0fe4e0-eac9-4704-b3fd-09b8594d0fbe" activityLinkId="8ace588c-1992-56bc-ba27-417194f981b8">
+        <name xml:lang="en">chemical factory, organics</name>
+        <unitName xml:lang="en">unit</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="90499edf-da26-59fb-8672-3a52851ad6e7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0004312041476430333" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="043a05a0-3840-587d-a91f-fe82ffd6c2b5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="364c99cc-a4ce-5590-9cb0-4f92e7528c52" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0012136006245910848" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="14568f72-3d80-503c-93eb-b1cc00f9b777">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0e204226-ce81-532d-9fc9-79622282e1e2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00011601064542822838" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="168abdd5-a4c9-546a-b422-3541bb3f98d6">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="adec4888-3d78-5b57-a7b7-742d9820310a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.2318020686975236E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="1a5482b5-de40-544d-9772-a696e1760b32">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5bacee1d-a48b-558b-b28f-84fced69594f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00039430711028045923" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="1f62d744-1c94-5426-9e69-dd6aae443eb5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="857c8b9f-fe15-577c-84f8-ab1c6cc9d5c1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.04239051777459248" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="1fcfd577-be9e-54ce-be11-5d9d9b881f12">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e856cf13-f3cc-5dba-a737-1f52b85ed44d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.4751307593166546E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="22e46e02-bb4e-5c8a-a866-9db1ed1168cb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="16d7dfe2-2c35-570a-a2bb-d8af4be68ae6" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0020843977572998222" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2ba5ef6c-6bfd-5f40-a6e8-d1f24c096377">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0f135b20-4537-531c-ad20-ca9929b752fb" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.013227206648479733" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2ee3ed34-2b39-568b-bd20-fda7b95247ee">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c824cc46-c8ac-54b1-b901-826e0b6ad2d4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.002613235584401103" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="3a1b1968-6e08-5828-abfd-89d8a9dad284">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a4b1695c-66b8-5f5d-944e-feb0ebf6dfb2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.67323683386922E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="40ca153c-b4a1-5a82-86da-d43338ab4cb7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6d03e55a-70f6-52dd-a1cb-4f51583aa312" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0003023727792500274" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="42ae3ed9-e711-5b31-961a-94d5aff6f8b0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eddbb631-20fd-5f31-a301-9d29321b16fe" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0006341676873790719" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="55b60f27-c7b6-5a2f-8e5b-66d5d190fab2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b0bc1ac4-d6ca-5d04-9b3a-3cbd14a37457" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.9627865158967076E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="5e2b28b5-4c95-597a-a451-75b7f7dfb300">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2a67af09-d86d-5f52-93ad-ded4efd08eed" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00039390589447052884" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6962608f-9d41-5502-a99a-6e4515323534">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="406134fc-64e1-5be2-bebd-681824058132" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.002517230144639668" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="698571e8-54e2-5821-8cb2-b22fdbd91d81">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f6b53ace-c661-5616-a3c0-860b0cb6724d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00045765669799624004" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="70dc554e-9301-59f1-bb7d-a022fe76dda1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="53a3a97d-cb53-595a-b9b3-146751bef762" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00200987006537206" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="77692438-957d-559a-8ee3-0547571d47ac">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fb981572-0268-54f1-90ab-46b02df9602c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0005342148308428391" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="85878b77-7681-5122-80a7-0f9e68d15003">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a6345049-2274-523d-99e0-f6ea9368e380" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.546181275117543E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8673e278-5645-5c65-a16d-71739d2137f5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="83555df0-32bd-5996-90b5-b6bf9ed29737" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0004308726339422403" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8e361f4d-020c-5e80-b73a-2c75dd2f6065">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3c5487ca-fabb-5229-ae87-5078035f20ff" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.12136069855670746" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8e9f1b22-0e94-5e79-9df2-6ec16a60c62a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="769ce6f5-d131-50fb-a05e-9b2447990765" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001241088163819828" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="907a4b08-28f6-5f4d-8a10-5c91cef5a900">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f174ffd4-e2a0-5ad9-b10c-479d0a694828" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000297761622311629" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9a4f7b7f-55c7-5bfe-8ca3-89399d5e2fee">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c616b4c1-5a4c-5451-a3c8-f69726f41b96" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00011347422189830787" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9b0f12b4-07dc-50db-af3a-79d607e7d5bd">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="28724d70-4e4e-51c1-ae7c-fb1d4944610e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.5147659233105184E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9eea8c5e-a4d6-5a1f-8883-1558fc1174cd">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eeae5684-d6ed-5ef2-bb91-896e37f28101" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0008505505613523173" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a76ecc3f-e524-56bf-a847-cc70deb450bd">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="36140b48-911d-5586-9dfd-4f840d696c16" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.163632470097839E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a9375135-28ff-58e8-9525-55c02906cabd">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d534d24c-cf80-5368-84f7-9bbb9da87e41" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0013906590928259152" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="abb9ec4a-c4d7-5247-8512-1b10458aea11">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dbb8f0a9-939a-53ae-98bd-108ee1bf51a4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0002937658398873627" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b1e9b22d-0fa6-5ed7-b6ec-af83cb27c073">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5d0abfdc-efc2-5fd5-900b-beeae3f21e8e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.2933266933292573E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b21a951e-26be-5d4f-883a-2da50201b831">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="336e06e3-92c4-5385-803c-cd777ec5ab12" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0001336339124301939" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b7192d97-6fda-58d5-9ac9-32bd2761c987">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bd7bf349-8dcc-58eb-b3d6-a90c5187da65" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0002699087249251345" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b8722ea3-097a-5918-9949-e2cc2bfe66a0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d8d6c316-66d1-5752-9574-76950984330f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0001676582501915819" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="bb365094-1281-5ef7-82fe-8ccbb7a0c701">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="88b311aa-1dac-58f4-9585-fb2ecd1b5e21" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0007237572430562387" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c25af0a3-7e75-59c6-b893-4c95aa536bd9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d9042b98-78bb-5f58-a42a-3d420f15593b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.008996260476815664" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c7603ff5-92f0-510e-8545-6f975b0ef9b3">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e7c19444-f198-5e54-bd0c-a3eaf5252081" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00023935489247612588" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cc2f80f2-cd92-5f6d-997d-72c484239fed">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="94604586-1ba3-5a59-a784-8971ca3d9671" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0012405916860429534" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="d990cad4-3a9c-5131-948e-02198e018df1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5bb4c11b-dd96-52f8-9e17-e25bb711a83a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.298137069341405E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="da3dcca5-88ec-54f4-882c-1b05c1f90a2c">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="657e3a30-32cc-50fc-bba1-f03eca2c0744" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0001809864060167619" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="dd6eb64a-9fcd-5f70-afa1-6368c2e7600e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1840fcb0-f9ef-5a49-b42b-bf0c945c3572" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.001017121069844608" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="df57711f-1eb1-5fb2-a8e1-62fe2a20d671">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a262a1db-ecfe-5f70-822f-ea3e211f939d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.006638256289795598" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e1eba13c-e376-5d2a-98c8-ee89aba27fb6">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4495e22e-e889-5ce2-ae51-e3b8d7786ad8" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00031390597895811716" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e97b9e5d-7f5c-5c62-9d61-21a6ab3d2a63">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="666497d5-8329-5120-88af-da7fc9d14443" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000707840990617087" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="eedad9f6-c9e0-5eef-a548-01dd27b33039">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fa84019f-5134-56b2-8e11-f6bd49eda551" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.004242815296821271" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ef0f4f3c-d335-5507-b34a-f1a65b234c1b">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6e477bfa-6a56-527f-ac68-cd4f47e9052f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0005383709319731648" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fc0ebf3f-cbc0-5862-a2fe-11e7820c6e7e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7e61096f-e653-5811-b378-5a9c8d4e3952" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.172859150798455E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fe80db2e-ea22-5747-b893-1b68fc5aa7ff">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f989b4c9-d13d-5741-b5c1-f27dc96395bc" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.01594198564117394" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="967d0a01-2da6-5769-8a2c-375d7cef2d20">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="61e33fc9-d831-53cc-ae59-49dcf2acd4fc" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="3.3941624700403814" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="9d98f355-6965-5d9e-808a-edade6bc4a45">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8e062d9e-f1cc-5a43-9146-c5287e53501b" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.055774801267027205" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="e0a8dee5-e264-5fc0-97c0-97ae0b8c2177">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ef55e447-b703-52b9-91b8-22561060f5b0" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0010489004181449511" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f92cd53f-9b02-5d8e-aad5-d154ed065c9c">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7f086b62-c949-57c7-b1fc-562b5f8a08f1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.06454263598770543" intermediateExchangeId="dadc7057-9041-4fae-893c-20aba9725f29" activityLinkId="1d5e87c9-d0be-519b-9331-5e4ebf28e135">
+        <name xml:lang="en">maize grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="14e3f475-a231-4833-b22f-6ceffb980fa6">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01122: Maize (corn), other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="243cbbfe-4e6e-5624-9265-674d25cd5509" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0020611547169373584" intermediateExchangeId="dadc7057-9041-4fae-893c-20aba9725f29" activityLinkId="30411833-d52b-5371-a055-3c77ccf9fb60">
+        <name xml:lang="en">maize grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="14e3f475-a231-4833-b22f-6ceffb980fa6">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01122: Maize (corn), other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="673cff03-5cd9-546a-a64c-a9503376db1f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.029634024350383" intermediateExchangeId="dadc7057-9041-4fae-893c-20aba9725f29" activityLinkId="7e9c5520-2002-56c7-9035-d4faaaf37d10">
+        <name xml:lang="en">maize grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="14e3f475-a231-4833-b22f-6ceffb980fa6">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01122: Maize (corn), other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="07903fd8-8538-5632-841e-27143032882b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.003167085159808953" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="0d165741-7e45-59d0-8636-86c08c3c83da">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="575cfdf4-3e1a-592f-aeca-116b7ed10095" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.13198403318117172" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="470cc6a6-5f42-5ebe-a8b4-47792d88cc3e">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9c1d6753-1a62-5c32-8d42-78bcf5dde6eb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.005234128589247008" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="6c1da2e8-ab63-504a-9151-3837e6da4603">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="efb54ad9-3f71-5f44-95b9-5c28cbdb3c8b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.002353789402763749" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="9034927f-c9bf-564a-b12f-73af29b4569f">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="de62a1ea-d9ce-5b4f-bd8f-5f0b88a059fa" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.009766621913991573" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="9b3378b4-c729-55b0-8399-d0bd77cd74ba">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="09bd10cd-96bc-5ab4-91e1-accb91febad7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.51036031552513" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="a1d24ea0-0c47-5c25-b5dc-7ea6fe758862">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="84555175-198f-5e69-b858-4e5fb141abb4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.003433531437131392" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="c20bb369-ea3a-5862-885f-7c1f44ac28cf">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a3dfdfa9-4e05-5cbc-8d10-2168f36a308e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.007819088243263847" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="c3fda02d-a564-59fb-b8e6-b7eb7115fe96">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="04a38293-6d7d-5964-9b6c-e4b17e55ff1b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.02631056296908622" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="f4de5f12-7a8c-5312-b8d3-a8fa7d546ab1">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="30c56416-7bd7-5927-9ffe-991e7bc0e9b0" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-2.8777045453622614E-06" intermediateExchangeId="7a83a93a-7648-46a8-b3a5-8adf5de62a96" activityLinkId="57ea09a4-7fda-57b3-9fa5-dab2d6dea4ca">
+        <name xml:lang="en">wastewater from maize starch production</name>
+        <unitName xml:lang="en">m3</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b9d183a9-5b9f-58ec-9a39-43282da8b0e1" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-0.0005978362765831254" intermediateExchangeId="7a83a93a-7648-46a8-b3a5-8adf5de62a96" activityLinkId="9f8dbc4e-b85f-52e6-a3e4-59ed19646798">
+        <name xml:lang="en">wastewater from maize starch production</name>
+        <unitName xml:lang="en">m3</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="4e2343a2-73e8-5e25-9dc9-9d72baf41f6f" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0.0009897436577637963" isCalculatedAmount="false" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4c69582e-4290-59a0-8052-2ddfc7c4e588" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0.0001099715175293107" isCalculatedAmount="false" elementaryExchangeId="2404b41a-2eed-4e9d-8ab6-783946fdf5d6">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">Modelling parameters are based on an average municipal solid waste incineration plant in Switzerland for the year of 2010 (grate incinerators).</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2022-09-12"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2022-09-12"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-09-12">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors: - The use of tags starting with 'ei_project' is not allowed in undefined datasets. Please rename or remove the below tags: ei_project_production_DB</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings: - Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum: Property 'carbon content, fossil': - Input='0.00215685388841763', Output='0.00215990714031795' - Input &lt; output by 3.05325190031814E-06 kg (0.14% of output) Property 'dry mass': - Input='1.00979851772702', Output='0.462530280912226' - Input &gt; output by 0.547268236814794 kg (118.32% of output) Property 'water in wet mass': - Input='0.75289851340707', Output='0.88290649786121' - Input &lt; output by 0.13000798445414 kg (14.73% of output) Property 'carbon content, non-fossil': - Input='0.117348', Output='0.117515495522369' - Input &lt; output by 0.000167495522368652 kg (0.14% of output) Property 'wet mass': - Input='1.76269703113409', Output='1.34543677877344' - Input &gt; output by 0.417260252360654 kg (31.01% of output) - Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.26569869' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0048834794' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00519558908' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.282679848' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.4395727' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00807924277' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.016468602' of exchange 'Toluene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.896018109' of exchange 'Toluene' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00833181815' of exchange 'Cyanide' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.453314735' of exchange 'Cyanide' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.838635002' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.015413914' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00171828736' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.0934879958' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Benzene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Benzene' deviates from the default amount in the master file. Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00456717615' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.24848937' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file. - The total water in wet mass of all input exchanges (0.75289851340707) and output exchanges (0.88290649786121) is unbalanced. - The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review. - Particulate Matter, &gt; 2.5 um and ≤ 10um - Particulate Matter, ≤ 2.5 um - Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products. -- Exchange(s): water, decarbonised, municipal waste incineration facility, Non-hazardous waste disposed, Water -- Property(ies): wet mass=1, carbon content, non-fossil=0.0207781, nitrogen content=0.00623163, water content=0.132677, oxygen content=0.494418, phosphorus content=0.292249, carbon content, fossil=0.000381896, water in wet mass=0.117136, iron content=0.185941, dry mass=0.882864, carbon content, fossil=0.000986022, iron content=0.0401805, water content=0, carbon content, non-fossil=0.0536471, oxygen content=0.563127, phosphorus content=0.341799, nitrogen content=0.00025987, dry mass=1, wet mass=1, water in wet mass=0, carbon content, fossil=0.0166507472, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0.905928203, wet mass=1, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0.748686634968048, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, dry mass=1, water in wet mass=0, wet mass=1, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0.428805015280039, dry mass=1, carbon content, fossil=0.428805015280039, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, water content=0, wet mass=1, carbon content, fossil=0.0048834794, carbon content, non-fossil=0.26569869, water content=0, water in wet mass=0, dry mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0.272916486782489, carbon content, non-fossil=0, water content=0, wet mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.282679848, carbon content, fossil=0.00519558908, carbon content, fossil=0.00807924277, dry mass=1, carbon content, non-fossil=0.4395727, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0.016468602, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.896018109, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.00833181815, dry mass=1, wet mass=1, carbon content, non-fossil=0.453314735, water in wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1000, dry mass=0, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, water content=0, carbon content, fossil=0, water content=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, water content=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, fossil=0.0166507472, carbon content, non-fossil=0.905928203, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0.015413914, water content=0, wet mass=1, water in wet mass=0, water in wet mass=0, water content=0, carbon content, fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0.272916486782489, carbon content, non-fossil=0.0934879958, carbon content, fossil=0.00171828736, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water in wet mass=1000, wet mass=1000, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0.0166507472, dry mass=1, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, carbon content, non-fossil=0.981951954, wet mass=1, water content=0, carbon content, fossil=0.0180480458, dry mass=1, water in wet mass=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water content=0, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0.0180480458, carbon content, non-fossil=0.981951954, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, carbon content, fossil=0.00456717615, dry mass=1, carbon content, non-fossil=0.24848937, water content=0, wet mass=1, water in wet mass=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0.748686634968048 - Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products. -- Exchange(s): water, decarbonised, municipal waste incineration facility, Non-hazardous waste disposed, Water -- Property(ies): wet mass=1, carbon content, non-fossil=0.0207781, nitrogen content=0.00623163, water content=0.132677, oxygen content=0.494418, phosphorus content=0.292249, carbon content, fossil=0.000381896, water in wet mass=0.117136, iron content=0.185941, dry mass=0.882864, carbon content, fossil=0.000986022, iron content=0.0401805, water content=0, carbon content, non-fossil=0.0536471, oxygen content=0.563127, phosphorus content=0.341799, nitrogen content=0.00025987, dry mass=1, wet mass=1, water in wet mass=0, carbon content, fossil=0.0166507472, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0.905928203, wet mass=1, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0.748686634968048, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, dry mass=1, water in wet mass=0, wet mass=1, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0.428805015280039, dry mass=1, carbon content, fossil=0.428805015280039, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, water content=0, wet mass=1, carbon content, fossil=0.0048834794, carbon content, non-fossil=0.26569869, water content=0, water in wet mass=0, dry mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0.272916486782489, carbon content, non-fossil=0, water content=0, wet mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.282679848, carbon content, fossil=0.00519558908, carbon content, fossil=0.00807924277, dry mass=1, carbon content, non-fossil=0.4395727, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0.016468602, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.896018109, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.00833181815, dry mass=1, wet mass=1, carbon content, non-fossil=0.453314735, water in wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1000, dry mass=0, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, water content=0, carbon content, fossil=0, water content=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, water content=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, fossil=0.0166507472, carbon content, non-fossil=0.905928203, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0.015413914, water content=0, wet mass=1, water in wet mass=0, water in wet mass=0, water content=0, carbon content, fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0.272916486782489, carbon content, non-fossil=0.0934879958, carbon content, fossil=0.00171828736, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water in wet mass=1000, wet mass=1000, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0.0166507472, dry mass=1, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, carbon content, non-fossil=0.981951954, wet mass=1, water content=0, carbon content, fossil=0.0180480458, dry mass=1, water in wet mass=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water content=0, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0.0180480458, carbon content, non-fossil=0.981951954, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, carbon content, fossil=0.00456717615, dry mass=1, carbon content, non-fossil=0.24848937, water content=0, wet mass=1, water in wet mass=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0.748686634968048 - A non-global market exists for the reference product 'sewage sludge, 70% water, WWT, WW from maize starch production' but is not supplied by any instances of the activity 'treatment of sewage sludge, 70% water, WWT, WW from maize starch production, municipal incineration'.</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2022-09-15"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-09-15">
+        <otherDetails xml:lang="en">Validation warnings: - Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum: Property 'water in wet mass': - Input='0.75289851340707', Output='0.88290649786121' - Input &lt; output by 0.13000798445414 kg (14.73% of output) Property 'carbon content, fossil': - Input='0.00215685388841763', Output='0.00215990714031795' - Input &lt; output by 3.05325190031814E-06 kg (0.14% of output) Property 'wet mass': - Input='1.76269703113409', Output='1.34543677877344' - Input &gt; output by 0.417260252360654 kg (31.01% of output) Property 'carbon content, non-fossil': - Input='0.117348', Output='0.117515495522369' - Input &lt; output by 0.000167495522368638 kg (0.14% of output) Property 'dry mass': - Input='1.00979851772702', Output='0.462530280912226' - Input &gt; output by 0.547268236814794 kg (118.32% of output) - Amount of property 'carbon content, non-fossil=0.24848937' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00456717615' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.015413914' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.838635002' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Benzene' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Benzene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.453314735' of exchange 'Cyanide' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00833181815' of exchange 'Cyanide' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.896018109' of exchange 'Toluene' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.016468602' of exchange 'Toluene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.0934879958' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00171828736' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.4395727' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00807924277' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Particulate Matter, &lt; 2.5 um' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Particulate Matter, &lt; 2.5 um' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.282679848' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.00519558908' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.26569869' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0048834794' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Particulate Matter, &gt; 2.5 um and &lt; 10um' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Particulate Matter, &gt; 2.5 um and &lt; 10um' deviates from the default amount in the master file. Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file. Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file. - The total water in wet mass of all input exchanges (0.75289851340707) and output exchanges (0.88290649786121) is unbalanced. - Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products. -- Exchange(s): municipal waste incineration facility, water, decarbonised, Water, Non-hazardous waste disposed -- Property(ies): nitrogen content=0.00623163, phosphorus content=0.292249, water content=0.132677, dry mass=0.882864, wet mass=1, carbon content, fossil=0.000381896, oxygen content=0.494418, carbon content, non-fossil=0.0207781, iron content=0.185941, water in wet mass=0.117136, iron content=0.0401805, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0.0536471, phosphorus content=0.341799, oxygen content=0.563127, water in wet mass=0, carbon content, fossil=0.000986022, nitrogen content=0.00025987, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0.428805015280039, dry mass=1, water content=0, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0.0180480458, wet mass=1, carbon content, non-fossil=0.981951954, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, fossil=0.748686634968048, wet mass=1, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.24848937, carbon content, fossil=0.00456717615, carbon content, fossil=0.015413914, water content=0, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.272916486782489, water content=0, dry mass=1, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water content=0, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, wet mass=0, water in wet mass=0, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0.272916486782489, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, carbon content, fossil=0.0166507472, water in wet mass=0, water content=0, carbon content, non-fossil=0.453314735, wet mass=1, carbon content, fossil=0.00833181815, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0.016468602, dry mass=1, carbon content, non-fossil=0.896018109, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, water in wet mass=0, water content=0, carbon content, fossil=0.0180480458, wet mass=1, carbon content, non-fossil=0.981951954, dry mass=1, water content=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0.00171828736, carbon content, non-fossil=0.0934879958, carbon content, fossil=0, wet mass=1000, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water content=0, carbon content, fossil=0.00807924277, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.4395727, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water in wet mass=0, wet mass=1, carbon content, fossil=0.0166507472, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0.428805015280039, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0.282679848, dry mass=1, wet mass=1, carbon content, fossil=0.00519558908, wet mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.26569869, carbon content, fossil=0.0048834794, dry mass=1, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0.748686634968048, water content=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0.905928203, carbon content, fossil=0.0166507472, dry mass=0, water in wet mass=0, wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0 - Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products. -- Exchange(s): municipal waste incineration facility, water, decarbonised, Water, Non-hazardous waste disposed -- Property(ies): nitrogen content=0.00623163, phosphorus content=0.292249, water content=0.132677, dry mass=0.882864, wet mass=1, carbon content, fossil=0.000381896, oxygen content=0.494418, carbon content, non-fossil=0.0207781, iron content=0.185941, water in wet mass=0.117136, iron content=0.0401805, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0.0536471, phosphorus content=0.341799, oxygen content=0.563127, water in wet mass=0, carbon content, fossil=0.000986022, nitrogen content=0.00025987, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0.428805015280039, dry mass=1, water content=0, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0.0180480458, wet mass=1, carbon content, non-fossil=0.981951954, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, fossil=0.748686634968048, wet mass=1, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.24848937, carbon content, fossil=0.00456717615, carbon content, fossil=0.015413914, water content=0, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.272916486782489, water content=0, dry mass=1, water content=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water content=0, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, wet mass=0, water in wet mass=0, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0.272916486782489, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, carbon content, fossil=0.0166507472, water in wet mass=0, water content=0, carbon content, non-fossil=0.453314735, wet mass=1, carbon content, fossil=0.00833181815, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0.016468602, dry mass=1, carbon content, non-fossil=0.896018109, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, water in wet mass=0, water content=0, carbon content, fossil=0.0180480458, wet mass=1, carbon content, non-fossil=0.981951954, dry mass=1, water content=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0.00171828736, carbon content, non-fossil=0.0934879958, carbon content, fossil=0, wet mass=1000, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water content=0, carbon content, fossil=0.00807924277, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.4395727, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water in wet mass=0, wet mass=1, carbon content, fossil=0.0166507472, water content=0, carbon content, non-fossil=0.905928203, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0.428805015280039, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0.282679848, dry mass=1, wet mass=1, carbon content, fossil=0.00519558908, wet mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.26569869, carbon content, fossil=0.0048834794, dry mass=1, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0.748686634968048, water content=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0.905928203, carbon content, fossil=0.0166507472, dry mass=0, water in wet mass=0, wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0 - A non-global market exists for the reference product 'sewage sludge, 70% water, WWT, WW from maize starch production' but is not supplied by any instances of the activity 'treatment of sewage sludge, 70% water, WWT, WW from maize starch production, municipal incineration'.</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="3" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2022-09-23">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-09-23">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='1.76269703113409', Output='1.34543677877344'
+ - Input &gt; output by 0.417260252360654 kg (31.01% of output)
+
+Property 'carbon content, fossil':
+ - Input='0.00215685388841763', Output='0.00215990714031795'
+ - Input &lt; output by 3.05325190031814E-06 kg (0.14% of output)
+
+Property 'dry mass':
+ - Input='1.00979851772702', Output='0.462530280912226'
+ - Input &gt; output by 0.547268236814794 kg (118.32% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0.117348', Output='0.117515495522369'
+ - Input &lt; output by 0.000167495522368638 kg (0.14% of output)
+
+Property 'water in wet mass':
+ - Input='0.75289851340707', Output='0.88290649786121'
+ - Input &lt; output by 0.13000798445414 kg (14.73% of output)
+
+
+- Amount of property 'carbon content, fossil=0.00171828736' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.0934879958' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Particulate Matter, &lt; 2.5 um' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Particulate Matter, &lt; 2.5 um' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.00807924277' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.4395727' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.00456717615' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.24848937' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.016468602' of exchange 'Toluene' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.896018109' of exchange 'Toluene' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.0048834794' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.26569869' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Benzene' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Benzene' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Heat, waste' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.00519558908' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.282679848' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.00833181815' of exchange 'Cyanide' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.453314735' of exchange 'Cyanide' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.0166507472' of exchange 'Particulate Matter, &gt; 2.5 um and &lt; 10um' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.905928203' of exchange 'Particulate Matter, &gt; 2.5 um and &lt; 10um' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.838635002' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.015413914' of exchange 'NMVOC, non-methane volatile organic compounds' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0.75289851340707) and output exchanges (0.88290649786121) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): water, decarbonised, municipal waste incineration facility, Non-hazardous waste disposed, Water
+ -- Property(ies): wet mass=1, dry mass=0.882864, iron content=0.185941, oxygen content=0.494418, phosphorus content=0.292249, carbon content, non-fossil=0.0207781, nitrogen content=0.00623163, water in wet mass=0.117136, water content=0.132677, carbon content, fossil=0.000381896, nitrogen content=0.00025987, dry mass=1, water in wet mass=0, oxygen content=0.563127, iron content=0.0401805, carbon content, non-fossil=0.0536471, phosphorus content=0.341799, water content=0, wet mass=1, carbon content, fossil=0.000986022, wet mass=1, carbon content, fossil=0.00171828736, water content=0, dry mass=1, carbon content, non-fossil=0.0934879958, water in wet mass=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0.0166507472, water content=0, carbon content, non-fossil=0.905928203, wet mass=1, carbon content, non-fossil=0.981951954, carbon content, fossil=0.0180480458, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1000, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=0, water in wet mass=0, dry mass=0, water content=0, carbon content, fossil=0.00807924277, wet mass=1, dry mass=1, carbon content, non-fossil=0.4395727, water in wet mass=0, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, wet mass=1, water content=0, carbon content, non-fossil=0.24848937, carbon content, fossil=0.00456717615, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, fossil=0.272916486782489, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0.896018109, carbon content, fossil=0.016468602, water in wet mass=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0.428805015280039, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.748686634968048, wet mass=1, carbon content, fossil=0, carbon content, fossil=0.0048834794, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0.26569869, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0.0166507472, dry mass=1, wet mass=1, carbon content, non-fossil=0.905928203, wet mass=0, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.282679848, wet mass=1, carbon content, fossil=0.00519558908, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, water content=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.453314735, carbon content, fossil=0.00833181815, dry mass=1, carbon content, non-fossil=0.428805015280039, water content=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0.905928203, dry mass=1, water in wet mass=0, carbon content, fossil=0.0166507472, wet mass=1, water content=0, dry mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.0180480458, carbon content, non-fossil=0.981951954, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0.748686634968048, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.272916486782489, dry mass=1, water content=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0.015413914, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): water, decarbonised, municipal waste incineration facility, Non-hazardous waste disposed, Water
+ -- Property(ies): wet mass=1, dry mass=0.882864, iron content=0.185941, oxygen content=0.494418, phosphorus content=0.292249, carbon content, non-fossil=0.0207781, nitrogen content=0.00623163, water in wet mass=0.117136, water content=0.132677, carbon content, fossil=0.000381896, nitrogen content=0.00025987, dry mass=1, water in wet mass=0, oxygen content=0.563127, iron content=0.0401805, carbon content, non-fossil=0.0536471, phosphorus content=0.341799, water content=0, wet mass=1, carbon content, fossil=0.000986022, wet mass=1, carbon content, fossil=0.00171828736, water content=0, dry mass=1, carbon content, non-fossil=0.0934879958, water in wet mass=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0.0166507472, water content=0, carbon content, non-fossil=0.905928203, wet mass=1, carbon content, non-fossil=0.981951954, carbon content, fossil=0.0180480458, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1000, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=0, water in wet mass=0, dry mass=0, water content=0, carbon content, fossil=0.00807924277, wet mass=1, dry mass=1, carbon content, non-fossil=0.4395727, water in wet mass=0, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, wet mass=1, water content=0, carbon content, non-fossil=0.24848937, carbon content, fossil=0.00456717615, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, fossil=0.272916486782489, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0.896018109, carbon content, fossil=0.016468602, water in wet mass=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0.428805015280039, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0.748686634968048, wet mass=1, carbon content, fossil=0, carbon content, fossil=0.0048834794, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0.26569869, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0.0166507472, dry mass=1, wet mass=1, carbon content, non-fossil=0.905928203, wet mass=0, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0.282679848, wet mass=1, carbon content, fossil=0.00519558908, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, water content=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.453314735, carbon content, fossil=0.00833181815, dry mass=1, carbon content, non-fossil=0.428805015280039, water content=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0.905928203, dry mass=1, water in wet mass=0, carbon content, fossil=0.0166507472, wet mass=1, water content=0, dry mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.0180480458, carbon content, non-fossil=0.981951954, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0.748686634968048, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0.272916486782489, dry mass=1, water content=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0.838635002, carbon content, fossil=0.015413914, water content=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, water content=0, wet mass=1, carbon content, non-fossil=0
+
+- A non-global market exists for the reference product 'sewage sludge, 70% water, WWT, WW from maize starch production' but is not supplied by any instances of the activity 'treatment of sewage sludge, 70% water, WWT, WW from maize starch production, municipal incineration'.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="e98986e8-51ee-468d-b4de-00f989a6dc7f" isActiveAuthor="true" personName="Nikolia Stoikou" personEmail="stoikou@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="e98986e8-51ee-468d-b4de-00f989a6dc7f" personName="Nikolia Stoikou" personEmail="stoikou@ecoinvent.org" dataPublishedIn="0" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2022-09-23T07:26:40" lastEditTimestamp="2022-09-23T11:28:37" fileGenerator="EcoEditor 3.13.5000.19341" fileTimestamp="2022-09-23T11:28:37" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

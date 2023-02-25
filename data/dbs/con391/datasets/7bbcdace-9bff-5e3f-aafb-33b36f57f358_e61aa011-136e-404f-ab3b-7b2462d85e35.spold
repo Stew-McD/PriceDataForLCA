@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="1" id="7bbcdace-9bff-5e3f-aafb-33b36f57f358" activityNameId="068ef2a6-95db-4263-840a-1bb2badec1bb" parentActivityId="514e1857-e999-4642-b8d1-c1328d383951" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">market for shale</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts at the gate of the activities that produce 'shale',  within the geography of Global.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the supply of 'shale',  to the consumers of this product. Transport is included. Product losses during transportation are assumed negligible and are therefore not included.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a market activity. Each market represents the consumption mix of a product in a given geography, connecting suppliers with consumers of the same product in the same geographical area. Markets group the producers and also the imports of the product (if relevant) within the same geographical area. They also account for transport to the consumer and for the losses during that process, when relevant.</text>
+          <text xml:lang="en" index="1">This is the market for  'shale', in the Global geography.</text>
+          <text xml:lang="en" index="2">Transport from producers to consumers of this product in the geography covered by the market is included.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="75bda068-8882-4e3e-847c-101ebcea2453">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">construction materials/additives</classificationValue>
+      </classification>
+      <classification classificationId="1569ef79-3c08-4e08-b908-a839ed48976c">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0810:Quarrying of stone, sand and clay</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology/>
+      <timePeriod startDate="2012-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="2e19a4f3-402b-57ed-8e23-eb5e4cdb8b39" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" intermediateExchangeId="e61aa011-136e-404f-ab3b-7b2462d85e35" productionVolumeAmount="15685627009.6463">
+        <name xml:lang="en">shale</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="6014982c-ef8e-4555-add0-14bc00bad6be" variableName="density_shale" amount="2000.0" isDefiningValue="false" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839" sourceId="efeb6874-be8d-49ac-b739-c64f98596010" sourceYear="2007" sourceFirstAuthor="Kellenberger D.">
+          <name xml:lang="en">bulk density</name>
+          <unitName xml:lang="en">kg/m3</unitName>
+          <uncertainty>
+            <lognormal meanValue="2000.0" mu="7.6" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Proxy. The uncertainty has been maximized.</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on clay, at mine dataset (ecoinvent v2.2)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.965" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.965" mu="-0.04" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.041" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be 30% of the price of the "shale brick".</comment>
+        </property>
+        <property propertyId="4131adc0-afda-4a73-b6b6-3ed9341ee3d9" variableName="Volume" amount="27.43" isDefiningValue="false" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+          <name xml:lang="en">volume</name>
+          <unitName xml:lang="en">m3</unitName>
+          <uncertainty>
+            <lognormal meanValue="27.43" mu="3.31" variance="0.0006" varianceWithPedigreeUncertainty="0.0086"/>
+            <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Estimation of the volume of clay per m2 assuming a clay layer of 90 feet.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0362694300518135" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.0362694300518135" mu="-3.32" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">water content on a dry matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.035" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.035" mu="-3.35" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">water content on a wet matter basis
+Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="1.0" mu="0.0" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation based on the exchange properties of clay (ecoinvent v3) since clays are the major constituent of shales (http://en.wikipedia.org/wiki/Shale)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en"/>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="4f0dc1b3-7ba0-4c0c-886a-21812ca65628">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15: Stone, sand and clay</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d2aa9b42-8f5f-5653-a1cb-e113a79d8422" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" intermediateExchangeId="e61aa011-136e-404f-ab3b-7b2462d85e35" activityLinkId="801e6bad-e01e-5490-af2f-02763decf9d9">
+        <name xml:lang="en">shale</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="6014982c-ef8e-4555-add0-14bc00bad6be" amount="2000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+          <name xml:lang="en">bulk density</name>
+          <unitName xml:lang="en">kg/m3</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.965" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.041" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <property propertyId="4131adc0-afda-4a73-b6b6-3ed9341ee3d9" amount="27.43" isDefiningValue="false" isCalculatedAmount="false" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+          <name xml:lang="en">volume</name>
+          <unitName xml:lang="en">m3</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0362694300518135" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.035" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="4f0dc1b3-7ba0-4c0c-886a-21812ca65628">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15: Stone, sand and clay</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9fd5e8fc-f056-52e4-bad0-bbcb62916316" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0121" intermediateExchangeId="0ace02fa-eca5-482d-a829-c18e46a52db4" activityLinkId="85ea0df8-1f36-5792-bd96-e377e3acec79">
+        <name xml:lang="en">transport, freight train</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Transport distance based on US BTS Commodity Flow Surveys 1993, 1997, 2002, 2007, US Dep. Of Transportation, Bureau of Transportation Statistics.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0121" mu="-4.41" variance="0.12" varianceWithPedigreeUncertainty="0.202"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3a7e1bd-527a-4941-905b-e2bea12a7944">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6512: Railway transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="34757ce7-113b-5436-aba0-bc97dd9409cb" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0021" intermediateExchangeId="068bf76a-bfaa-435c-85ed-3d2bb2c4bb4f" activityLinkId="94b269dc-63e7-5311-9004-4024508aad8c">
+        <name xml:lang="en">transport, freight, inland waterways, barge</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Transport distance based on US BTS Commodity Flow Surveys 1993, 1997, 2002, 2007, US Dep. Of Transportation, Bureau of Transportation Statistics.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0021" mu="-6.17" variance="0.12" varianceWithPedigreeUncertainty="0.202"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="6b904c7e-332b-4eca-bcae-4e6a0496b826">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">65229: Other inland water transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f6271d79-efd9-5f5d-87a6-6e9c2b483161" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.001" intermediateExchangeId="090f56b8-6a83-48c1-ae26-234d04771e53" activityLinkId="ef5e8d10-5daa-51ea-89b3-531014e1a8b4">
+        <name xml:lang="en">transport, freight, light commercial vehicle</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Transport distance based on US BTS Commodity Flow Surveys 1993, 1997, 2002, 2007, US Dep. Of Transportation, Bureau of Transportation Statistics. Of the total road transport, 6% is assumed to be by delivery van for goods with a large share of retail sale, and 3% for goods that are mainly sold via wholesale.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.001" mu="-6.91" variance="0.12" varianceWithPedigreeUncertainty="0.202"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="3ca82b2c-1079-495b-8eb4-76d8b4095055">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">65119: Other road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3642736b-dde2-5c24-a440-89111f523f22" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0323" intermediateExchangeId="cfbce515-3f54-4411-ad9d-3d26b7faa15a" activityLinkId="3c3c625f-c84c-54cf-a256-42eccebb3743">
+        <name xml:lang="en">transport, freight, lorry, unspecified</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Transport distance based on US BTS Commodity Flow Surveys 1993, 1997, 2002, 2007, US Dep. Of Transportation, Bureau of Transportation Statistics. Of the total road transport, 6% is assumed to be by delivery van for goods with a large share of retail sale, and 3% for goods that are mainly sold via wholesale.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0323" mu="-3.43" variance="0.12" varianceWithPedigreeUncertainty="0.202"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9685f357-49a6-57ad-a297-fc378ad55694" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0727" intermediateExchangeId="eeb68c18-502b-4117-a033-a5daf24322fc" activityLinkId="a5ae5535-cb49-5146-a35c-8bd750269d11">
+        <name xml:lang="en">transport, freight, sea, bulk carrier for dry goods</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">The total marine transport volume differentiated into major commodity groups based on data from FearnResearch (2001): Fearnley's Annual Review 2000. Oslo: Fearnley/AS, p. 1-78. The category “Other cargo” accounts for 38% of total maritime transport volume and has been distributed on commodity groups based on the proportions in the marine import and export of the US in 2001-2010.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0727" mu="-2.62" variance="0.12" varianceWithPedigreeUncertainty="0.202"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="eca48a66-f927-4c3d-a150-f81a978603f5">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">65219: Other coastal and transoceanic water transport services of other freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+      </representativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="false" personName="[System]" personEmail="support@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.11" defaultLanguage="en" creationTimestamp="2014-04-18T13:55:36" lastEditTimestamp="2014-04-18T13:55:36" fileGenerator="Database Layer" fileTimestamp="2014-04-18T13:55:36" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

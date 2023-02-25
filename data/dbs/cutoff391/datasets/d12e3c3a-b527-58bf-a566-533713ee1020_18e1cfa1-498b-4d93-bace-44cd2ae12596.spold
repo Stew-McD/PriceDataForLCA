@@ -1,0 +1,1027 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="d12e3c3a-b527-58bf-a566-533713ee1020" activityNameId="f1db8b81-5fea-4538-ad67-5c0d1db22fa5" parentActivityId="919a7435-a003-5447-8399-df8b1402d8b6" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">anaerobic digestion of manure</activityName>
+        <includedActivitiesStart xml:lang="en">Input of livestock manure (cattle slurry, pig slurry, cattle manure) to incoming storage at the biogas plant.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The treatment includes storage (and 10% of the total pre-treatment storage emissions) of the substrates, anerobic fermentation, as well as the storage of digestate after fermentation. The activity ends with the biogas and digestate being available at the biogas plant. Furthermore, the calorific value of the biogas only accounts for the methane content excluding the H2S presence in it. Glycerine was removed as input in the anaerobic digestion (AD) process. Water content of digestate is 95% in wet weight basis. Finally, the dataset incorporates emissions of CO2, CH4, NH3 and N2O to air due to the storage of the substrates before the AD process as well as from storage of the digestate after the AD process. The storage of the substrate before the AD process is assumed to be an under cover system.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This activity produces biogas and digestate from manure. The methane content of the biogas is calculated depending on the substrate input.  The reference product is the produced biogas (single purpose of this process).</text>
+          <text xml:lang="en" index="1">[This dataset is meant to replace the following datasets:]</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="9a63625a-358b-4c1d-bf95-50ba038a759b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3821:Treatment and disposal of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="131278d6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Conditions refer to biogas production in Switzerland.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">The storage of the substrate and the storage of the digestate (before and after the anaerobic digestion process respectively) are both considered to be closed.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2018-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="4cecbeb3-628b-53de-a20a-e8fb37990391" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="biogas" casNumber="014493-06-2" amount="1.0" mathematicalRelation="ABS(cattle_FYM)*DM_cattle_FYM*EF_cattle_FYM_DM+ABS(cattle_slurry)*DM_cattle_slurry*EF_cattle_slurryDM+ABS(swine_slurry)*DM_swine_slurry*EF_swine_slurryDM" intermediateExchangeId="18e1cfa1-498b-4d93-bace-44cd2ae12596" productionVolumeAmount="48904762.0">
+        <name xml:lang="en">biogas</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Gas derived from fermentation of sewage sludge. Sewage gas is well suited as a fuel for co-generation. The obtained heat is sufficient to cover the overall heat consumption of a WWTP, including the heat demand for the fermentation process. Furthermore, sewage gas may be directly burnt for heating purposes. In principle, the generated sewage gas can be upgraded to natural gas quality and then used as a fuel for road vehicles or fed into the natural gas network. In the year 2004 the waste water treatment plant Buholz was equipped with a biogas upgrading plant. The quantity (degradation rate) and quality of the biogas depend on several factors: • composition of the input material (share of dry organic matter) • duration of digestion • temperature inside digestion tank • quality and quantity of co-substrates</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.5355558519011999" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.4534524" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.4534524" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Total C content in kg/Nm3 (Tab 12.8, ecoinvent v2.2 report n17), referred to 1kg DM</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.181063" isDefiningValue="false" mathematicalRelation="" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated from the density of CH4 (0.668 kg/m3) and CO2 (1.842 kg/m3) and the share of CH4 in biogas</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="22.73" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of "heat and power co-generation, biogas, gas engine" dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.109" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Same prices per energy output as natural gas, based on the proportional lower heating value (2/3 that of natural gas)</comment>
+        </property>
+        <property propertyId="1ffacfb6-8f96-43fa-beac-844ad4444716" variableName="share_CH4_in_biogas" amount="0.720751229" isDefiningValue="false" mathematicalRelation="ABS( swine_slurry)* DM_swine_slurry* EF_swine_slurryDM* share_CH4_swine+ABS( cattle_slurry* DM_cattle_slurry* EF_cattle_slurryDM* share_CH4_cattle+cattle_FYM* DM_cattle_FYM* EF_cattle_FYM_DM* share_CH4_cattle)" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">share of methane in biogas</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Calculated from factors for each substrate</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.181063" isDefiningValue="false" mathematicalRelation="" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated by the densities of CO2 and CH4. for the sake of simplicity it is assumed that biogas is consists only of the aforementioned substances.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">According to the Swiss ministry of Environment, in 2016 in Switzerland, 1027 TJ of energy produced from anaerobic digestion dedicated to the treatment of Agricultural wastes. Values aexpressed in gross energy production. Assuming a calorific value of 21 MJ per Nm3 of biogas, the production volume is calculated to be 48904762 m3 of biogass. Source: Kaufmann, U. (2017). Schweizerische Statistik der erneuerbaren Energien. Ausgabe 2016, (2016), 75. Retrieved from http://www.bfe.admin.ch/php/modules/publikationen/stream.php?extlang=de&amp;name=de_729286095.pdf&amp;endung=Schweizerische</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c8fb31c-3c73-4800-842e-4b7d4980b2c1">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17200: Coal gas, water gas, producer gas and similar gases, other than petroleum gases and other gaseous hydrocarbons</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="441bf347-0303-5a63-b005-4f7a385d5e6e" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="2.8600029991482456E-07" mathematicalRelation="biogas*(share_200000m3/(share_200000m3+share_600000m3+share_1400000m3)*(200/350)^0.7+share_600000m3/(share_200000m3+share_600000m3+share_1400000m3)*(600/350)^0.7+share_1400000m3/(share_200000m3+share_600000m3+share_1400000m3)*(1400/350)^0.7)/(lifetime*350000)" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="33afc5c1-e057-4456-b964-cd90dc31b1cb" activityLinkId="bcdf7ecd-e342-505d-927a-793604745dbd">
+        <name xml:lang="en">anaerobic digestion plant, agriculture, with methane recovery</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Lifespan is taken as being equal to 20 years.In order to take account of the scale effect, the following formula is applied: Ui = U0 x (Ci/C0)^0,7 where Ui is the number of infrastructure units for the reference case i, in “units”; U0 = 1 [unit] is the number of infrastructure units for the reference facility "anaerobic digestion plant, agriculture, with methane recovery"; Ci is the annual biogas production for the reference case i, en m3/year; C0 = 350,000 [m3/year] is the annual biogas production of the reference facility "anaerobic digestion plant, agriculture, with methane recovery". The infrastructure input per kg of substrate is calculated according to the following formula: Ii = Ui x Yi / (20 x Ci) where Ii is the infrastructure input “anaerobic digestion plant, covered, agriculture” for the reference case i, in “units” per kg of substrates; Ui is the number of infrastructure units for the reference case i, in “units”; Yi is the biogas production yield for the reference case i, in m3 of biogas per kg of substrates; Ci is the annual biogas production for the reference case i, in m3/year.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.7071543345153E-07" mu="-15.0672729774739" variance="0.3" varianceWithPedigreeUncertainty="0.356"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="26a709ee-0d8e-45f7-9bf7-8c0121a98202">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53290: Other civil engineering works</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9e8fa193-4b0e-51f8-bb2c-63de54063da0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="digestate" amount="-36.18257393164099" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="caf4f3f7-4613-4919-af55-f142830d5ca8" activityLinkId="bfa6aedf-c078-54cc-b7c9-3994494dc0b0">
+        <name xml:lang="en">digester sludge</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated as residual from the mass balance: input manure - outputs and emissions. The density of biogas is assumed to be 1.185628256 kg /m3 of BG in normal conditions of temperature and pressure.
+</comment>
+        <uncertainty>
+          <lognormal meanValue="46.9000857077949" mu="3.84801950290888" variance="0.0006" varianceWithPedigreeUncertainty="0.050600000000000006"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.02975" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.595" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_digestate" amount="0.595" isDefiningValue="false" mathematicalRelation="0.85*0.70" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Assumed value based on expert judgement</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.05" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="2.42" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of the treatment dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Assumed without economic value</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="18.9999999999999" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.95" isDefiningValue="false" mathematicalRelation="1-DM_digestate" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Clculated from wet mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7497deaf-5b79-538b-bc81-0e911a701ce1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.158" mathematicalRelation="biogas*factor_el" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="f3202c0a-89f0-5232-bb7e-541dfcbd2cf1">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated with a fixed factor per m3 biogas produced</comment>
+        <uncertainty>
+          <lognormal meanValue="0.2048006191" mu="-1.84516024595517" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5c3170f3-7ba5-5bd9-8193-bf4248b88abb" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="3.47" mathematicalRelation="biogas* factor_process_heat" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="dd80f0f2-f4d5-40f0-9035-09c1a7f3f07b" activityLinkId="76777b22-d9cc-5d05-9cb4-07733ff58ae5">
+        <name xml:lang="en">heat, central or small-scale, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Calculated with a fixed factor per m3 biogas produced</comment>
+        <uncertainty>
+          <lognormal meanValue="4.4978363815" mu="1.24415459395877" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="597ea611-6ab0-512f-a57a-f1283aef90ed" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="cattle_slurry" amount="20.451988955925966" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="ad551fe0-84c5-471a-9acf-b7d2204fdb65" activityLinkId="05cab09d-a089-5001-b104-c99126441f75">
+        <name xml:lang="en">manure, liquid, cattle</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Shares of substrates as in Switzerland 2009</comment>
+        <uncertainty>
+          <lognormal meanValue="26.51" mu="3.27752202030093" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.05076" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.6345" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_cattle_slurry" amount="0.6345" isDefiningValue="false" mathematicalRelation="13.5* N_cattle_slurry" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.08" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" variableName="N_cattle_slurry" amount="0.047" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">nitrogen content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="11.5" isDefiningValue="false" mathematicalRelation="0.92/0.08" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.92" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="535009d0-0e50-4f6f-b38c-4eb9e32e69ab">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34654: Excreta of animals useful for manure/fertilizer and fuel preparation</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f41386f7-36f9-5420-b62b-eabc0c5b6e11" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="swine_slurry" amount="12.27119337355558" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="6c50f204-1e98-422e-b20c-70088087f505" activityLinkId="f354d353-eb7d-5be8-92f4-c4386f6e5db1">
+        <name xml:lang="en">manure, liquid, swine</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Shares of substrates as in Switzerland 2009</comment>
+        <uncertainty>
+          <lognormal meanValue="15.906" mu="2.76669639653494" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.031724999999999996" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.6345" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_swine_slurry" amount="0.6345" isDefiningValue="false" mathematicalRelation="13.5* N_swine_slurry" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.05" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" variableName="N_swine_slurry" amount="0.047" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">nitrogen content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="19.0" isDefiningValue="false" mathematicalRelation="0.95/0.05" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.95" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="535009d0-0e50-4f6f-b38c-4eb9e32e69ab">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34654: Excreta of animals useful for manure/fertilizer and fuel preparation</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e95cb4be-9acd-5aed-a644-03d8c5db34a4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="cattle_FYM" amount="4.462252135838392" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." intermediateExchangeId="ed56bc72-4186-40ab-a961-b8c0b49b64c8" activityLinkId="30bd55ab-89e5-54b0-a5f2-a21a22de89bb">
+        <name xml:lang="en">manure, solid, cattle</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Shares of substrates as in Switzerland 2009</comment>
+        <uncertainty>
+          <lognormal meanValue="5.784" mu="1.75509548485646" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.09867000000000001" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.4485" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_cattle_FYM" amount="0.4485" isDefiningValue="false" mathematicalRelation="19.5* N_cattle_FYM" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.22" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" variableName="N_cattle_FYM" amount="0.023" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">nitrogen content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="3.54545454545455" isDefiningValue="false" mathematicalRelation="0.78/0.22" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.78" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="535009d0-0e50-4f6f-b38c-4eb9e32e69ab">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34654: Excreta of animals useful for manure/fertilizer and fuel preparation</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="96298011-9ee0-5aa1-be3e-08e4425671ab" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="NH3_emission" casNumber="007664-41-7" amount="0.0017503979810816943" isCalculatedAmount="false" sourceId="1f8b29a4-3434-4934-9f26-684369073381" sourceYear="2012" sourceFirstAuthor="Alig, M." elementaryExchangeId="0f440cc0-0f74-446d-99d6-8ff0e97a2444">
+        <name xml:lang="en">Ammonia</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value according to literature: ES(NH3) = (17/14) x C(Ntot) x 62% x EF2 x ז where ES(NH3) is the ammonia emissions in kg NH3/t of wet substrates; C(Ntot) is the average total nitrogen content of the substrates in kg N/t of wet substrate; It is calculated (3.4507) based on the relevant contributions of the three manure substrates. EF2 = 13.5% for an assumed open air storage; is the ammonia emission factor; ז is the percentage of the time that the substrate is stored at the biogas producer’s (0.1, supposed that the substrates are stored at the biogas producer’s for 10% of the stockage time before digestion). The value includes emissions from the storage of the substrate until its use from the anaerobic digestion process but also emissions from the storage of the digestate until its final use. EDB(NH3) = (17/14) x ((QDL/QDB) x CDL(Ntot) x 70% x EF7 + (QDS/QDB) x CDS(Ntot) x 27% x EF8) where EDB(NH3) is the ammonia emissions in kg NH3/t raw digestate; QDB, QDL and QDS are the respective quantities of raw, liquid and solid digestate in t; CDL(Ntot) is the total nitrogen content of the liquid digestate in kg N/t liquid digestate; CDS(Ntot) is the total nitrogen content of the solid digestate in kg N/t solid digestate; Both Nitrogen contents are equal and are calculated by multyplying one tonne of digestate with the DM of the digestate and the nitrogen content of it (70% N on a wet mass basis) EF7 = 13.5% for an assumed open air storage; is the ammonia emission factor for the liquid digestate; EF8 = 30% is the ammonia emission factor for the solid digestate. It is here assumed that the solid fraction of the digestate is 5% of the wet mass (DM of digestate = 5% of ww). Reference: Dauriat A., Gaillard G., Alig M., Scharfy D., Membrez Y., Bachmann N., Steiner R., Charles R., Maltas A., Sinaj S., Analyse de cycle de vie de la production centralisée et décentralisée de biogaz en exploitations agricoles : Rapport final. Hrsg. Station de recherche Agroscope Reckenholz-Tänikon ART &amp; Station de recherche Agroscope Changins-Wädenswil ACW, Zürich et Nyon. Avril, 2012, 1-147 S.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00226887715314507" mu="-6.08847021605821" variance="0.04" varianceWithPedigreeUncertainty="0.096"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">azane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="11861e45-99b6-5932-a49a-29854c8f3722" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000124-38-9" amount="0.07089524938692314" isCalculatedAmount="false" sourceId="1f8b29a4-3434-4934-9f26-684369073381" sourceYear="2012" sourceFirstAuthor="Alig, M." elementaryExchangeId="d6235194-e4e6-4548-bfa3-ac095131aef4">
+        <name xml:lang="en">Carbon dioxide, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value according to literature: ES(CO2) = (44/12) x C(C) x EF4 x t where ES(CO2) is the carbon dioxide emissions in kg CO2/t of wet substrate; C(C) is the average carbon content of the substrates in kg C/t of wet substrate; EF4 = 7% is the carbon dioxide emission factor; t is the percentage of the time that the substrate is stored at the biogas producer’s (0.1, supposed that the substrates are stored at the biogas producer’s for 10% of the stockage time before digestion). The value includes emissions from the storage of the substrate until its use from the anaerobic digestion process but also emissions from the storage of the digestate until its final use. The CO2 emissions are calculated on the basis of the CH4 emissions, with the hypothesis that 30% of the carbon is emitted in the form of methane and 70% in the form of carbon dioxide (Jungbluth et al., 2007). EDB(CO2) = (44/12) x (0.7/0.3) x (12/16) x EDB(CH4) where EDB(CO2) is the carbon dioxide emissions in kg CO2/t raw digestate; EDB(CH4) is the methane emissions in kg CH4/t raw digestate. Reference: Dauriat A., Gaillard G., Alig M., Scharfy D., Membrez Y., Bachmann N., Steiner R., Charles R., Maltas A., Sinaj S., Analyse de cycle de vie de la production centralisée et décentralisée de biogaz en exploitations agricoles : Rapport final. Hrsg. Station de recherche Agroscope Reckenholz-Tänikon ART &amp; Station de recherche Agroscope Changins-Wädenswil ACW, Zürich et Nyon. Avril, 2012, 1-147 S. Jungbluth, N., Chudacoff, M., Dauriat, A., Dinkel, F., Doka, G., Faist Emmenegger, M., Gnansounou, E., Kljun, N., Schleiss, K., Spielmann, M., Stettler, C., Sutter, J. 2007: Life Cycle Inventories of Bioenergy. ecoinvent report No. 17, Swiss Centre for Life Cycle Inventories, Dübendorf, CH.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0918948795296883" mu="-2.38710996902167" variance="0.0006" varianceWithPedigreeUncertainty="0.056600000000000004"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Carbon dioxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.272727272727273" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.272727272727273" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.272727272727273" isDefiningValue="false" mathematicalRelation="12/44" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">calculated using molecular weight of the respective substances</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="350bc16b-4813-59aa-8506-c46d0c7ee409" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010024-97-2" amount="0.0002490386623259582" isCalculatedAmount="false" sourceId="1f8b29a4-3434-4934-9f26-684369073381" sourceYear="2012" sourceFirstAuthor="Alig, M." elementaryExchangeId="afd6d670-bbb0-4625-9730-04088a5b035e">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value according to literature: ES(N2O) = (44/28) x (C(Ntot) - (14/17) x ES(NH3)) x EF3 x t where ES(N2O) is the nitrous oxide emissions in kg N2O/t of wet substrates; C(Ntot) is the average total nitrogen content of the substrates in kg N/t of wet substrate; It is calculated (3.4507 kg N/t of wet substrate) based on the relevant contributions of the three manure substrates. EF3 = 0.5% is the nitrous oxide emission factor; t is the percentage of the time that the substrate is stored at the biogas producer’s (0.1, supposed that the substrates are stored at the biogas producer’s for 10% of the stockage time before digestion). The value includes emissions from the storage of the substrate until its use from the anaerobic digestion process but also emissions from the storage of the digestate until its final use. EDB(N2O) = (44/28) x (QDS/QDB) x (CDS(Ntot) - CDS(Ntot) x 27% x EF8) x EF9 where EDB(N2O) is the nitrous oxide emissions in kg N2O/t raw digestate; QDS is the quantity of solid digestate in t; QDB is the quantity of raw digestate in t; CDS(Ntot) is the total nitrogen content of the solid digestate in kg N/t solid digestate; Both Nitrogen contents are equal and are calculated by multiplying one tonne of digestate with the DM of the digestate and the nitrogen content of it (70% N on a wet mass basis). EF8 = 30% is the ammonia emission factor for the solid digestate; EF9 = 2% is the nitrous oxide emission factor for the solid digestate. Reference: Dauriat A., Gaillard G., Alig M., Scharfy D., Membrez Y., Bachmann N., Steiner R., Charles R., Maltas A., Sinaj S., Analyse de cycle de vie de la production centralisée et décentralisée de biogaz en exploitations agricoles : Rapport final. Hrsg. Station de recherche Agroscope Reckenholz-Tänikon ART &amp; Station de recherche Agroscope Changins-Wädenswil ACW, Zürich et Nyon. Avril, 2012, 1-147 S.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000322805520406279" mu="-8.03846052008435" variance="0.04" varianceWithPedigreeUncertainty="0.096"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">nitrous oxide</synonym>
+        <synonym xml:lang="en">dinitrogen oxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="13179569-ebef-568d-88c2-4e3bca0129c7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007783-06-4" amount="4.127583225650513E-05" isCalculatedAmount="false" mathematicalRelation="1.11E-6*(ABS(cattle_slurry)+ABS(swine_slurry)+ABS(cattle_FYM))" sourceId="f816fdd3-6033-449b-937b-d8de44d687a5" sourceYear="2011" sourceFirstAuthor="Dauriat A." elementaryExchangeId="0b0ea9d1-9c54-4e23-bcfc-1b8fc2cf0358">
+        <name xml:lang="en">Hydrogen sulfide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emission factors from Dauriat 2011</comment>
+        <uncertainty>
+          <lognormal meanValue="5.3502E-05" mu="-10.0952334046665" variance="0.04" varianceWithPedigreeUncertainty="0.096"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">sulfane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0f08f462-2d1b-5e68-87e0-14e9166fe1c7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000074-82-8" amount="0.01983423218575475" isCalculatedAmount="false" sourceId="1f8b29a4-3434-4934-9f26-684369073381" sourceYear="2012" sourceFirstAuthor="Alig, M." elementaryExchangeId="57bdb443-d4a6-423d-8024-959b8261d02e">
+        <name xml:lang="en">Methane, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value according to literature: ES(CH4) = 0.670 x Bo x C(OM) x EF1 x t where ES(CH4) is the methane emissions in kg CH4/t of wet substrate; Bo = 0.345 is the substrate methane emission potential in m3 CH4/kg OM; C(OM) is the average organic-matter content of the substrates in kg OM/t of wet substrate; This is calculated (65.725 kg OM/t of wet substrate) based on the relevant contributions of the three manure substrates. EF1 = 10% is the methane emission factor; t is the percentage of the time that the substrate is stored at the biogas producer’s (0.1, supposed that the substrates are stored at the biogas producer’s for 10% of the stockage time before digestion) The value includes emissions from the storage of the substrate until its use from the anaerobic digestion process but also emissions from the storage of the digestate until its final use. EDB(CH4) = 0.670 x Bo x ((QDL/QDB) x CDL(OM) x EF5 + (QDS/QDB) x CDS(OM) x EF6) where EDB(CH4) is the methane emissions in kg CH4/t raw digestate; Bo = 0.345 is the methane emission potential of the digestates in m3 CH4/kg OM; QDB, QDL and QDS are the respective quantities of raw, liquid and solid digestate in t; CDL(OM) is the average organic-matter content of the liquid digestate in kg OM/t ; CDS(OM) is the average organic-matter content of the solid digestate in kg OM/t ; EF5 = 10% is the methane emission factor for the liquid digestate; EF6 = 1% is the methane emission factor for the solid digestate. It is here assumed that the solid fraction of the digestate is 5% of the wet mass (DM of digestate = 5% of ww). Reference: Dauriat A., Gaillard G., Alig M., Scharfy D., Membrez Y., Bachmann N., Steiner R., Charles R., Maltas A., Sinaj S., Analyse de cycle de vie de la production centralisée et décentralisée de biogaz en exploitations agricoles : Rapport final. Hrsg. Station de recherche Agroscope Reckenholz-Tänikon ART &amp; Station de recherche Agroscope Changins-Wädenswil ACW, Zürich et Nyon. Avril, 2012, 1-147 S.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0257092596899729" mu="-3.66090405275241" variance="0.04" varianceWithPedigreeUncertainty="0.096"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Methane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.75" isDefiningValue="false" mathematicalRelation="12/16" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">calculated using molecular weight of the respective substances</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <parameter parameterId="c44fc5c3-c54c-4416-b606-7603b863acd0" amount="0.25" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">carbon conversion efficiency of cattle slurry in digester</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="71f227ad-ad49-46a3-9798-cea311ab5169" amount="0.347" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">carbon conversion efficiency of solid cattle manure in digester</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="c5004f06-3a72-4a79-8115-460bb23f81f3" amount="0.255" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">carbon conversion efficiency of swine slurry in digester</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="4220aa61-fa9e-44c3-a62e-ccee298ca55c" amount="1.842" variableName="CO2_density" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">carbon dioxide density (ntp)</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">calculated for normal conditions of temperature and pressure. the value represents kg of CO2 per m3 of CO2</comment>
+      </parameter>
+      <parameter parameterId="bb85e2df-c4be-4771-8a63-5ee28cfe8cc8" amount="0.308" variableName="EF_cattle_slurryDM" mathematicalRelation="400*0.77/1000" unitId="15a259d2-4417-45e8-9f67-7459326c5eb2">
+        <name xml:lang="en">efficiency of biogas production from cattle slurry dry mass</name>
+        <unitName xml:lang="en">m3/kg</unitName>
+        <comment xml:lang="en">400 m3 CH4/Mg OM *0.77 kg OM/ kg wet/ 1000 (1 Mg / 1000 kg)</comment>
+      </parameter>
+      <parameter parameterId="5233bb01-732b-43b4-a847-4906ac941cb7" amount="0.3" variableName="EF_cattle_FYM_DM" mathematicalRelation="400*0.75/1000" unitId="15a259d2-4417-45e8-9f67-7459326c5eb2">
+        <name xml:lang="en">efficiency of biogas production from solid cattle manure</name>
+        <unitName xml:lang="en">m3/kg</unitName>
+        <comment xml:lang="en">400 m3 CH4/Mg OM *0.75 kg OM/kg wer/ 1000 (1 Mg / 1000 kg)</comment>
+      </parameter>
+      <parameter parameterId="7a726b6b-b2b9-4b34-b3a2-a7f2eb01181c" amount="0.3285" variableName="EF_swine_slurryDM" mathematicalRelation="450*0.73/1000" unitId="15a259d2-4417-45e8-9f67-7459326c5eb2">
+        <name xml:lang="en">efficiency of biogas production from swine slurry dry matter</name>
+        <unitName xml:lang="en">m3/kg</unitName>
+        <comment xml:lang="en">450 m3 CH4/Mg OM*0.73 kg OM/kg wet/ 1000 (1 Mg / 1000 kg)</comment>
+      </parameter>
+      <parameter parameterId="a028902f-046a-4ece-bef5-06a402f28a53" amount="0.158" variableName="factor_el" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">electricity use factor</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">The amount refers to electricity needed for the maintenance of a 350 kWe biogas plant with a biogas engine. Values are based on the survey of 18 biogas plants in Switzerland in 2009, resulting in a mean value of 0.158 kWh per m3 of biogas</comment>
+      </parameter>
+      <parameter parameterId="93d1d4cb-0170-439e-86a3-e7d6781f92db" amount="6.16E-05" variableName="EF_CH4_cattle_slurryDM" mathematicalRelation="0.77*0.08/1000" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor CH4 cattle slurry dry mass</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="6.16E-05" mu="-9.6948486874248" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated as OM (kg OM/kg DM)*DM (kg DM/kg wet)/1000 (1000kg/1t)</comment>
+      </parameter>
+      <parameter parameterId="62ac947a-aa4f-4252-bba3-3aadce6150e7" amount="4.25E-06" variableName="EF_CH4_digestateDM" mathematicalRelation="0.085*0.05/1000" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor CH4 digestate</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="4.25E-06" mu="-12.3685915750279" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated as OM (kg OM/kg DM)*DM (kg DM/kg wet)/1000 (1000kg/1t)</comment>
+      </parameter>
+      <parameter parameterId="a4663225-8140-4fad-bfba-d2c3670bbeca" amount="0.000165" variableName="EF_CH4_cattle_FYM_DM" mathematicalRelation="0.75*0.22/1000" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor CH4 solid cattle manure dry mass</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.000165" mu="-8.70956508406369" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated as OM (kg OM/kg DM)*DM (kg DM/kg wet)/1000 (1000kg/1t)</comment>
+      </parameter>
+      <parameter parameterId="e1ec9a01-4238-4a7a-8283-87bc201391f1" amount="3.65E-05" variableName="EF_CH4_swine_slurryDM" mathematicalRelation="0.73*0.05/1000" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor CH4 swine slurry dry mass</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="3.65E-05" mu="-10.2181982973758" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated as OM (kg OM/kg DM)*DM (kg DM/kg wet)/1000 (1000kg/1t)</comment>
+      </parameter>
+      <parameter parameterId="ac6e573d-416c-4cb7-b532-43a669954c1c" amount="0.07" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor CO2</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.07" mu="-2.65926003693278" variance="0.0006" varianceWithPedigreeUncertainty="0.0031999999999999997"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="2743ad6b-b444-4af2-a9bb-88ee5e84bf9c" amount="0.005" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor N2O</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.005" mu="-5.29831736654804" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="1a287c42-37a8-47aa-bcb9-6c549341584f" amount="0.0135" variableName="EF_NH3" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">emission factor ammonia</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.0135" mu="-4.30506559353775" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Emission factor (kg/kg soluble nitrogen) for covered storage (10% of the factor for open storage)</comment>
+      </parameter>
+      <parameter parameterId="5fe0ebf6-6ef1-4c48-a347-e8d12e8f09c9" amount="20.0" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">lifetime of facility</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="20.0" mu="2.99573227355399" variance="0.04" varianceWithPedigreeUncertainty="0.042600000000000006"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="e4f20404-22a6-4ddb-8216-49463e74ab50" amount="0.668" variableName="methane_density" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">methane density (ntp)</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">calculated for normal conditions of temperature and pressure. the value represents kg of CH4 per m3 of CH4</comment>
+      </parameter>
+      <parameter parameterId="4d55c22e-d080-4569-9517-55af739c1ac9" amount="3.47" variableName="factor_process_heat" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">process heat use factor</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="3.47" mu="1.24415459395877" variance="0.0006" varianceWithPedigreeUncertainty="0.0031999999999999997"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">The amount refers to heat needed for the maintenance of a 150 kWe biogas plant with a biogas engine. Values are based on the survey of 18 biogas plants in Switzerland in 2009, resulting in a mean value of 3.47 MJ per m3 of biogas</comment>
+      </parameter>
+      <parameter parameterId="7f50d3b2-674e-42e6-8ebd-e7a68ea30073" amount="0.43595336946518" variableName="share_CO2_manure" mathematicalRelation="1- (share_CH4_manure)-0.008" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of carbon dioxide in biogas from manure</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">the amount is calculated assuming that O2 is present in Biogas at a cncentration of 0.3% v/v and H2S is present in Biogas at a concentration of 0.5% v/v. Hence, abstracting those values along with the concentration of CH4 in % v/v yields the amount of CO2.</comment>
+      </parameter>
+      <parameter parameterId="024e2a07-d396-46cb-9561-41d663393490" amount="0.55" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of methane in biogas from cattle</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="5b0d10ad-1787-4fbd-bffd-bc5631f2a793" amount="0.55604663053482" variableName="share_CH4_manure" mathematicalRelation="(ABS(cattle_FYM)*DM_cattle_FYM*EF_cattle_FYM_DM*share_CH4_cattle+ABS(cattle_slurry)*DM_cattle_slurry*EF_cattle_slurryDM*share_CH4_cattle+ABS(swine_slurry)*DM_swine_slurry*EF_swine_slurryDM*share_CH4_swine)/biogas" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of methane in biogas from manure (mixture)</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">Calculating the content of CH4 in the biogas as a whole, taking into account the different contributions of all three manure substrates</comment>
+      </parameter>
+      <parameter parameterId="2a4c5848-c1d4-41d7-8228-ef0b66a150ee" amount="0.58" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of methane in biogas from swine</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="29db582f-122a-43ab-be50-341a271209d1" amount="0.483" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of size class 14E5 m3</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.483" mu="-0.727738625329564" variance="0.3" varianceWithPedigreeUncertainty="0.3026"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="37c3e67e-33a5-4217-b553-565ce60b25f2" amount="0.034" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of size class 2E5 m3</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.034" mu="-3.38139475436598" variance="0.3" varianceWithPedigreeUncertainty="0.3026"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="da606068-65c6-41bd-bb54-2e5711156681" amount="0.483" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of size class 6E5 m3</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.483" mu="-0.727738625329564" variance="0.3" varianceWithPedigreeUncertainty="0.3026"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="6b479324-0a7e-4a18-b194-8025b85d0c2d" amount="0.7" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of soluble nitrogen in digestate</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="0b45b390-5e30-4225-aced-5c5f5a35398c" amount="0.62" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of soluble nitrogen in substrate</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="b7aca90e-1cc1-44b8-ba72-62c70ff1ebdc" amount="0.1" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of storage time</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">The data for this dataset was generated within a project in 2009-2011 financed by the Swiss Federal Office for Energy in order to analyse the life cycle of Swiss agricultural biogas production in centralised and decentralised plants. The data used for modelling were taken from a survey of 18 biogas plants in Switzerland and literature. Assumptions were validated with biogas experts. 7 new reference biogas production systems have been established based on the questionnaires, comprising the fermentation of manure, manure with different ratios of co-substrate addition and 3 sizes of biogas plants (small = 2E5 m3, medium = 6E5 m3, large = 14E5 m3).</samplingProcedure>
+        <extrapolations xml:lang="en">Data refer to Swiss production.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="27" reviewerId="66109d31-fb99-4a5f-aedd-5424b4a57ebc" reviewerName="Ivan Muñoz Ortiz" reviewerEmail="im@lca-net.com" reviewDate="2020-01-24"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="6" reviewedMinorRevision="8" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-01-24">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, non-fossil":
+ - Input="2.42097273", Output="2.19712223637246"
+ - Input &gt; output by 0.223850493627538 kg (10.19% of output)
+
+Property "dry mass":
+ - Input="4.18858", Output="3.98760304908975"
+ - Input &gt; output by 0.200976950910245 kg (5.04% of output)
+
+Property "water in wet mass":
+ - Input="44.01142", Output="44.5550814224052"
+ - Input &lt; output by 0.543661422405151 kg (1.22% of output)
+
+Property "wet mass":
+ - Input="48.2", Output="48.5426844714949"
+ - Input &lt; output by 0.342684471494906 kg (0.71% of output)
+
+Property "price":
+ - Input="0", Output="0.14128650305"
+ - Input &lt; output by 0.14128650305 EUR2005 (100% of output)
+
+
+- Amount of property "carbon content, non-fossil=0.497586481867452" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "lower heating value=0" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "wet mass=1.17446525575212" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "dry mass=1.17446525575212" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.595" of exchange "digester sludge" deviates from the default amount in the master file.
+Amount of property "water content=18.9999999999999" of exchange "digester sludge" deviates from the default amount in the master file.
+Amount of property "water in wet mass=0.92" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.6345" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.047" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "water content=11.5" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "dry mass=0.08" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.047" of exchange "manure, liquid, swine" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.6345" of exchange "manure, liquid, swine" deviates from the default amount in the master file.
+Amount of property "water content=3.54545454545455" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.023" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.4485" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.272727272727273" of exchange "Carbon dioxide, non-fossil" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.75" of exchange "Methane, non-fossil" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (44.01142) and output exchanges (44.5550814224052) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0.595, dry mass=0.05, price=0, water content=18.9999999999999, water in wet mass=0.95, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.272727272727273, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.75, dry mass=1, water content=0, water in wet mass=0, wet mass=1
+ -- Parameter(s): carbon conversion efficiency of cattle slurry in digester, carbon conversion efficiency of solid cattle manure in digester, carbon conversion efficiency of swine slurry in digester, carbon dioxide density (ntp), efficiency of biogas production from cattle slurry dry mass, efficiency of biogas production from solid cattle manure, efficiency of biogas production from swine slurry dry matter, electricity use factor, methane density (ntp), share of carbon dioxide in biogas from manure, share of methane in biogas from cattle, share of methane in biogas from manure (mixture), share of methane in biogas from swine, share of soluble nitrogen in digestate, share of soluble nitrogen in substrate, share of storage time
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0.595, dry mass=0.05, price=0, water content=18.9999999999999, water in wet mass=0.95, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.272727272727273, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.75, dry mass=1, water content=0, water in wet mass=0, wet mass=1
+ -- Parameter(s): carbon conversion efficiency of cattle slurry in digester, carbon conversion efficiency of solid cattle manure in digester, carbon conversion efficiency of swine slurry in digester, carbon dioxide density (ntp), efficiency of biogas production from cattle slurry dry mass, efficiency of biogas production from solid cattle manure, efficiency of biogas production from swine slurry dry matter, electricity use factor, methane density (ntp), share of carbon dioxide in biogas from manure, share of methane in biogas from cattle, share of methane in biogas from manure (mixture), share of methane in biogas from swine, share of soluble nitrogen in digestate, share of soluble nitrogen in substrate, share of storage time
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="27" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-02-10">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, non-fossil":
+ - Input="2.42097273", Output="2.13381268401569"
+ - Input &gt; output by 0.287160045984308 kg (13.46% of output)
+
+Property "dry mass":
+ - Input="4.18858", Output="3.99615508773931"
+ - Input &gt; output by 0.192424912260693 kg (4.82% of output)
+
+Property "water in wet mass":
+ - Input="44.01142", Output="44.5550814224052"
+ - Input &lt; output by 0.543661422405151 kg (1.22% of output)
+
+Property "wet mass":
+ - Input="48.2", Output="48.5512365101445"
+ - Input &lt; output by 0.35123651014446 kg (0.72% of output)
+
+Property "price":
+ - Input="0", Output="0.14128650305"
+ - Input &lt; output by 0.14128650305 EUR2005 (100% of output)
+
+
+- Amount of property "carbon content, non-fossil=0.4534524" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "dry mass=1.181063" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "wet mass=1.181063" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "lower heating value=0" of exchange "biogas" deviates from the default amount in the master file.
+Amount of property "water content=18.9999999999999" of exchange "digester sludge" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.595" of exchange "digester sludge" deviates from the default amount in the master file.
+Amount of property "dry mass=0.08" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "water content=11.5" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.047" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.6345" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "water in wet mass=0.92" of exchange "manure, liquid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.047" of exchange "manure, liquid, swine" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.6345" of exchange "manure, liquid, swine" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.4485" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "nitrogen content=0.023" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "water content=3.54545454545455" of exchange "manure, solid, cattle" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.272727272727273" of exchange "Carbon dioxide, non-fossil" deviates from the default amount in the master file.
+Amount of property "carbon content, non-fossil=0.75" of exchange "Methane, non-fossil" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (44.01142) and output exchanges (44.5550814224052) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0.595, dry mass=0.05, price=0, water content=18.9999999999999, water in wet mass=0.95, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.272727272727273, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.75, dry mass=1, water content=0, water in wet mass=0, wet mass=1
+ -- Parameter(s): carbon conversion efficiency of cattle slurry in digester, carbon conversion efficiency of solid cattle manure in digester, carbon conversion efficiency of swine slurry in digester, carbon dioxide density (ntp), efficiency of biogas production from cattle slurry dry mass, efficiency of biogas production from solid cattle manure, efficiency of biogas production from swine slurry dry matter, electricity use factor, methane density (ntp), share of carbon dioxide in biogas from manure, share of methane in biogas from cattle, share of methane in biogas from manure (mixture), share of methane in biogas from swine, share of soluble nitrogen in digestate, share of soluble nitrogen in substrate, share of storage time
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0.595, dry mass=0.05, price=0, water content=18.9999999999999, water in wet mass=0.95, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.272727272727273, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0.75, dry mass=1, water content=0, water in wet mass=0, wet mass=1
+ -- Parameter(s): carbon conversion efficiency of cattle slurry in digester, carbon conversion efficiency of solid cattle manure in digester, carbon conversion efficiency of swine slurry in digester, carbon dioxide density (ntp), efficiency of biogas production from cattle slurry dry mass, efficiency of biogas production from solid cattle manure, efficiency of biogas production from swine slurry dry matter, electricity use factor, methane density (ntp), share of carbon dioxide in biogas from manure, share of methane in biogas from cattle, share of methane in biogas from manure (mixture), share of methane in biogas from swine, share of soluble nitrogen in digestate, share of soluble nitrogen in substrate, share of storage time
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2021-01-27">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-01-27">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='48.2', Output='48.5512365101445'
+ - Input &lt; output by 0.35123651014446 kg (0.72% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='2.42097273', Output='2.13381268401569'
+ - Input &gt; output by 0.287160045984308 kg (13.46% of output)
+
+Property 'dry mass':
+ - Input='4.18858', Output='3.99615508773931'
+ - Input &gt; output by 0.192424912260693 kg (4.82% of output)
+
+Property 'water in wet mass':
+ - Input='44.01142', Output='44.5550814224052'
+ - Input &lt; output by 0.543661422405151 kg (1.22% of output)
+
+Property 'price':
+ - Input='0', Output='0.14128650305'
+ - Input &lt; output by 0.14128650305 EUR2005 (100% of output)
+
+
+- Amount of property 'carbon content, non-fossil=0.4534524' of exchange 'biogas' deviates from the default amount in the master file.
+Amount of property 'dry mass=1.181063' of exchange 'biogas' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.181063' of exchange 'biogas' deviates from the default amount in the master file.
+Property 'lower heating value=' of master data exchange was removed from exchange 'biogas'.
+Amount of property 'water content=18.9999999999999' of exchange 'digester sludge' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.595' of exchange 'digester sludge' deviates from the default amount in the master file.
+Amount of property 'nitrogen content=0.047' of exchange 'manure, liquid, swine' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.6345' of exchange 'manure, liquid, swine' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.4485' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'nitrogen content=0.023' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'water content=3.54545454545455' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'water content=11.5' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'nitrogen content=0.047' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.6345' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.92' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'dry mass=0.08' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.272727272727273' of exchange 'Carbon dioxide, non-fossil' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.75' of exchange 'Methane, non-fossil' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (44.01142) and output exchanges (44.5550814224052) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.595, price=0, water in wet mass=0.95, water content=18.9999999999999, dry mass=0.05, wet mass=1, carbon content, fossil=0, heating value, net=2.42, wet mass=1, carbon content, non-fossil=0.272727272727273, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.75
+ -- Parameter(s): share of soluble nitrogen in digestate, share of methane in biogas from manure (mixture), share of carbon dioxide in biogas from manure, methane density (ntp), share of soluble nitrogen in substrate, share of methane in biogas from cattle, share of methane in biogas from swine, carbon conversion efficiency of cattle slurry in digester, electricity use factor, carbon conversion efficiency of swine slurry in digester, efficiency of biogas production from swine slurry dry matter, efficiency of biogas production from cattle slurry dry mass, carbon conversion efficiency of solid cattle manure in digester, efficiency of biogas production from solid cattle manure, carbon dioxide density (ntp), share of storage time
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.595, price=0, water in wet mass=0.95, water content=18.9999999999999, dry mass=0.05, wet mass=1, carbon content, fossil=0, heating value, net=2.42, wet mass=1, carbon content, non-fossil=0.272727272727273, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.75
+ -- Parameter(s): share of soluble nitrogen in digestate, share of methane in biogas from manure (mixture), share of carbon dioxide in biogas from manure, methane density (ntp), share of soluble nitrogen in substrate, share of methane in biogas from cattle, share of methane in biogas from swine, carbon conversion efficiency of cattle slurry in digester, electricity use factor, carbon conversion efficiency of swine slurry in digester, efficiency of biogas production from swine slurry dry matter, efficiency of biogas production from cattle slurry dry mass, carbon conversion efficiency of solid cattle manure in digester, efficiency of biogas production from solid cattle manure, carbon dioxide density (ntp), share of storage time
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="3860cfbd-a932-45c0-90c7-658d5bea9ea3" isActiveAuthor="true" personName="Thomas Kägi" personEmail="t.kaegi@carbotech.ch"/>
+      <dataGeneratorAndPublication personId="3860cfbd-a932-45c0-90c7-658d5bea9ea3" personName="Thomas Kägi" personEmail="t.kaegi@carbotech.ch" dataPublishedIn="2" publishedSourceId="b0e27450-e82c-4cf1-9a15-81e10e4626f5" publishedSourceYear="2019" publishedSourceFirstAuthor="Kaegi Thomas" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="5" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2019-11-07T13:05:22" lastEditTimestamp="2020-02-10T11:21:08" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2020-02-10T11:21:08" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

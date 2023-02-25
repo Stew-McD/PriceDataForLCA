@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="86eaec32-1737-5227-ab11-82d0e62ac495" activityNameId="dec88814-a094-41b7-badb-2c2211d44884" parentActivityId="0dca7f45-d44f-4db2-b18a-446eb5a35fc4" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">suction, shavings, softwood</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the shavings at the planing machine.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the shavings collected at a silo at the sawmill site. The dataset does not include direct wood dust emissions. The infrasturcture for the pipes and pumps as well as for the silo are assumed be part of the infrastructure DS for the sawmill.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This data represents the service of collecting shavings from the planing of softwood, expressed per kg dry mass and transporting it to its silo via aspiration.</text>
+        </generalComment>
+        <tag>recontextualization</tag>
+      </activity>
+      <classification classificationId="45e0d63f-f176-49f2-a053-8033c5f89e77">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">1610:Sawmilling and planing of wood</classificationValue>
+      </classification>
+      <geography geographyId="868a66d1-7428-4ba2-9125-253b07afc119">
+        <shortname xml:lang="en">CA-QC</shortname>
+        <comment>
+          <text xml:lang="en" index="0">The exchanges of this child dataset are identical to the GLO dataset. This dataset was created to enable linking to regional markets (e.g. for electricity). Data quality indicators were adjusted accordingly</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2011-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="1e32958c-3e81-5c67-ad63-d13b1b5c6fdc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="ff7a13da-3665-469e-a211-4ab06801c7ea" productionVolumeAmount="119916136.221304">
+        <name xml:lang="en">shavings, softwood, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">shavings recollected from the planing process where they are generated as loose shavings.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.006" varianceWithPedigreeUncertainty="0.216"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">kg oven dry</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="13.38" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.113" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on data from FAOSTAT (accessed 20140429). The price is calculated by using data on total world import quantity (m3) and import value (1000 USD), year 2005. 40461924 m3 of Chips and Particles was imported in the world in 2005. The import value was 3022227000 USD. The calculated price is thus (3022227000/40461924=74.7*0.8=) 62.2 Euro/m3. It is estimated, that the chips and particles are half hardwood (of density 650 kg/m3) and half softwood (of density 450 kg/m3), thus the remaining mixture has a density of 550 kg/m3. The recalculated price is (1/550*62.2=) 0.11 Euro/kg. Using the same approach the calculated price for 2010 was 0.123 Euro/kg.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.1" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">calculated as kg wet matter/wet volume</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e0a125db-b8fc-4904-9987-1272d8f0f3ca">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39283: Non-agglomerated wood waste and scrap</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="49a4f588-bd3b-50f0-a59a-f726cf58055a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0645" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6fefa877-1511-5d32-b404-81000f0615a9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">electricity needed for the suction of shavings from the planing process and their transport to a bunker/silo.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0645" mu="-2.74" variance="0.006" varianceWithPedigreeUncertainty="0.216"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4442b557-555e-578d-b0bf-d3cd2bfe473e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="aa447135-9cc5-4f34-9385-ca2a0ae70d3c" activityLinkId="0879e055-f8a7-576c-8ccc-5b2863778a52">
+        <name xml:lang="en">shavings, softwood, loose, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">extrapolated from Swiss data via FAO statistics on the production of sawnwood</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="12.61" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.113" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on data from FAOSTAT (accessed 20140429). The price is calculated by using data on total world import quantity (m3) and import value (1000 USD), year 2005. 40461924 m3 of Chips and Particles was imported in the world in 2005. The import value was 3022227000 USD. The calculated price is thus (3022227000/40461924=74.7*0.8=) 62.2 Euro/m3. It is estimated, that the chips and particles are half hardwood (of density 650 kg/m3) and half softwood (of density 450 kg/m3), thus the remaining mixture has a density of 550 kg/m3. The recalculated price is (1/550*62.2=) 0.11 Euro/kg. Using the same approach the calculated price for 2010 was 0.123 Euro/kg.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Sum of all production volumes of all planing processes for the Swiss geographical reference, quantified within the planing datasets, and extrapolated to Quebec volume.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e0a125db-b8fc-4904-9987-1272d8f0f3ca">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39283: Non-agglomerated wood waste and scrap</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">complementary literature and sampling from sawmills</samplingProcedure>
+        <extrapolations xml:lang="en">Extrapolated from Swiss data. The exchanges of this child dataset are identical to the GLO dataset. This dataset was created to enable linking to regional markets (e.g. for electricity). Data quality indicators were adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="20" reviewerId="00c7a068-1730-48bf-a7b3-275340049de5" reviewerName="Frank Werner" reviewerEmail="frank@frankwerner.ch" reviewDate="2015-06-03">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="20" reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2015-06-03">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="20" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-06-03">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Amount of property 'water content=0,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0,494, dry mass=1, water in wet mass=0,1, water content=0,1, wet mass=1,1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0,494, dry mass=1, water in wet mass=0,1, water content=0,1, wet mass=1,1
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - shavings, softwood, loose, measured as dry mass
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-04-30">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-04-30">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Amount of property 'wet mass=1,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0,1' of exchange 'shavings, softwood, loose, measured as dry mass' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,1, water content=0,1, wet mass=1,1, carbon content, fossil=0, carbon content, non-fossil=0,494, price=0,113, dry mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,1, water content=0,1, wet mass=1,1, carbon content, fossil=0, carbon content, non-fossil=0,494, price=0,113, dry mass=1
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - shavings, softwood, loose, measured as dry mass
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="a84d170e-e428-4103-b895-7574b28536b4" isActiveAuthor="true" personName="Hugues Imbeault-Tétreault" personEmail="hugues.imbeault@polymtl.ca"/>
+      <dataGeneratorAndPublication personId="a84d170e-e428-4103-b895-7574b28536b4" personName="Hugues Imbeault-Tétreault" personEmail="hugues.imbeault@polymtl.ca" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2015-04-16T16:48:02" lastEditTimestamp="2015-06-03T10:39:20" fileGenerator="EcoEditor 3.6.120.14104" fileTimestamp="2015-06-03T10:39:20" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

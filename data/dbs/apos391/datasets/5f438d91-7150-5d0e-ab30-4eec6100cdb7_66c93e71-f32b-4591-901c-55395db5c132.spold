@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="5f438d91-7150-5d0e-ab30-4eec6100cdb7" activityNameId="1c763d7c-7f28-53b7-8433-3d6e579bfa88" parentActivityId="4e082eb8-1f74-5786-9299-11d76fa386bb" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity, high voltage, residual mix</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts from 1kWh of electricity from untracked consumption.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the transport of 1 kWh of high voltage electricity from untracked consumption in the transmission network over aerial lines and cables. 
+This dataset includes: - electricity inputs of the untracked consumption in this country - the transmission network - direct emissions to air (ozone and N2O). - electricity losses during transmission This dataset doesn't include - electricity losses during transformation, as these are included in the dataset for transformation - - SF6 emissions during the transmission, as these are allocated to the residual mix dataset for medium voltage. - SF6 emissions during production and deconstruction of the switchgear, as these are accounted for in the transmission network dataset. </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset describes the residual mix on the high voltage level in Hungary. The residual mix is a virtual mix. It represents the energy mix of untracked consumption  , i.e., electricity consumption that is not explicitly tracked through mechanisms such as Guarantees of Origin (GO). The shares have been calculated based on statistics from AIB (2022) following the methodology of grexel (2020).  </text>
+          <text xml:lang="en" index="1">The calculation area considered for the calculation of the residual mixes covers all members of EU28, Iceland, Norway, Serbia and Switzerland.</text>
+          <text xml:lang="en" index="2">The residual mix of a country is calculated based on the domestic residual mix. The domestic residual mix represents the sum of all domestic electricity production considering imports and export outside the calculation area and issued and expired attributes. </text>
+          <text xml:lang="en" index="3">In countries for which the volume of untracked consumption is smaller than the volume of the domestic residual mix, the composition of the residual mix is equal to the composition of the domestic residual mix. In countries for which the volume of untracked consumption is larger than the volume of the domestic residual mix, the European Attribute Mix (EAM) is used to account for the deficits. Thus, in countries with a deficit in their domestic residual mix, the residual mix is equal to the domestic residual mix plus the respective amount taken from the EAM. For a detailed description of the methodology refer to grexel (2020).</text>
+          <text xml:lang="en" index="4">The composition of the residual mix of this activity is valid for the year 2021. </text>
+          <text xml:lang="en" index="5">Sources:</text>
+          <text xml:lang="en" index="6">- AIB (2022), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</text>
+          <text xml:lang="en" index="7">- grexel (2020), Issuance Based Residual Mix Calculation Methodology, Published 31.03.2020, Version 1.1, https://www.aib-net.org/sites/default/files/assets/facts/residual-mix/2022/RM%20EAM%20IB%20Calculation%20Methodology%20V1_2.pdf</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="0e56bc44-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">HU</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Average technology used to transmit and distribute electricity. Includes underground and overhead lines. Electricity production according to related technology datasets.</text>
+          <text xml:lang="en" index="1">Electricity from untracked consumption. Average technology used to transmit and distribute electricity. Includes underground and overhead lines. Electricity production according to related technology datasets. Definition of the voltage levels: - High voltage level above 24 kV (large scale industry) - Medium voltage level between 1 kV and 24 kV (medium to small scale industry, service sector and public buildings) - Low voltage level below 1 kV (Households)</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2021-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">The annual production volumes of this market are taken from AIB (2022). 2021 European Residual Mix - Results of the calculation of Residual Mixes for the calendar year 2021 (Version 1.0, 2022-05-31) and are valid for the year 2021. The data on the european residual mixes is based on the transactions of guarantees of origin representing the time period of 1.4.2021 - 31.3.2022.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="42f2f834-da59-57a9-a909-4129c5184a1b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="40133827228.1587">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated value. Based on AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f75f922c-34d3-5609-b68b-b09433e80268" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.365976184800521" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="0323f0d7-f8c6-5ed8-8aaf-2a80806a9cd9">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cf3b35ad-80d2-54f7-811b-ab0df127f06d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000140124792260914" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="0aced803-9671-5981-9000-537891335868">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="abba11da-6e85-541a-abee-773e0c3868b0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00109097915204766" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="0b39f4f8-fa60-5aff-a4b1-a8fd30518031">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6c87297e-bcc4-5ecf-84e4-ff8e926d4581" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.20845188121862E-06" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="105517e2-d948-5897-99d3-8cc8fe704484">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a94a4d0b-39bc-55d7-9fa2-8195789c75e4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.86248533392535E-05" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="1a2a9b40-ff58-5495-8836-d3b5133228dd">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="761882b8-51e6-517d-baa4-4254093aa791" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000484246186820581" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="29e5465f-ed75-5ae9-85e0-e58e25772d8f">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0cd856f4-3575-5036-9908-539126b5d5f5" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00117652541935291" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="3cb45681-bbb4-5069-a481-c114def0a45c">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0104efab-98ed-5f41-adb2-c5d719b97e25" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.50312877192164E-05" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="50b33b19-23b5-5c22-81ac-0754b426604b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a0baffec-caed-5fb2-8b72-260cfbbf2559" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0653774257267789" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="54a3ea23-1607-57a3-98f5-00483f04e099">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eab4bde2-1a55-5f8a-9830-967eaca52d41" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0530038051942098" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="560e616f-009e-518d-8c77-9dc2bb830a3a">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="70d520ff-01c8-5f8b-9e3e-6b41bdd053b7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.01911835495085" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="5bd5afb4-e7b5-5444-9db3-2113dc153e5d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f7352a7a-77a5-5f54-a008-976890ea4239" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0285465187456989" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="5f438d91-7150-5d0e-ab30-4eec6100cdb7">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated Value. Represents losses occuring during transmission of the electricity.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a86134c0-6e4d-578b-9a03-76499fa19293" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00397031404837325" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="77bf5682-024f-5a48-94d9-2b41bc55d7fe">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="95190d75-9c99-59de-9e76-a32cbed0dee6" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0069826215352558" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="8c05d8ad-481b-50b0-b375-10133af4c8ef">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="57b18da6-227e-5a58-9c9d-7b4be72ccea4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000511688069027848" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="8d54181b-a4c6-542e-ae04-6893fa20fcfa">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7a43c9d2-a0a0-5a60-8b7e-c9ceebcddba9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00057093856938243" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="98d169d4-8be7-5e85-b254-3ff4711f888f">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="54737443-89d3-5f1e-bc78-cc7f1a6027b3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000377722873648995" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="9a66f686-fcc1-565b-986f-b49283f96afe">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6611ba61-1c39-50f5-8f22-777ea942e9ee" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000255844027584772" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="ab92c5bd-9f33-5162-b690-58d55faba23f">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="72472b6e-93c7-5de1-a7b2-194ae4db3d59" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.72544005794457E-05" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="b823c15f-7257-5800-b862-173f5935b026">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="13155252-d245-5e48-9597-f96c85a428a4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0438653920463017" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="bce1a3b6-df2d-51b6-bdcc-f6e4f837f79c">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="435fc8bd-61da-57b9-ab0c-e2307ddd2a6f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000492047719850139" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="dccdd6c4-43be-54dc-9872-e06580c5ae7b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cc30bce3-c5df-537f-9946-b4f239563c86" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0360133897924589" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="dd651d57-f9f4-5826-bf20-dba13d900fa3">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4ba58867-d70d-5800-a175-728c8fae5e3a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0130906864106882" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="dee558ff-0886-52c3-b4f9-a41d5564e42b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3b5c0e0b-45eb-50a0-8c16-59e23b6e3190" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.211743351249477" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e28776cc-adbc-588c-b906-6a9ae14370af">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated Value. For this country the domestic residual mix has lower volume than the final residual mix, thus the missing electricity is supplied by the European Attribute Mix (EAM). The EAM is a virtual mix and is calculated as the sum of all surplus attributes from countries with a domestic residual mix larger than the national consumption.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="324f2d53-2f99-5aee-957e-74ce8d8fa2c7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00336908270470276" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e3c3aece-ebbb-5d3a-be9e-64b5e7ae036f">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eb2f3e6b-93e6-5832-91c4-2293d94996b8" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000123655965336805" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e3f2c940-0cf2-5132-b243-65e67c4b9122">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="51b9a626-b121-50ad-8422-3475b8d08488" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0805495267458959" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e83faa2f-e965-50ad-932e-0a751d13f572">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5539974b-8e00-5f23-826e-558e8d631830" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0831086853829811" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f2d34c32-ced5-535f-97d1-8b335ffd8abf">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="be311eee-c0f9-57f2-8842-00a363010f18" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00474981654609762" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f6bb8ee1-44ad-50bf-8e55-e256516e7446">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5ae97df-49bb-5a52-bc20-dc7a40b67f58" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00223617291996552" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="fc6ec30e-d8ae-57db-950a-c95eadc3af6c">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="04142fc2-e783-562a-916a-1179e1968643" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00145329817660998" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="fee83af9-2f34-5794-b8c7-6790e74092c4">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calcualted value. Shares of electricity producing technologies based on Tab. 2 of AIB(2021). Technology splits of corresponding ecoinvent electricity markets are used.
+AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e24f4223-6c83-5124-9d46-06fc222a839b" unitId="ae252091-811b-461b-8e89-8f3075639eb1" amount="3.00078975580294E-09" intermediateExchangeId="55defeeb-f85a-4264-8ce9-80eac3a28de4" activityLinkId="cab1f193-e9a8-5faf-90a9-b32ac103bab0">
+        <name xml:lang="en">transmission network, electricity, high voltage direct current aerial line</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment xml:lang="en">The amount of required transmission infrastructure is based on the Global Transmission Report (2022) assuming a lifetime of 40 years for the infrastrure.
+- Global Electricity Transmission Report and Database, 2022-2031, Global Transmission Research, accessed March 2022</comment>
+        <uncertainty>
+          <lognormal meanValue="3.00078975580294E-09" mu="-19.6243903309887" variance="0.3" varianceWithPedigreeUncertainty="0.30472499999999997"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <synonym xml:lang="en">HVDC</synonym>
+        <synonym xml:lang="en">overhead transmission line</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" amount="40.0" isDefiningValue="false" isCalculatedAmount="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f3c0b25d-f090-41fa-a4b8-5ea769827ec8">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53242: Long-distance communication and power lines (cables)</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="99e8f9e6-af0c-56a2-9ff3-a57a90ca3789" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010024-97-2" amount="5E-06" isCalculatedAmount="false" elementaryExchangeId="20185046-64bb-4c09-a8e7-e8a9e144ca98">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literatur value/estimation. The electro-magnetic field near high voltage aerial lines can lead to the ionisation of air molecules and to the formation of nitrous oxide and ozone. This reaction happens in a boundary layer called corona. The formation of pollutants depends on the weather and the surface of the conductor. Therefore, only a few general assumptions can be made.
+
+Hill et al. 1984 report a nitrous oxide formation rate between 0.01 and 0.21 g per kWh of electricity transmitted, valid for North American conditions. The geometric mean of 0.05 g/kWh. The emission rates are reduced by a factor of 10 to account for the shorter transmission distances in most of the countries.</comment>
+        <uncertainty>
+          <lognormal meanValue="5E-06" mu="-12.2060726455302" variance="0.35" varianceWithPedigreeUncertainty="0.5599999999999999"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <synonym xml:lang="en">nitrous oxide</synonym>
+        <synonym xml:lang="en">dinitrogen oxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3433b935-f678-5e8d-bfaa-ec149135f7f2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010028-15-6" amount="4.15772755242894E-06" isCalculatedAmount="false" elementaryExchangeId="2058d91e-bb9f-4fce-8e53-131825b14a23">
+        <name xml:lang="en">Ozone</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literatur value/estimation. The electro-magnetic field near high voltage aerial lines can lead to the ionisation of air molecules and to the formation of nitrous oxide and ozone. This reaction happens in a boundary layer called corona. The formation of pollutants depends on the weather and the surface of the conductor. Therefore, only a few general assumptions can be made.
+
+Bohlin et al. 1991 and Böhringer et al. 1988 report very low ozone concentrations near the corona, which hardly can be measured. The value here is estimated from Swiss data: 
+ - annual ozone emissions: 50-1250 tons (Knoepfel 1995, p. 99). The geometric mean of 250 t/year is used for calculations.
+ - annual amount of electricity transported in Switzerland: 60129 GWh. 
+
+S. Bohlin, K. Eriksson, G. Flisberg, 'Electrical transmission', World Clean Energy Conf., Geneva, Nov. 1991
+
+A. Böhringer et al., 'Ozonbildung an Hochspannungsfreileitungen', Elektrizitätswirtschaft 87(1988) Nr. 21, S. 1017-1022</comment>
+        <uncertainty>
+          <lognormal meanValue="4.15772755242894E-06" mu="-12.3905418943816" variance="0.5" varianceWithPedigreeUncertainty="0.7100000000000001"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-08-15">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-08-15">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Non-global datasets cannot be uploaded unless a global dataset (for the same activity name, time period and macro-economic scenario) exists in the database or is uploaded together with the non-global dataset. Matching activities found, but none with GLO location.</text>
+          <text xml:lang="en" index="3">None</text>
+          <text xml:lang="en" index="4">If you have already submitted a corresponding global dataset for review, you make ask the database administrator to abort this submission, so that you can upload your non-global datasets together with the global.</text>
+          <text xml:lang="en" index="5">- No GLO dataset found! Related datasets: electricity, high voltage, residual mix, BA, 2021 - 2021 (b3059792-ae17-5be4-9413-81b1a8a1a048) [electricity, high voltage: 1]#electricity, high voltage, residual mix, BE, 2021 - 2021 (e3d146de-bea1-514c-ac4a-77dc3635d116) [electricity, high voltage: 1]#electricity, high voltage, residual mix, BG, 2021 - 2021 (c9cb3052-400f-57d1-9481-ea261632dfb8) [electricity, high voltage: 1]#electricity, high voltage, residual mix, CY, 2021 - 2021 (5d512ba4-e37e-5242-8ef5-454b5f8e453b) [electricity, high voltage: 1]#electricity, high voltage, residual mix, CZ, 2021 - 2021 (0bd28e25-9371-5db7-b17b-d78688a5fa12) [electricity, high voltage: 1]#electricity, high voltage, residual mix, DE, 2021 - 2021 (0ea361ad-efc1-5001-8cf3-dffb708f1c07) [electricity, high voltage: 1]#electricity, high voltage, residual mix, DK, 2021 - 2021 (60feabe1-38bb-5143-a030-297f065809b3) [electricity, high voltage: 1]#electricity, high voltage, residual mix, EE, 2021 - 2021 (ba7d1d18-8785-525b-bf13-db4c0c0d7de0) [electricity, high voltage: 1]#electricity, high voltage, residual mix, ES, 2021 - 2021 (ddd9c21d-24f6-51a0-a296-3aa510c7ad87) [electricity, high voltage: 1]#electricity, high voltage, residual mix, FI, 2021 - 2021 (505f086c-e869-5ede-a73a-0056d56feb72) [electricity, high voltage: 1]#electricity, high voltage, residual mix, FR, 2021 - 2021 (56e0dcfb-cf3b-56ae-b03b-fe6217e63a34) [electricity, high voltage: 1]#electricity, high voltage, residual mix, GB, 2021 - 2021 (7d09fca7-116b-5203-ac81-92975b2c0f5f) [electricity, high voltage: 1]#electricity, high voltage, residual mix, GR, 2021 - 2021 (5876ce71-60b1-5627-bdab-788af65d68d9) [electricity, high voltage: 1]#electricity, high voltage, residual mix, HR, 2021 - 2021 (bad38c00-838c-5911-a9d9-f74d15883ce5) [electricity, high voltage: 1]#electricity, high voltage, residual mix, IE, 2021 - 2021 (3850821e-2e9b-5652-ab9b-62314faf9c64) [electricity, high voltage: 1]#electricity, high voltage, residual mix, IS, 2021 - 2021 (2dbf6642-a3c1-5de7-a045-0b1d59faa36c) [electricity, high voltage: 1]#electricity, high voltage, residual mix, IT, 2021 - 2021 (b92b0970-21f0-5cc5-a9a6-87dc21c39ce7) [electricity, high voltage: 1]#electricity, high voltage, residual mix, LT, 2021 - 2021 (6b77f588-7707-5657-9e77-2d9967a99008) [electricity, high voltage: 1]</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'dry mass':
+ - Input='0', Output='9.15772755242894E-06'
+ - Input &lt; output by 9.15772755242894E-06 kg (100% of output)
+
+Property 'wet mass':
+ - Input='0', Output='9.15772755242894E-06'
+ - Input &lt; output by 9.15772755242894E-06 kg (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage
+ -- Property(ies): dry mass=1, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage, electricity, high voltage
+ -- Property(ies): dry mass=1, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0
+
+- The input exchange 'electricity, high voltage' has an activity link and therefore requires a valid product exchange for that input to be available. If the valid product exchange is not available the dataset will be put on hold at the end of its review and will remain on hold until such a valid product exchange has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="true" personName="[System]" personEmail="support@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" dataPublishedIn="1" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2022-08-15T15:32:15" lastEditTimestamp="2022-08-15T15:32:15" fileTimestamp="2022-08-15T15:32:15" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

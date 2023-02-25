@@ -1,0 +1,1431 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="9bafbb7b-517c-5210-ad47-35e0092f1fe5" activityNameId="4bf9860b-c9b3-4319-b645-f6f4b211fd1a" parentActivityId="4c6585d1-cb00-40fe-9af6-ceb038c75dfc" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">hardwood forestry, beech, sustainable forest management</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with site preparation assuming establishment of the forest via planting, including seedling production and covers all process related to forest management, including site preparation, planting,  tending, young growth tending, clearing, thinnings and harvesting operations including the processing of wood fuel to chips, bundles and chopped wood (logs for energy) over one rotation period. It covers also the maintenance and construction of forest roads.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the assortments at the forest road and includes eventual drying before transportation.</includedActivitiesEnd>
+        <generalComment>
+          <imageUrl index="0">https://db3.ecoinvent.org/images/3144c7ee-9bae-4739-9536-eeceba9716fa</imageUrl>
+          <text xml:lang="en" index="1">This dataset covers the production and harvesting of 1 m3 of stemwood, beech, solid, under bark, plus the relative share of enery wood from slash from sustainable forest management as the prevailing management practices in Germany.</text>
+          <imageUrl index="2">https://db3.ecoinvent.org/images/9b034ccd-8aaf-4273-9326-e0f311926670</imageUrl>
+          <text xml:lang="en" index="3">None</text>
+          <imageUrl index="4">https://db3.ecoinvent.org/images/5033e0f9-a2cf-415c-8a4b-332860ea356f</imageUrl>
+          <text xml:lang="en" index="5">For Germany forestry processes for the 4 main tree species are modelled:</text>
+          <text xml:lang="en" index="6">•	hardwood: beech</text>
+          <text xml:lang="en" index="7">•	hardwood: oak</text>
+          <text xml:lang="en" index="8">•	softwood: spruce</text>
+          <text xml:lang="en" index="9">•	softwood: pine</text>
+          <text xml:lang="en" index="10">Table 1-1 lists the parameters of the inventoried tree species and their sources:</text>
+          <imageUrl index="11">https://db3.ecoinvent.org/images/a251dcf3-201a-45aa-962e-b155998a6a12</imageUrl>
+          <text xml:lang="en" index="12">None</text>
+          <imageUrl index="13">https://db3.ecoinvent.org/images/148e9e47-e650-460b-be03-2d49ce0b7637</imageUrl>
+        </generalComment>
+        <tag>combined production,</tag>
+        <tag>Swiss brush-up completed</tag>
+        <tag>combined production</tag>
+      </activity>
+      <classification classificationId="30e36ded-b8a3-4eb1-b5f5-edbe571c8c29">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0220:Logging</classificationValue>
+      </classification>
+      <geography geographyId="0e0e1020-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">DE</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2010-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="3d3661f3-9376-5715-b594-e319fee4cf78" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="wood_chips" amount="1.0" mathematicalRelation="share_wood_fuel*basic_wood_d/(1-bark)*share_chips" intermediateExchangeId="7fe99768-d571-4bc2-a272-7df585bd0d48" productionVolumeAmount="671689333.333333">
+        <name xml:lang="en">wood chips, wet, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">average composition of 1 m3 solid wood under bark, harvested in Germany; see general comment for details</comment>
+        <property propertyId="831cecb4-2de9-46fd-bbc5-22661e104beb" variableName="wood_chips_apparent_wood_d" amount="974.16" isDefiningValue="false" mathematicalRelation="wood_chips_basic_wood_d*(1+moisture_wood_chips)" isCalculatedAmount="true" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+          <name xml:lang="en">apparent wood density</name>
+          <unitName xml:lang="en">kg/m3</unitName>
+          <comment xml:lang="en">wet mass/wet volume</comment>
+        </property>
+        <property propertyId="2520c12c-a34f-40e5-ac7d-37a325d01311" variableName="wood_chips_basic_wood_d" amount="541.2" isDefiningValue="false" mathematicalRelation="dry_wood_d*(1-30*shrinkage_ratio)" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">basic wood density</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">dry mass/wet volume</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="wood_chips_DM" amount="1.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">including bark</comment>
+        </property>
+        <property propertyId="a264a1a8-0ec9-4671-bc2d-336d5a0b99dd" variableName="wood_chips_dry_wood_d" amount="660.0" isDefiningValue="false" mathematicalRelation="dry_wood_d" isCalculatedAmount="true" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+          <name xml:lang="en">dry wood density</name>
+          <unitName xml:lang="en">kg/m3</unitName>
+          <comment xml:lang="en">kg dry matter/ dry volume</comment>
+        </property>
+        <property propertyId="d61b8768-8ef6-4a99-ae16-9e51f24ad5b5" variableName="wood_chips_Gross_Heat_Value" amount="19.6" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, gross</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">gross (upper) heating (calorific) value</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" variableName="wood_chips_Net_Heat_Value" amount="9.39111111111111" isDefiningValue="false" mathematicalRelation="wood_chips_Gross_Heat_Value-1.32-(20*moisture_wood_chips/(1+moisture_wood_chips))" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">net (lower) heating (calorific) value</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Expert judgement (Urs Luginbühl, Swiss Sawmilling industry, personal communication in June 2014). Wood chips from softwood should have a price of 0.101 EUR/kg. Woodchips from hardwood should have a price of 0.112 EUR/kg. Average of these two values is used. Cross-reference; FAOSTAT database; http://faostat.fao.org/site/626/DesktopDefault.aspx?PageID=626#ancor; Average import/export prices of EU for 'chips and particles'. Price: 48.76 Euro/m3. The density of the wood chips is 650 kg/m3. The price is recalculated accordingly.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.8" isDefiningValue="false" mathematicalRelation="moisture_wood_chips" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content is equivalent to moisture content (kg water/kg dry mass)</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.8" isDefiningValue="false" mathematicalRelation="wood_chips_WM-wood_chips_DM" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water in wet mass = wet mass - dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="wood_chips_WM" amount="1.8" isDefiningValue="false" mathematicalRelation="wood_chips_DM*(1+moisture_wood_chips)" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">no comment</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">see general comments field</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f3251bba-85f8-5b57-94c6-808f09be24b8" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.023041643064074965" mathematicalRelation="saw_veneer_logs*(diesel_per_gravel*m_gravel)/sum_RP_m3+pulpwood*(diesel_per_gravel*m_gravel)/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*(diesel_per_gravel*m_gravel)/sum_RP_m3+cleft_timber*(1-bark)/cleft_timber_basic_wood_d*(diesel_per_gravel*m_gravel)/sum_RP_m3+saw_veneer_logs*planting_density/500*7*0.84*42.6/yield_wood_ub/sum_RP_m3+pulpwood*planting_density/500*7*0.84*42.6/yield_wood_ub/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*planting_density/500*7*0.84*42.6/yield_wood_ub/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*planting_density/500*7*0.84*42.6/yield_wood_ub/sum_RP_m3+saw_veneer_logs*1*15*6*0.84*42.6/yield_wood_ub/sum_RP_m3+pulpwood*1*15*6*0.84*42.6/yield_wood_ub/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*1*15*6*0.84*42.6/yield_wood_ub/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*1*15*6*0.84*42.6/yield_wood_ub/sum_RP_m3" intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="79d6450d-f9ad-5619-89c3-05c8d7622af3">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">for distribution of gravel for maintenance of forest road over rotation period PLUS diesel for planting activities, productivity 500 seedlings/PMH, diesel consumption 7l/PMH, converted to MJ PLUS the diesel consumption used in mechanical clearing (1 intervention, 15 PMH per ha, 6 l/PMH, converted to MJ)</comment>
+        <uncertainty>
+          <lognormal meanValue="13.8557080291971" mu="2.62869727980224" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="732.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f8ed161c-655e-5158-ac8f-ea34d1b573d0" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" amount="3.3056003493919235E-05" mathematicalRelation="saw_veneer_logs*forwarding_forwarder/sum_RP_m3+pulpwood*forwarding_forwarder/sum_RP_m3+wood_chips*share_chips_at_forest_road*(1-bark)/basic_wood_d*forwarding_forwarder/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*forwarding_forwarder/sum_RP_m3+wood_chips*share_chips_in_stand/basic_wood_d/(productivity_forwarding_chips_in_stand/ ratio_bulk_solid_chips)/11*9.5/sum_RP_m3" intermediateExchangeId="746fcd09-118b-4e91-87be-64b0883ff04f" activityLinkId="b7fec06e-38db-5e0e-a260-e1b9bb08217d">
+        <name xml:lang="en">forwarding, forwarder</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">average input per m3; see general comment for details; covers the forwarding of stemwood PLUS the forwarding of chips chipped in the stand</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0195382208888889" mu="-3.9353826862114" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2daf05ce-f6a7-4c99-8234-cf89d4813f2a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8614: Support and operation services to forestry and logging</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9d842e65-ff42-5e1e-b0c4-421ec092a852" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.19576933659183968" mathematicalRelation="saw_veneer_logs*m_gravel/sum_RP_m3+pulpwood*m_gravel/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*m_gravel/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*m_gravel/sum_RP_m3" intermediateExchangeId="37eceabd-b33f-4757-a4b9-5c51dee1710d" activityLinkId="9887ac1d-deae-5b6a-9073-90bbc3e7a029">
+        <name xml:lang="en">gravel, crushed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">gravel for maintenance of forest road over rotation period</comment>
+        <uncertainty>
+          <lognormal meanValue="117.722627737226" mu="4.76833124504297" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="2312.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="21b3be95-02c7-44c6-a096-be16e4643979">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15320: Pebbles, gravel, broken or crushed stone, macadam; granules, chippings and powder of stone</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a21ac2ce-99da-5ac3-ab58-a9a95ff43145" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" amount="2.594235033259423E-05" mathematicalRelation="saw_veneer_logs*harvesting/sum_RP_m3+pulpwood*harvesting/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*harvesting/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*harvesting/sum_RP_m3" intermediateExchangeId="b90634dc-b7d5-4c1c-98dc-7cb18fccaa1f" activityLinkId="0b72b42a-5ccb-5b0c-8180-c3d47803b4a4">
+        <name xml:lang="en">harvesting, forestry harvester</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">average input per m3; see general comment for details</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0156" mu="-4.16048436472665" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2daf05ce-f6a7-4c99-8234-cf89d4813f2a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8614: Support and operation services to forestry and logging</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c60f748d-68ab-558b-813c-0dd7cd99bd2f" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" amount="0.0007562796381115767" mathematicalRelation="saw_veneer_logs*power_sawing/sum_RP_m3+pulpwood*power_sawing/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*power_sawing/sum_RP_m3+ cleft_timber*(1-bark)/cleft_timber_basic_wood_d*power_sawing/sum_RP_m3+saw_veneer_logs*(1*14+2*15+1*15)/yield_wood_ub/sum_RP_m3+pulpwood*(1*14+2*15+1*15)/yield_wood_ub/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*(1*14+2*15+1*15)/yield_wood_ub/sum_RP_m3+ cleft_timber*(1-bark)/cleft_timber_basic_wood_d*(1*14+2*15+1*15)/yield_wood_ub/sum_RP_m3" intermediateExchangeId="8578a99c-e6ff-412c-a829-9e53f8890e5a" activityLinkId="da74f21a-ad97-5035-b2ce-153e0b025d36">
+        <name xml:lang="en">power sawing, without catalytic converter</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">average input per m3 covering hand-held gasoline-driven equipment used for site preparation, tending and pruning (attributing per ha values to total amount of wood harvested) as well as the amount of power sawing per harvested m3 of stemwood; see general comment for details</comment>
+        <uncertainty>
+          <lognormal meanValue="0.454776155717761" mu="-0.787949946541367" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a4575bbf-ec02-4a5f-81d3-8a23cf13494d">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">88311: Wood manufacturing services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="68af7f30-8907-5f65-a20f-6ed3e0bac0c5" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" amount="0.00013885144124168515" mathematicalRelation="saw_veneer_logs*skidding/sum_RP_m3+pulpwood*skidding/sum_RP_m3+wood_chips*share_chips_at_forest_road*(1-bark)/basic_wood_d*skidding/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*skidding/sum_RP_m3" intermediateExchangeId="d7d5b411-031a-4735-acee-3f9658cf74c4" activityLinkId="c0e392f8-370d-57f3-97e3-c9235e80eb98">
+        <name xml:lang="en">skidding, skidder</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">average input per m3; see general comment for details</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0850275552" mu="-2.46477989620289" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2daf05ce-f6a7-4c99-8234-cf89d4813f2a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8614: Support and operation services to forestry and logging</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8aecd6d5-ecd8-5e1b-bda6-d14e75d9cfdf" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="0.016184634308187805" mathematicalRelation=" saw_veneer_logs*(share_area_planted*planting_density*(1-seedlings_heated)/yield_wood_ub)/sum_RP_m3+pulpwood*(share_area_planted*planting_density*(1-seedlings_heated)/yield_wood_ub)/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*(share_area_planted*planting_density*(1-seedlings_heated)/yield_wood_ub)/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*(share_area_planted*planting_density*(1-seedlings_heated)/yield_wood_ub)/sum_RP_m3" intermediateExchangeId="45de5067-49da-472e-8e49-cf79714646c0" activityLinkId="9af07758-c9bf-5c90-af98-c70b902f4da1">
+        <name xml:lang="en">tree seedling, for planting</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">calculated as 100% of the seedlings coming from unheated greenhouses in Germany</comment>
+        <uncertainty>
+          <lognormal meanValue="9.7323600973236" mu="2.27545642560579" variance="0.025" varianceWithPedigreeUncertainty="0.035"/>
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0988" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.2" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.5" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.3" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="6677d96b-39b9-426f-8568-c369cd62a7e6">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01961: Live plants; bulbs, tubers and roots; cuttings and slips; mushroom spawn</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="13be949c-bbc1-5a6e-ad92-73030e899e4d" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" variableName="chipping_mobile" amount="4.225178615422521E-05" mathematicalRelation="wood_chips*share_chips_at_forest_road/basic_wood_d*ratio_bulk_solid_chips/productivity_mobile_chipper" intermediateExchangeId="9465d984-75e8-44d3-bfb0-297d9be64100" activityLinkId="bbbf2c6f-8dd4-5466-bac4-df08d6088218">
+        <name xml:lang="en">wood chipping, chipper, mobile, diesel, at forest road</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">no comment</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00257122962962963" mu="-5.96337103938935" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2daf05ce-f6a7-4c99-8234-cf89d4813f2a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8614: Support and operation services to forestry and logging</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="064abfba-503d-5d55-8106-011ea51c94b3" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3" variableName="chipping_terrain" amount="4.138950480413888E-06" mathematicalRelation="wood_chips*share_chips_in_stand/basic_wood_d*ratio_bulk_solid_chips/productivity_terrain_chipper" intermediateExchangeId="cfaded1c-5fdd-46e0-9ccf-634da6d5d8ae" activityLinkId="25aff69a-540e-55aa-b55b-dabb30d76039">
+        <name xml:lang="en">wood chipping, forwarder with terrain chipper, in forest</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">no comment</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000251875555555555" mu="-8.28657541958614" variance="0.025" varianceWithPedigreeUncertainty="0.033600000000000005"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="2daf05ce-f6a7-4c99-8234-cf89d4813f2a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8614: Support and operation services to forestry and logging</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="49fb60b4-23b5-554b-b8bf-3d3f80c67ef8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000124-38-9" amount="1.8113333333333332" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs/(1-bark)*basic_wood_d* saw_veneer_logs_C_content_non_fossil/12*44/sum_RP_m3+pulpwood/(1-bark)*basic_wood_d* pulpwood_C_content_non_fossil/12*44/sum_RP_m3+wood_chips* chips_C_content_non_fossil/12*44/sum_RP_m3+cleft_timber* cleft_timber_C_content_non_fossil/12*44/sum_RP_m3" elementaryExchangeId="cc6a1abb-b123-4ca6-8f16-38209df609be">
+        <name xml:lang="en">Carbon dioxide, in air</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Resource input, referring to total biomass harvested, i.e. wood including bark</comment>
+        <uncertainty>
+          <lognormal meanValue="1089.21511111111" mu="6.9932126342905" variance="0.025" varianceWithPedigreeUncertainty="0.033"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Carbon dioxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.272916486782489" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="45bb416c-a63b-429f-8754-b3f76a069c43">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in air</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="850700f4-f643-5692-a323-5e39c2d09e0c" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="19.6" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs/(1-bark)*saw_veneer_logs_basic_wood_d*saw_veneer_logs_Gross_Heat_Value/sum_RP_m3+pulpwood/(1-bark)*pulpwood_basic_wood_d*pulpwood_Gross_Heat_Value/sum_RP_m3+wood_chips*wood_chips_Gross_Heat_Value/sum_RP_m3+cleft_timber*cleft_timber_Gross_Heat_Value/sum_RP_m3" elementaryExchangeId="01c12fca-ad8b-4902-8b48-2d5afe3d3a0f">
+        <name xml:lang="en">Energy, gross calorific value, in biomass</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Energy content of wood</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" mathematicalRelation="" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">gross calorific value, measured in dry mass</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="2d0acbd3-2083-4011-9a29-20c626b23dc3">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">biotic</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8c7d43d0-51d1-56ee-af0a-dffcf6e518b1" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="2.7711330862479158" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*(a_transformation_forest*rotation_period)/sum_RP_m3+pulpwood*(a_transformation_forest*rotation_period)/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*(a_transformation_forest*rotation_period)/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*(a_transformation_forest*rotation_period)/sum_RP_m3" elementaryExchangeId="aca1714f-0040-4a65-a73a-0e38aa9f50f4">
+        <name xml:lang="en">Occupation, forest, intensive</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Area occupied for the production of wood over one rotation period</comment>
+        <uncertainty>
+          <lognormal meanValue="1666.37469586375" mu="7.41840570492013" variance="0.2" varianceWithPedigreeUncertainty="0.20800000000000002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9059956d-35ae-5a80-af28-3cfc2c54e8c6" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0.06117791768494991" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*a_transformation_road*rotation_period/sum_RP_m3+pulpwood*a_transformation_road*rotation_period/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*a_transformation_road*rotation_period/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*a_transformation_road*rotation_period/sum_RP_m3" elementaryExchangeId="956c5f83-65c8-4607-9749-147cfb9c8f70">
+        <name xml:lang="en">Occupation, traffic area, rail/road embankment</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Area occupied by forest roads over one roation period</comment>
+        <uncertainty>
+          <lognormal meanValue="36.7883211678832" mu="3.60518043523729" variance="0.2" varianceWithPedigreeUncertainty="0.20800000000000002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="df839413-860a-5fb5-83c4-27b1cd5e2c48" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.019793807758913682" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*a_transformation_forest/sum_RP_m3+pulpwood*a_transformation_forest/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*a_transformation_forest/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*a_transformation_forest/sum_RP_m3" elementaryExchangeId="e717f3cc-ac70-4c9b-be56-1614239b917e">
+        <name xml:lang="en">Transformation, from forest, intensive</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Area of forest, excluding forest roads per ha</comment>
+        <uncertainty>
+          <lognormal meanValue="11.9026763990268" mu="2.47676328231083" variance="0.35" varianceWithPedigreeUncertainty="0.358"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="39f22986-2973-516f-b189-e1df2b80434b" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.0004369851263210707" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*a_forest_road/yield_wood_ub/sum_RP_m3+pulpwood*a_forest_road/yield_wood_ub/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*a_forest_road/yield_wood_ub/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*a_forest_road/yield_wood_ub/sum_RP_m3" elementaryExchangeId="46b8b2fd-eb2a-413d-bc39-e7dc18a420ef">
+        <name xml:lang="en">Transformation, from traffic area, rail/road embankment</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Area of forest roads per ha</comment>
+        <uncertainty>
+          <lognormal meanValue="0.262773722627737" mu="-1.33646198737202" variance="0.35" varianceWithPedigreeUncertainty="0.358"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="18c1a8bc-196c-5d16-8cff-092720a26092" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.019793807758913682" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*a_transformation_forest/sum_RP_m3+pulpwood*a_transformation_forest/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*a_transformation_forest/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*a_transformation_forest/sum_RP_m3" elementaryExchangeId="994d61de-fbb0-4187-a4d4-b11c3c2b9102">
+        <name xml:lang="en">Transformation, to forest, intensive</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">no comment</comment>
+        <uncertainty>
+          <lognormal meanValue="11.9026763990268" mu="2.47676328231083" variance="0.35" varianceWithPedigreeUncertainty="0.358"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="636ac2d2-1e6e-5205-aa9f-bc603084159c" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.0004369851263210707" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs*a_forest_road/yield_wood_ub/sum_RP_m3+pulpwood*a_forest_road/yield_wood_ub/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d*a_forest_road/yield_wood_ub/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d*a_forest_road/yield_wood_ub/sum_RP_m3" elementaryExchangeId="04eb0695-e67b-46e5-9516-da6bde119822">
+        <name xml:lang="en">Transformation, to traffic area, rail/road embankment</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">no comment</comment>
+        <uncertainty>
+          <lognormal meanValue="0.262773722627737" mu="-1.33646198737202" variance="0.35" varianceWithPedigreeUncertainty="0.358"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="40a5b47e-1f92-55ba-80a5-4c0150438980" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="v_wood_standing" amount="0.001662971175166297" isCalculatedAmount="false" mathematicalRelation="saw_veneer_logs/sum_RP_m3+pulpwood/sum_RP_m3+wood_chips*(1-bark)/basic_wood_d/sum_RP_m3+cleft_timber*(1-bark)/ cleft_timber_basic_wood_d/sum_RP_m3" elementaryExchangeId="bac875f4-75fb-4dde-841a-b07d3a41bcd1">
+        <name xml:lang="en">Wood, hard, standing</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Resource input, referring to wood under bark</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.025" varianceWithPedigreeUncertainty="0.033"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="650.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.15" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="97.5" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="747.5" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="2d0acbd3-2083-4011-9a29-20c626b23dc3">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">biotic</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="24ee851f-a160-4ef8-8dea-e9c8536fc173" amount="0.1" variableName="bark" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">Bark ratio</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.1" mu="-2.30258509299405" variance="0.025" varianceWithPedigreeUncertainty="0.025"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">share of bark of total volume of trunk (solid wood + bark) for hardwood; U. Luginbühl, personal written communication, HIS</comment>
+      </parameter>
+      <parameter parameterId="8945f57a-5554-4b31-99a0-d0335660be2b" amount="11.9026763990268" variableName="a_transformation_forest" mathematicalRelation="(10000-a_forest_road)*share_revenues_wood/yield_wood_ub" unitId="0762a8b8-f434-4c5c-807f-c9fb7a8e432b">
+        <name xml:lang="en">area forest per m3 wood</name>
+        <unitName xml:lang="en">m2/m3</unitName>
+        <comment xml:lang="en">area of forest per ha divided by total harvest over one rotation period per hectare</comment>
+      </parameter>
+      <parameter parameterId="8ce78ffe-b834-4aab-8bde-a36ceb166aeb" amount="216.0" variableName="a_forest_road" mathematicalRelation="54*4" unitId="8ee4b882-0429-47dc-883c-3961cef82e85">
+        <name xml:lang="en">area forest road</name>
+        <unitName xml:lang="en">m2/ha</unitName>
+        <uncertainty>
+          <lognormal meanValue="216.0" mu="5.37527840768417" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Schweinle, J. and C. Thoroe (2001): Vergleichende Ökobilanzierung der Rohholzproduktion in verschiedenen Forstbetrieben. Mitteilungen der Bundesforschungsanstalt für Forst- und Holzwirtschaft Nr. 204, Kommissionsverlag Max Wiedebusch, Hamburg.</comment>
+      </parameter>
+      <parameter parameterId="04dd62c0-c589-4677-9a5e-4926e0fe2861" amount="216.0" variableName="a_forest_road_gravel" mathematicalRelation="a_forest_road" unitId="8ee4b882-0429-47dc-883c-3961cef82e85">
+        <name xml:lang="en">area forest road in gravel</name>
+        <unitName xml:lang="en">m2/ha</unitName>
+        <uncertainty>
+          <lognormal meanValue="216.0" mu="5.37527840768417" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">assumed</comment>
+      </parameter>
+      <parameter parameterId="6c9f9ece-cb64-4934-8d30-0912845f8790" amount="0.262773722627737" variableName="a_transformation_road" mathematicalRelation="a_forest_road/yield_wood_ub" unitId="0762a8b8-f434-4c5c-807f-c9fb7a8e432b">
+        <name xml:lang="en">area forest road per m3 wood</name>
+        <unitName xml:lang="en">m2/m3</unitName>
+        <comment xml:lang="en">area of forest road per ha divided by total harvest over one rotation period per hectare; Albrecht, S., S. Rüter, J. Welling, M. Knauf, U. Mantau, A. Braune, M. Baitz, H. Weimar, S. Sörgel, J. Kreissig, J. Deimling and S. Hellwig (2009): ÖkoPot - Ökologische Potenziale durch Holznutzung gezielt fördern. Abschlussbericht zum BMBF-Projekt FKZ 0330545. Universität Stuttgart, Universität Hamburg, Hamburg. 
+</comment>
+      </parameter>
+      <parameter parameterId="4a73e2bd-492b-4738-b5de-48a8bea48e62" amount="1600.0" variableName="d_gravel" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">bulk density gravel</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="1600.0" mu="7.37775890822787" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg gravel / m3 bulked material</comment>
+      </parameter>
+      <parameter parameterId="e6989940-adaa-4216-b8c0-458df3d49b47" amount="0.043" variableName="diesel_per_gravel" unitId="34e6691f-4a1b-4c2b-b239-c55b952f0bd3">
+        <name xml:lang="en">diesel consumption per kg of gravel used for maintenance of forest roads</name>
+        <unitName xml:lang="en">MJ/kg</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.043" mu="-3.14655516328857" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">diesel consumption of building machines used to maintaine road and distribute new layer of gravel</comment>
+      </parameter>
+      <parameter parameterId="db33bf4a-7b21-4b40-8343-9b069e1684d8" amount="0.0195" variableName="forwarding_forwarder" unitId="a25a4cee-1cc6-4046-bf44-eaf5d424930b">
+        <name xml:lang="en">forwarding with forwarder per m3</name>
+        <unitName xml:lang="en">PMH/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.0195" mu="-3.93734081341244" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">referring to stemwood; IMPORTANT NOTE: When considering several harvesting systems, e.g. in datasets on national forestry, this parameter is NOT the inverse productivity of the harvesting system but the inverse productivity of the system weighted with the share of the amount harvested by the respective system. This has to be calculated outside EcoEditor. Own calculations based on Klvac, R. and A. Skoupy (2009): Characteristic fuel consumption and exhaust emissions in fully mechanized logging operations. Journal of Forest Research, 14(6): 328-334: referring to Freitas 2004; Skogforsk (2006): Fuel consumption in forestry continues to fall. Results from Skogforsk, Skogforsk, Uppsala; Berg, S. and T. Karjalainen (2003): Comparison of greenhouse gas emissions from forest operations in Finand and Sweden. Forestry, 76(3): 271-284.
+</comment>
+      </parameter>
+      <parameter parameterId="853ea3a0-88e5-48ea-a933-74ad36dc26e6" amount="117.722627737226" variableName="m_gravel" mathematicalRelation="thickness_new_gravel*a_forest_road_gravel*d_gravel*rotation_period/interval_road_maintenance/yield_wood_ub" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">gravel for maintenance of forest roads</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">adding up all gravel input over one rotation period per m3 of total yield of wood</comment>
+      </parameter>
+      <parameter parameterId="68899351-2bfd-4ea0-aabe-e17483108bef" amount="0.0156" variableName="harvesting" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">harvesting with forestry harvester</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.0156" mu="-4.16048436472665" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">referring to stemwood; IMPORTANT NOTE: When considering several harvesting systems, e.g. in datasets on national forestry, this parameter is NOT the inverse productivity of the harvesting system but the inverse productivity of the system weighted with the share of the amount harvested by the respective system. This has to be calculated outside EcoEditor. Own calculations based on Klvac, R. and A. Skoupy (2009): Characteristic fuel consumption and exhaust emissions in fully mechanized logging operations. Journal of Forest Research, 14(6): 328-334: referring to Freitas 2004; Skogforsk (2006): Fuel consumption in forestry continues to fall. Results from Skogforsk, Skogforsk, Uppsala; Berg, S. and T. Karjalainen (2003): Comparison of greenhouse gas emissions from forest operations in Finand and Sweden. Forestry, 76(3): 271-284.
+</comment>
+      </parameter>
+      <parameter parameterId="2393dc20-1828-4bd7-a306-8770f06cec77" amount="0.35" variableName="moisture_cleft_timber" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content cleft timber</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.35" mu="-1.04982212449868" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg water/kg dry mass. </comment>
+      </parameter>
+      <parameter parameterId="00155fbe-c336-4b18-8325-c03f523f0751" amount="0.8" variableName="moisture_pulpwood" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content pulpwood</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.8" mu="-0.22314355131421" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg water/kg dry mass. Schweinle, J. and C. Thoroe (2001): Vergleichende Ökobilanzierung der Rohholzproduktion in verschiedenen Forstbetrieben. Mitteilungen der Bundesforschungsanstalt für Forst- und Holzwirtschaft Nr. 204, Kommissionsverlag Max Wiedebusch, Hamburg.</comment>
+      </parameter>
+      <parameter parameterId="9f5b3983-1c4c-42aa-9a8b-e661f81bd714" amount="0.7" variableName="moisture_sawlogs" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content sawlogs and veneer logs</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.7" mu="-0.356674943938732" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg water/kg dry mass. Schweinle, J. and C. Thoroe (2001): Vergleichende Ökobilanzierung der Rohholzproduktion in verschiedenen Forstbetrieben. Mitteilungen der Bundesforschungsanstalt für Forst- und Holzwirtschaft Nr. 204, Kommissionsverlag Max Wiedebusch, Hamburg.</comment>
+      </parameter>
+      <parameter parameterId="aa8b5aa8-3cd3-4134-abbd-602307cc70df" amount="0.8" variableName="moisture_wood_chips" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content wood chips</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.8" mu="-0.22314355131421" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg water/kg dry mass. Based on Schweinle, J. and C. Thoroe (2001): Vergleichende Ökobilanzierung der Rohholzproduktion in verschiedenen Forstbetrieben. Mitteilungen der Bundesforschungsanstalt für Forst- und Holzwirtschaft Nr. 204, Kommissionsverlag Max Wiedebusch, Hamburg.</comment>
+      </parameter>
+      <parameter parameterId="c338d857-5b18-4231-af5e-aaa7e70c3fda" amount="10.0" variableName="interval_road_maintenance" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">periodicity of maintenance of forest roads</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="10.0" mu="2.30258509299405" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">interval between two events of maintenance of forest roads</comment>
+      </parameter>
+      <parameter parameterId="80789075-3886-4512-9907-7029958e559f" amount="8000.0" variableName="planting_density" unitId="5b972631-34e3-4db7-a615-f6931770a0cb">
+        <name xml:lang="en">planting density</name>
+        <unitName xml:lang="en">unit</unitName>
+        <uncertainty>
+          <lognormal meanValue="8000.0" mu="8.98719682066197" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">number of trees per hectare</comment>
+      </parameter>
+      <parameter parameterId="b90e5616-9123-42fb-a9dd-0c7aab428137" amount="0.383" variableName="power_sawing" unitId="a25a4cee-1cc6-4046-bf44-eaf5d424930b">
+        <name xml:lang="en">power sawing without catalytic converter per m3</name>
+        <unitName xml:lang="en">PMH/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.383" mu="-0.959720289801491" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">referring to stemwod; IMPORTANT NOTE: When considering several harvesting systems, e.g. in datasets on national forestry, this parameter is NOT the inverse productivity of the harvesting system but the inverse productivity of the system weighted with the share of the amount harvested by the respective system. This has to be calculated outside EcoEditor. Own calculations based on Klvac, R. and A. Skoupy (2009): Characteristic fuel consumption and exhaust emissions in fully mechanized logging operations. Journal of Forest Research, 14(6): 328-334: referring to Freitas 2004; Skogforsk (2006): Fuel consumption in forestry continues to fall. Results from Skogforsk, Skogforsk, Uppsala; Berg, S. and T. Karjalainen (2003): Comparison of greenhouse gas emissions from forest operations in Finand and Sweden. Forestry, 76(3): 271-284.
+</comment>
+      </parameter>
+      <parameter parameterId="152228a2-f381-47d5-adb4-3a063f8cfc71" amount="70.0" variableName="productivity_forwarding_chips_in_stand" unitId="afc016fa-b880-482a-8a6c-2cd02dc6dd81">
+        <name xml:lang="en">productivity forwarding wood chips from terrain chipper</name>
+        <unitName xml:lang="en">m3/PMH</unitName>
+        <uncertainty>
+          <lognormal meanValue="70.0" mu="4.24849524204936" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked/ productive machine hour</comment>
+      </parameter>
+      <parameter parameterId="de7d50f3-79c2-4f70-81af-3fac07a31bd5" amount="120.0" variableName="productivity_mobile_chipper" unitId="afc016fa-b880-482a-8a6c-2cd02dc6dd81">
+        <name xml:lang="en">productivity mobile chipper</name>
+        <unitName xml:lang="en">m3/PMH</unitName>
+        <uncertainty>
+          <lognormal meanValue="120.0" mu="4.78749174278205" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked/ productive machine hour</comment>
+      </parameter>
+      <parameter parameterId="231fa08d-58c5-4e67-bbb7-2666838817d3" amount="25.0" variableName="productivity_terrain_chipper" unitId="afc016fa-b880-482a-8a6c-2cd02dc6dd81">
+        <name xml:lang="en">productivity terrain chipper</name>
+        <unitName xml:lang="en">m3/PMH</unitName>
+        <uncertainty>
+          <lognormal meanValue="25.0" mu="3.2188758248682" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked/ productive machine hour; based on Cremer, T. and B. Velazques-Marti (2007): Evaluation of two harvesting systems for the supply of wood-chips in Norway spurce forest affected by bark beetle. Croation Journal of Forest Engineering, 28(2): 145-155;  referring to Lechner et al 2007</comment>
+      </parameter>
+      <parameter parameterId="4efc1c61-6ade-4bee-afb5-e4cdb97a02ed" amount="5.26" variableName="productivity_clefting_device" unitId="afc016fa-b880-482a-8a6c-2cd02dc6dd81">
+        <name xml:lang="en">productivity, clefting device</name>
+        <unitName xml:lang="en">m3/PMH</unitName>
+        <uncertainty>
+          <lognormal meanValue="5.26" mu="1.66013102674962" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked/ productive machine hour</comment>
+      </parameter>
+      <parameter parameterId="483d8154-2595-4421-b948-902d885c5c0e" amount="2.8" variableName="ratio_bulk_solid_chips" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">ratio bulk density / solid density of chips</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="2.8" mu="1.02961941718116" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked / m3 solid</comment>
+      </parameter>
+      <parameter parameterId="89ee1d51-1d0e-49a2-9387-059e82029760" amount="1.4" variableName="ratio_bulk_solid_cleft_timber" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">ratio bulk density / solid density of cleft timber</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="1.4" mu="0.336472236621213" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as m3 bulked / m3 solid</comment>
+      </parameter>
+      <parameter parameterId="a8ca255a-876f-4b19-86bb-acebd15d64a1" amount="140.0" variableName="rotation_period" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">rotation period</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="140.0" mu="4.9416424226093" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">number of years from planting to final harvest. Source: Schweinle &amp; Thoroe (2001)</comment>
+      </parameter>
+      <parameter parameterId="cd5747c9-fb0d-4716-b90e-0d9ade440066" amount="0.23" variableName="share_chips" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of chips of total wood fuel</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.23" mu="-1.46967597005894" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of chips of total wood fuel harvested (referring consistently to volume under bark or volume over bark for all types of wood fuel)share_bundles + share_chopped_wood+share_chips = 100% wood fuel; calculated based onAnonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+</comment>
+      </parameter>
+      <parameter parameterId="9b5d2558-4ca3-47f4-863c-5b1a39ee0d74" amount="0.98" variableName="share_chips_at_forest_road" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of chips processed at forest road (from above-ground biomass)</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.98" mu="-0.0202027073175195" variance="0.25" varianceWithPedigreeUncertainty="0.252"/>
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of chips processed at forest road of total amount of chips processed in the forest; share_chips_at _forest_road+share_chips_in_stand = 100% chips from forestry; calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+</comment>
+      </parameter>
+      <parameter parameterId="8507af14-d9c3-4864-aff7-ce2dd940b8ed" amount="0.02" variableName="share_chips_in_stand" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of chips processed in stand (from above-ground biomass)</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.02" mu="-3.91202300542815" variance="0.25" varianceWithPedigreeUncertainty="0.252"/>
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of chips processed in the stand of total amount of chips processed in the fores; share_chips_at _forest_road+share_chips_in_stand = 100% chips from forestry;calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+</comment>
+      </parameter>
+      <parameter parameterId="da213ca3-a357-44cd-adb7-77ee2a7b5955" amount="0.77" variableName="share_cleft_timber" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of cleft timber of total wood fuel</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.77" mu="-0.261364764134408" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of cleft timber as wood fuel of total wood fuel harvested (referring consistently to volume under bark or volume over bark for all types of wood fuel); share_bundles + share_cleft_timber+share_chips = 100% wood fuel; calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+
+</comment>
+      </parameter>
+      <parameter parameterId="172a77a2-a870-44ee-9e28-d9337f7a0961" amount="1.0" variableName="share_area_planted" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of planted area</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of forest area that is planted instead of being restocked by natural regeneration</comment>
+      </parameter>
+      <parameter parameterId="cd0b77e7-dc17-4e52-887c-04166122db27" amount="0.3" variableName="share_pulpwood" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of pulpwood of total wood harvest</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.3" mu="-1.20397280432594" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of pulpwood of total wood harvest (referring to volume below bark); share_sawlogs + share_pulpwood + share_wood_fuel = 100%; calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+
+</comment>
+      </parameter>
+      <parameter parameterId="9892018e-0639-4de8-97c8-4f59bbe0f555" amount="0.26" variableName="share_sawlogs" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of sawlogs and veneer logs of total wood harvest</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.26" mu="-1.34707364796661" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of sawlogs and veneer logs of total wood harvest (referring to volume below bark); share_sawlogs + share_pulpwood + share_wood_fuel = 100%; calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+</comment>
+      </parameter>
+      <parameter parameterId="a1d89808-10dc-415f-87fd-5466c845fd9c" amount="0.0" variableName="seedlings_heated" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of seedlings from heated greenhouses</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">share of seedlings from heated greenhouses of total amount of seedlings used in replanting%; Albrecht, S., S. Rüter, J. Welling, M. Knauf, U. Mantau, A. Braune, M. Baitz, H. Weimar, S. Sörgel, J. Kreissig, J. Deimling and S. Hellwig (2009): ÖkoPot - Ökologische Potenziale durch Holznutzung gezielt fördern. Abschlussbericht zum BMBF-Projekt FKZ 0330545. Universität Stuttgart, Universität Hamburg, Hamburg. 
+</comment>
+      </parameter>
+      <parameter parameterId="d17f3224-b906-4bc0-87a5-5cd5166871ea" amount="0.44" variableName="share_wood_fuel" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of wood fuel of total wood harvest</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.44" mu="-0.82098055206983" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Share of wood fuel of total wood harvest (referring to volume below bark); share_sawlogs + share_pulpwood + share_wood_fuel = 100%; calculated based on Anonymous (2010): Statistisches Jahrbuch über Ernährung, Landwirtschaft und Forsten der Bundesrepublick Deutschland. 54. Jahrgang, Wirtschaftsverlag NW GmbH, Bremerhaven. 
+Anonymous (2013): 19 Land- und Forstwirtschaft. In: Statistisches Jahrbuch 2012, Statistisches Bundesamt, Berlin, 471-500.
+
+</comment>
+      </parameter>
+      <parameter parameterId="f0310a6a-7fa7-4a3b-9ee8-0b5b20f5de9e" amount="1.0" variableName="share_revenues_wood" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share, revenues wood production</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.25" varianceWithPedigreeUncertainty="0.252"/>
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Used to determine the share of land used for the productive function of forestry covered in this dataset</comment>
+      </parameter>
+      <parameter parameterId="6f8bc24c-2488-4038-b6f2-77cfe3ad2246" amount="0.006" variableName="shrinkage_ratio" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">shrinkage ratio</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.006" mu="-5.11599580975408" variance="0.25" varianceWithPedigreeUncertainty="0.25"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">for wood: % of volume lost per % of humidity lowered; usually applicable for humidity u &lt; 30%; as oak according to Kollmann 1982</comment>
+      </parameter>
+      <parameter parameterId="c8cef0b4-57bb-4341-a5b8-2bf65144c292" amount="0.0852" variableName="skidding" unitId="a25a4cee-1cc6-4046-bf44-eaf5d424930b">
+        <name xml:lang="en">skidding with skidder per m3</name>
+        <unitName xml:lang="en">PMH/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.0852" mu="-2.46275384514687" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">referring to stemwood; IMPROTANT NOTE: When considering several harvesting systems, e.g. in datasets on national forestry, this parameter is NOT the productivity of the harvesting system but the productivity of the system weighted with the share of the amount harvested by the respective system. This has to be calculated outside EcoEditor. Own calculations based on Klvac &amp; Skoupy 2009, Skogforsk 2006, Berg &amp; Karjalainen 2003</comment>
+      </parameter>
+      <parameter parameterId="dd63d46a-c8ed-4e41-9625-edcdb736643a" amount="1.0" variableName="sum_RP_m3" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+        <name xml:lang="en">sum of reference products in volume</name>
+        <unitName xml:lang="en">m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="0.0" variance="0.005" varianceWithPedigreeUncertainty="0.005"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">as solid under bark; DO NOT CHANGE; dataset might calculate misleading results</comment>
+      </parameter>
+      <parameter parameterId="2a5b7645-c53c-4593-8bf2-84882ffd25f4" amount="0.02" variableName="thickness_new_gravel" unitId="f2aaa4ba-fb58-49a7-a552-e7f64366f379">
+        <name xml:lang="en">thickness of new gravel layer</name>
+        <unitName xml:lang="en">m</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.02" mu="-3.91202300542815" variance="0.25" varianceWithPedigreeUncertainty="0.252"/>
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">thickness of layer of gravel that is added during a maintenance operation of forest roads</comment>
+      </parameter>
+      <parameter parameterId="53e45fb3-7ea7-407c-a0c3-9ff8b8539a16" amount="541.2" variableName="basic_wood_d" mathematicalRelation="dry_wood_d*(1-30*shrinkage_ratio)" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">wood density, basic</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="541.2" mu="6.29378889629663" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg oven-dry matter/wet volume</comment>
+      </parameter>
+      <parameter parameterId="1d981cd7-3abe-4200-b492-5f2114d35e11" amount="660.0" variableName="dry_wood_d" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">wood density, dry</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="660.0" mu="6.49223983502047" variance="0.25" varianceWithPedigreeUncertainty="0.25"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">kg oven-dry matter/dry volume; Oenorm B3012</comment>
+      </parameter>
+      <parameter parameterId="015fe09e-985a-42d6-ad3d-8da5c262a96e" amount="822.0" variableName="yield_wood_ub" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+        <name xml:lang="en">yield wood over rotation period</name>
+        <unitName xml:lang="en">m3</unitName>
+        <uncertainty>
+          <lognormal meanValue="822.0" mu="6.71174039505618" variance="0.25" varianceWithPedigreeUncertainty="0.2506"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">yield of wood under bark per ha over one rotation period</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">Literature</samplingProcedure>
+        <extrapolations xml:lang="en">see Geography and Technology</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="2" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-05-04">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-05-04">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, non-fossil':
+ - Input='619,326318652458', Output='280,423381333333'
+ - Input &gt; output by 338,902937319125 kg (120,85% of output)
+
+Property 'dry mass':
+ - Input='13645,0175442011', Output='567,658666666666'
+ - Input &gt; output by 13077,3588775344 kg (2303,74% of output)
+
+Property 'water in wet mass':
+ - Input='98,4732360097324', Output='348,376453333333'
+ - Input &lt; output by 249,903217323601 kg (71,73% of output)
+
+Property 'wet mass':
+ - Input='13743,4907802108', Output='916,035119999999'
+ - Input &gt; output by 12827,4556602108 kg (1400,32% of output)
+
+Property 'price':
+ - Input='0', Output='118,4838944'
+ - Input &lt; output by 118,4838944 EUR2005 (100% of output)
+
+
+- Amount of property 'basic wood density=541,2' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1,35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0,35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, net=13,0948148148148' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19,6' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'dry wood density=660' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'apparent wood density=730,62' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19,6' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541,2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=974,16' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541,2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=432,96' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541,2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541,2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19,6' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=920,04' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=378,84' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19,6' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1,8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0,8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+Amount of property 'dry mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0,494' of exchange 'Wood, hard, standing' deviates from the default amount in the master file.
+
+- Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (98,4732360097324) and output exchanges (348,376453333333) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): carbon content, non-fossil=0,272916486782489, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0,494, dry mass=650, water content=0,15, water in wet mass=97,5, wet mass=747,5, carbon content, fossil=0
+ -- Parameter(s): area forest per m3 wood, area forest road per m3 wood, gravel for maintenance of forest roads, share of seedlings from heated greenhouses
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): carbon content, non-fossil=0,272916486782489, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0,494, dry mass=650, water content=0,15, water in wet mass=97,5, wet mass=747,5, carbon content, fossil=0
+ -- Parameter(s): area forest per m3 wood, area forest road per m3 wood, gravel for maintenance of forest roads, share of seedlings from heated greenhouses
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="7" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-07-22">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="7" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-07-22">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'water in wet mass':
+ - Input='98.4732360097324', Output='348.376453333333'
+ - Input &lt; output by 249.903217323601 kg (71.73% of output)
+
+Property 'wet mass':
+ - Input='13743.4907802108', Output='916.03512'
+ - Input &gt; output by 12827.4556602108 kg (1400.32% of output)
+
+Property 'dry mass':
+ - Input='13645.0175442011', Output='567.658666666666'
+ - Input &gt; output by 13077.3588775344 kg (2303.74% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='619.326318652458', Output='280.423381333333'
+ - Input &gt; output by 338.902937319125 kg (120.85% of output)
+
+Property 'price':
+ - Input='0', Output='118.4838944'
+ - Input &lt; output by 118.4838944 EUR2005 (100% of output)
+
+
+- Amount of property 'heating value, gross=19.6' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=920.04' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=378.84' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541.2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=974.16' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541.2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=432.96' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, net=13.0948148148148' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'dry wood density=660' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'apparent wood density=730.62' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.494' of exchange 'Wood, hard, standing' deviates from the default amount in the master file.
+Amount of property 'dry mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+
+- Due to the use of the reference product property(s) 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'heating value, gross', 'basic wood density', 'carbon content, non-fossil' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'heating value, gross', 'carbon content, non-fossil' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'carbon content, non-fossil', 'basic wood density', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (98.4732360097324) and output exchanges (348.376453333333) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): water content=0.15, carbon content, fossil=0, water in wet mass=97.5, wet mass=747.5, dry mass=650, carbon content, non-fossil=0.494, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.272916486782489, water in wet mass=0, water content=0, wet mass=1, carbon content, fossil=0
+ -- Parameter(s): share of seedlings from heated greenhouses, gravel for maintenance of forest roads, area forest per m3 wood, area forest road per m3 wood
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): water content=0.15, carbon content, fossil=0, water in wet mass=97.5, wet mass=747.5, dry mass=650, carbon content, non-fossil=0.494, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0.272916486782489, water in wet mass=0, water content=0, wet mass=1, carbon content, fossil=0
+ -- Parameter(s): share of seedlings from heated greenhouses, gravel for maintenance of forest roads, area forest per m3 wood, area forest road per m3 wood
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="8" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-08-11">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="8" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-08-11">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='13743.4907802108', Output='916.03512'
+ - Input &gt; output by 12827.4556602108 kg (1400.32% of output)
+
+Property 'dry mass':
+ - Input='13645.0175442011', Output='567.658666666666'
+ - Input &gt; output by 13077.3588775344 kg (2303.74% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='619.326318652458', Output='280.423381333333'
+ - Input &gt; output by 338.902937319125 kg (120.85% of output)
+
+Property 'water in wet mass':
+ - Input='98.4732360097324', Output='348.376453333333'
+ - Input &lt; output by 249.903217323601 kg (71.73% of output)
+
+Property 'price':
+ - Input='0', Output='118.4838944'
+ - Input &lt; output by 118.4838944 EUR2005 (100% of output)
+
+
+- Amount of property 'heating value, gross=19.6' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=920.04' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=378.84' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541.2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, net=13.0948148148148' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'dry wood density=660' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'apparent wood density=730.62' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=974.16' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=541.2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=432.96' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+Amount of property 'dry mass=1' of exchange 'Energy, gross calorific value, in biomass' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.494' of exchange 'Wood, hard, standing' deviates from the default amount in the master file.
+
+- Due to the use of the reference product property(s) 'heating value, gross', 'carbon content, non-fossil' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'heating value, gross', 'basic wood density', 'carbon content, non-fossil' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'carbon content, non-fossil', 'heating value, gross', 'basic wood density' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (98.4732360097324) and output exchanges (348.376453333333) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0.272916486782489, water in wet mass=0, carbon content, fossil=0, wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=0, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0, wet mass=747.5, dry mass=650, water in wet mass=97.5, water content=0.15, carbon content, fossil=0, carbon content, non-fossil=0.494, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, wet mass=0, carbon content, fossil=0
+ -- Parameter(s): area forest road per m3 wood, area forest per m3 wood, share of seedlings from heated greenhouses, gravel for maintenance of forest roads
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0.272916486782489, water in wet mass=0, carbon content, fossil=0, wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=0, water content=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0, wet mass=747.5, dry mass=650, water in wet mass=97.5, water content=0.15, carbon content, fossil=0, carbon content, non-fossil=0.494, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, wet mass=0, carbon content, fossil=0
+ -- Parameter(s): area forest road per m3 wood, area forest per m3 wood, share of seedlings from heated greenhouses, gravel for maintenance of forest roads
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="11" reviewedMinorRevision="9" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-05-11">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="11" reviewedMinorRevision="9" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-05-11">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='1957.35744687753', Output='975.086053333334'
+ - Input &gt; output by 982.271393544199 kg (100.74% of output)
+
+Property 'water in wet mass':
+ - Input='98.4732360097324', Output='373.75272'
+ - Input &lt; output by 275.279483990267 kg (73.65% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='298.226318652458', Output='297.058666666666'
+ - Input &gt; output by 1.16765198579168 kg (0.39% of output)
+
+Property 'dry mass':
+ - Input='1858.8842108678', Output='601.333333333333'
+ - Input &gt; output by 1257.55087753447 kg (209.13% of output)
+
+Property 'price':
+ - Input='0', Output='118.4838944'
+ - Input &lt; output by 118.4838944 EUR2005 (100% of output)
+
+
+- Amount of property 'heating value, gross=19.6' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.8' of exchange 'wood chips, wet, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'wet mass=1.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water content=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, net=13.89' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'dry wood density=660' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0.35' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'apparent wood density=730.62' of exchange 'cleft timber, measured as dry mass' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1082.4' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=481.066666666666' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=601.333333333333' of exchange 'pulpwood, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, gross=19.6' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=601.333333333333' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=541.2' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1022.26666666667' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=420.933333333333' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Wood, hard, standing' deviates from the default amount in the master file.
+
+- Due to the use of the reference product property(s) 'heating value, gross', 'carbon content, non-fossil' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'carbon content, non-fossil', 'heating value, gross', 'basic wood density' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+Due to the use of the reference product property(s) 'basic wood density', 'carbon content, non-fossil', 'heating value, gross' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (98.4732360097324) and output exchanges (373.75272) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): water content=0.15, wet mass=747.5, carbon content, fossil=0, water in wet mass=97.5, carbon content, non-fossil=0, dry mass=650, carbon content, non-fossil=0.272916486782489, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, wet mass=0, carbon content, fossil=0, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, dry mass=0, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=0
+ -- Parameter(s): area forest road per m3 wood, area forest per m3 wood, gravel for maintenance of forest roads, share of seedlings from heated greenhouses
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Energy, gross calorific value, in biomass
+ -- Property(ies): water content=0.15, wet mass=747.5, carbon content, fossil=0, water in wet mass=97.5, carbon content, non-fossil=0, dry mass=650, carbon content, non-fossil=0.272916486782489, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, wet mass=0, carbon content, fossil=0, wet mass=0, carbon content, fossil=0, water in wet mass=0, dry mass=0, carbon content, non-fossil=0, dry mass=0, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=0
+ -- Parameter(s): area forest road per m3 wood, area forest per m3 wood, gravel for maintenance of forest roads, share of seedlings from heated greenhouses
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="00c7a068-1730-48bf-a7b3-275340049de5" isActiveAuthor="true" personName="Frank Werner" personEmail="frank@frankwerner.ch"/>
+      <dataGeneratorAndPublication personId="00c7a068-1730-48bf-a7b3-275340049de5" personName="Frank Werner" personEmail="frank@frankwerner.ch" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="13" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2019-05-04T10:54:33" lastEditTimestamp="2021-05-11T10:20:33" fileGenerator="EcoEditor 3.12.6000.6006" fileTimestamp="2021-05-11T10:20:33" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="448a911a-2194-5765-948f-90efec0efb6a" activityNameId="790e8956-2391-4342-b8d4-8a5f09cfcf23" parentActivityId="c91c6d85-a173-429e-9bab-4b6938301e9d" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity production, solar thermal parabolic trough, 50 MW</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts with the concentrated solar power plant being operational and producing electricity. </includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity does not show any operation&amp;maintenance activities directly as these are already included in the supplying activities (e.g. oil use and disposal for maintenance of the pumps). </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This activity represents the generation of electricity with a 50 MW solar thermal parabolic trough power plant in Spain. This requires a fully constructed solar thermal parabolic trough and the required co-firing diesel fuel to run the plant. </text>
+        </generalComment>
+        <tag>CSP</tag>
+        <tag>Concentrated Solar Power</tag>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="12ea642c-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">ES</shortname>
+        <comment>
+          <text xml:lang="en" index="0">This dataset has been extrapolated from a dataset modelled for the location Upington, South Africa. Uncertainty has not been adjusted as it is assumed that the modelled 50 MW  parabolic trough power plant would be very similar in other parts of the world. </text>
+        </comment>
+      </geography>
+      <technology technologyLevel="2">
+        <comment>
+          <text xml:lang="en" index="0"> - 50 MW solar thermal parabolic power plant</text>
+          <text xml:lang="en" index="1"> - Dataset modelled for the location "Upington, South Africa", Direct Normal Irradiance: 2719 kWh/m2a</text>
+          <text xml:lang="en" index="2"> - Air cooling</text>
+          <text xml:lang="en" index="3"> - collector field area: 600'000 m2</text>
+          <text xml:lang="en" index="4"> - thermal heat storage capacity: 1100 MWhth / ca. 6 hours </text>
+          <text xml:lang="en" index="5">- hot and cold two stage nitrate salt thermal storage system</text>
+          <text xml:lang="en" index="6">-  full load hours: 5379 hours/year</text>
+          <text xml:lang="en" index="7"> - steam mass flow rate: 105 kg/s</text>
+          <text xml:lang="en" index="8"> </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2010-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="8e1cc63a-519f-5159-a7c8-0cb9ea47a589" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="4528851371.683282">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Reference product 1 KWh electricity production</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="-6.908" variance="0.001" varianceWithPedigreeUncertainty="0.001"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Literature value/extrapolated value. According to IEA statistics (OECD 2017), total gross electricity production with solar thermal plants in Spain amounted to 3775 GWh in 2012. 
+According to NREL 2017, total installed capacity of solar thermal plants in Spain amounts to 2307 MW, out of which 2225 MW of parabolic trough type, 51 MW solar towers, and 31 MW Linear Fresnel reflector. No dataset to model the latter exists in ecoinvent, so that these 31 MW are neglected. 
+The total electricity production (2012) is split according to these installed capacities (status beginning of 2017)  as a first assumption. Further, it is assumed that the power plant own electricity use (losses from gross to net production) amounts to 10.9% (Telsnig 2015). 
+
+OECD. 2017. OECD - Electricity and heat generation. OECD iLibrary, IEA Electricity Information Statistics. ISSN: 1683-4283 (online); DOI: 10.1787/elect-data-en
+
+
+ Solar Paces. 2017. CSP Projects Around the World. Data on CSP projects compiled by NREL. National Renewable Energy Laboratory (NREL), United States, Accessed February 2017. &lt;http://www.solarpaces.org/csp-technology/csp-projects-around-the-world&gt;.
+
+
+Telsnig, Thomas. 2015. "Standortabhängige Analyse und Bewertung solarthermischer Kraftwerke am Beispiel Südafrikas." In.: Institut für Energiewirtschaft und Rationelle Energieanwendung IER, Universtität Stuttgart. Forschungsbericht. Band 123. ISSN 0938-1228.
+</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="3288156030.31634" mu="0.0" variance="0.01" varianceWithPedigreeUncertainty="0.22"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c1361b6f-2ed6-5791-a183-a004f3671dca" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000071-43-2" amount="5.18900109550448E-05" mathematicalRelation="621690*0.02/ electricity_yield" intermediateExchangeId="f598c5db-f614-47c6-a037-2ab56003e360" activityLinkId="d76f08fe-79ca-5e0b-bf22-b00bf6917e33">
+        <name xml:lang="en">benzene</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Assumption: 2% of the heat transfer liquid are lost per year. 
+
+Hyperion Energy Investments. 2007. Estudio de impacto ambiental para la central solar termoelectrica Helios II (Ciudad Real).</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.923076923076923" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.923076923076923" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.923076923076923" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="42.5" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Based on literature, page 16, Report6, part 4</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="0049a77d-b473-486c-9a71-ce2683387ba9">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33100: Coke and semi-coke of coal, of lignite or of peat; retort carbon</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6751fb3a-430e-56ef-9e85-003f47065efd" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.39110089581208E-10" mathematicalRelation="1/( electricity_yield* lifetime)" intermediateExchangeId="f1cf6d58-0859-4640-8bd8-d06234b3afbf" activityLinkId="cbfcee5f-d300-5743-9ec5-4e7be537e4ac">
+        <name xml:lang="en">concentrated solar power plant, solar thermal parabolic trough, 50 MW</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Infrastructure needed for the production of 1 kWh of electricity</comment>
+        <uncertainty>
+          <lognormal meanValue="1.39110089581208E-10" mu="-6.908" variance="0.001" varianceWithPedigreeUncertainty="0.019700000000000002"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="aa005306-e085-4bce-abda-72d667080932">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">54262: General construction services of power plants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f542ad36-66d1-5cfb-8783-e9c81529325b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000101-84-8" amount="0.000143921351139464" mathematicalRelation="1724310*0.02/ electricity_yield" intermediateExchangeId="4855fa83-84d7-4138-8fde-27aa1bab3f42" activityLinkId="c26333fc-4876-5cb8-a286-6ef26fb04312">
+        <name xml:lang="en">diphenylether-compound</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Assumption: 2% of the heat transfer liquid are lost per year. 
+
+Hyperion Energy Investments. 2007. Estudio de impacto ambiental para la central solar termoelectrica Helios II (Ciudad Real).</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.560061211007654" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.560061211007654" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.560061211007654" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="fa142c11-6af2-4e81-abb5-fc5120ee6604">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34663: Herbicides, anti-sprouting products and plant-growth regulators</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="27d5af3f-47e9-581e-b369-ae4f16289dbb" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.385714285714286" mathematicalRelation="(electricity_yield/(1-0.104)*0.096)/electricity_yield*3.6" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="e032d729-d85c-56b8-87e8-725261fb6619">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat needed for backup firing per 1kWh of net electricity produced. For the system as modelled in Telsnig 2015 for the location Upington, a co-firing rate of 9.6% of total gross electricity production has been calculated. The parasitic losses amount to 10.4% of the gross electricity production. 
+As many systems run on natural gas as backup power source, heat from natural gas is assumed in this dataset as an input. </comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ce0669d3-ed4c-5524-a22f-1ce88b302e60" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007732-18-5" amount="0.1" intermediateExchangeId="360e2eb0-f81c-4e4b-ba6b-c7a690f31275" activityLinkId="8046b405-02cd-55de-a5fa-892b2a23cf25">
+        <name xml:lang="en">water, deionised</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Water used for cleaning the mirrors. 
+Various references indicate a water need for these cleaning activities between 0.04 and 0.12 l/kWh, with several references mentioning 0.09-0.1 l/kWh, so that a value of 0.1l/kWh was chosen for this dataset. 
+
+Boukelia, T.E., Mecibah, M.S., Kumar, B.N., Reddy, K.S. 2015. Investigation of solar parabolic trough power plants with and without integrated TES (thermal energy storage) and FBS (guel backup system) using thermic oil and solar salt. Energy 88 (2015) 292-303
+
+Fernández-García, A., Alvarez-Rodrigo, L., Martínez-Arcos, L., Aguiar, R., Márquez-Payés, JM. 2014. Study of different cleaning methods for solar reflectors used in CSP plants. Energy procedia 49 (2014) 80-89
+
+Moreno Merino, L., Imbern Fernández, N., Durán Valsero, J.J., Aguilera, H. 2018. Journal of Environmental Management 206 (2018) 409-417.
+
+Raza, A., Higgo, A.R., Alobaidli, A., Zhang, T.J. 2016. Water recovery in a concentrated solar power plant. AIP Conference Proceedings 1734, 160014 (2016)
+
+System Advisor Model Version 2016.3.14 (SAM 2016.3.14). National Renewable Energy Laboratory. Golden, CO. Accessed October 31, 2016. https://sam.nrel.gov/content/downloads.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" mu="-2.303" variance="0.006" varianceWithPedigreeUncertainty="0.017225"/>
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="f3780433-c451-4aa0-840a-d6d4ddee8a8d" amount="239618373.0" variableName="electricity_yield" unitId="46a269fc-4efb-4087-b5c1-9f4bc318275d">
+        <name xml:lang="en">electricity yield</name>
+        <unitName xml:lang="en">kWh/year</unitName>
+        <uncertainty>
+          <lognormal meanValue="239618373.0" mu="19.29" variance="0.0006" varianceWithPedigreeUncertainty="0.0032999999999999995"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">Yearly electricity yield as calculated in Telsnig 2015 for the solar tower plant in Upington, South Africa, for the configuration with limited storage and a direct normal irradiance (DNI) of 2719 kWh/m2*y. 
+Parasitic loads are calculated to be 10.9% of the gross electricity production. </comment>
+      </parameter>
+      <parameter parameterId="902d8a9c-c2b3-4b9e-855c-94bbe44f79db" amount="30.0" variableName="lifetime" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">lifetime</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="30.0" mu="3.401" variance="0.001" varianceWithPedigreeUncertainty="0.0117"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">The assumed economic lifetime of the solar tower power plant is 30 years. For verification of this assumption please see Telsnig 2015, chapter 4.6. </comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">This dataset is entirely based on the detailed life cycle inventory as presented in the dissertation report by 
+Telsnig, Thomas. 2015. Standortabhängige Analyse und Bewertung solarthermischer Kraftwerke am Beispiel Südafrikas. Forschungsbericht. Band 123. ISSN 0938-1228. Institut für Energiewirtschaft und Rationelle Energieanwendung, Universität Stuttgart, Germany. 
+The basics of that extensive report written in German as well as the procedure of bringing the data in that report into ecoinvent format are summarised in a report (in english) on the concentrated solar power datasets available on the ecoinvent ecoQuery webpage. 
+Further, data in Telsnig 2015 are not shown explicitely for the downscaled 50 MW parabolic trough power plant. This gap is filled in the ecoinvent report. </samplingProcedure>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from a dataset modelled for the location Upington, South Africa. 
+The original data modelling a 250 MW power plant have been scaled down with parameter specific linear and non-linear equations to represent a 50 MW plant design. 
+Uncertainty has not been adjusted as it is assumed that the modelled 50 MW parabolic trough plant would be very similar in other parts of the world. </extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2017-03-06">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41" reviewerId="f7495ea8-83b8-4047-9da0-e9803f7e6425" reviewerName="Christopher Oberschelp" reviewerEmail="oberschelp@ifu.baug.ethz.ch" reviewDate="2017-03-06">
+        <details>
+          <text xml:lang="en" index="0">Very detailed and well-structured dataset with in-depth documentation. Key exchanges have been found reasonable. Comparison of impacts with other technologies might now help to spot any unusual or unexpected exchanges.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2017-03-06">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-05-07">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0,000128503237859837', Output='0'
+ - Input &gt; output by 0,000128503237859837 kg
+
+Property 'water in wet mass':
+ - Input='0,1', Output='0'
+ - Input &gt; output by 0,1 kg
+
+Property 'wet mass':
+ - Input='0,100195811362095', Output='0'
+ - Input &gt; output by 0,100195811362095 kg
+
+Property 'dry mass':
+ - Input='0,000195811362094509', Output='0'
+ - Input &gt; output by 0,000195811362094509 kg
+
+
+- The total water in wet mass of all input exchanges (0,1) and output exchanges (0) is unbalanced.
+
+- The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review.
+ - concentrated solar power plant, solar thermal parabolic trough, 50 MW
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas, benzene, diphenylether-compound
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas, benzene, diphenylether-compound
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, high voltage', global (2010-2020) production volume 3980000000, sum of all non-global production volumes 3976149839,30951. Local datasets used in calculation: ZA (2010-2020) PV: 66020926,8292683, FRCC (2010-2020) PV: 34325214,2474558, WECC, US only (2010-2020) PV: 587647667,916444, ES (2010-2020) PV: 3288156030,31634
+
+- The input exchange 'concentrated solar power plant, solar thermal parabolic trough, 50 MW' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2017-02-16T15:49:24" lastEditTimestamp="2018-05-07T15:23:21" fileGenerator="EcoEditor 3.8.600.15164" fileTimestamp="2018-05-07T15:23:21" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

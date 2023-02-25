@@ -1,0 +1,857 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="d67880a5-8153-5363-8064-fe9a95733c5d" activityNameId="93a6c9b5-0ec4-4538-b372-f10b1dff783a" parentActivityId="0730c49c-6181-5c78-aad1-9fa7c061af68" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">sawing, hardwood</activityName>
+        <includedActivitiesStart xml:lang="en">The sawing process starts with the sorting of the log at the sawmill.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with sawn hardwood, at sawmill; the processing of all co-products from the sawing process are covered in separate datasets.The dataset does not include dust emissions to the environment because of lack of data.
+</includedActivitiesEnd>
+        <generalComment>
+          <imageUrl index="0">https://db3.ecoinvent.org/images/17207f1c-5ed1-44f5-ae1e-ec865f03d889</imageUrl>
+          <text xml:lang="en" index="1">This dataset represents the service of sawing one m3 hardwood at a sawmill. </text>
+          <imageUrl index="2">https://db3.ecoinvent.org/images/c6ededdc-81c4-4952-891f-e393d17b6370</imageUrl>
+          <text xml:lang="en" index="3">The process chain in a sawmill is a net of interlinked processes; the process structure depends on the individual design and technologies in place for each sawmill. The structuring of the sawmilling processes is based on the identification of the core processes in a sawmill that are attributable to several co-products (such as upstream processes like forestry and transport of logs to the sawmill) sorting, storing and the sawing of the (debarked) log. Other processes are attributable directly to one of the co-products such as the chipping of residual wood (either after sawing or as part of the profile chipping), the chipping of the bark (the "debarking") or the suction of saw dust as collection and internal transport.</text>
+        </generalComment>
+        <tag>Swiss brush-up completed</tag>
+      </activity>
+      <classification classificationId="45e0d63f-f176-49f2-a053-8033c5f89e77">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">1610:Sawmilling and planing of wood</classificationValue>
+      </classification>
+      <geography geographyId="f9221622-cc45-11de-98ed-0019e336be3a">
+        <shortname xml:lang="en">Europe without Switzerland</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Represents average Swiss conditions assumed to be represenative for Europe</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2011-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="89306145-6844-5123-9e82-47174485786c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="m_sawdust" amount="1.0" mathematicalRelation="sawnwood_raw/(share_sawnwood/100)* share_sawdust/100* basic_wood_d" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="a514c9f2-0d4d-4ce2-809b-de4c29e74709" productionVolumeAmount="1302515084.84197">
+        <name xml:lang="en">sawdust, loose, wet, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">calculated by the share and basic density as the moisture content is over 30%</comment>
+        <uncertainty>
+          <lognormal meanValue="110.793442622951" mu="4.70766759045852" variance="0.025" varianceWithPedigreeUncertainty="0.0251"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.012924956477378203" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="7.79" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.034" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to have the same price bark.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="3.7669770491803343" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.7" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.7" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.7" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Scaled from the PV estimates of the Swiss sawmilling chain based UNECE data for 2013 for the production volumes of Switzerland (60"000 m3) and the production volume of Europe without Switzerland ( 12"748 m3 - 60"000 m3).</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c386aae3-b404-4ba8-a116-a9559af1c085">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3928: Sawdust and wood waste and scrap</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d6c1a8b0-439e-5962-bf6a-a0fc54e17ddb" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.004085041273605954" mathematicalRelation="0.822*42.6" sourceId="eb7aa6a7-a42d-4fd0-84eb-b03500bc688f" sourceYear="2012" sourceFirstAuthor="Rüter, S." intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="79d6450d-f9ad-5619-89c3-05c8d7622af3">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Diesel for internal transport</comment>
+        <uncertainty>
+          <lognormal meanValue="35.0172" mu="3.38148598220459" variance="0.025" varianceWithPedigreeUncertainty="0.03370000000000001"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="732.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="5476d104-e7ea-4caf-9cef-0c6749a8f642" amount="4416.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_8</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This link has been introduced to model transport specifically for the SAM model; to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN.</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="5f51ac3e-cf2a-4c81-a296-467a9e7f666d" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_8</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">No scaling needed as transport is modelled in market dataset that has been part of the brush-up</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f04b9e97-91c8-5731-8eac-821f8a79b1bc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" variableName="elec_midvol" amount="0.0024859848743058522" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="71badb83-ce3e-57ed-85b8-ed9d244fdd3a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">data from industry, i.e. consumption of over-all electricity of the sawmill including the first sawing step, minus electricty consumed for the chipping of residual wood, the bark handling as well as for the suction of sawdust (i.e. processes that are covered in separate datasets).</comment>
+        <uncertainty>
+          <lognormal meanValue="21.31" mu="3.05917644611053" variance="0.025" varianceWithPedigreeUncertainty="0.03370000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="1779.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c48249bb-7e92-5ec8-8067-6b23dfd4da66" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.2482420532647874E-05" mathematicalRelation="0.091+0.016" sourceId="eb7aa6a7-a42d-4fd0-84eb-b03500bc688f" sourceYear="2012" sourceFirstAuthor="Rüter, S." intermediateExchangeId="ea75b944-c676-4a13-85b8-2bea98f765a4" activityLinkId="809a7ce6-14e4-55fd-887d-6ff4460139f3">
+        <name xml:lang="en">lubricating oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Lubricating oil plus motor oil</comment>
+        <uncertainty>
+          <lognormal meanValue="0.107" mu="-2.23492644452023" variance="0.025" varianceWithPedigreeUncertainty="0.041100000000000005"/>
+          <pedigreeMatrix reliability="1" completeness="5" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="2866.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. C-content/dry mass of fats and oils considered 75%, from: ecoinvent v2.2 report, n 15a, pg 40</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="40.2" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Literature value, Source: IPCC 2006, 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Prepared by the National Greenhouse Gas Inventories Programme, Eggleston H.S., Buendia L., Miwa K., Ngara T. and Tanabe K. (eds). Published: IGES, Japan</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="10ff9f76-486c-4c81-965e-4507d9adef0e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33380: Lubricants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="199bd3df-dfbe-58e4-8a62-771108179988" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0.00019736502440811192" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="c00cac00-a885-42b0-88f5-fb5dce2a9a6f" activityLinkId="10a65d87-fbae-529f-9ef5-774cd02dcb65">
+        <name xml:lang="en">sawlog and veneer log, hardwood, measured as solid wood under bark</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">input of the log, from which 1 m3 of sawnwood is produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.691823918" mu="0.494696241836107" variance="0.025" varianceWithPedigreeUncertainty="0.03370000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="2520c12c-a34f-40e5-ac7d-37a325d01311" variableName="saw_veneer_logs_basic_wood_d" amount="545.9480682" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">basic wood density</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">dry mass/wet volume</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="299.6648285618" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="606.6089647" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">dry mass is equivalent to definition of basic wood density (dry mass / wet volume)</comment>
+        </property>
+        <property propertyId="a3cef394-8d22-44b2-8f7c-7fb5b2dc7593" amount="563.2" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass under bark</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="d61b8768-8ef6-4a99-ae16-9e51f24ad5b5" variableName="saw_veneer_logs_Gross_Heat_Value" amount="0.0" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, gross</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">gross (upper) heating (calorific) value</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="6071.3" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.The property is based on a value of 7.79MJ/kg</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.7" isDefiningValue="false" mathematicalRelation="moisture_sawnwood/100" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis; same as "moisture content"</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="424.6262753" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">amount of water in a wet matter</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1031.23524" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">extrapolated form basic wood density plus water content</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c90def53-ce7d-44e2-b3ae-a506def63b84">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">031: Wood in the rough</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aa213dc4-1585-5920-b436-b042576b46b1" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" variableName="sawmill" amount="2.554813174439144E-11" sourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" sourceYear="2013" sourceFirstAuthor="BFS" intermediateExchangeId="ec8fb345-3751-4db5-a67a-fddc6c72a183" activityLinkId="836cc920-d9d2-5b5b-a549-d040ba4a5468">
+        <name xml:lang="en">sawmill</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">value taken from econvent 2.2</comment>
+        <uncertainty>
+          <lognormal meanValue="2.19E-07" mu="-15.3341941071299" variance="0.55" varianceWithPedigreeUncertainty="0.5592000000000001"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="4" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7801849e-eab4-51f1-8f21-a296ad2ae948" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-1.8665301731062242E-06" sourceId="eb7aa6a7-a42d-4fd0-84eb-b03500bc688f" sourceYear="2012" sourceFirstAuthor="Rüter, S." intermediateExchangeId="1b30b018-ac39-41f4-a9e0-92057eef8bb8" activityLinkId="3cc7b300-3205-5751-8227-97a168ef9b68">
+        <name xml:lang="en">waste mineral oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">waste motor oil; the lubricating oil is used in a dissipative way</comment>
+        <uncertainty>
+          <lognormal meanValue="0.016" mu="-4.13516655674236" variance="0.025" varianceWithPedigreeUncertainty="0.0257"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="b275a25e-3259-47e4-a877-f93576656920" amount="1113.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_link_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="cc1ba8c4-aea0-4aed-af64-0642cf5ded2b" amount="-1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">UVEK_relative_amount_1</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">to be used only in special submissions in coordination with ecoinvent and the Swiss FOEN</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.7779999999999996" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.864444444444444" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.864444444444444" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.6, ecoinvent v2.2 report 13_I.  C content has been calculated after data in the tables, and then referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.9" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="34.7" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of the treatment dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.111111111111111" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Scaled from the PV estimates of the Swiss sawmilling chain based UNECE data for 2013 for the production volumes of Switzerland (60"000 m3) and the production volume of Europe without Switzerland ( 12"748 m3 - 60"000 m3).</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="4f7718b8-b479-50c0-b450-5618451bacd9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.595198893562827" isCalculatedAmount="false" elementaryExchangeId="419de9f0-ee00-4e95-9556-c8f06b17beec">
+        <name xml:lang="en">Carbon dioxide, non-fossil, resource correction</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.27" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.27" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.27" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="45bb416c-a63b-429f-8754-b3f76a069c43">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in air</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="24ee851f-a160-4ef8-8dea-e9c8536fc173" amount="0.1" variableName="bark" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">Bark ratio</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">ratio of the bark of the total stem volume</comment>
+      </parameter>
+      <parameter parameterId="3665c98e-6d16-442a-a5d5-9ae016ae434e" amount="70.0" variableName="moisture_sawdust" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content saw dust</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">moisture content of sawdust</comment>
+      </parameter>
+      <parameter parameterId="95f951f6-bc5d-41d3-b90a-4b67dac31997" amount="70.0" variableName="moisture_sawnwood" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content sawnwood</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">moisture content of sawnwood</comment>
+      </parameter>
+      <parameter parameterId="ef1f75f9-0011-4957-ba61-6d8519fa495c" amount="70.0" variableName="moisture_slab" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">moisture content slab</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">moisture content of slab</comment>
+      </parameter>
+      <parameter parameterId="08b6c714-f853-4598-9e57-3a16dc8e7eef" amount="12.0" variableName="share_sawdust" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of sawdust</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">share of sawdust produced from the debarked stem volume</comment>
+      </parameter>
+      <parameter parameterId="8f5d0a21-b4eb-4e7e-bc3f-14cc21f705cd" amount="61.0" variableName="share_sawnwood" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of sawnwood</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">share of sawnwood produced from the debarked stem volume</comment>
+      </parameter>
+      <parameter parameterId="230ac055-050d-42db-bc6d-1d89ffddaba7" amount="27.0" variableName="share_slab" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">share of slab</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">share of slabs/sidings/cut-offs produced from the debarked stem volume</comment>
+      </parameter>
+      <parameter parameterId="c7a18acd-20fe-4620-a31a-935a7c4ba3e9" amount="0.004" variableName="shrinkage_ratio" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">shrinkage ratio (u=30% - 0%)</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">shrinkage ratio between u=30% to 0%</comment>
+      </parameter>
+      <parameter parameterId="ab98e311-cd01-4544-9e13-e1b85337e05f" amount="957.44" variableName="wood_d_apparent" mathematicalRelation="(1+moisture_sawnwood/100)* basic_wood_d" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">wood density, apparent</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">kg wet matter/wet volume</comment>
+      </parameter>
+      <parameter parameterId="53e45fb3-7ea7-407c-a0c3-9ff8b8539a16" amount="563.2" variableName="basic_wood_d" mathematicalRelation="dry_wood_d*(1-30*shrinkage_ratio)" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">wood density, basic</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">kg oven-dry matter/wet volume</comment>
+      </parameter>
+      <parameter parameterId="1d981cd7-3abe-4200-b492-5f2114d35e11" amount="640.0" variableName="dry_wood_d" unitId="cacb6d36-694d-4e4f-9e79-6c9c73146839">
+        <name xml:lang="en">wood density, dry</name>
+        <unitName xml:lang="en">kg/m3</unitName>
+        <comment xml:lang="en">kg oven-dry matter/oven-dry volume</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">complementary literature and sampling from sawmills; CH data used to approximate European processes</samplingProcedure>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-05-07"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-05-07">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, non-fossil":
+ - Input="456,282112", Output="506,777413479053"
+ - Input &lt; output by 50,4953014790529 kg (9,96% of output)
+
+Property "dry mass":
+ - Input="923,755", Output="1025,87960947177"
+ - Input &lt; output by 102,124609471767 kg (9,95% of output)
+
+Property "price":
+ - Input="0", Output="291,449882695811"
+ - Input &lt; output by 291,449882695811 EUR2005 (100% of output)
+
+Property "water in wet mass":
+ - Input="646,5536", Output="718,107246630237"
+ - Input &lt; output by 71,5536466302369 kg (9,96% of output)
+
+Property "wet mass":
+ - Input="1570,3086", Output="1743,986856102"
+ - Input &lt; output by 173,678256102004 kg (9,96% of output)
+
+Property "carbon content, fossil":
+ - Input="0,08025", Output="0,012448"
+ - Input &gt; output by 0,067802 kg (544,68% of output)
+
+
+- Amount of property "basic wood density=550" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "wet mass=957,44" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "water in wet mass=394,24" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "dry mass=563,2" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (646,5536) and output exchanges (718,107246630237) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0,034, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0,494, water content=0,7, wet mass=1,7, water in wet mass=0,7, price=0,034, water content=0,7, wet mass=1,7, dry mass=1, carbon content, non-fossil=0,494, carbon content, fossil=0, water in wet mass=0,7, price=0,077, water in wet mass=0,7, wet mass=1,7, carbon content, non-fossil=0,494, water content=0,7, dry mass=1, carbon content, fossil=0, carbon content, fossil=0,864444444444444, carbon content, non-fossil=0, dry mass=0,9, net heating value=0, price=0, SAM_activityLink_1=1113, SAM_activityLink_1_scaling_factor=-1, water content=0,111111111111111, water in wet mass=0,1, wet mass=1
+ -- Parameter(s): Bark ratio, moisture content saw dust, moisture content sawnwood, moisture content slab, share of sawdust, share of sawnwood, share of slab, shrinkage ratio (u=30% - 0%), wood density, apparent, wood density, basic, wood density, dry
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0,034, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0,494, water content=0,7, wet mass=1,7, water in wet mass=0,7, price=0,034, water content=0,7, wet mass=1,7, dry mass=1, carbon content, non-fossil=0,494, carbon content, fossil=0, water in wet mass=0,7, price=0,077, water in wet mass=0,7, wet mass=1,7, carbon content, non-fossil=0,494, water content=0,7, dry mass=1, carbon content, fossil=0, carbon content, fossil=0,864444444444444, carbon content, non-fossil=0, dry mass=0,9, net heating value=0, price=0, SAM_activityLink_1=1113, SAM_activityLink_1_scaling_factor=-1, water content=0,111111111111111, water in wet mass=0,1, wet mass=1
+ -- Parameter(s): Bark ratio, moisture content saw dust, moisture content sawnwood, moisture content slab, share of sawdust, share of sawnwood, share of slab, shrinkage ratio (u=30% - 0%), wood density, apparent, wood density, basic, wood density, dry
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-05-16"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-05-16">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "dry mass":
+ - Input="923,755", Output="1025,87960947177"
+ - Input &lt; output by 102,124609471767 kg (9,95% of output)
+
+Property "water in wet mass":
+ - Input="646,5536", Output="718,107246630237"
+ - Input &lt; output by 71,5536466302369 kg (9,96% of output)
+
+Property "carbon content, non-fossil":
+ - Input="456,282112", Output="506,777413479053"
+ - Input &lt; output by 50,4953014790528 kg (9,96% of output)
+
+Property "wet mass":
+ - Input="1570,3086", Output="1743,986856102"
+ - Input &lt; output by 173,678256102004 kg (9,96% of output)
+
+Property "carbon content, fossil":
+ - Input="0,08025", Output="0,012448"
+ - Input &gt; output by 0,067802 kg (544,68% of output)
+
+Property "price":
+ - Input="0", Output="291,449882695811"
+ - Input &lt; output by 291,449882695811 EUR2005 (100% of output)
+
+
+- Amount of property "basic wood density=550" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "wet mass=957,44" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "water in wet mass=394,24" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "dry mass=563,2" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (646,5536) and output exchanges (718,107246630237) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): net heating value=0, SAM_activityLink_1=1113, carbon content, fossil=0,864444444444444, water content=0,111111111111111, price=0, dry mass=0,9, carbon content, non-fossil=0, wet mass=1, water in wet mass=0,1, SAM_activityLink_1_scaling_factor=-1, water in wet mass=0,7, carbon content, fossil=0, price=0,034, water content=0,7, carbon content, non-fossil=0,494, wet mass=1,7, dry mass=1, carbon content, non-fossil=0,494, dry mass=1, wet mass=1,7, price=0,077, water in wet mass=0,7, water content=0,7, carbon content, fossil=0, carbon content, non-fossil=0,494, water in wet mass=0,7, price=0,034, dry mass=1, carbon content, fossil=0, wet mass=1,7, water content=0,7
+ -- Parameter(s): wood density, dry, shrinkage ratio (u=30% - 0%), wood density, basic, wood density, apparent, moisture content saw dust, moisture content sawnwood, share of slab, Bark ratio, share of sawdust, moisture content slab, share of sawnwood
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): net heating value=0, SAM_activityLink_1=1113, carbon content, fossil=0,864444444444444, water content=0,111111111111111, price=0, dry mass=0,9, carbon content, non-fossil=0, wet mass=1, water in wet mass=0,1, SAM_activityLink_1_scaling_factor=-1, water in wet mass=0,7, carbon content, fossil=0, price=0,034, water content=0,7, carbon content, non-fossil=0,494, wet mass=1,7, dry mass=1, carbon content, non-fossil=0,494, dry mass=1, wet mass=1,7, price=0,077, water in wet mass=0,7, water content=0,7, carbon content, fossil=0, carbon content, non-fossil=0,494, water in wet mass=0,7, price=0,034, dry mass=1, carbon content, fossil=0, wet mass=1,7, water content=0,7
+ -- Parameter(s): wood density, dry, shrinkage ratio (u=30% - 0%), wood density, basic, wood density, apparent, moisture content saw dust, moisture content sawnwood, share of slab, Bark ratio, share of sawdust, moisture content slab, share of sawnwood
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="4" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-08-12"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-08-12">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, fossil":
+ - Input="0.08025", Output="0.012448"
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+Property "price":
+ - Input="0", Output="291.449882695811"
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+
+- Amount of property "basic wood density=550" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "wet mass=957.44" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "water in wet mass=394.24" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "dry mass=563.2" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0.034, water in wet mass=0.7, carbon content, fossil=0, carbon content, non-fossil=0.494, water content=0.7, wet mass=1.7, dry mass=1, carbon content, fossil=0, water content=0.7, dry mass=1, water in wet mass=0.7, carbon content, non-fossil=0.494, wet mass=1.7, price=0.077, dry mass=1, wet mass=1.7, water content=0.7, price=0.034, carbon content, fossil=0, carbon content, non-fossil=0.494, water in wet mass=0.7, wet mass=1, UVEK_relative_amount_1=-1, water in wet mass=0.1, water content=0.111111111111111, carbon content, fossil=0.864444444444444, carbon content, non-fossil=0, dry mass=0.9, price=0, UVEK_link_1=1113, net heating value=0
+ -- Parameter(s): moisture content saw dust, wood density, dry, wood density, apparent, share of sawdust, shrinkage ratio (u=30% - 0%), moisture content sawnwood, share of sawnwood, wood density, basic, moisture content slab, share of slab, Bark ratio
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0.034, water in wet mass=0.7, carbon content, fossil=0, carbon content, non-fossil=0.494, water content=0.7, wet mass=1.7, dry mass=1, carbon content, fossil=0, water content=0.7, dry mass=1, water in wet mass=0.7, carbon content, non-fossil=0.494, wet mass=1.7, price=0.077, dry mass=1, wet mass=1.7, water content=0.7, price=0.034, carbon content, fossil=0, carbon content, non-fossil=0.494, water in wet mass=0.7, wet mass=1, UVEK_relative_amount_1=-1, water in wet mass=0.1, water content=0.111111111111111, carbon content, fossil=0.864444444444444, carbon content, non-fossil=0, dry mass=0.9, price=0, UVEK_link_1=1113, net heating value=0
+ -- Parameter(s): moisture content saw dust, wood density, dry, wood density, apparent, share of sawdust, shrinkage ratio (u=30% - 0%), moisture content sawnwood, share of sawnwood, wood density, basic, moisture content slab, share of slab, Bark ratio
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-08-14"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-08-14">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, fossil":
+ - Input="0.08025", Output="0.012448"
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+Property "wet mass":
+ - Input="1570.3086", Output="1743.986856102"
+ - Input &lt; output by 173.678256102004 kg (9.96% of output)
+
+Property "price":
+ - Input="0", Output="291.449882695811"
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+Property "dry mass":
+ - Input="923.755", Output="1025.87960947177"
+ - Input &lt; output by 102.124609471767 kg (9.95% of output)
+
+Property "water in wet mass":
+ - Input="646.5536", Output="718.107246630237"
+ - Input &lt; output by 71.5536466302369 kg (9.96% of output)
+
+Property "carbon content, non-fossil":
+ - Input="456.282112", Output="506.777413479053"
+ - Input &lt; output by 50.4953014790529 kg (9.96% of output)
+
+
+- Amount of property "basic wood density=550" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "wet mass=957.44" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "water in wet mass=394.24" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "dry mass=563.2" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (646.5536) and output exchanges (718.107246630237) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.494, wet mass=1.7, dry mass=1, carbon content, fossil=0, water content=0.7, water in wet mass=0.7, price=0.077, dry mass=1, price=0.034, wet mass=1.7, water content=0.7, carbon content, fossil=0, water in wet mass=0.7, carbon content, non-fossil=0.494, carbon content, fossil=0, price=0.034, water content=0.7, water in wet mass=0.7, dry mass=1, carbon content, non-fossil=0.494, wet mass=1.7, net heating value=0, water in wet mass=0.1, dry mass=0.9, carbon content, fossil=0.864444444444444, water content=0.111111111111111, carbon content, non-fossil=0, UVEK_relative_amount_1=-1, wet mass=1, UVEK_link_1=1113, price=0
+ -- Parameter(s): share of sawdust, wood density, dry, wood density, basic, wood density, apparent, moisture content slab, share of slab, Bark ratio, share of sawnwood, moisture content saw dust, moisture content sawnwood, shrinkage ratio (u=30% - 0%)
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.494, wet mass=1.7, dry mass=1, carbon content, fossil=0, water content=0.7, water in wet mass=0.7, price=0.077, dry mass=1, price=0.034, wet mass=1.7, water content=0.7, carbon content, fossil=0, water in wet mass=0.7, carbon content, non-fossil=0.494, carbon content, fossil=0, price=0.034, water content=0.7, water in wet mass=0.7, dry mass=1, carbon content, non-fossil=0.494, wet mass=1.7, net heating value=0, water in wet mass=0.1, dry mass=0.9, carbon content, fossil=0.864444444444444, water content=0.111111111111111, carbon content, non-fossil=0, UVEK_relative_amount_1=-1, wet mass=1, UVEK_link_1=1113, price=0
+ -- Parameter(s): share of sawdust, wood density, dry, wood density, basic, wood density, apparent, moisture content slab, share of slab, Bark ratio, share of sawnwood, moisture content saw dust, moisture content sawnwood, shrinkage ratio (u=30% - 0%)
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="4" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2020-08-17"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="5" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2020-08-17">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "carbon content, fossil":
+ - Input="0.08025", Output="0.012448"
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+Property "price":
+ - Input="0", Output="291.449882695811"
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+
+- Amount of property "basic wood density=550" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "wet mass=1063.82222226" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "water in wet mass=438.04444446" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+Amount of property "dry mass=625.7777778" of exchange "sawlog and veneer log, hardwood, measured as solid wood under bark" deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.494, carbon content, fossil=0, price=0.034, dry mass=1, water in wet mass=0.7, wet mass=1.7, water content=0.7, water content=0.7, water in wet mass=0.7, price=0.077, wet mass=1.7, carbon content, non-fossil=0.494, carbon content, fossil=0, dry mass=1, price=0.034, water content=0.7, carbon content, non-fossil=0.494, dry mass=1, wet mass=1.7, carbon content, fossil=0, water in wet mass=0.7, carbon content, non-fossil=0, net heating value=0, water content=0.111111111111111, dry mass=0.9, UVEK_link_1=1113, price=0, wet mass=1, UVEK_relative_amount_1=-1, water in wet mass=0.1, carbon content, fossil=0.864444444444444
+ -- Parameter(s): moisture content sawnwood, moisture content slab, shrinkage ratio (u=30% - 0%), share of sawnwood, Bark ratio, wood density, dry, wood density, basic, share of sawdust, share of slab, moisture content saw dust, wood density, apparent
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0.494, carbon content, fossil=0, price=0.034, dry mass=1, water in wet mass=0.7, wet mass=1.7, water content=0.7, water content=0.7, water in wet mass=0.7, price=0.077, wet mass=1.7, carbon content, non-fossil=0.494, carbon content, fossil=0, dry mass=1, price=0.034, water content=0.7, carbon content, non-fossil=0.494, dry mass=1, wet mass=1.7, carbon content, fossil=0, water in wet mass=0.7, carbon content, non-fossil=0, net heating value=0, water content=0.111111111111111, dry mass=0.9, UVEK_link_1=1113, price=0, wet mass=1, UVEK_relative_amount_1=-1, water in wet mass=0.1, carbon content, fossil=0.864444444444444
+ -- Parameter(s): moisture content sawnwood, moisture content slab, shrinkage ratio (u=30% - 0%), share of sawnwood, Bark ratio, wood density, dry, wood density, basic, share of sawdust, share of slab, moisture content saw dust, wood density, apparent
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="8" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2021-01-27">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="8" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-01-27">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0.08025', Output='0.012448'
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+Property 'price':
+ - Input='0', Output='291.449882695811'
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+
+- Property 'net heating value=0' of master data exchange was removed from exchange 'waste mineral oil'.
+Amount of property 'basic wood density=550' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1063.82222226' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=438.04444446' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): heating value, net=7.79, dry mass=1, carbon content, fossil=0, price=0.034, carbon content, non-fossil=0.494, wet mass=1.7, water in wet mass=0.7, water content=0.7, carbon content, non-fossil=0.494, price=0.077, water content=0.7, carbon content, fossil=0, water in wet mass=0.7, wet mass=1.7, dry mass=1, heating value, net=7.79, carbon content, non-fossil=0, water content=0.111111111111111, UVEK_relative_amount_1=-1, UVEK_link_1=1113, heating value, net=34.7, price=0, dry mass=0.9, water in wet mass=0.1, wet mass=1, carbon content, fossil=0.864444444444444, wet mass=1.7, water content=0.7, water in wet mass=0.7, carbon content, non-fossil=0.494, dry mass=1, carbon content, fossil=0, price=0.034, heating value, net=7.37
+ -- Parameter(s): moisture content sawnwood, share of sawdust, wood density, dry, shrinkage ratio (u=30% - 0%), wood density, basic, wood density, apparent, moisture content slab, share of sawnwood, moisture content saw dust, share of slab, Bark ratio
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): heating value, net=7.79, dry mass=1, carbon content, fossil=0, price=0.034, carbon content, non-fossil=0.494, wet mass=1.7, water in wet mass=0.7, water content=0.7, carbon content, non-fossil=0.494, price=0.077, water content=0.7, carbon content, fossil=0, water in wet mass=0.7, wet mass=1.7, dry mass=1, heating value, net=7.79, carbon content, non-fossil=0, water content=0.111111111111111, UVEK_relative_amount_1=-1, UVEK_link_1=1113, heating value, net=34.7, price=0, dry mass=0.9, water in wet mass=0.1, wet mass=1, carbon content, fossil=0.864444444444444, wet mass=1.7, water content=0.7, water in wet mass=0.7, carbon content, non-fossil=0.494, dry mass=1, carbon content, fossil=0, price=0.034, heating value, net=7.37
+ -- Parameter(s): moisture content sawnwood, share of sawdust, wood density, dry, shrinkage ratio (u=30% - 0%), wood density, basic, wood density, apparent, moisture content slab, share of sawnwood, moisture content saw dust, share of slab, Bark ratio
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="9" reviewedMinorRevision="1" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2021-03-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="9" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-03-02">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='291.449882695811'
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='0.08025', Output='0.012448'
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+
+- Property 'net heating value=0' of master data exchange was removed from exchange 'waste mineral oil'.
+Amount of property 'water in wet mass=438.04444446' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=550' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1063.82222226' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0.034, dry mass=1, water in wet mass=0.7, carbon content, fossil=0, carbon content, non-fossil=0.494, wet mass=1.7, heating value, net=7.37, water content=0.7, carbon content, non-fossil=0, heating value, net=34.7, carbon content, fossil=0.864444444444444, water in wet mass=0.1, UVEK_link_1=1113, wet mass=1, dry mass=0.9, UVEK_relative_amount_1=-1, price=0, water content=0.111111111111111, wet mass=1.7, price=0.034, carbon content, fossil=0, heating value, net=7.79, dry mass=1, carbon content, non-fossil=0.494, water content=0.7, water in wet mass=0.7, carbon content, fossil=0, water in wet mass=0.7, dry mass=1, wet mass=1.7, price=0.077, heating value, net=7.79, water content=0.7, carbon content, non-fossil=0.494
+ -- Parameter(s): moisture content saw dust, share of sawnwood, share of slab, Bark ratio, moisture content slab, shrinkage ratio (u=30% - 0%), wood density, apparent, wood density, dry, moisture content sawnwood, wood density, basic, share of sawdust
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0.034, dry mass=1, water in wet mass=0.7, carbon content, fossil=0, carbon content, non-fossil=0.494, wet mass=1.7, heating value, net=7.37, water content=0.7, carbon content, non-fossil=0, heating value, net=34.7, carbon content, fossil=0.864444444444444, water in wet mass=0.1, UVEK_link_1=1113, wet mass=1, dry mass=0.9, UVEK_relative_amount_1=-1, price=0, water content=0.111111111111111, wet mass=1.7, price=0.034, carbon content, fossil=0, heating value, net=7.79, dry mass=1, carbon content, non-fossil=0.494, water content=0.7, water in wet mass=0.7, carbon content, fossil=0, water in wet mass=0.7, dry mass=1, wet mass=1.7, price=0.077, heating value, net=7.79, water content=0.7, carbon content, non-fossil=0.494
+ -- Parameter(s): moisture content saw dust, share of sawnwood, share of slab, Bark ratio, moisture content slab, shrinkage ratio (u=30% - 0%), wood density, apparent, wood density, dry, moisture content sawnwood, wood density, basic, share of sawdust
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="10" reviewedMinorRevision="3" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-08-19">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="10" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-08-19">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0.08025', Output='0.012448'
+ - Input &gt; output by 0.067802 kg (544.68% of output)
+
+Property 'price':
+ - Input='0', Output='291.449882695811'
+ - Input &lt; output by 291.449882695811 EUR2005 (100% of output)
+
+
+- Property 'heating value, net=1' of master data exchange was removed from exchange 'diesel, burned in building machine'.
+Amount of property 'water in wet mass=424.6262753' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'heating value, net=8612.79' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'dry mass=606.6089647' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'basic wood density=545.9480682' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=1031.23524' of exchange 'sawlog and veneer log, hardwood, measured as solid wood under bark' deviates from the default amount in the master file.
+Property 'net heating value=0' of master data exchange was removed from exchange 'waste mineral oil'.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1.7, carbon content, non-fossil=0.494, carbon content, fossil=0, dry mass=1, water content=0.7, water in wet mass=0.7, price=0.077, heating value, net=7.79, price=0.034, carbon content, non-fossil=0.494, water content=0.7, dry mass=1, wet mass=1.7, carbon content, fossil=0, heating value, net=7.37, water in wet mass=0.7, wet mass=1, water in wet mass=0.1, heating value, net=34.7, UVEK_link_1=1113, water content=0.111111111111111, carbon content, non-fossil=0, dry mass=0.9, price=0, carbon content, fossil=0.864444444444444, UVEK_relative_amount_1=-1, water in wet mass=0.7, dry mass=1, water content=0.7, wet mass=1.7, price=0.034, carbon content, fossil=0, carbon content, non-fossil=0.494, heating value, net=7.79
+ -- Parameter(s): wood density, basic, share of sawdust, moisture content slab, Bark ratio, moisture content saw dust, shrinkage ratio (u=30% - 0%), moisture content sawnwood, wood density, dry, share of slab, wood density, apparent, share of sawnwood
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1.7, carbon content, non-fossil=0.494, carbon content, fossil=0, dry mass=1, water content=0.7, water in wet mass=0.7, price=0.077, heating value, net=7.79, price=0.034, carbon content, non-fossil=0.494, water content=0.7, dry mass=1, wet mass=1.7, carbon content, fossil=0, heating value, net=7.37, water in wet mass=0.7, wet mass=1, water in wet mass=0.1, heating value, net=34.7, UVEK_link_1=1113, water content=0.111111111111111, carbon content, non-fossil=0, dry mass=0.9, price=0, carbon content, fossil=0.864444444444444, UVEK_relative_amount_1=-1, water in wet mass=0.7, dry mass=1, water content=0.7, wet mass=1.7, price=0.034, carbon content, fossil=0, carbon content, non-fossil=0.494, heating value, net=7.79
+ -- Parameter(s): wood density, basic, share of sawdust, moisture content slab, Bark ratio, moisture content saw dust, shrinkage ratio (u=30% - 0%), moisture content sawnwood, wood density, dry, share of slab, wood density, apparent, share of sawnwood
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="00c7a068-1730-48bf-a7b3-275340049de5" isActiveAuthor="true" personName="Frank Werner" personEmail="frank@frankwerner.ch"/>
+      <dataGeneratorAndPublication personId="00c7a068-1730-48bf-a7b3-275340049de5" personName="Frank Werner" personEmail="frank@frankwerner.ch" dataPublishedIn="1" publishedSourceId="a4f0da80-40f2-4e99-a4d1-b7bff67bb7f9" publishedSourceYear="2013" publishedSourceFirstAuthor="BFS" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="12" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2019-05-07T08:35:27" lastEditTimestamp="2021-08-19T10:55:00" fileGenerator="EcoEditor 3.13.3000.19229" fileTimestamp="2021-08-19T10:55:00" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

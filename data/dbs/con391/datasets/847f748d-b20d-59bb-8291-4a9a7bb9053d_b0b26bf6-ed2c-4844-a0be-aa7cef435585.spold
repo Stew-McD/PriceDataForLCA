@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="847f748d-b20d-59bb-8291-4a9a7bb9053d" activityNameId="0e9285ae-67e5-4b3e-a9b8-e29907997187" parentActivityId="a3625cb7-c157-5f4a-8087-c9e667b44122" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">water pump operation, electric</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the input of electricity into the engine of the water pump.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the consumption of electricity by the water pump. The inventory includes the use of lubricating oil which results in an output of waste oil. The pump itself is taken into account through the input of "water pump, 22kW".</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the operation of a water pump that is powered by an electric engine. The reference product is 1 MJ of electricity consumed by the engine. The amount of energy that is actually delivered to the water varies depending on the operating conditions and pump characteristics.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="bbe2eb06-fac9-48bb-9610-f402b9d3f2d0">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0161:Support activities for crop production</classificationValue>
+      </classification>
+      <geography geographyId="0f848e98-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">MA</shortname>
+        <comment>
+          <text xml:lang="en" index="0">This dataset is not related to a specific geography. It is assumed to be representative of the average operation of an electric pump.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">This dataset is assumed to represent the average current technology for electric water pumps.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2018-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">This dataset has no specific time period as it is based on estimations and assumptions.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="325e940f-b1b5-555e-8c15-2d9462ba181b" unitId="980b811e-3905-4797-82a5-173f5568bc7e" variableName="RP_amount" amount="1.0" intermediateExchangeId="b0b26bf6-ed2c-4844-a0be-aa7cef435585" productionVolumeAmount="4012406947.62417">
+        <name xml:lang="en">water pump operation, electric</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">The reference product amount refers to the energy that is consumed by the pump in the form of electricity. The actual amount of energy that is transferred to the water depends on many variables such as pump and drive efficiency, age of the pump, operating conditions, etc.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0340395449274135" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated based on the total amount of electric energy used in the three irrigation datasets located in the same geography: "irrigation, surface", "irrigation, sprinkler" and "irrigation, drip". This is a rough approximation, as it assumes that this type of pump is used exclusively for irrigation purposes, and that all irrigation systems use this type of pump.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f695f1de-a361-4c17-bf80-d68be5aed5a3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">83327: Engineering services for water, sewerage and drainage projects</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e71fd3dc-4e06-5bef-850f-36a68f3772e7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.277777777777778" mathematicalRelation="UnitConversion(1, 'MJ', 'kWh')" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="2f23bf3a-1548-5b5c-93d3-98f9d201a175">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Amount of electricity (in kWh) that is required to supply the pump with 1 MJ of energy.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.277777777777778" mu="-1.2809" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0c570f67-e0f7-5a78-95c8-f384030eea0a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="lubricating_oil" amount="0.000514019" intermediateExchangeId="ea75b944-c676-4a13-85b8-2bea98f765a4" activityLinkId="9a5a8499-d6f9-5d1d-83e9-9447a92022d5">
+        <name xml:lang="en">lubricating oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Approximated value. Copied from the dataset "water pump operation, diesel" GLO.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000514019" mu="-7.5733" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. C-content/dry mass of fats and oils considered 75%, from: ecoinvent v2.2 report, n 15a, pg 40</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="40.2" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Literature value, Source: IPCC 2006, 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Prepared by the National Greenhouse Gas Inventories Programme, Eggleston H.S., Buendia L., Miwa K., Ngara T. and Tanabe K. (eds). Published: IGES, Japan</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="10ff9f76-486c-4c81-965e-4507d9adef0e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33380: Lubricants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6c25b9d1-8f1f-5891-8d28-4376385d5d91" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_oil" amount="-0.000514019" mathematicalRelation="lubricating_oil" intermediateExchangeId="1b30b018-ac39-41f4-a9e0-92057eef8bb8" activityLinkId="828da156-e614-54f5-b8e7-3f7ffeeb01db">
+        <name xml:lang="en">waste mineral oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">This exchange accounts for the disposal of the lubricating oil. No losses of lubricating oil to the environment are taken into account.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000514019" mu="-7.5733" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.7779999999999996" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.864444444444444" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.864444444444444" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.6, ecoinvent v2.2 report 13_I. C content has been calculated after data in the tables, and then referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.9" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="34.7" isDefiningValue="false" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of the treatment dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.111111111111111" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of the reference product based on the output amounts.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="04bf4689-16e7-55c6-9abc-f34b722a50a2" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="7.82184520265456E-06" mathematicalRelation="1 / ((9.8 * (15.9018*0.8 + 53.6018*0.16 + 42.9018*0.04) * 1000 * pump_lifetime_capacity)/(1000000 * pump_efficiency))" intermediateExchangeId="ec483d90-1745-483a-ad01-d6ac63952615" activityLinkId="754dd432-b535-56ea-b8a9-98d1f6db0034">
+        <name xml:lang="en">water pump, 22kW</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Calculated value. The pump is assumed to have a lifetime of 10 years, with a lifetime capacity of about 317000 m3 of pumped water (see exchange property comment for more details). This corresponds to a total energy consumption of roughly 128000 MJ based on the assumptions that the total head supplied to the pumped water is about 23 m, and that the pump shaft efficiency is 70% and the electric motor efficiency is 80%. The total head is calculated by weighting the total head supplied in the global (GLO) irrigation datasets according to their production volumes (in m3). The production volume shares and total heads for the three irrigation datasets are the following:
+1. irrigation, surface: share = 80%, total head = 15.9018
+2. irrigation, sprinkler: share = 16%, total head = 53.6018
+3. irrigation, drip: share = 4%, total head = 42.9018 
+The total head is calculated based on the elevation head (which depends on the shares of water obtained from surface water and groundwater) and the dynamic pressure head (which depends on the irrigation technique). The details of the calculation of the total head are provided in the three irrigation datasets. This is a rough estimation, and is based on the very simplified assumption that all irrigation systems use the same type of water pump.</comment>
+        <uncertainty>
+          <lognormal meanValue="7.82184520265456E-06" mu="-11.7586" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" amount="10.0" isDefiningValue="false" isCalculatedAmount="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+        </property>
+        <property propertyId="a01597eb-34e2-4057-a7c7-e27bfdca34d1" variableName="pump_lifetime_capacity" amount="317442.00965401" isDefiningValue="false" mathematicalRelation="2.67264E+12 / (252579046.13 * 10000) * 3 * 10000 * lifetime" isCalculatedAmount="true" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5">
+          <name xml:lang="en">lifetime capacity in m3</name>
+          <unitName xml:lang="en">m3</unitName>
+          <comment xml:lang="en">The lifetime capacity is calculated based on the lifetime of the pump and the amount of water supplied per year to a field of 3 hectares. The amount of water supplied per year was calculated by dividing the amount of water used for irrigation globally by the global irrigated area. The amount of water used for irrigation globally is equal to 2.67E+12 m3 and corresponds to the World irrigation water withdrawal given in Table 5 of Frenken &amp; Gillet (2012). The global irrigated area is equal to 2.53E+8 ha and corresponds to the area actually irrigated published in the Global Map of Irrigation Areas (Siebert et al. 2013). The average area supplied by one pump unit (3 ha) is taken from Nemecek &amp; Gillet (2007). The lifetime capacity is highly uncertain as it is directly related to the lifetime of the pump, which depends on many different factors. References: Frenken, K. &amp; Gillet, V. (2012) Irrigation water requirement and water withdrawal by country, FAO AQUASTAT Reports. Siebert, S., Henrich, V., Frenken, K., Burke, J. (2013) Update of the Digital Global Map of Irrigation Areas to Version 5, FAO 2013. Excel file last accessed on 2018-03-12: http://www.fao.org/nr/water/aquastat/irrigationmap/index20.stm Nemecek T. &amp; Kägi T. (2007) Life Cycle Inventories of Swiss and European Agricultural Production Systems. Final report ecoinvent V2.0 No. 15a. Agroscope Reckenholz-Taenikon Research Station ART, Swiss Centre for Life Cycle Inventories, Zurich and Dübendorf, CH, retrieved from: www.ecoinvent.ch.</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a0485c7e-9384-42de-bb3b-0ebc816b947c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">43220: Pumps for liquids; liquid elevators</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="6a0165c7-0fd7-47d6-bfbf-e3fee9aacc42" amount="0.56" variableName="pump_efficiency" mathematicalRelation="0.7*0.8" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">efficiency</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">Overall efficiency of the pump: the efficiency of the pump shaft is 70%, while the efficiency of the drive or motor is assumed to be 80% for an electric motor.</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <samplingProcedure xml:lang="en">Calculated data.</samplingProcedure>
+        <extrapolations xml:lang="en">The data concerning lubricating oil use is copied from the dataset "water pump operation, diesel" GLO.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-06-14"/>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-06-14">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "price":
+ - Input="0", Output="0,122"
+ - Input &lt; output by 0,122 EUR2005 (100% of output)
+
+Property "water in wet mass":
+ - Input="0", Output="5,14019E-05"
+ - Input &lt; output by 5,14019E-05 kg (100% of output)
+
+Property "carbon content, fossil":
+ - Input="0,00038551425", Output="0,000399906782"
+ - Input &lt; output by 1,43925319999998E-05 kg (3,6% of output)
+
+Property "dry mass":
+ - Input="0,000514019", Output="0,0004626171"
+ - Input &gt; output by 5,14019E-05 kg (11,11% of output)
+
+
+- Amount of property "price=0,122" of exchange "water pump operation, electric" deviates from the default amount in the master file.
+Amount of property "lifetime capacity in m3=317442,00965401" of exchange "water pump, 22kW" deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (5,14019E-05) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,1, water content=0,111111111111111, wet mass=1, carbon content, fossil=0,864444444444444, carbon content, non-fossil=0, dry mass=0,9, net heating value=0
+ -- Parameter(s): efficiency
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,1, water content=0,111111111111111, wet mass=1, carbon content, fossil=0,864444444444444, carbon content, non-fossil=0, dry mass=0,9, net heating value=0
+ -- Parameter(s): efficiency
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2021-01-27">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="4" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-01-27">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.0340395449274135'
+ - Input &lt; output by 0.0340395449274135 EUR2005 (100% of output)
+
+Property 'water in wet mass':
+ - Input='0', Output='5.14019E-05'
+ - Input &lt; output by 5.14019E-05 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='0.00038551425', Output='0.000399906782'
+ - Input &lt; output by 1.43925319999998E-05 kg (3.6% of output)
+
+Property 'dry mass':
+ - Input='0.000514019', Output='0.0004626171'
+ - Input &gt; output by 5.14019E-05 kg (11.11% of output)
+
+
+- Amount of property 'price=0.0340395449274135' of exchange 'water pump operation, electric' deviates from the default amount in the master file.
+Property 'net heating value=0' of master data exchange was removed from exchange 'waste mineral oil'.
+Amount of property 'lifetime capacity in m3=317442.00965401' of exchange 'water pump, 22kW' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (5.14019E-05) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): heating value, net=34.7, price=0, water in wet mass=0.1, water content=0.111111111111111, carbon content, fossil=0.864444444444444, carbon content, non-fossil=0, dry mass=0.9, wet mass=1
+ -- Parameter(s): efficiency
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): heating value, net=34.7, price=0, water in wet mass=0.1, water content=0.111111111111111, carbon content, fossil=0.864444444444444, carbon content, non-fossil=0, dry mass=0.9, wet mass=1
+ -- Parameter(s): efficiency
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="44a0bdd8-6624-4a73-a661-7190ddf070b3" isActiveAuthor="false" personName="David FitzGerald" personEmail="fitzgerald@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="44a0bdd8-6624-4a73-a661-7190ddf070b3" personName="David FitzGerald" personEmail="fitzgerald@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="7" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2019-06-14T09:22:19" lastEditTimestamp="2019-06-14T11:39:02" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2019-06-14T11:39:02" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

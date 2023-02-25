@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="c8ed67f0-ecd0-5cb8-9a85-fff3155edbeb" activityNameId="37b8edf3-3cdf-483e-ab25-c14e32e06826" parentActivityId="fef99834-77cc-48cf-a174-67aa98055bfb" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity production, solar tower power plant, 20 MW</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the solar tower and all units being operational. This activity does not include any maintenance activities or replacement of parts within the 30 years plant lifetime. </includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity does not show any operation&amp;maintenance activities directly as these are already included in the supplying activities (e.g. oil use and disposal for maintenance of the pumps). </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This activity represents the generation of high voltage electricity with a 20 MW concentrated solar power solar tower plant in Upington, South Africa. This requires a fully constructed solar tower plant and the required co-firing diesel fuel to run the plant. </text>
+        </generalComment>
+        <tag>Concentrated Solar Power</tag>
+        <tag>CSP</tag>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="12b21766-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">ZA</shortname>
+        <comment>
+          <text xml:lang="en" index="0">None</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="2">
+        <comment>
+          <text xml:lang="en" index="0"> - 20 MW solar tower power plant</text>
+          <text xml:lang="en" index="1"> - Dataset modelled for the location "Upington, South Africa", Direct Normal Irradiance: 2719 kWh/m2a</text>
+          <text xml:lang="en" index="2"> - Air cooling</text>
+          <text xml:lang="en" index="3"> - collector field area: 215'520 m2</text>
+          <text xml:lang="en" index="4"> - thermal heat storage capacity: 440 MWhth </text>
+          <text xml:lang="en" index="5">- hot and cold two stage nitrate salt thermal storage system </text>
+          <text xml:lang="en" index="6">- steam mass flow rate: 37 kg/s</text>
+          <text xml:lang="en" index="7"> </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2010-01-01" endDate="2022-01-01" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="17e3e53d-8954-5f17-9676-adf739cfb3a0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="23902439.0243902">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Reference product for electricity production for a 20MW solar tower power plant. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" mu="-6.908" variance="0.001" varianceWithPedigreeUncertainty="0.001"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Literature value/extrapolated value. According to IPPPP 2016, total net electricity production with solar thermal plants in South Africa amounted to 98 GWh in 2016. 
+According to NREL 2017, total installed capacity of solar thermal plants in South Africa amounts to 205 MW, out of which 155 MW of parabolic trough type and 50 MW solar towers. 
+The total electricity production is split according to these installed capacities as a first assumption. 
+
+
+IPPPP. 2016. Independent Power Producers Procurement Programme (IPPPP): An Overview As at 30 September 2016. https://www.ipp-projects.co.za/Publications/GetPublicationFile?fileid=a5cfe14e-10b7-e611-9463-2c59e59ac9cd&amp;fileName=20161129_IPPPP_Overview_Sep16.pdf
+
+
+ Solar Paces. 2017. CSP Projects Around the World. Data on CSP projects compiled by NREL. National Renewable Energy Laboratory (NREL), United States, Accessed February 2017. &lt;http://www.solarpaces.org/csp-technology/csp-projects-around-the-world&gt;.
+</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="03081a47-ba33-501a-8f88-94aee5d8f9b5" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="3.15078346168507E-10" mathematicalRelation="1/(electricity_yield*lifetime)" intermediateExchangeId="73e2ac74-b55b-48e0-937b-b8c9aa56042a" activityLinkId="61c02243-c510-5594-9afd-49b3ac9e9b32">
+        <name xml:lang="en">concentrated solar power plant, solar tower, 20 MW</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Infrastructure needed for the production of 1 kWh of electricity;activityLink introduced to establish a direct link to the corresponding regional supply of this product</comment>
+        <uncertainty>
+          <lognormal meanValue="3.15078346168507E-10" mu="-6.908" variance="0.001" varianceWithPedigreeUncertainty="0.019700000000000002"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="58c43590-9d63-402c-98e5-399314aa3fdf">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53262: Power plants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="914e397d-5161-5033-ad3b-377372303156" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.402876404494382" mathematicalRelation="(electricity_yield/(1-0.11)*0.0996)/electricity_yield*3.6" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="86093f7f-0016-5f97-9c45-b407efd93d6a">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat needed for backup firing per 1kWh of net electricity produced. For the system as modelled in Telsnig 2015 for the location Upington, a co-firing rate of 9.9% of total gross electricity production has been calculated. The parasitic losses amount to 11% of the gross electricity production. 
+As many systems run on natural gas as backup power source, heat from natural gas is assumed in this dataset as an input. </comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="71779a17-0c99-5039-a26a-f828b78d61d8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007732-18-5" amount="0.1" intermediateExchangeId="360e2eb0-f81c-4e4b-ba6b-c7a690f31275" activityLinkId="cff074dc-fe7d-5040-86b1-8af7acf2e185">
+        <name xml:lang="en">water, deionised</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Water used for cleaning the mirrors. 
+Various references indicate a water need for these cleaning activities between 0.04 and 0.12 l/kWh, with several references mentioning 0.09-0.1 l/kWh, so that a value of 0.1l/kWh was chosen for this dataset. 
+
+Boukelia, T.E., Mecibah, M.S., Kumar, B.N., Reddy, K.S. 2015. Investigation of solar parabolic trough power plants with and without integrated TES (thermal energy storage) and FBS (guel backup system) using thermic oil and solar salt. Energy 88 (2015) 292-303
+
+Fernández-García, A., Alvarez-Rodrigo, L., Martínez-Arcos, L., Aguiar, R., Márquez-Payés, JM. 2014. Study of different cleaning methods for solar reflectors used in CSP plants. Energy procedia 49 (2014) 80-89
+
+Moreno Merino, L., Imbern Fernández, N., Durán Valsero, J.J., Aguilera, H. 2018. Journal of Environmental Management 206 (2018) 409-417.
+
+Raza, A., Higgo, A.R., Alobaidli, A., Zhang, T.J. 2016. Water recovery in a concentrated solar power plant. AIP Conference Proceedings 1734, 160014 (2016)
+
+System Advisor Model Version 2016.3.14 (SAM 2016.3.14). National Renewable Energy Laboratory. Golden, CO. Accessed October 31, 2016. https://sam.nrel.gov/content/downloads.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" mu="-2.303" variance="0.006" varianceWithPedigreeUncertainty="0.017225"/>
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="f3780433-c451-4aa0-840a-d6d4ddee8a8d" amount="105793793.0" variableName="electricity_yield" unitId="46a269fc-4efb-4087-b5c1-9f4bc318275d">
+        <name xml:lang="en">electricity yield</name>
+        <unitName xml:lang="en">kWh/year</unitName>
+        <uncertainty>
+          <lognormal meanValue="105793793.0" mu="18.48" variance="0.0006" varianceWithPedigreeUncertainty="0.0032999999999999995"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">Yearly electricity yield as calculated in Telsnig 2015 for the solar tower plant in Upington, South Africa, for the configuration with limited storage and a direct normal irradiance (DNI) of 2719 kWh/m2*y. 
+Parasitic loads are calculated to be 11% of the gross electricity production. </comment>
+      </parameter>
+      <parameter parameterId="902d8a9c-c2b3-4b9e-855c-94bbe44f79db" amount="30.0" variableName="lifetime" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+        <name xml:lang="en">lifetime</name>
+        <unitName xml:lang="en">year</unitName>
+        <uncertainty>
+          <lognormal meanValue="30.0" mu="3.401" variance="0.001" varianceWithPedigreeUncertainty="0.0117"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">The assumed economic lifetime of the solar tower power plant is 30 years. </comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">This dataset is entirely based on the detailed life cycle inventory as presented in the dissertation report by 
+Telsnig, Thomas. 2015. Standortabhängige Analyse und Bewertung solarthermischer Kraftwerke am Beispiel Südafrikas. Forschungsbericht. Band 123. ISSN 0938-1228. Institut für Energiewirtschaft und Rationelle Energieanwendung, Universität Stuttgart, Germany. 
+The basics of that extensive report written in German as well as the procedure of bringing the data in that report into ecoinvent format are summarised in a report (in english) on the concentrated solar power datasets available on the ecoinvent ecoQuery webpage. 
+Further, data in Telsnig 2015 are not shown explicitely for the downscaled 20 MW solar tower power plant. This gap is filled in the ecoinvent report. </samplingProcedure>
+        <extrapolations xml:lang="en">The original data modelling a 440 MW power plant have been scaled down with parameter specific linear and non-linear equations to represent a 20 MW plant design. </extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="36" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2017-03-13">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="36" reviewerId="f7495ea8-83b8-4047-9da0-e9803f7e6425" reviewerName="Christopher Oberschelp" reviewerEmail="oberschelp@ifu.baug.ethz.ch" reviewDate="2017-03-13">
+        <details>
+          <text xml:lang="en" index="0">Very detailed, structured and well-documented datasets. Main exchanges have been checked and make sense.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="36" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2017-03-13">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="36" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-05-08">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'water in wet mass':
+ - Input='0,1', Output='0'
+ - Input &gt; output by 0,1 kg
+
+Property 'wet mass':
+ - Input='0,1', Output='0'
+ - Input &gt; output by 0,1 kg
+
+
+- The total water in wet mass of all input exchanges (0,1) and output exchanges (0) is unbalanced.
+
+- The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review.
+ - concentrated solar power plant, solar tower, 20 MW
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, high voltage', global (2010-2020) production volume 333637843,1, sum of all non-global production volumes 333634843,083702. Local datasets used in calculation: WECC, US only (2010-2020) PV: 231778023,56722, ES (2010-2020) PV: 75284380,4920914, AU (2010-2020) PV: 2670000, ZA (2010-2020) PV: 23902439,0243902
+
+- The input exchange 'concentrated solar power plant, solar tower, 20 MW' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="0" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2017-02-16T14:25:06" lastEditTimestamp="2018-05-07T15:28:23" fileGenerator="EcoEditor 3.8.600.15164" fileTimestamp="2018-05-07T15:28:23" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

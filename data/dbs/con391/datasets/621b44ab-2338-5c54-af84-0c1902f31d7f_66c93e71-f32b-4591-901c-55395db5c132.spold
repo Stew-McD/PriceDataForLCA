@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="621b44ab-2338-5c54-af84-0c1902f31d7f" activityNameId="d78b0e2d-789b-4044-ad51-477aee6b5637" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="876bc7ed-905e-4a1e-a21c-a434719f6874" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity, high voltage, import from CA-AB</activityName>
+        <includedActivitiesStart xml:lang="en">This activity represents the point of 'handing over' the electricity from one country to the other at the border.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This dataset doesn't include any electricity losses or transmission infrastructure as these are accounted for in the market datasets.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the amount of imported electricity from Alberta (Canada) to British Columbia (Canada). The import value is valid for 2013 and includes all electricity imports, independently whether used within the importing country, or re-exported. For a discussion of different ways of modeling electricity trade in LCI, please refer to (Itten &amp; Frischknecht 2014).</text>
+        </generalComment>
+        <tag>Canada</tag>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="533c318c-a189-4fc6-84a8-e9d48eab987c">
+        <shortname xml:lang="en">CA-BC</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2013-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">Annual production volume valid for 2013.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c0637468-235b-592a-ad1c-ff89a39bdded" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="223000000.0">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Literature value/calculation. Data from StatCan and regional sources (BCSTAT (British Columbia), AESO (Alberta and Saskatchewan), IESO (Ontario, Manitoba)).</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2e6e99d1-af81-5021-a4b3-4b15ef3a13d9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="8dfd7d93-2c48-5e07-8912-7ee1ccb2d666">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">activityLink added to better reflect the reality of the supply chain</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <samplingProcedure xml:lang="en">Literature</samplingProcedure>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="12" reviewerId="9a963412-20a7-428b-8740-3582e217c4b6" reviewerName="Carl Vadenbo" reviewerEmail="vadenbo@ifu.baug.ethz.ch" reviewDate="2015-08-04">
+        <details>
+          <text xml:lang="en" index="0">The update of the whole electricity sector for the ecoinvent v3.2 database consist of hundreds of datasets. All these datasets have passed through a streamlined review processes where the underlying modelling of production volumes, technology shares and efficiencies was reviewed in detail prior to the datasets being submitted to the database.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="12" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-08-04">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977'
+ - Input &lt; output by 0,0977 EUR2005 (100% of output)
+
+
+- When adding an import activity dataset to a geographical area the overall consumption (73800000000) and production (78553725850,842) of product 'electricity, high voltage' has to be equal within a precision of 0.4%.
+
+Consumers used in calculation: electricity voltage transformation from high to medium voltage, CA-BC, 2012 - 2012 (c0cabdeb-6ee3-4964-8c65-9d728b882105) [electricity, medium voltage: 1], electricity production, hydro, pumped storage, CA-BC, 1945 - 2015 (e80c4fcc-82e0-46b0-9252-b94c90013ab9) [electricity, high voltage: 1].
+
+Producers used in calculation: electricity, high voltage, import from CA-AB, CA-BC, 2008 - 2008 (20a771c8-440f-4225-84c5-66f5eb8694a9) [electricity, high voltage: 1], electricity, high voltage, import from WECC, US only, CA-BC, 2008 - 2008 (b6067855-7bfc-4a53-8f67-1f7a590ce129) [electricity, high voltage: 1], electricity production, hydro, reservoir, alpine region, CA-BC, 1945 - 2015 (55d698c5-21aa-4b8b-a9a6-6028a65535a0) [electricity, high voltage: 1], electricity production, wind, &lt;1MW turbine, onshore, CA-BC, 2000 - 2015 (1a7823af-3e34-4c8d-b70b-5b942f84661b) [electricity, high voltage: 1], heat and power co-generation, wood chips, 6667 kW, state-of-the-art 2014, CA-BC, 2010 - 2015 (872b1627-67ea-4458-8eb7-57ee0f52848a) [heat, district or industrial, other than natural gas: 0,45], electricity production, wind, 1-3MW turbine, onshore, CA-BC, 2005 - 2015 (f48ff171-a3e5-4259-a412-4bbd302bf79a) [electricity, high voltage: 1], electricity production, hydro, run-of-river, CA-BC, 1945 - 2015 (375720f0-db38-4efe-bd65-3ec9856e3dfd) [electricity, high voltage: 1], electricity production, natural gas, combined cycle power plant, CA-BC, 2000 - 2015 (1616b1a9-cc31-498a-b51a-4d790af2c1a2) [electricity, high voltage: 1], electricity production, oil, CA-BC, 1980 - 2015 (15eb5775-f398-49c5-99fa-fc036c546cf6) [electricity, high voltage: 1], electricity production, natural gas, at conventional power plant, CA-BC, 1990 - 2015 (75adba9f-2567-46fc-8e56-154a9dc319b2) [electricity, high voltage: 1], heat and power co-generation, natural gas, conventional power plant, 100MW electrical, CA-BC, 1990 - 2015 (4f741fe3-2d0b-4c63-9330-4c4b6ae4e116) [heat, district or industrial, natural gas: 0,98], electricity production, hydro, pumped storage, CA-BC, 1945 - 2015 (e80c4fcc-82e0-46b0-9252-b94c90013ab9) [electricity, high voltage: 1].
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="11" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-08-04">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.0977'
+ - Input &lt; output by 0.0977 EUR2005 (100% of output)
+
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1bd1c9a0-1fba-4bb3-ac28-b30bbc2b2388" isActiveAuthor="true" personName="Pablo Tirado " personEmail="pablo.tirado-seco@polymtl.ca"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="2" publishedSourceId="6b29fd4a-68db-4e71-bf2e-94037ca10474" publishedSourceYear="2009" publishedSourceFirstAuthor="National Energy Board" isCopyrightProtected="true" pageNumbers="figure 6.3"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" creationTimestamp="2015-05-19T10:32:17" lastEditTimestamp="2015-08-04T20:48:09" fileGenerator="EcoEditor 3.6.120.14104" fileTimestamp="2015-08-04T20:48:09" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

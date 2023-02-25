@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="1" id="3caa1654-691c-584b-a919-07b016c6f073" activityNameId="3d0a6404-34cc-4127-97e5-5cc688d9a5b9" parentActivityId="fce1138c-07a3-4543-8710-ad780dbe19d9" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">market for brick production facility</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts with the built infrastructure ready to use.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the infrastructure made accessible to the users. Transport or losses are considered irrelevant for this product.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a market activity. In the case of services or immobile infrastructures, markets are connecting suppliers and consumers at a global level. For specific connections at regional level, direct links between the local producing activities and the local consumers are preferred. Transport or losses are logically not relevant for this type of products.</text>
+          <text xml:lang="en" index="1">This is the market for  'brick production facility', in the Global geography.</text>
+          <text xml:lang="en" index="2">This market contains no transport or losses, as they are irrelevant for the delivered product.</text>
+          <text xml:lang="en" index="3">This is an immobile infrastructure, representing the construction of a brick production facility. The facility has an average yearly production of 66,957 tons brick shale, lifetime of the site is estimated to 75 years. The construction includes the building halls, paved roads, machinery and the decommission of construction materials. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="75bda068-8882-4e3e-847c-101ebcea2453">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">construction materials/additives</classificationValue>
+      </classification>
+      <classification classificationId="d1a5808c-6d4a-4d8c-a748-b9fef65b7ed1">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4290:Construction of other civil engineering projects</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology/>
+      <timePeriod startDate="1954-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="16199519-7798-5ce0-b692-048564f58fce" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.0" intermediateExchangeId="fe15c49e-fef2-4cbc-be64-04338f4e2823" productionVolumeAmount="2.23747052518757">
+        <name xml:lang="en">brick production facility</name>
+        <unitName xml:lang="en">unit</unitName>
+        <property propertyId="6b2e1ace-3d42-4536-aed5-866ac1281364" variableName="ref_product_capacity_kg" amount="66957000.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="66957000.0" mu="18.02" variance="0.0006" varianceWithPedigreeUncertainty="0.0006"/>
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en"/>
+          </uncertainty>
+          <comment xml:lang="en">Measured value based on sales of brick for the dataset brick shale production, Québec (source: questionnaire). Represent the real capacity of the facility.</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="ref_product_lifetime" amount="75.0" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <uncertainty>
+            <lognormal meanValue="75.0" mu="4.32" variance="0.0006" varianceWithPedigreeUncertainty="0.2106"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+            <comment xml:lang="en">Estimation. The uncertainty has been maximized.</comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimation of infrastructure lifetime based on personnal communication with the brick producer.</comment>
+        </property>
+        <property propertyId="38583c32-c20b-4553-9152-b14b0bee1e61" variableName="ref_product_lifetime_capacity_kg" amount="5021775000.0" isDefiningValue="false" mathematicalRelation="ref_product_lifetime*ref_product_capacity_kg" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">lifetime capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="5021775000.0" mu="22.34" variance="0.0" varianceWithPedigreeUncertainty="0.0"/>
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+            <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables.</comment>
+          </uncertainty>
+          <comment xml:lang="en">Calculated value based on the real capacity of the facility.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="3260884.09360722" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en"/>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="54e0091e-24ab-5818-bb65-05274d18d1a4" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.0" intermediateExchangeId="fe15c49e-fef2-4cbc-be64-04338f4e2823" activityLinkId="4b5990ba-d43e-5652-8d95-46f8e8877285">
+        <name xml:lang="en">brick production facility</name>
+        <unitName xml:lang="en">unit</unitName>
+        <property propertyId="6b2e1ace-3d42-4536-aed5-866ac1281364" amount="66957000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" amount="75.0" isDefiningValue="false" isCalculatedAmount="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+        </property>
+        <property propertyId="38583c32-c20b-4553-9152-b14b0bee1e61" amount="5021775000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">lifetime capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="3260884.09360722" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+      </representativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="false" personName="[System]" personEmail="support@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.11" defaultLanguage="en" creationTimestamp="2014-04-18T13:54:46" lastEditTimestamp="2014-04-18T13:54:46" fileGenerator="Database Layer" fileTimestamp="2014-04-18T13:54:46" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

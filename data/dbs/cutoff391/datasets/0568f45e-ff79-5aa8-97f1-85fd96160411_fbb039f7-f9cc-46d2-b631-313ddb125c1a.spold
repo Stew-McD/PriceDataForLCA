@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="0568f45e-ff79-5aa8-97f1-85fd96160411" activityNameId="f887b333-63e7-4944-8077-386e1a6ca4ef" parentActivityId="15a9d83c-46f2-447a-ad1d-97fa584105f6" inheritanceDepth="-1" type="1" energyValues="0">
+        <activityName xml:lang="en">treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the reception of non-Fe-Co-metals fraction from the treatment of Li-Ion battery, pyrometallurgical processing</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the production of Copper. Aluminium and Lithium are burned during the process.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The treatment of non-Fe-Co-metals fraction from used Li-ion battery, pyrometallurgical processing is based on the proxy "treatment of precious metal from electronics scrap, in anode slime, precious metal extraction". This proxy has been chosen because of the diverse composition of this fraction. The byproducts in the original dataset "silver, secondary, at precious metal refinery", "gold, secondary, at precious metal refinery" and "palladium, secondary, at precious metal refinery" have been deleted in order to adapt the dataset to the composition of the non-Fe-Co-metals fraction. The same has been done for the original outputs of Cadmium, Lead, Mercury and Zinc. The composition of the non-Fe-Cp-metals is 21% Copper, 14.4% Aluminium and 0.8% Lithium. The composition is calculated from the Li-Ion battery production, including cathode and anode components.The uncertainty has been adjusted accordingly. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="6fe7bc2b-4be4-48f7-92b0-f27dea9053ce">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2420:Manufacture of basic precious and other non-ferrous metals</classificationValue>
+      </classification>
+      <classification classificationId="aeaec32d-b5a4-44e0-bb50-25c0f4fe3d37">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">metals/extraction</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Data is adapted from a Swedish plant that is singular in the region and ranges worldwide among the big producer. It may be taken as approximation for the global situation</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Based on technology that treats anode slime by pressure leaching and top blown rotary converter. </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="005b4b3e-f24f-5d6c-a6ca-9dbf5e3f269b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="copper_bp" casNumber="007440-50-8" amount="1.0" mathematicalRelation="0.21- copper_emissions" intermediateExchangeId="fbb039f7-f9cc-46d2-b631-313ddb125c1a" productionVolumeAmount="50399.7333325877">
+        <name xml:lang="en">copper, cathode</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">based on Li-ioin battery composition and pyrometallurgical treatment process. Substracted from copper emissions related to the original process for precious metal extraction</comment>
+        <uncertainty>
+          <lognormal meanValue="0.209998888885782" mu="-1.56" variance="0.0006" varianceWithPedigreeUncertainty="0.1726"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="3.5710464013713095" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Price calculated as 5-year market average (2015-2019; USD/kg; USGS [2020]) and converted to EUR2005 (USD2019/EUR2005 exchange rate: 0.62; Official Data Foundation [2020] and Macrotrends [2020]). 
+
+References:
+Official Data Foundation (2020). Inflation Calculator [Online]. Available from: https://www.officialdata.org/us/inflation/2005?endYear=2019&amp;amount=1 [Accessed 28/07/2020]
+USGS (2020). Mineral Commodity Summaries 2020 [Online]. Available from: https://pubs.usgs.gov/periodicals/mcs2020/mcs2020.pdf [Accessed 28/07/2020]
+Macrotrends (2020). Euro Dollar Exchange Rate (EUR USD) - Historical Chart [Online]. Available from: https://www.macrotrends.net/2548/euro-dollar-exchange-rate-historical-chart [Accessed 28/07/2020]</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="50399.7333325877" mu="10.83" variance="0.0006" varianceWithPedigreeUncertainty="0.1306"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="5"/>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="bd5e293b-6d66-47a9-afb6-7fb659e2d6a0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41413: Refined copper and copper alloys, unwrought; master alloys of copper</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en"/>
+        <extrapolations xml:lang="en">this dataset is based on a proxy. The byproducts have been adapted to the composition of the treated product</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="9011fbce-fc4b-4755-890b-96728c23c4d3" reviewerName="Bo Weidema" reviewerEmail="bow@lca-net.com" reviewDate="2012-05-02">
+        <details>
+          <text xml:lang="en" index="0">Passed</text>
+        </details>
+        <otherDetails xml:lang="en">Documentation slightly revised</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="ffc5469b-548a-4a0e-9614-7106eeea4bca" reviewerName="Hans-Jörg Althaus" reviewerEmail="hja.privat@gmail.com" reviewDate="2012-05-02">
+        <details>
+          <text xml:lang="en" index="0">This is a proxy dataset that has to be used with appropriate care</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="31" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-07-10">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'wet mass':
+ - Input='0,0523752271774081', Output='-1'
+ - Input &gt; output by 1,05237522717741 kg (105,24% of output)
+
+Property 'dry mass':
+ - Input='0,0523752271774081', Output='-1'
+ - Input &gt; output by 1,05237522717741 kg (105,24% of output)
+
+
+- Amount of property 'carbon content, fossil=0' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Amount of property 'dry mass=1' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Amount of property 'wet mass=1' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Amount of property 'water content=0' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'oxygen, liquid' deviates from the default amount in the master file.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'copper'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'copper'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'copper'.
+Property 'wet mass=' of master data exchange was removed from exchange 'copper'.
+Property 'dry mass=' of master data exchange was removed from exchange 'copper'.
+Property 'water content=' of master data exchange was removed from exchange 'copper'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'water content=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Nitrogen oxides'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'water content=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Sulfur dioxide'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'water content=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Particulates, &gt; 10 um'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'water content=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Particulates, &lt; 2.5 um'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'Chlorine'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'Chlorine'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Chlorine'.
+Property 'water content=0' of master data exchange was removed from exchange 'Chlorine'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Chlorine'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'Chlorine'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'Fluorine'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Fluorine'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'Fluorine'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'Fluorine'.
+Property 'water content=0' of master data exchange was removed from exchange 'Fluorine'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Fluorine'.
+Property 'water content=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Copper'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Copper'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Copper'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Copper'.
+Property 'water content=' of master data exchange was removed from exchange 'Copper'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Copper'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+Property 'water content=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Particulates, &gt; 2.5 um, and &lt; 10um'.
+
+- The following negative reference products do not appear on the current list of materials for treatment. No activities exist that produce these materials for treatment.
+ - non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1b11366d-47b7-40d4-b85d-7d7063b22209" isActiveAuthor="false" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="1b11366d-47b7-40d4-b85d-7d7063b22209" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" dataPublishedIn="0" publishedSourceIdOverwrittenByChild="true" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2012-04-27T15:38:30" lastEditTimestamp="2012-06-22T15:08:25" fileGenerator="EcoEditor 2.4.58.7528" fileTimestamp="2012-06-22T15:08:25" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

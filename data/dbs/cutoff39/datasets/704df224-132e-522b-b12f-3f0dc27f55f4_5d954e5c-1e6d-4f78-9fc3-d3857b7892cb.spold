@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="704df224-132e-522b-b12f-3f0dc27f55f4" activityNameId="416fb40b-6d75-4ce1-96a0-c6af1e1bb922" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="b30dde36-3a52-5dc9-ac31-f5600c6d1c0a" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity production, hydro, aluminium industry</activityName>
+        <synonym xml:lang="en"/>
+        <includedActivitiesStart xml:lang="en">Re-labelling dataset, not representing a real transformation activity. Conceptually, the activity can be said to start with the production of electricity.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">Re-labelling dataset, not representing a real transformation activity. Conceptually, the activity can be said to end with a given amount of high voltage electricity labelled as specifically used for the production of electricity.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a dataset used to create an aluminium industry specific electricity market for 'aluminium production Area 7' (Oceania). The production volume represents the total amount of hydroelectricity used in the region for aluminium production (electrolysis and ingot casting). The dataset also identifies the technology and country providing the hydroelectricity in the region. </text>
+          <text xml:lang="en" index="1">Electricity markets specific to the aluminium-industry are needed in an LCI database because primary aluminium production is very energy intensive, and hence the location of production plants is often determined by access to large amounts of cheap electricity, which often results in an electricity mix that is different from the general grid mix of the countries where the production plants are located. </text>
+          <text xml:lang="en" index="2">It is assumed that the production of electricity in general and in aluminium industry specific power plants is identical. Details on actual electricity generation with each technology can be found in the corresponding datasets.</text>
+          <text xml:lang="en" index="3">The share of hydroelectricity produced by the different technologies (reservoir, run-of-river, pumped storage) is calculated using both (1) estimates of the share of hydroelectricity coming from each country within Area 7 (using country-specific aluminium production volumes and International Energy Agency data on electricity sources within each country) and (2) ecoinvent v3.2 country-specific split of hydroelectricity for AU. For NZ, hydroelectricity is assumed to be produced in non-alpine reservoir hydroelectric plants.</text>
+          <text xml:lang="en" index="4">Calculations are detailed in the report 'Calculating grid mixes for the aluminium industry in ecoinvent v3', available on the ecoinvent website.</text>
+        </generalComment>
+        <tag>electricity, primary aluminium industry</tag>
+        <tag>re-labelling activity</tag>
+      </activity>
+      <classification classificationId="a2151a25-4436-4100-b29b-85d910b709d4">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">hard coal/power plants</classificationValue>
+      </classification>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="9232290c-e62b-11de-ba56-0019e336be3a">
+        <shortname xml:lang="en">UN-OCEANIA</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Aluminium producing Oceania countries (AU, NZ)</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2015-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">Production volume updated with 2015 data from IAI</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="beef301c-7487-5ef4-b138-48cf83621b57" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" isCalculatedAmount="false" intermediateExchangeId="5d954e5c-1e6d-4f78-9fc3-d3857b7892cb" productionVolumeAmount="8118427842.000003">
+        <name xml:lang="en">electricity, high voltage, aluminium industry</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e8ff1351-425f-5c84-84bb-c81e68a48a58" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.64288206088864" isCalculatedAmount="false" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="05694b5b-19bc-5481-9ceb-d63ce21e69e8">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.642882060889" mu="-0.441793991647" variance="0.035800000000000005" varianceWithPedigreeUncertainty="0.0172"/>
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="448951af-de9d-5d32-9867-989d6cb9e1d1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.3556725281528008" isCalculatedAmount="false" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="af0df227-3291-5419-9444-f5ede45cf553">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.355672528153" mu="-1.03374483621" variance="0.008" varianceWithPedigreeUncertainty="0.0033"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4f12981c-b3b2-52d0-907b-af731b188f0c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0014454109585591906" isCalculatedAmount="false" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e1005167-764b-5a17-b04d-bb36e19a3ca4">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.00144541095856" mu="-6.53936159747" variance="0.008" varianceWithPedigreeUncertainty="0.0033"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">IAI data used for total electricity used in the production of aluminium that is from hydroelectric plants. ecoinvent data used to split hydroelectricity production to the respective technologies (reservoir, run-of-river, pumped storage). The cited 100% representativeness is for IAI data (data based on 100% of regional aluminium production). The percent representativeness of data used to split hydroelectricity production to different types of plants (national grid proxy) is 36%: rest (ZE) based on an assumption.</samplingProcedure>
+        <extrapolations xml:lang="en">For the split of hydroelectricity production to the respective technologies (reservoir, run-of-river, pumped storage), sharess of different types of hydroelectric plants in the country, were used as a proxy for the split relevant for the aluminium industry, see general comments.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="5" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-07">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977000000000547'
+ - Input &lt; output by 0,0977000000000547 EUR2005 (100% of output)
+
+
+- Specified amount (1,00000000000056) did not match amount calculated by uncertainty (1) at exchange 'electricity, high voltage, aluminium industry'
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-12">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977000000000547'
+ - Input &lt; output by 0,0977000000000547 EUR2005 (100% of output)
+
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-12">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.0977000000000547'
+ - Input &lt; output by 0.0977000000000547 EUR2005 (100% of output)
+
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-06-12">
+        <otherDetails xml:lang="en"/>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="e4de3332-2c72-47a8-a50b-c9e42f5e251d" isActiveAuthor="true" personName="Pascal Lesage" personEmail="pascal.lesage@polymtl.ca"/>
+      <dataGeneratorAndPublication personId="e4de3332-2c72-47a8-a50b-c9e42f5e251d" personName="Pascal Lesage" personEmail="pascal.lesage@polymtl.ca" isCopyrightProtected="true" accessRestrictedTo="1" companyIdOverwrittenByChild="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" lastEditTimestamp="2018-06-12T17:39:20" fileGenerator="EcoEditor 3.11.1000.30" fileTimestamp="2018-06-12T17:39:20" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

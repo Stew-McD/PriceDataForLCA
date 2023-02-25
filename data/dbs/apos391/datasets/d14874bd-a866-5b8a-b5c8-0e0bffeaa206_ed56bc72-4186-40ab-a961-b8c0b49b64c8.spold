@@ -1,0 +1,1638 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="d14874bd-a866-5b8a-b5c8-0e0bffeaa206" activityNameId="2f25a5b2-68c7-4028-97d4-3c4bc5334472" parentActivityId="d3c87239-6aff-4415-904f-b0581668a0ba" inheritanceDepth="-1" type="1" energyValues="0">
+        <activityName xml:lang="en">milk production, from cow</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts from the reception and storage of feed materials, and dairy herd housing.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the provision of milk at the farm gate, ready for delivery. The dataset includes the consumption of feed; the production of pasture and feed (sliage) taking place on-site; the livestock management operations (including bedding, drinking water, milking equipment, cleaning products and water), methane emissions from enteric fermentation and manure management emissions (methane, ammonia and nitrous oxide); emissions from the application of synthetic fertilisers in pasture and silage production (ammonia, nitrous oxide, nitrates and phosphates); energy and buildings (including electricity used in cattle housing and milk parlour equipment, and diesel for regular operations). The dataset does not include fodder and feed production and processing into meal for animals where this takes place off site; nor milk transportation beyond the farm gate (e.g. to dairy processing plants). The dataset does not include the emissions associated with using the manure as a fertiliser on the farms (this is because manure is modelled as a by-product in the ecoinvent datasets, even though it is used in the growing of pasture in most South African dairy operations). Also, the dataset does not include particulate matter emissions, nor any drugs used on the dairy farm.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the production of average milk from dairy cows in South Africa. The activity includes the consumption of feed, the production of feed (silage) and pasture where this is produced on site, the operation of cattle housing systems for the management of the dairy herd and the production of cow milk. The functional unit is 1 kg of Fat and Protein Corrected Milk (FPCM) raw milk from dairy farms. The FPCM correction is made for a conversion to a 4.0% fat and 3.3% true protein content, following the equation provided by the International Dairy Federation (IDF): FPCM (kg/yr) = Production (kg/yr) x [0.1226 x Fat% + 0.0776 x Protein% + 0.2534]. Live animals sold for slaughter (cull cows - cows slaughtered when no longer productive - and male calves) are by-products of the milk system, as are  solid and liquid manure.</text>
+          <text xml:lang="en" index="1">This dataset does not cover organic milk production.</text>
+          <text xml:lang="en" index="2">Pasture-based system: 90% of manure is generated on pasture during grazing and is thus not collected, with the remaining 10% collected in slurry and stored prior to treatment. Total-mixed ration (TMR) system: 35% of manure is generated on pasture during grazing and is thus not collected, about 44% of the manure is managed as solid manure and the remainder is managed as liquid manure. </text>
+          <imageUrl index="3">https://db3.ecoinvent.org/images/07ce7255-3f18-496a-9abc-c6cf1227fb6c</imageUrl>
+        </generalComment>
+      </activity>
+      <classification classificationId="01c46aed-f5d1-4428-8f0a-52a590cfa278">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0141:Raising of cattle and buffaloes</classificationValue>
+      </classification>
+      <geography geographyId="12b21766-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">ZA</shortname>
+        <comment>
+          <text xml:lang="en" index="0">South African values: not applicable worldwide. The dairy system is South Africa is modelled as 48% of milk produced via total-mixed ration (TMR) intensive production systems and 52% produced via pasture-based systems. </text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Data and assumptions are intended to reflect current equipment, processes, and market conditions.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2016-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">The production volume data are from Milk Producers Organisation (MPO)  data for 2016. 2016 is therefore taken as the reference year. National herd statistics and dependent emissions (methane and nitrous oxide) are from the latest national GHG inventory (2012), whilst farm data is circa 2010.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="f5e791aa-cf1f-54fb-8104-91ba98ccefe0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="manure_solid_byproduct" amount="1.0" intermediateExchangeId="ed56bc72-4186-40ab-a961-b8c0b49b64c8" productionVolumeAmount="4890005100.0">
+        <name xml:lang="en">manure, solid, cattle</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Solid manure generated excluding that left on pasture during grazing (60% of total manure). Calculated from number of animals and a manure generation rate of 7.7 tonnes/(head.year) for dairy cattle, based on the manure generated in pens and total heads of dairy in South Africa (DEA, 2017). These figures are based on manure management practices at representative operations in the region for intensive and pasture based operations. Reference(s): DEA (2017) Unlocking Barriers and Opportunities for Land-use Based Climate-Change Mitigation Activities in South Africa, Department of Environmental Affairs of South Africa, Available at: https://www.environment.gov.za/sites/default/files/reports/unlockingbarriers_land-usebasedclimatechangemitigation.pdf. (Accessed September 2017).</comment>
+        <uncertainty>
+          <lognormal meanValue="1.55" mu="0.4383" variance="0.004" varianceWithPedigreeUncertainty="0.0101"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en"/>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.014807421634393615" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0756315" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.441" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.441" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">original default value of master file</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1715" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="f53a5dbc-3bd3-4570-adff-b00790ea3ffc" amount="0.0277" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nitrogen content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0042" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">World market value of manure, deflated with barley world market price and consumer price index, based on [http://www.gov.pe.ca/photos/original/af_NM_manconv.pdf].</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.00651" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="4.8309" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.8285" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="535009d0-0e50-4f6f-b38c-4eb9e32e69ab">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34654: Excreta of animals useful for manure/fertilizer and fuel preparation</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ade50fee-cd1a-5cdb-bfa6-32fde9b89605" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0006798994823998669" intermediateExchangeId="eb8fd188-240c-4b62-9b24-0265599b8d95" activityLinkId="1cf7582d-78c3-5486-acb0-de64bcecc12e">
+        <name xml:lang="en">alfalfa-grass silage</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Alfalfa (lucerne) is fed in intensive systems. On the extensive farms grass or maize silage is grown on the farm (i.e. it is not represented as a feed input to the system)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.07117" mu="-0.868" variance="0.0006" varianceWithPedigreeUncertainty="0.0047"/>
+          <pedigreeMatrix reliability="1" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.484" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.484" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.484" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6bc8ac5e-cc4c-45fb-93dc-53c0e45091df" amount="18.55" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">energy content</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="1.1739" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1.1739" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="2.1739" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="650f2e0f-fc8b-4837-89dd-689cb7d93576">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01912: Alfalfa for forage and silage</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b616b7a2-16fd-5916-b99d-8f89aa3ad953" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00023367066656597923" intermediateExchangeId="aeaf5266-3f9c-4074-bd34-eba76a61760c" activityLinkId="8308d6cd-5d43-515e-ba41-43019ae6c94d">
+        <name xml:lang="en">barley grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Brewers' grain is occasionally a feed component (as on one of the sample farms) where an appropriate source is available.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.02446" mu="-3.27" variance="0.0006" varianceWithPedigreeUncertainty="0.006699999999999999"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4002268" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.46538" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.46538" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.86" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6bc8ac5e-cc4c-45fb-93dc-53c0e45091df" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">energy content</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.16279" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.14" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c0fbfabf-11db-5279-afee-eb1db25a47ea" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.004203397109118187" intermediateExchangeId="fecdf330-8660-4362-adde-ab5ea197ab1d" activityLinkId="ac325f96-c59a-5832-9238-ea0fad7d9b6f">
+        <name xml:lang="en">diesel, burned in agricultural machinery</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Average diesel use on dairy farms, primarily for feed operations (sample of five farms). </comment>
+        <uncertainty>
+          <lognormal meanValue="0.44" mu="-0.821" variance="0.0006" varianceWithPedigreeUncertainty="0.043300000000000005"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="39afb89e-b8b3-4a64-ae59-adc9ad3bdb4e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">86119: Other support services to crop production</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3d0856ff-06c4-53e6-9656-d98114c88046" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0010021280835147677" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="6185d39e-c5ac-5344-bead-8fba0b29e418">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Average electricity use on dairy farms for milking, housing and feed operations (sample of five farms). Extensive farms irrigating pasture have the highest electricity use (0.15 kWh/kg FPCM), whilst intensive farms have lower electricity use (average of 0.07 kWh/kg FPCM).</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1049" mu="-2.255" variance="0.0006" varianceWithPedigreeUncertainty="0.043300000000000005"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9db9c0c1-0a4f-53e9-a0a5-6291eed0e912" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="8.712495826172243E-05" intermediateExchangeId="f5707bdf-f7e2-479b-b3ea-99c04de8a927" activityLinkId="bd0faba4-8e50-5bdf-a062-2f6740914d9b">
+        <name xml:lang="en">inorganic nitrogen fertiliser, as N</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Average nitrate fertiliser used for cultivating pasture and growing silage.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00912" mu="-4.697" variance="0.0006" varianceWithPedigreeUncertainty="0.043300000000000005"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="6ff6750c-1b0d-4607-904b-98afe7a82931">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3461: Mineral or chemical fertilizers, nitrogenous</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bd9d11fe-13f2-5619-b42f-ecd4a01be468" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="2.9041652753907477E-05" intermediateExchangeId="5321a299-0c03-4bfc-9dda-d020456f6b2e" activityLinkId="1512695c-f048-5f19-a416-c056234cf04e">
+        <name xml:lang="en">inorganic phosphorus fertiliser, as P2O5</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Average phosphate fertiliser used for cultivating pasture and growing silage.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00304" mu="-5.796" variance="0.0006" varianceWithPedigreeUncertainty="0.043300000000000005"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="61200d47-8237-4105-856f-b7a4da7727dd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3462: Mineral or chemical fertilizers, phosphatic</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7903b3a8-98df-5f93-a94b-6dc7f098b5d0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.2037000812474811E-05" intermediateExchangeId="7c4dafff-fe18-45c0-92e4-857950032abb" activityLinkId="4911d62b-c8a2-563c-a92a-5e4c084471c2">
+        <name xml:lang="en">inorganic potassium fertiliser, as K2O</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Average potassium fertiliser used for cultivating pasture and growing silage.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00126" mu="-6.677" variance="0.0006" varianceWithPedigreeUncertainty="0.043300000000000005"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="354ba91f-37a6-4329-b165-ce66a7065546">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3463: Mineral or chemical fertilizers, potassic</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="17eac25c-c1ab-55f6-beaa-1a1f714738a9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="001317-65-3" amount="4.7097153972619695E-05" intermediateExchangeId="64cea105-f89a-4f95-ae44-84ff904a28fc" activityLinkId="980f319c-2daf-5d2f-912c-f5ab25223ffc">
+        <name xml:lang="en">limestone, crushed, washed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Feedlime (finely ground limestone) as calcium supplementation for cattle either in dairy concentrate or in mineral packs.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00493" mu="-6.21" variance="0.0006" varianceWithPedigreeUncertainty="0.006699999999999999"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.11702262857142871" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.117257142857143" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.117257142857143" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Table 3.1, ecoinvent v2.2 report 7, part VII, pg 3. MW CaCO3=100, MW MgCO3=84. C content of limestone is 0.117257 kg/kg DM</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Table 3.1, ecoinvent v2.2 report 7, part VII, pg 3</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.998" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="0.0" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Not combustible</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.00200400801603206" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.002" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">ecoinvent v2.2 report 7, part VII, pg 3</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="32a7d945-9669-498f-b623-03c083030c64">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15200: Gypsum; anhydrite; limestone flux; limestone and other calcareous stone, of a kind used for the manufacture of[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fafe919b-befc-5c6d-92dc-52378d5274bc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="1309-48-4" amount="5.2542463863977344E-06" intermediateExchangeId="dd70763b-fb75-4d80-a469-03e3c9cee9cb" activityLinkId="95ef06a6-8fca-51da-bedb-54539db53af4">
+        <name xml:lang="en">magnesium oxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Magnesium oxide for animal supplementation, either in dairy concentrate or in mineral packs.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00055" mu="-8.01" variance="0.0006" varianceWithPedigreeUncertainty="0.006699999999999999"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="31e98423-6683-52e6-8fb9-5f88e2818f0e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0032140702804357344" intermediateExchangeId="aefadd6b-01e9-48ff-b4a1-2c3c8e0d79ca" activityLinkId="137e512c-fa8d-5d68-b148-7df2768db43d">
+        <name xml:lang="en">maize grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Maize grain is the primary component of dairy concentrate (66% by mass), and is also fed directly to cattle </comment>
+        <uncertainty>
+          <lognormal meanValue="0.33644" mu="-1.82" variance="0.0006" varianceWithPedigreeUncertainty="0.0047"/>
+          <pedigreeMatrix reliability="1" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4038302" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.46957" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.46957" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.86" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6bc8ac5e-cc4c-45fb-93dc-53c0e45091df" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">energy content</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.162790697674419" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.14" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="46b1835c-dd46-5b9e-bc83-bce5699aa19e" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.3852104109594026E-07" mathematicalRelation="" intermediateExchangeId="ab75f8c2-4cc6-48da-b71b-2a7da2986b39" activityLinkId="196f073a-1533-5ed7-98c7-f1651a377610">
+        <name xml:lang="en">operation, housing system, cattle, loose, per animal unit</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Generic value taken from ecoinvent dataset  "milk production, from cow, GLO" (i.e. not specific to South Africa). Comment from "milk production, from cow, GLO": considering the whole herd of the dairy farm, in livestock unit, and total milk produced over the year</comment>
+        <uncertainty>
+          <lognormal meanValue="1.45E-05" mu="-11.14" variance="0.0" varianceWithPedigreeUncertainty="0.004"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">math relation</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="155839a3-eb3e-46da-bcdd-f2dfec7bc89e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8612: Animal husbandry services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="37ca18b8-692c-5869-9204-7fd5367de157" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.3669733994109787E-06" mathematicalRelation="" intermediateExchangeId="729005c5-811f-42a1-b599-fac315af9f3a" activityLinkId="97446dc9-ee3f-5992-9017-195e8242b7bb">
+        <name xml:lang="en">operation, housing system, cattle, tied, per animal unit</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Generic value taken from ecoinvent dataset  "milk production, from cow, GLO" (i.e. not specific to South Africa). Comment from "milk production, from cow, GLO": considering the whole herd of the dairy farm, in livestock unit, and total milk produced over the year</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000143091" mu="-8.85" variance="0.0" varianceWithPedigreeUncertainty="0.004"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">math relation</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="155839a3-eb3e-46da-bcdd-f2dfec7bc89e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8612: Animal husbandry services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cfc80215-1cdf-51ad-a2fe-e6e40eaad3e4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00013403104872938221" intermediateExchangeId="3719fbf0-0ae5-4e1d-9668-e5f2cecf9a43" activityLinkId="377d0f3a-8f49-5f8f-9b4a-1c42be4e23c7">
+        <name xml:lang="en">rape meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Oilcake (canola (rapeseed) and/or soya) makes up approximately 10% of  diary feed concentrate (pellets)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.01403" mu="-4.484" variance="0.0006" varianceWithPedigreeUncertainty="0.041800000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4115099999999997" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.457233333333333" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.457233333333333" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.9" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.111111111111111" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7f7973c0-b748-5a20-bb1d-5a53b126c270" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7647-14-5" amount="1.5667207406713245E-05" intermediateExchangeId="edcfa83a-363a-4b2d-8d6a-612e32dfcdfc" activityLinkId="5850f1b4-04da-5cec-8b15-72e2b7735f3b">
+        <name xml:lang="en">sodium chloride, powder</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Salt in dairy concentrate and/or mineral pack supplements to cattle</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00164" mu="-6.21" variance="0.0006" varianceWithPedigreeUncertainty="0.006699999999999999"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaCl</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaCl</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="53ee2434-256c-4e1f-8356-601663e73388">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">16200: Salt and pure sodium chloride; sea water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4e778e56-7868-55b2-88c1-299cc49cb29f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00033273709388769655" intermediateExchangeId="4f3726cc-4fdd-4511-8122-9c6c264ae12c" activityLinkId="24274e8f-1fac-591c-935e-a098b4ee5863">
+        <name xml:lang="en">soybean, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Soya oilcake in diary concentrate (pellets) or as direct feed component</comment>
+        <uncertainty>
+          <lognormal meanValue="0.03483" mu="-1.617" variance="0.0006" varianceWithPedigreeUncertainty="0.0047"/>
+          <pedigreeMatrix reliability="1" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.46681390000000006" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.52451" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.52451" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.89" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6bc8ac5e-cc4c-45fb-93dc-53c0e45091df" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">energy content</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.1236" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.11" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e2472283-52b5-5eea-95a4-5171adfc797e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0007601461544830322" intermediateExchangeId="d7f544d6-c372-4fc3-81ae-44aa3614c9fc" activityLinkId="20db0bcb-0453-509a-b02a-ea7f55d1ab56">
+        <name xml:lang="en">straw</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">wheat straw, fed in intensive systems only.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.07957" mu="-3.57" variance="0.0006" varianceWithPedigreeUncertainty="0.0053"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.37177016666666696" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.437376666666667" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.437376666666667" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.85" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="14.25" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Literature value, Source: Phyllis2, database for (treated) biomass, algae, feedstocks for biogas production and biochar, https://phyllis.nl/Biomass/View/1271, ECN.TNO</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.176470588235294" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.15" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="02ac3244-06a8-41ee-b660-b4f2b5d519fd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01913: Cereal straw, husks, unprepared, ground, pressed, or in the form of pellets</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d1ecdf7b-16a3-5eb6-955d-d9ffa8eda807" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000057-13-6" amount="2.252809670798648E-05" intermediateExchangeId="9e0c9c28-7d8f-4f18-a769-bff3a4c8c1e5" activityLinkId="6671a9e3-1006-50f5-bf48-7e008c82f3d2">
+        <name xml:lang="en">urea</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">The exchange has been updated from 'urea, as N' into 'urea' and therefore its amount has been scaled (multiplied) from 0.0011 kg by 2.1438 kg of 'urea' per kg of 'urea, as N'. Original comment of the exchange is: Urea is a component of dairy concentrate and/or mineral pack supplements to cattle</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0011" mu="-6.768" variance="0.0006" varianceWithPedigreeUncertainty="0.041800000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.2" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.2" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.2" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2NCONH2 </comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e4c8f863-46c4-42c0-98b2-ed729649c346">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34611: Urea</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="473be938-69b4-5e45-96be-c7f0f9d6f1c9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00044689753810124734" intermediateExchangeId="eebb0924-cf1b-43a6-bdd4-c1a322ace5a0" activityLinkId="d2ee69f1-ecb0-5251-aed5-86c5931b5f61">
+        <name xml:lang="en">wheat bran</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Wheat bran, a by-product from flour production for human consumption, makes up 20% of dairy concentrate feed (2nd highest component of feed after maize).</comment>
+        <uncertainty>
+          <lognormal meanValue="0.04678" mu="-3.28" variance="0.0006" varianceWithPedigreeUncertainty="0.041800000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.41325" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.475" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.475" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Assumed carbon content, on a dry mass basis according to FAOSTAT.
+Reference: http://www.fao.org/forestry/17111/en</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.87" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Average dry mass of 87% applied in this dataset. Feedipedia (2015) Animal Feed Resources Information System: Wheat Bran, Available at: https://www.feedipedia.org/node/726. (Accessed October 2017).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.149425287356322" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.13" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass - dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="673e12e7-6afe-4be7-a271-b99868530282">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23130: Groats, meal and pellets of wheat and other cereals</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3221a3ea-d1d4-5d76-a5a4-c70137796f7c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0005451110006177719" mathematicalRelation="" intermediateExchangeId="d47a4435-3089-4263-af99-8611eed2698c" activityLinkId="7b07054a-23bd-5e7b-b3ba-4c18a88a38ad">
+        <name xml:lang="en">wood chips, dry, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Generic value taken from ecoinvent dataset  "milk production, from cow, GLO" (i.e. not specific to South Africa). Comment from "milk production, from cow, GLO": 650 kg dried wood chips (wet mass) per dairy cow per year is used for animal litter. Sawdust may also be used. The division by 1.4 is to add up to the wet mass of the exchange.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.057060714" mu="-2.86" variance="0.0006" varianceWithPedigreeUncertainty="0.0053"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content of dry mass is 0.494 kgC/kg dry wood (ecoinvent v2.2 report 9). </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The volume refers to the bulked volume: dried matter content = 239 kg/m3 dried matter (u=0%) (ecoinvent v2.2 report 9, Table 13.1)</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="9.99" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">LHV is calculated based on the Carbon content of the product. More details can be found on the respective documentation.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.4" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content*dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">dry mass+water mass</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="e6156124-4358-5c29-ac3b-ba8161711ef1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007664-41-7" amount="5.302012262637714E-05" isCalculatedAmount="false" elementaryExchangeId="0f440cc0-0f74-446d-99d6-8ff0e97a2444">
+        <name xml:lang="en">Ammonia</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Ammonia emissions due to volatilisation from manure management are estimated at 21 and 10 kg NH3 per head per year for milking cows and heifers, respectively, using the Tier 2 methodology of the Intergovernmental Panel on Climate Change (IPCC) with factors for tropical production systems. Ammonia emissions from synthetic fertiliser application is estimated at 1.02 tonnes N2O per year and is very farm specific depending on the degree of cultivated pasture and fertiliser applied. Range across five farms is from zero to 6.9 tonnes NH3 per year, calculated using farm-specific fertiliser application rates and with emissions estimated using the Tier 2 methodology of the Intergovernmental Panel on Climate Change (IPCC). </comment>
+        <uncertainty>
+          <lognormal meanValue="0.00555" mu="-5.95" variance="0.008" varianceWithPedigreeUncertainty="0.0521"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">azane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f7e53211-63ff-5828-9dd9-81bfa942ff55" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010024-97-2" amount="3.343611336798558E-06" isCalculatedAmount="false" sourceId="1d85a9ad-57ab-4831-95a0-eea888785546" sourceYear="2013" sourceFirstAuthor="du Toit C.J.L." elementaryExchangeId="afd6d670-bbb0-4625-9730-04088a5b035e">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Direct and indirect emissions from manure management are estimated at 0.22 and 0.61 kg N2O per head per year, respectively, using the Tier 2 methodology of the Intergovernmental Panel on Climate Change (IPCC) with factors for tropical production systems. Value is from Du Toit et al. (2013) for the national dairy herd across all age groups (cattle numbers for 2010). Direct and indirect nitrous oxide emissions from synthetic fertiliser application is estimated at 3.3 tonnes NH3 per year and is very farm specific depending on the degree of cultivated pasture and fertiliser applied. Range across five farms is from zero to 6.9 tonnes NH3 per year, calculated using farm-specific fertiliser application rates and with emissions estimated using the Tier 2 methodology of the Intergovernmental Panel on Climate Change (IPCC). Reference: du Toit C.J.L., Meissner H.H. and van Niekerk W.A. (2013) Direct Methane and Nitrous Oxide Emissions of South African Dairy and Beef Cattle, South African Journal of Animal Science, Volume 43 (3), pp 320-339.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00035" mu="-9.79" variance="0.003" varianceWithPedigreeUncertainty="0.08710000000000001"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">nitrous oxide</synonym>
+        <synonym xml:lang="en">dinitrogen oxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4899e8d6-73a5-5a4e-86bf-e93e1c8ae37d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000074-82-8" amount="0.00016622524931512832" isCalculatedAmount="false" sourceId="1d85a9ad-57ab-4831-95a0-eea888785546" sourceYear="2013" sourceFirstAuthor="du Toit C.J.L." elementaryExchangeId="57bdb443-d4a6-423d-8024-959b8261d02e">
+        <name xml:lang="en">Methane, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Methane emissions from enteric fermentation from lactating cows, heifers ad calves, and from manure management. Value is from Du Toit et al. (2013) for the national dairy herd across all age groups (cattle numbers for 2010). The values of Du Toit et al (2013) are used as they are representative of South African dairy production as a whole and are applied in South Africa's national GHG reporting. Direct methane emissions for South African dairy cattle are estimated using the Tier 2 methodology of the Intergovernmental Panel on Climate Change (IPCC), but adapted for tropical production systems. Full details available in the publication: du Toit C.J.L., Meissner H.H. and van Niekerk W.A. (2013) Direct Methane and Nitrous Oxide Emissions of South African Dairy and Beef Cattle, South African Journal of Animal Science, Volume 43 (3), pp 320-339.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0174" mu="-4.051" variance="0.008" varianceWithPedigreeUncertainty="0.0521"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Methane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="fd71eb58-6674-52a0-9f01-c1d726da45e0" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="0.00020744398140861084" isCalculatedAmount="false" mathematicalRelation="(water_input-((milk_output*WWM_milk)+((50-18)/18)+(manure_solid_byproduct*WWM_manure_solid)+(manure_liquid_byproduct*WWM_manure_liquid))/1000)*fraction_PW_to_air" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Cattle drinking water is modelled as emitted to air, after accounting for water in milk (assuming cattle consume 50 liters water per head per day and produce18 litres of milk per head per day). For the remaining water(wash water), 15% is assumed to evaporate, with the balance to surface run-off.</comment>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f1adf09d-dd68-5b7d-8fa2-73516c61802a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="014797-55-8" amount="2.6748890694388466E-05" isCalculatedAmount="false" elementaryExchangeId="5189de76-6bbb-44ba-8c42-5714f1b4371f">
+        <name xml:lang="en">Nitrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Nitrate emissions from synthetic fertilisers applied to cultivated field. Estimated as 0.3 kg N / kg N additions on irrigated fields only (IPCC 2006)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0028" mu="-5.878" variance="0.04" varianceWithPedigreeUncertainty="0.08870000000000001"/>
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Nitrate ion</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="42aebc4e-bfb5-5e04-a3fd-2e1cc1c82c5a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="014265-44-2" amount="2.9614843268787226E-06" isCalculatedAmount="false" elementaryExchangeId="c8791f3c-3c4a-4278-91c0-483797d14da2">
+        <name xml:lang="en">Phosphate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Phosphate emissions from synthetic fertilisers applied to cultivated field. Estimated as 0.3 kg P / kg P additions on irrigated fields only </comment>
+        <uncertainty>
+          <lognormal meanValue="0.00031" mu="-8.079" variance="0.04" varianceWithPedigreeUncertainty="0.12070000000000002"/>
+          <pedigreeMatrix reliability="5" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Phosphate ion</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c0924ce8-66fa-5b65-a58a-bf9df457d985" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="0.0011755158946487976" isCalculatedAmount="false" mathematicalRelation="(water_input-((milk_output*WWM_milk)+((50-18)/18)+(manure_solid_byproduct*WWM_manure_solid)+(manure_liquid_byproduct*WWM_manure_liquid))/1000)*(1-fraction_PW_to_air)" elementaryExchangeId="db4566b1-bd88-427d-92da-2d25879063b9">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Cattle drinking water is modelled as emitted to air, after accounting for water in milk (assuming cattle consume 50 liters water per head per day and produce18 litres of milk per head per day). For the remaining water(wash water), 15% is assumed to evaporate, with the balance to surface run-off.</comment>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="08112c22-01ba-5d2b-b3b8-54c79f6e0650" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0.09247473640060012" isCalculatedAmount="false" elementaryExchangeId="e780232c-898f-4606-8d21-f8589801ebe6">
+        <name xml:lang="en">Occupation, grassland, natural, for livestock grazing</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">On the dairy farms, pasture is predominantly cultivated (70% in the extensive systems and 100% in the intensive systems). A nominal farm life of 30 years is assumed.</comment>
+        <uncertainty>
+          <lognormal meanValue="9.68" mu="2.27" variance="0.002" varianceWithPedigreeUncertainty="0.044700000000000004"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5f6da8de-fa89-5181-a8bb-aaed3f2e5f1c" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0.16842247962216736" isCalculatedAmount="false" elementaryExchangeId="59ded913-17fe-4b3e-80cb-79b97cdbef9a">
+        <name xml:lang="en">Occupation, pasture, man made</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">On the dairy farms, pasture is predominantly cultivated (70% in the extensive systems and 100% in the intensive systems). A nominal farm life of 30 years is assumed.</comment>
+        <uncertainty>
+          <lognormal meanValue="17.63" mu="2.87" variance="0.002" varianceWithPedigreeUncertainty="0.044700000000000004"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="dad052dd-1367-521d-84dd-a5b8a5a6cd8a" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.008693389475676251" isCalculatedAmount="false" elementaryExchangeId="b905c2e0-a0db-4e66-80d2-8bdfc93c6218">
+        <name xml:lang="en">Transformation, from grassland, natural (non-use)</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Total land use on farm, both cultivated and natural. Stocking rate varies from 0.5 to 3 heads/ha in extensive farms, and 3 to 10 heads/ha in intensive farms. Pre-farm land is assumed to be grassland, although this is a simplification.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.91" mu="-0.09431" variance="0.008" varianceWithPedigreeUncertainty="0.0512"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="25083012-7342-5f0b-b93f-395dc1c68e88" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.003057016079358682" isCalculatedAmount="false" elementaryExchangeId="ce132b7d-ab1c-4df3-9656-8fe37ede77b1">
+        <name xml:lang="en">Transformation, to grassland, natural, for livestock grazing</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">On the dairy farms, pasture is predominantly cultivated (70% in the extensive systems and 100% in the intensive systems). </comment>
+        <uncertainty>
+          <lognormal meanValue="0.32" mu="-1.139" variance="0.008" varianceWithPedigreeUncertainty="0.0507"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="957ea8c7-4094-519b-8529-576b09f287bb" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.00563637339631757" isCalculatedAmount="false" elementaryExchangeId="7a16b680-6d9a-4db3-a23e-0ec64aca5995">
+        <name xml:lang="en">Transformation, to pasture, man made</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">On the dairy farms, pasture is predominantly cultivated (70% in the extensive systems and 100% in the intensive systems). </comment>
+        <uncertainty>
+          <lognormal meanValue="0.59" mu="-0.5276" variance="0.008" varianceWithPedigreeUncertainty="0.0507"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0f581b27-f7e3-5aaf-b07c-37feeea01769" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_input" casNumber="007732-18-5" amount="0.0014234231119513861" isCalculatedAmount="false" elementaryExchangeId="478e8437-1c21-4032-8438-872a6b5ddcdf">
+        <name xml:lang="en">Water, unspecified natural origin</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Water used during milking (washing, sluicing), watering cows and irrigating pastures. Estimate based on an average of the water requirement data reported by representative farm(s) in the region. </comment>
+        <uncertainty>
+          <lognormal meanValue="0.149" mu="-4.492" variance="0.0006" varianceWithPedigreeUncertainty="0.041800000000000004"/>
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00114865738217139" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="6a098164-9f04-4f65-8104-ffab7f2677f3">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in ground</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="daadf2d4-7bbb-4f69-8ab5-58df4c1685eb" amount="0.15" variableName="fraction_PW_to_air" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">fraction, process water, to air</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <comment xml:lang="en">Literature value. In case when no industry/process specific data are available, default evaporation fraction value is used. This value is 15% and is based on literature (Statistics Canada, 2007 &amp; Shaffer, K.H., 2008, Consumptive water use in the Great Lakes Basin, USGS &amp; Shiklomanov, 2003, World Water Resources at the Beginning of the 21st Century) and has been approved by an expert.</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">The inventory data is primarily from five farms in the Western Cape for the 2008/2009 production year, and supplemented with data from literature and expert knowledge, where necessary. The Western Cape is responsible for about 27% of the total milk produced in South Africa, second only to the Eastern Cape in 2014 (DAFF, 2015b). The coastal areas in South Africa, including the Western Cape itself, accounted for 82% of the total production due to the more suitable climate for dairy farming, with mild temperatures and good rainfall ensuring good quality natural and artificial pastures (DAFF, 2015b). Although the sample size is small, the five farms represent a reasonable cross section of farming practices in the Western Cape which encompass different farming approaches (i.e. intensive stall based systems and pasture based systems), a range in farm sizes and a range of geographical areas within the Western Cape Province. Academic publications (Banga et al., 2014, Du Toit et al., 2013) provided further information, such as that on enteric fermentation, conception rates, culling practices etc. Emissions from the agricultural process estimated according to Nemecek and Schnetzer (2011) and other references cited where appropriate.   Reference(s): DAFF (2015) A profile of the South African dairy market value chain 2015. Available at: http://www.nda.agric.za/doaDev/sideMenu/Marketing/Annual%20Publications/Commodity%20Profiles/field%20crops/Dairy%20market%20value%20chain%20profile%202015.pdf; du Toit C.J.L., Meissner H.H. and van Niekerk W.A. (2013) Direct Methane and Nitrous Oxide Emissions of South African Dairy and Beef Cattle, South African Journal of Animal Science, Volume 43 (3), pp 320-339.; Nemecek and Schnetzer (2011) Methods of Assessment of Direct Field Emissions for LCIs of Agricultural Production Systems, Life cycle inventories of Swiss and European agricultural production systems; IPCC (2006). IPCC Guidelines for national greenhouse gas inventories‚ Prepared by the National Greenhouse Gas Inventories Programme.</samplingProcedure>
+        <extrapolations xml:lang="en"/>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="35" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-03-06">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="35" reviewerId="f48a446f-c675-4da4-a835-637f2eb8250f" reviewerName="Jens Lansche" reviewerEmail="jens.lansche@agroscope.admin.ch" reviewDate="2018-03-06">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="33" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-03-06">
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="35" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-04-16">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, non-fossil':
+ - Input='0,259902818330667', Output='0,204901199448444'
+ - Input &gt; output by 0,0550016188822227 kg (26,84% of output)
+
+Property 'wet mass':
+ - Input='149,7455714626', Output='147,512830222222'
+ - Input &gt; output by 2,23274124037772 kg (1,51% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,000968071508800681', Output='0'
+ - Input &gt; output by 0,000968071508800681 kg
+
+Property 'dry mass':
+ - Input='0,587899954', Output='0,427719'
+ - Input &gt; output by 0,160180954 kg (37,45% of output)
+
+Property 'water in wet mass':
+ - Input='149,1576715086', Output='147,085111222222'
+ - Input &gt; output by 2,07256028637769 kg (1,41% of output)
+
+Property 'price':
+ - Input='0', Output='0,4366654'
+ - Input &lt; output by 0,4366654 EUR2005 (100% of output)
+
+
+- Amount of property 'energy content=2,615' of exchange 'cow milk' deviates from the default amount in the master file.
+Amount of property 'water content=7,12348' of exchange 'cow milk' deviates from the default amount in the master file.
+Amount of property 'dry mass=0,1715' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,8285' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'nitrogen content=0,0277' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'water content=4,8309' of exchange 'manure, solid, cattle' deviates from the default amount in the master file.
+Amount of property 'dry mass=0,072' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'water content=12,8889' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'nitrogen content=0,04306' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,928' of exchange 'manure, liquid, cattle' deviates from the default amount in the master file.
+Property 'water content=0,666666666666667' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'dry mass=0,6' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'energy content=14,9367' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'carbon content, non-fossil=0,4928' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+Property 'water in wet mass=0,4' of master data exchange was removed from exchange 'cattle for slaughtering, live weight'.
+
+- Due to the use of the reference product property(s) 'water in wet mass' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (149,1576715086) and output exchanges (147,085111222222) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Water, Water
+ -- Property(ies): price=0,0042, water content=4,8309, wet mass=1, dry mass=0,1715, water in wet mass=0,8285, nitrogen content=0,0277, carbon content, non-fossil=0,441, carbon content, fossil=0, price=0,0042, dry mass=0,072, wet mass=1, carbon content, fossil=0, water content=12,8889, water in wet mass=0,928, nitrogen content=0,04306, carbon content, non-fossil=0,68, price=2,7, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0,748686634968048, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0,0104328554239, wet mass=1000, water content=9081,65213442, dry mass=0,1101, water in wet mass=999,8899, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=0, wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=1000, wet mass=1000, dry mass=0
+ -- Parameter(s): fraction, process water, to air
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): Water, Water
+ -- Property(ies): price=0,0042, water content=4,8309, wet mass=1, dry mass=0,1715, water in wet mass=0,8285, nitrogen content=0,0277, carbon content, non-fossil=0,441, carbon content, fossil=0, price=0,0042, dry mass=0,072, wet mass=1, carbon content, fossil=0, water content=12,8889, water in wet mass=0,928, nitrogen content=0,04306, carbon content, non-fossil=0,68, price=2,7, carbon content, non-fossil=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0,748686634968048, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0,0104328554239, wet mass=1000, water content=9081,65213442, dry mass=0,1101, water in wet mass=999,8899, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=0, dry mass=0, water in wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=0, wet mass=1000, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=1000, wet mass=1000, dry mass=0
+ -- Parameter(s): fraction, process water, to air
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="19fd67c5-a1f9-43cc-ac2c-a45863ba3f60" isActiveAuthor="true" personName="Philippa Notten" personEmail="pippa@tgh.co.za"/>
+      <dataGeneratorAndPublication personId="19fd67c5-a1f9-43cc-ac2c-a45863ba3f60" personName="Philippa Notten" personEmail="pippa@tgh.co.za" dataPublishedIn="1" publishedSourceId="f6b8d104-ac3d-474a-b26b-35ddd0491679" publishedSourceYear="2017" publishedSourceFirstAuthor="Russo, V," isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="5" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2017-09-26T10:49:22" lastEditTimestamp="2018-04-14T18:02:39" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2018-04-14T18:02:39" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

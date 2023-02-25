@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="6820d4b0-4888-578b-a0cd-cc78c80c2e9f" activityNameId="6c32576b-baaf-4719-a3ac-da24ccafb17f" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="1de0e634-5257-4619-87d6-b61e67558662" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity voltage transformation from high to medium voltage</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts with the high voltage electricity arriving at the transformer station.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with 1kWh of high voltage electricity transformed to medium voltage. 
+
+This dataset includes the losses during voltage transformation.
+
+It doesn't include the transformer station itself as this is included in the dataset for the transmission network.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the transformation of electricity voltage from high to medium voltage.</text>
+          <text xml:lang="en" index="1">Definition of the voltage levels: </text>
+          <text xml:lang="en" index="2"> - High voltage level above 24 kV (large scale industry)</text>
+          <text xml:lang="en" index="3"> - Medium voltage level between 1 kV and 24 kV (medium to small scale industry, service sector</text>
+          <text xml:lang="en" index="4">and public buildings)</text>
+          <text xml:lang="en" index="5"> - Low voltage level below 1 kV (Households)</text>
+          <text xml:lang="en" index="6">The original ecoinvent dataset used as a basis was 'electricity voltage transformation from high to medium voltage, BR, 2012-2012' and it has been copied in '12/2017'</text>
+          <text xml:lang="en" index="7">[This dataset is meant to replace the following datasets:</text>
+          <text xml:lang="en" index="8"> - electricity voltage transformation from high to medium voltage, BR, 2012 - 2012 (38fe745b-d561-42ea-862e-3c38d368510e)]</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="572aa631-8a25-4c16-b437-2ee0672c450d">
+        <shortname xml:lang="en">BR-Northern grid</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Transformers are essential components of the electricity grid. They connect the different voltage levels.</text>
+          <text xml:lang="en" index="1">Big power plants feed the electricity at a very high voltage to the electricity grid. Transformers between 600 MVA and 80 MVA can be found in substations, where the high transmission voltage is transformed to the medium distribution voltage. In an additional step the medium voltage is transformed to low voltage using transformers below 2.5 MVA. The small transformers below 2.5 MVA are allocated to the low voltage level, whereas all the other transformers are allocated to the medium voltage level.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2014-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="3e6bb3eb-bce8-57d8-bc7f-0fc4aa5f7e0a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" productionVolumeAmount="69953729477.72295">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated to be between the price of electricity, high voltage and electricity, low voltage.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">This value is the total output after transformation (high to medium voltage).
+It includes net generation high voltage, transformation losses and transmission losses.
+The calculation is made based on total electricity losses between net electricity available at the busbar and the use of electricity calculated based on the Anuário Estatístico de Energia Elétrica 2021 (page 75), (PD) (EMPRESA, 2016). These total losses over the whole chain are then allocated to the different voltage levels as well as transformation and transmission losses based on supplementary material information in Itten et al. 2014. For details please see the documentation available on ecoQuery.
+
+EMPRESA, D.P.E.E., 2021. Anuário Estatístico de Energia Elétrica 2021 ano base 2020. Rio de Janeiro: EPE.. Available: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/Anu%C3%A1rio_2021.pdf#page=1&amp;zoom=auto,-248,653
+
+Treyer, Karin &amp; Bauer, Christian. (2014). Life cycle inventories of electricity generation and power supply in version 3 of the ecoinvent database?Part II: Electricity markets. The International Journal of Life Cycle Assessment. 21. 10.1007/s11367-013-0694-x. </productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6fe35633-7ef8-5107-ab2d-df8069145a40" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.025882762" sourceId="e5c28d59-2abe-4005-ad85-433ffc9ca8e6" sourceYear="2014" sourceFirstAuthor="Itten, R." intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e2cf9086-50f5-5321-8cfe-1988eef2c38d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value/estimation.
+
+This value compensates for the losses during transformation on this electricity market. The calculation is made based on total electricity losses between net electricity available at the busbar and the use of electricity calculated based on the Anuário Estatístico de Energia Elétrica 2021 (page 75), (PD) (EMPRESA, 2016). These total losses over the whole chain are then allocated to the different voltage levels as well as transformation and transmission losses based on supplementary material information in Itten et al. 2014. For details please see the documentation available on ecoQuery.
+
+EMPRESA, D.P.E.E., 2021. Anuário Estatístico de Energia Elétrica 2021 ano base 2020. Rio de Janeiro: EPE.. Available: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/Anu%C3%A1rio_2021.pdf#page=1&amp;zoom=auto,-248,653
+
+Treyer, Karin &amp; Bauer, Christian. (2014). Life cycle inventories of electricity generation and power supply in version 3 of the ecoinvent database?Part II: Electricity markets. The International Journal of Life Cycle Assessment. 21. 10.1007/s11367-013-0694-x. </comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="7d9a9c96-6f91-4627-a044-6816e91a2b64" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">electricity transformation losses</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="a5b1977a-ec47-4123-beac-51e2c634cfa3" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">total electricity losses within the country</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">Electricity losses data are based on EMPRESA 2021 data and on data from Treyer et al. (2014)
+
+EMPRESA, D.P.E.E., 2021. Anuário Estatístico de Energia Elétrica 2021 ano base 2020. Rio de Janeiro: EPE.. Available: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/Anu%C3%A1rio_2021.pdf#page=1&amp;zoom=auto,-248,653
+
+Treyer, Karin &amp; Bauer, Christian. (2014). Life cycle inventories of electricity generation and power supply in version 3 of the ecoinvent database?Part II: Electricity markets. The International Journal of Life Cycle Assessment. 21. 10.1007/s11367-013-0694-x. </extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-01-24">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" reviewerName="Karin Treyer" reviewerEmail="karin.treyer@psi.ch" reviewDate="2018-01-24">
+        <details>
+          <text xml:lang="en" index="0">The loss values in this dataset need to be revised in a wholistic way over the whole market- transformation dataset chain. This will be done in an integrated way after accept of all affected datasets into the database. </text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-01-24">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="29" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-05-09">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Transforming activities cannot have a geographical location that implies that its intermediate outputs are supplied to more than one market. Matching markets found: market for electricity, medium voltage, BR, 2014 - 2017, market for electricity, medium voltage, BR-Northern grid, 2014 - 2017</text>
+          <text xml:lang="en" index="3">None</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,1'
+ - Input &lt; output by 0,1 EUR2005 (100% of output)
+
+
+- Specified amount (1) did not match amount calculated by uncertainty (0,0074) at exchange 'electricity, high voltage'
+- The specified geography shall not overlap with the geography Brazil of the related dataset electricity voltage transformation from high to medium voltage, BR, 2012 - 2012.
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-06-20">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-20">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Transforming activities cannot have a geographical location that implies that its intermediate outputs are supplied to more than one market. Matching markets found: market for electricity, medium voltage, BR, 2014 - 2017, market for electricity, medium voltage, BR-Northern grid, 2014 - 2017</text>
+          <text xml:lang="en" index="3">None</text>
+          <text xml:lang="en" index="4">- The specified geography shall not overlap with the geography Brazil of the related dataset electricity voltage transformation from high to medium voltage, BR, 2012 - 2012.</text>
+          <text xml:lang="en" index="5">None</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,1'
+ - Input &lt; output by 0,1 EUR2005 (100% of output)
+
+
+- Specified amount (1) did not match amount calculated by uncertainty (0,0074) at exchange 'electricity, high voltage'
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, medium voltage', global (2012-2012) production volume 20500000000000, sum of all non-global production volumes 20607706557108,7. Local datasets used in calculation: CA-QC (2012-2015) PV: 135284092185, CY (2012-2012) PV: 4160000000, AU (2012-2012) PV: 217000000000, CH (2012-2012) PV: 72700000000, DK (2012-2012) PV: 40700000000, FI (2012-2012) PV: 81400000000, AT (2012-2012) PV: 90800000000, CL (2012-2012) PV: 61800000000, BG (2012-2012) PV: 41800000000, ES (2012-2012) PV: 259000000000, MT (2012-2012) PV: 1900000000, FRCC (2012-2012) PV: 201000000000, CSG (2012-2012) PV: 747000000000, FR (2012-2012) PV: 499000000000, IS (2012-2012) PV: 16300000000, CZ (2012-2012) PV: 84400000000, BE (2012-2012) PV: 86700000000, LV (2012-2012) PV: 10100000000, BR (2012-2012) PV: 518000000000, EE (2012-2012) PV: 12200000000, LT (2012-2012) PV: 11900000000, GB (2012-2012) PV: 332000000000, DE (2012-2012) PV: 567000000000, BA (2012-2012) PV: 16200000000, GR (2012-2012) PV: 55400000000, NO (2012-2012) PV: 138000000000, JP (2012-2012) PV: 923000000000, MX (2012-2012) PV: 252000000000, IE (2012-2012) PV: 25200000000, HU (2012-2012) PV: 45300000000, HICC (2012-2012) PV: 9070000000, PL (2012-2012) PV: 147000000000, MY (2012-2012) PV: 125000000000, KR (2012-2012) PV: 453000000000, NPCC, US only (2012-2012) PV: 262000000000, LU (2012-2012) PV: 8230000000, IT (2012-2012) PV: 290000000000, ID (2012-2012) PV: 171000000000, IR (2012-2012) PV: 215000000000, MK (2012-2012) PV: 7260000000, HR (2012-2012) PV: 21300000000, NL (2012-2012) PV: 120000000000, MRO, US only (2012-2012) PV: 251000000000, RU (2012-2012) PV: 920000000000, TH (2012-2012) PV: 155000000000, SGCC (2012-2012) PV: 3670000000000, RFC (2012-2012) PV: 883000000000, SK (2012-2012) PV: 37300000000, SPP (2012-2012) PV: 114000000000, TRE (2012-2012) PV: 361000000000, PT (2012-2012) PV: 50900000000, RS (2012-2012) PV: 36100000000, ZA (2012-2012) PV: 230000000000, TW (2012-2012) PV: 217000000000, SA (2012-2012) PV: 233000000000, SI (2012-2012) PV: 20500000000, UA (2012-2012) PV: 171000000000, RO (2012-2012) PV: 54000000000, SERC (2012-2012) PV: 935000000000, TR (2012-2012) PV: 208000000000, WECC, US only (2012-2012) PV: 681000000000, TZ (2012-2012) PV: 4910000000, SE (2012-2012) PV: 159000000000, CA-YK (2012-2012) PV: 411000000, CA-NB (2012-2012) PV: 20800000000, CA-AB (2012-2012) PV: 67600000000, CA-ON (2012-2012) PV: 133000000000, CA-PE (2012-2012) PV: 1480000000, CA-BC (2012-2012) PV: 73800000000, CA-NF (2012-2012) PV: 39500000000, CA-SK (2012-2012) PV: 21700000000, CA-MB (2012-2012) PV: 33900000000, CA-NS (2012-2012) PV: 10200000000, ASCC (2012-2012) PV: 6130000000, CA-NU (2012-2012) PV: 88400000, CA-NT (2012-2012) PV: 697000000, IN-Southern grid (2012-2012) PV: 182170120048,54, IN-Western grid (2012-2012) PV: 273326884031,13, IN-Northern grid (2012-2012) PV: 243489172787,31, IN-North-eastern grid (2012-2012) PV: 9135601517,36, IN-Eastern grid (2012-2012) PV: 122680404186,38, TM (2012-2012) PV: 16883867731,6294, AO (2012-2012) PV: 7838244205,40541, AE (2012-2012) PV: 95637153970,2884, ZW (2012-2012) PV: 9429581735,11294, TT (2012-2012) PV: 8666252612,80168, ZM (2012-2012) PV: 12690586024,8447, TN (2012-2012) PV: 15677354223,1947, YE (2012-2012) PV: 5706451304,34783, VE (2012-2012) PV: 97821727436,8231, VN (2012-2012) PV: 125666570998,938, UY (2012-2012) PV: 28660915641,4763, AM (2012-2012) PV: 6777984363,05733, XK (2012-2012) PV: 5405101129,32605, AL (2012-2012) PV: 7119220359,89717, UZ (2012-2012) PV: 49261089033,2442, EC (2012-2012) PV: 17480979039,479, BO (2012-2012) PV: 7445497745,3271, CI (2012-2012) PV: 6877022600, CU (2012-2012) PV: 15337670147,139, CW (2012-2012) PV: 347186172,839506, BY (2012-2012) PV: 34351848055,2455, BN (2012-2012) PV: 3463447857,14286, DO (2012-2012) PV: 13108427067,0391, CR (2012-2012) PV: 9670179495,14563, DZ (2012-2012) PV: 50004798260,8696, BD (2012-2012) PV: 34047666345,9707, BH (2012-2012) PV: 14491914253,211, AZ (2012-2012) PV: 19141951424,9037, CM (2012-2012) PV: 4922615105,34846, CD (2012-2012) PV: 8609610971,92225, BW (2012-2012) PV: 3606641117,02128, BJ (2012-2012) PV: 1087066666,66667, CG (2012-2012) PV: 714003896,103896, KE (2012-2012) PV: 7856925264,29342, GT (2012-2012) PV: 9184983096,77419, HT (2012-2012) PV: 616189411,764706, HK (2012-2012) PV: 43343719409,8428, KG (2012-2012) PV: 12538010977,9614, IL (2012-2012) PV: 50576823001,1115, KW (2012-2012) PV: 54716740225,8905, GI (2012-2012) PV: 172475789,473684, GE (2012-2012) PV: 10282439423,0769, JM (2012-2012) PV: 1925560924,57421, EG (2012-2012) PV: 146108948074,95, HN (2012-2012) PV: 6663176830,14354, KP (2012-2012) PV: 15428738093,7693, ER (2012-2012) PV: 298325714,285714, LB (2012-2012) PV: 10682610171,3654, KZ (2012-2012) PV: 92343008288,1598, MA (2012-2012) PV: 29345352082,7222, GA (2012-2012) PV: 2138869513,10861, GH (2012-2012) PV: 10821103021,7566, IQ (2012-2012) PV: 58217512897,4588, ME (2012-2012) PV: 3499346382,97872, LY (2012-2012) PV: 23075015111,5891, KH (2012-2012) PV: 4259111552,79503, MD (2012-2012) PV: 4946810920,13889, JO (2012-2012) PV: 15551467795,1002, ET (2012-2012) PV: 8258692072,28916, LK (2012-2012) PV: 9972320340,24896, NP (2012-2012) PV: 4268108226,12086, NI (2012-2012) PV: 3240180211,26761, NA (2012-2012) PV: 3961032000, NG (2012-2012) PV: 20781376327,9133, MZ (2012-2012) PV: 21993521631,016, QA (2012-2012) PV: 3035989285,71429, MN (2012-2012) PV: 5740652027,02703, MU (2012-2012) PV: 1023207645,05119, MM (2012-2012) PV: 11942022146,8927, NE (2012-2012) PV: 1152282589,28571, OM (2012-2012) PV: 24702510716,302, NZ (2012-2012) PV: 38191888558,2386, PK (2012-2012) PV: 88546265127,048, PY (2012-2012) PV: 46156385316,4557, PA (2012-2012) PV: 8175367788,67102, PH (2012-2012) PV: 66530786212,1212, TG (2012-2012) PV: 1108075833,33333, SN (2012-2012) PV: 2692305691,05691, SY (2012-2012) PV: 19082151339,6128, SG (2012-2012) PV: 38084753849,3989, SD (2012-2012) PV: 9983406746,03175, TJ (2012-2012) PV: 17082380633,2454, SS (2012-2012) PV: 202364042,553191, SV (2012-2012) PV: 5396304249,20128, PE (2012-2017) PV: 39440308960, AR (2012-2017) PV: 120000000000, CO (2014-2017) PV: 53185000000, BR-Mid-western grid (2014-2017) PV: 42884469160, BR-North-eastern grid (2014-2017) PV: 97550374440, BR-South-eastern grid (2014-2017) PV: 298145592090, BR-Southern grid (2014-2017) PV: 92833466040, BR-Northern grid (2014-2017) PV: 41896450090
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-04-05">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-04-05">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Transforming activities cannot have a geographical location that implies that its intermediate outputs are supplied to more than one market. Matching markets found: market for electricity, medium voltage, BR, 2014 - 2017, market for electricity, medium voltage, BR-Northern grid, 2014 - 2017</text>
+          <text xml:lang="en" index="3">None</text>
+          <text xml:lang="en" index="4">- The specified geography shall not overlap with the geography Brazil of the related dataset electricity voltage transformation from high to medium voltage, BR, 2012 - 2012.</text>
+          <text xml:lang="en" index="5">None</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,1'
+ - Input &lt; output by 0,1 EUR2005 (100% of output)
+
+
+- Specified amount (1) did not match amount calculated by uncertainty (0,0074) at exchange 'electricity, high voltage'
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, medium voltage', global (2012-2012) production volume 20500000000000, sum of all non-global production volumes 20607706557108,7. Local datasets used in calculation: CA-MB (2012-2012) PV: 33900000000, CA-NS (2012-2012) PV: 10200000000, CA-NF (2012-2012) PV: 39500000000, CA-NB (2012-2012) PV: 20800000000, CA-NT (2012-2012) PV: 697000000, CA-AB (2012-2012) PV: 67600000000, CA-ON (2012-2012) PV: 133000000000, CA-BC (2012-2012) PV: 73800000000, CA-YK (2012-2012) PV: 411000000, CA-QC (2012-2015) PV: 135284092185, CA-NU (2012-2012) PV: 88400000, CA-PE (2012-2012) PV: 1480000000, CA-SK (2012-2012) PV: 21700000000, BR-Mid-western grid (2014-2017) PV: 42884469160, BR-Southern grid (2014-2017) PV: 92833466040, BR-North-eastern grid (2014-2017) PV: 97550374440, PE (2012-2017) PV: 39440308960, AR (2012-2017) PV: 120000000000, IN-North-eastern grid (2012-2012) PV: 9135601517,36, IN-Northern grid (2012-2012) PV: 243489172787,31, IN-Western grid (2012-2012) PV: 273326884031,13, IN-Eastern grid (2012-2012) PV: 122680404186,38, IN-Southern grid (2012-2012) PV: 182170120048,54, PT (2012-2012) PV: 50900000000, OM (2012-2012) PV: 24702510716,302, QA (2012-2012) PV: 3035989285,71429, PL (2012-2012) PV: 147000000000, PH (2012-2012) PV: 66530786212,1212, PY (2012-2012) PV: 46156385316,4557, PA (2012-2012) PV: 8175367788,67102, NZ (2012-2012) PV: 38191888558,2386, NPCC, US only (2012-2012) PV: 262000000000, RFC (2012-2012) PV: 883000000000, PK (2012-2012) PV: 88546265127,048, VE (2012-2012) PV: 97821727436,8231, SPP (2012-2012) PV: 114000000000, ZW (2012-2012) PV: 9429581735,11294, SGCC (2012-2012) PV: 3670000000000, YE (2012-2012) PV: 5706451304,34783, TN (2012-2012) PV: 15677354223,1947, SS (2012-2012) PV: 202364042,553191, SD (2012-2012) PV: 9983406746,03175, WECC, US only (2012-2012) PV: 681000000000, SK (2012-2012) PV: 37300000000, SA (2012-2012) PV: 233000000000, SE (2012-2012) PV: 159000000000, TR (2012-2012) PV: 208000000000, UA (2012-2012) PV: 171000000000, TZ (2012-2012) PV: 4910000000, SV (2012-2012) PV: 5396304249,20128, TJ (2012-2012) PV: 17082380633,2454, RO (2012-2012) PV: 54000000000, TW (2012-2012) PV: 217000000000, SG (2012-2012) PV: 38084753849,3989, TT (2012-2012) PV: 8666252612,80168, ZM (2012-2012) PV: 12690586024,8447, TM (2012-2012) PV: 16883867731,6294, ZA (2012-2012) PV: 230000000000, RU (2012-2012) PV: 920000000000, TG (2012-2012) PV: 1108075833,33333, SERC (2012-2012) PV: 935000000000, TH (2012-2012) PV: 155000000000, SI (2012-2012) PV: 20500000000, UZ (2012-2012) PV: 49261089033,2442, XK (2012-2012) PV: 5405101129,32605, TRE (2012-2012) PV: 361000000000, SN (2012-2012) PV: 2692305691,05691, VN (2012-2012) PV: 125666570998,938, RS (2012-2012) PV: 36100000000, UY (2012-2012) PV: 28660915641,4763, SY (2012-2012) PV: 19082151339,6128, ME (2012-2012) PV: 3499346382,97872, MX (2012-2012) PV: 252000000000, BG (2012-2012) PV: 41800000000, MN (2012-2012) PV: 5740652027,02703, MT (2012-2012) PV: 1900000000, MK (2012-2012) PV: 7260000000, MU (2012-2012) PV: 1023207645,05119, CR (2012-2012) PV: 9670179495,14563, AO (2012-2012) PV: 7838244205,40541, BD (2012-2012) PV: 34047666345,9707, MZ (2012-2012) PV: 21993521631,016, BN (2012-2012) PV: 3463447857,14286, CL (2012-2012) PV: 61800000000, AM (2012-2012) PV: 6777984363,05733, CI (2012-2012) PV: 6877022600, NA (2012-2012) PV: 3961032000, BW (2012-2012) PV: 3606641117,02128, NE (2012-2012) PV: 1152282589,28571, AT (2012-2012) PV: 90800000000, BJ (2012-2012) PV: 1087066666,66667, NP (2012-2012) PV: 4268108226,12086, NL (2012-2012) PV: 120000000000, NI (2012-2012) PV: 3240180211,26761, BY (2012-2012) PV: 34351848055,2455, MRO, US only (2012-2012) PV: 251000000000, CM (2012-2012) PV: 4922615105,34846, CD (2012-2012) PV: 8609610971,92225, AU (2012-2012) PV: 217000000000, AL (2012-2012) PV: 7119220359,89717, ASCC (2012-2012) PV: 6130000000, BO (2012-2012) PV: 7445497745,3271, NG (2012-2012) PV: 20781376327,9133, BA (2012-2012) PV: 16200000000, NO (2012-2012) PV: 138000000000, CG (2012-2012) PV: 714003896,103896, MY (2012-2012) PV: 125000000000, CH (2012-2012) PV: 72700000000, BR (2012-2012) PV: 518000000000, AZ (2012-2012) PV: 19141951424,9037, BH (2012-2012) PV: 14491914253,211, BE (2012-2012) PV: 86700000000, AE (2012-2012) PV: 95637153970,2884, MM (2012-2012) PV: 11942022146,8927, ID (2012-2012) PV: 171000000000, ET (2012-2012) PV: 8258692072,28916, HN (2012-2012) PV: 6663176830,14354, EG (2012-2012) PV: 146108948074,95, EE (2012-2012) PV: 12200000000, ES (2012-2012) PV: 259000000000, GT (2012-2012) PV: 9184983096,77419, EC (2012-2012) PV: 17480979039,479, FRCC (2012-2012) PV: 201000000000, DO (2012-2012) PV: 13108427067,0391, GH (2012-2012) PV: 10821103021,7566, FI (2012-2012) PV: 81400000000, GR (2012-2012) PV: 55400000000, CZ (2012-2012) PV: 84400000000, GE (2012-2012) PV: 10282439423,0769, FR (2012-2012) PV: 499000000000, HK (2012-2012) PV: 43343719409,8428, HU (2012-2012) PV: 45300000000, DZ (2012-2012) PV: 50004798260,8696, DE (2012-2012) PV: 567000000000, IL (2012-2012) PV: 50576823001,1115, ER (2012-2012) PV: 298325714,285714, CY (2012-2012) PV: 4160000000, GB (2012-2012) PV: 332000000000, HT (2012-2012) PV: 616189411,764706, HR (2012-2012) PV: 21300000000, HICC (2012-2012) PV: 9070000000, GA (2012-2012) PV: 2138869513,10861, DK (2012-2012) PV: 40700000000, CSG (2012-2012) PV: 747000000000, CW (2012-2012) PV: 347186172,839506, IE (2012-2012) PV: 25200000000, CU (2012-2012) PV: 15337670147,139, GI (2012-2012) PV: 172475789,473684, MA (2012-2012) PV: 29345352082,7222, KG (2012-2012) PV: 12538010977,9614, KP (2012-2012) PV: 15428738093,7693, LB (2012-2012) PV: 10682610171,3654, IT (2012-2012) PV: 290000000000, KH (2012-2012) PV: 4259111552,79503, LK (2012-2012) PV: 9972320340,24896, IR (2012-2012) PV: 215000000000, JO (2012-2012) PV: 15551467795,1002, KZ (2012-2012) PV: 92343008288,1598, MD (2012-2012) PV: 4946810920,13889, KR (2012-2012) PV: 453000000000, KE (2012-2012) PV: 7856925264,29342, KW (2012-2012) PV: 54716740225,8905, LY (2012-2012) PV: 23075015111,5891, LV (2012-2012) PV: 10100000000, JP (2012-2012) PV: 923000000000, IQ (2012-2012) PV: 58217512897,4588, LT (2012-2012) PV: 11900000000, LU (2012-2012) PV: 8230000000, JM (2012-2012) PV: 1925560924,57421, IS (2012-2012) PV: 16300000000, CO (2014-2017) PV: 53185000000, BR-South-eastern grid (2014-2017) PV: 298145592090, BR-Northern grid (2014-2017) PV: 41896450090
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="12" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-08-02">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="3" reviewedMinorRevision="12" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-08-02">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Execution of rule ifu.ecoshared.database.Rule3040 failed with an unexpected error: A .NET Framework error occurred during execution of user-defined routine or aggregate "geometry": </text>
+          <text xml:lang="en" index="3">System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.</text>
+          <text xml:lang="en" index="4">System.Runtime.InteropServices.COMException: </text>
+          <text xml:lang="en" index="5">   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)</text>
+          <text xml:lang="en" index="6">   at Microsoft.SqlServer.Types.GLNativeMethods.ThrowExceptionForHr(GL_HResult errorCode)</text>
+          <text xml:lang="en" index="7">   at Microsoft.SqlServer.Types.GLNativeMethods.Combine(CombineMode combineMode, GeoData g1, GeoData g2)</text>
+          <text xml:lang="en" index="8">   at Microsoft.SqlServer.Types.SqlGeometry.STIntersection(SqlGeometry other)</text>
+          <text xml:lang="en" index="9">.</text>
+          <text xml:lang="en" index="10">- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99.5% of the production volume of the corresponding global.</text>
+          <text xml:lang="en" index="11">None</text>
+          <text xml:lang="en" index="12"> Error: -  Exchange 'electricity, medium voltage', global (2012-2012) production volume 20500000000000, sum of all non-global production volumes 41816212741510.3. Local datasets used in calculation: CA-MB (2012-2012) PV: 24322645230.0735, CA-NB (2012-2012) PV: 12536266596.5944, CA-NF (2012-2012) PV: 10504827867.3273, CA-NT (2012-2012) PV: 341575590.639037, CA-NS (2012-2012) PV: 9441042689.11838, CA-NU (2012-2012) PV: 179032826.321757, CA-ON (2012-2012) PV: 125312702122.833, CA-PE (2012-2012) PV: 1443901202.38316, CA-SK (2012-2012) PV: 22121350446.1431, CA-QC (2012-2015) PV: 176572467988.26, CA-YK (2012-2012) PV: 437477230.514646, CA-AB (2012-2012) PV: 56098728515.8302, BR-Mid-western grid (2014-2017) PV: 42884469160, CA-BC (2012-2012) PV: 52177798833.8473, PE (2012-2017) PV: 45504949091.7676, AR (2012-2017) PV: 119976932433.26, US-NPCC (2012-2012) PV: 235214089834.712, OM (2012-2012) PV: 32171502278.6111, NZ (2012-2012) PV: 38675204495.1107, PA (2012-2012) PV: 9258289647.2125, PH (2012-2012) PV: 84163490289.2051, PK (2012-2012) PV: 125575245451.68, PL (2012-2012) PV: 138529253555.842, PT (2012-2012) PV: 43141121059.6317, QA (2012-2012) PV: 1345814007.73296, PY (2012-2012) PV: 14045407777.8352, RO (2012-2012) PV: 46234194064.7162, US-RFC (2012-2012) PV: 858958939465.687, RS (2012-2012) PV: 32698450122.2714, SA (2012-2012) PV: 212632471882.205, RU (2012-2012) PV: 889396124267.729, SE (2012-2012) PV: 123625488530.89, SD (2012-2012) PV: 13226557448.5343, US-SERC (2012-2012) PV: 1252240567285.38, SG (2012-2012) PV: 39578203153.8553, CN-SGCC (2012-2012) PV: 3670000000000, SK (2012-2012) PV: 24053809051.397, SI (2012-2012) PV: 13253223427.0295, SN (2012-2012) PV: 3240855746.73744, SS (2012-2012) PV: 475004649.495814, SV (2012-2012) PV: 5251180350.80059, TG (2012-2012) PV: 1302819573.5675, SY (2012-2012) PV: 14264198092.3945, TJ (2012-2012) PV: 15174877472.0463, TH (2012-2012) PV: 100986019038.77, TM (2012-2012) PV: 15887684699.7542, TN (2012-2012) PV: 16024410127.5123, TR (2012-2012) PV: 242077555364.892, US-TRE (2012-2012) PV: 379552056679.929, TT (2012-2012) PV: 7995085539.6425, TW (2012-2012) PV: 204699970435.871, UA (2012-2012) PV: 129938181601.512, TZ (2012-2012) PV: 6115380555.84429, UZ (2012-2012) PV: 53948305384.9446, UY (2012-2012) PV: 10033971221.0194, VE (2012-2012) PV: 77100268312.6693, US-WECC (2012-2012) PV: 657159515557.233, VN (2012-2012) PV: 209302155894.256, YE (2012-2012) PV: 2280064456.34767, XK (2012-2012) PV: 4987686416.42824, ZA (2012-2012) PV: 195976007855.125, ZM (2012-2012) PV: 13448354345.2834, ZW (2012-2012) PV: 8783533317.72197, ME (2012-2012) PV: 5112266015.72319, MM (2012-2012) PV: 19040914002.1511, MK (2012-2012) PV: 8303074817.68076, MN (2012-2012) PV: 7050007204.99235, US-MRO (2012-2012) PV: 430886788473.923, MT (2012-2012) PV: 2106541226.49462, MU (2012-2012) PV: 1190383344.57995, MX (2012-2012) PV: 234767663245.081, MY (2012-2012) PV: 140658681662.982, MZ (2012-2012) PV: 14086801344.714, NA (2012-2012) PV: 4169494394.95099, NG (2012-2012) PV: 24994716657.2075, NE (2012-2012) PV: 1531638738.91274, NL (2012-2012) PV: 87030492202.5901, NI (2012-2012) PV: 3373985294.25726, NO (2012-2012) PV: 122724392405.149, AE (2012-2012) PV: 117011473588.278, NP (2012-2012) PV: 6707040199.73674, AM (2012-2012) PV: 5474993045.74125, AL (2012-2012) PV: 7657200975.09139, AO (2012-2012) PV: 10069360120.4525, US-ASCC (2012-2012) PV: 4783833815.69564, AT (2012-2012) PV: 63745455769.7729, AZ (2012-2012) PV: 18643378287.2188, AU (2012-2012) PV: 201543049183.83, BA (2012-2012) PV: 12112129895.005, BD (2012-2012) PV: 56807432326.2774, BE (2012-2012) PV: 70637869375.7369, BG (2012-2012) PV: 31672299756.4432, BH (2012-2012) PV: 16014323622.5016, BN (2012-2012) PV: 3266346367.92099, BJ (2012-2012) PV: 1263564726.09294, BO (2012-2012) PV: 8105399441.52422, BW (2012-2012) PV: 3418379746.56376, BY (2012-2012) PV: 29219682293.345, CG (2012-2012) PV: 969865143.708561, CD (2012-2012) PV: 9114723740.44415, CH (2012-2012) PV: 72700000000, CL (2012-2012) PV: 63961350968.2568, CI (2012-2012) PV: 7325486573.26705, CR (2012-2012) PV: 9934980835.64496, CM (2012-2012) PV: 4623543671.97333, CW (2012-2012) PV: 633990182.598491, CU (2012-2012) PV: 16526798367.3837, CY (2012-2012) PV: 4236522809.99715, CZ (2012-2012) PV: 52611758745.5982, DK (2012-2012) PV: 29040945244.063, DE (2012-2012) PV: 421617187394.998, DO (2012-2012) PV: 13704480572.1166, DZ (2012-2012) PV: 59219617024.6253, EC (2012-2012) PV: 20768364352.5464, EE (2012-2012) PV: 7497317022.78701, EG (2012-2012) PV: 159795577112.044, ER (2012-2012) PV: 365779763.788541, ET (2012-2012) PV: 10185062999.0124, ES (2012-2012) PV: 212593610672.44, FI (2012-2012) PV: 72652681180.5078, FR (2012-2012) PV: 429088222999.683, US-FRCC (2012-2012) PV: 201000000000, GB (2012-2012) PV: 258688914941.294, GA (2012-2012) PV: 2083086212.93782, GE (2012-2012) PV: 10574790069.6232, GH (2012-2012) PV: 9695829518.21133, GI (2012-2012) PV: 189687466.275, GR (2012-2012) PV: 46611084426.7679, US-HICC (2012-2012) PV: 8235740463.93679, GT (2012-2012) PV: 9892045950.73682, HK (2012-2012) PV: 43450941864.3765, HR (2012-2012) PV: 16719430990.5982, HN (2012-2012) PV: 5861613186.22573, HU (2012-2012) PV: 39225537502.999, HT (2012-2012) PV: 767346499.40556, ID (2012-2012) PV: 156062636099.068, IE (2012-2012) PV: 25489689696.8639, IL (2012-2012) PV: 52528848819.8087, IQ (2012-2012) PV: 78157645598.108, IT (2012-2012) PV: 255664676346.498, IR (2012-2012) PV: 254156756879.898, JM (2012-2012) PV: 2276124786.82575, JO (2012-2012) PV: 15618351927.6401, JP (2012-2012) PV: 785127096620.103, KG (2012-2012) PV: 12736901575.8594, KE (2012-2012) PV: 9443968197.80125, KH (2012-2012) PV: 8606192485.6745, KP (2012-2012) PV: 13473413311.9817, KR (2012-2012) PV: 492140945495.355, KW (2012-2012) PV: 61945806469.5569, KZ (2012-2012) PV: 87826181125.7095, LK (2012-2012) PV: 12342648094.4835, LB (2012-2012) PV: 12974331670.295, LU (2012-2012) PV: 7459481038.47523, LT (2012-2012) PV: 11312104517.6906, LV (2012-2012) PV: 6412180722.70348, LY (2012-2012) PV: 28190880409.7444, MA (2012-2012) PV: 31955301582.9883, MD (2012-2012) PV: 5448342228.78794, IS (2012-2012) PV: 18154478802.3799, CO (2014-2017) PV: 62770420264.0817, BR-South-eastern grid (2014-2017) PV: 298145592090, US-PR (2021-2021) PV: 16801533457.683, CN-ECGC (2020-2020) PV: 3670000000000, CN-CCG (2020-2020) PV: 3670000000000, CN-NECG (2020-2020) PV: 3670000000000, CN-NCGC (2020-2020) PV: 3670000000000, CN-SWG (2020-2020) PV: 3670000000000, CN-NWG (2020-2020) PV: 3670000000000, CN-CSG (2012-2012) PV: 747000000000, IN-Eastern grid (2012-2012) PV: 122680404186.38, IN-Western grid (2012-2012) PV: 273326884031.13, IN-Northern grid (2012-2012) PV: 243489172787.31, IN-North-eastern grid (2012-2012) PV: 9135601517.36, IN-Southern grid (2012-2012) PV: 182170120048.54, BR-North-eastern grid (2014-2017) PV: 96831263962, BR-Southern grid (2014-2017) PV: 145998000000, BR-Northern grid (2014-2017) PV: 71135037010</text>
+          <text xml:lang="en" index="13">None</text>
+          <text xml:lang="en" index="14">- Execution of rule ifu.ecospold02.internal.Rule3072 failed with an unexpected error: A .NET Framework error occurred during execution of user-defined routine or aggregate "geometry": </text>
+          <text xml:lang="en" index="15">System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.</text>
+          <text xml:lang="en" index="16">System.Runtime.InteropServices.COMException: </text>
+          <text xml:lang="en" index="17">   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)</text>
+          <text xml:lang="en" index="18">   at Microsoft.SqlServer.Types.GLNativeMethods.ThrowExceptionForHr(GL_HResult errorCode)</text>
+          <text xml:lang="en" index="19">   at Microsoft.SqlServer.Types.GLNativeMethods.Combine(CombineMode combineMode, GeoData g1, GeoData g2)</text>
+          <text xml:lang="en" index="20">   at Microsoft.SqlServer.Types.SqlGeometry.STIntersection(SqlGeometry other)</text>
+          <text xml:lang="en" index="21">.</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.1'
+ - Input &lt; output by 0.1 EUR2005 (100% of output)
+
+
+- Specified amount (1) did not match amount calculated by uncertainty (0.0074) at exchange 'electricity, high voltage'
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="f0048abe-db4e-451a-8acb-9935d3400c56" isActiveAuthor="true" personName="Henrique Rogerio Antunes de Souza Junior" personEmail="henrique_hjr@hotmail.com"/>
+      <dataGeneratorAndPublication personId="fd227c6e-b605-44db-8caa-45a1e1f8d26b" personName="Henrique Rogerio Antunes de Souza Junior" personEmail="henrique.junior@posgrad.ufsc.br" dataPublishedIn="1" publishedSourceId="7447e4ce-4a9d-4421-a718-eba846b6644c" publishedSourceYear="2017" publishedSourceFirstAuthor="Suppen, N" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="13" internalSchemaVersion="2.0.12" defaultLanguage="en" lastEditTimestamp="2022-09-16T10:00:10" fileGenerator="EcoEditor 3.13.5000.19341" fileTimestamp="2022-09-16T10:00:10" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

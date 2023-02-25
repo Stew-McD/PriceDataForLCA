@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="379b181b-93ca-5b0e-80ed-461cde36d5a0" activityNameId="a00d465e-21ab-5889-8239-2460cd13475b" parentActivityId="e8f7c6fc-eb52-542f-8b17-114e5b9ea5d8" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity voltage transformation, residual mix, from medium to low voltage</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts with the high voltage electricity arriving at the transformer station.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with 1kWh of high voltage electricity transformed to medium voltage. 
+
+This dataset includes the losses during voltage transformation.
+
+It doesn't include the transformer station itself as this is included in the dataset for the transmission network.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the transformation of electricity voltage from medium to low voltage.</text>
+          <text xml:lang="en" index="1">Definition of the voltage levels: </text>
+          <text xml:lang="en" index="2"> - High voltage level above 24 kV (large scale industry)</text>
+          <text xml:lang="en" index="3"> - Medium voltage level between 1 kV and 24 kV (medium to small scale industry, service sector</text>
+          <text xml:lang="en" index="4">and public buildings)</text>
+          <text xml:lang="en" index="5"> - Low voltage level below 1 kV (Households)</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="10df2fe6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">NL</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Transformers are essential components of the electricity grid. They connect the different voltage levels.</text>
+          <text xml:lang="en" index="1">Big power plants feed the electricity at a very high voltage to the electricity grid. Transformers between 600 MVA and 80 MVA can be found in substations, where the high transmission voltage is transformed to the medium distribution voltage. In an additional step the medium voltage is transformed to low voltage using transformers below 2.5 MVA. The small transformers below 2.5 MVA are allocated to the low voltage level, whereas all the other transformers are allocated to the medium voltage level.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2021-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e334219c-21a2-5a36-9ec1-5a2bcef3e1a9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" productionVolumeAmount="3551709533.78352">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.107" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: IEA Key world energy statistics 2004 (www.iea.org/textbase/nppdf/free/2004/keyworld2004.pdf)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated value. Based on AIB (2021), Association of Issuing Bodies, European Residual Mixes, Results of the calculation of Residual Mixes for the calendar year 2021, Version 1.0, 2022-05-31, https://www.aib-net.org/facts/european-residual-mix/2021</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="675bb337-94b7-5b58-aa13-c250e9a42fa2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.01747560791302" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8901324d-854e-551c-af54-1d099210e5e1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated Value. Represents losses occuring during transmission of the electricity.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-08-15">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-08-15">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- Non-global datasets cannot be uploaded unless a global dataset (for the same activity name, time period and macro-economic scenario) exists in the database or is uploaded together with the non-global dataset. Matching activities found, but none with GLO location.</text>
+          <text xml:lang="en" index="3">None</text>
+          <text xml:lang="en" index="4">If you have already submitted a corresponding global dataset for review, you make ask the database administrator to abort this submission, so that you can upload your non-global datasets together with the global.</text>
+          <text xml:lang="en" index="5">- No GLO dataset found! Related datasets: electricity voltage transformation, residual mix, from medium to low voltage, LU, 2021 - 2021 (48556fd3-4707-53cc-8894-06bc32f97dea) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, LV, 2021 - 2021 (10ca1bf0-87bf-5eef-9096-1f9c8ad31ef0) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, ME, 2021 - 2021 (55316e7f-6f9c-5f3b-9e64-f9b03313708d) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, MT, 2021 - 2021 (66a5def0-10c0-5fb7-a28c-76bad68116b5) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, NO, 2021 - 2021 (85d77825-245c-53a7-b0c6-edc2daa83430) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, PL, 2021 - 2021 (29305419-193e-5a42-8a18-a7aa07f9fe8e) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, PT, 2021 - 2021 (9ece58a6-dd98-56c4-a88b-56713b3a44fc) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, RO, 2021 - 2021 (17261d7d-a057-525e-ad65-1ee4328a9535) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, RS, 2021 - 2021 (87ec6b9b-d4fd-53e1-8874-036f9b1165ac) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, SE, 2021 - 2021 (d2ef3e75-44e6-5c13-aaa3-f77fd4591087) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, SI, 2021 - 2021 (8bd353c4-4580-5ae5-814a-f58a8750d2bf) [electricity, low voltage: 1]#electricity voltage transformation, residual mix, from medium to low voltage, SK, 2021 - 2021 (e6c3f1de-1630-5f7a-b1ef-a758409766ae) [electricity, low voltage: 1]</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, medium voltage
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): electricity, medium voltage
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="true" personName="[System]" personEmail="support@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2022-08-15T15:32:12" lastEditTimestamp="2022-08-15T15:32:12" fileTimestamp="2022-08-15T15:32:12" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="f12efe7a-fd35-561b-b975-e22fb9a4e70c" activityNameId="403f6196-d860-496b-884b-9a1f0f8fd842" parentActivityId="1b54736e-f115-4e42-ba1a-03ce8d5fd47e" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">transport, freight, lorry, all sizes, EURO2 to generic market for transport, freight, lorry, unspecified</activityName>
+        <includedActivitiesStart xml:lang="en">The activity strats with the lorries of different sizes with EURO2 class.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the supply of the generic product, transport, freight, lorry, unspecified.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a linking activity which transfers part of the production volume of the specific transport, freight, lorry of all sizes, EURO2 to the generic market for transport, freight, lorry, unspecified.</text>
+          <text xml:lang="en" index="1">The transport, freight, lorry, unspecified is meant to be used by activities, where the size and EURO class of the transport supplied is unkown. </text>
+        </generalComment>
+        <tag>linking activity</tag>
+      </activity>
+      <classification classificationId="0783fec2-42b8-41e0-9944-cdba0fe68601">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4923:Freight transport by road</classificationValue>
+      </classification>
+      <geography geographyId="0a2c8c66-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">BR</shortname>
+      </geography>
+      <technology technologyLevel="1"/>
+      <timePeriod startDate="2019-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="a5a0de70-8d43-5cf6-a3d9-a401b43a4c77" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" variableName="transport_RP" amount="1.0" intermediateExchangeId="cfbce515-3f54-4411-ad9d-3d26b7faa15a" productionVolumeAmount="90103410000.0">
+        <name xml:lang="en">transport, freight, lorry, unspecified</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en"/>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.02447672221848497" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">The production volume is calculated as a sum of all the "transport, freight, lorry, ..., EURO2" activities. Production volume retrieved from the Brazilian National Logistic Plan -2025 (EPL, 2018), which reports the amount of 1,548 billion tonne.km of freight transported by lorries in 2015. The split among lorry size categories has been calculated according to fleet sizes, annual mileages and freight loads. The average annual mileage accounts for the annual mileage decay according to the fleet age of each size class (CETESB, 2019). Furthermore, the shares of emission regulation classes are estimated according to their respective fleet size reported for the state of São Paulo in 2018 (CETESB, 2019).
+ It is estimated, that 10% of this transport is used for transport of goods in need of atmosphere control. And thus this production volume is included in the "transport, freight, lorry ... with refrigeration machine" datasets. It is also estimated, that 50% of the production volume of this transport is transfered to the generic market for transport, freight, lorry, unspecified. Which means, that 50% of people using this transport do not know or do not care about the size of the vehicle and the EURO class.                                                                                    
+ References: 
+
+CETESB (2019). Companhia Ambiental do Estado de São Paulo (2019). Emissões Veiculares no Estado de São Paulo. Governo do Estado de São Paulo. Available at: cetesb.sp.gov.br/veicular/relatoriose-publicacoes/. [Accessed on 15/06/2020]
+
+EPL (2018). Plano Nacional de Logística. PNL -  2025. Relatório Executivo. Available at: epl.gov.br/transporte-inter-regional-de-carga-no-brasil-panorama-2015 [Accessed on 24/05/2021]
+</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e9cc412f-c63c-5a14-976f-5b8ae29c0b01" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.256" intermediateExchangeId="559d5695-102a-4beb-9f7f-3db334c9b51d" activityLinkId="cad7d9d9-0da3-5d3e-96d5-a433d8c542c7">
+        <name xml:lang="en">transport, freight, lorry 16-32 metric ton, EURO2</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.      
+ 
+Production volume retrieved from the Brazilian National Logistic Plan -2025 (EPL, 2018), which reports the amount of 1,548 billion tonne.km of freight transported by lorries in 2015. The split among lorry size categories has been calculated according to fleet sizes, annual mileages and freight loads. The average annual mileage accounts for the annual mileage decay according to the fleet age of each size class (CETESB, 2019). Furthermore, the shares of emission regulation classes are estimated according to their respective fleet size reported for the state of São Paulo in 2018 (CETESB, 2019).
+
+References: 
+
+CETESB (2019). Companhia Ambiental do Estado de São Paulo (2019). Emissões Veiculares no Estado de São Paulo. Governo do Estado de São Paulo. Available at: cetesb.sp.gov.br/veicular/relatoriose-publicacoes/. [Accessed on 15/06/2020]
+
+EPL (2018). Plano Nacional de Logística. PNL -  2025. Relatório Executivo. Available at: epl.gov.br/transporte-inter-regional-de-carga-no-brasil-panorama-2015 [Accessed on 24/05/2021].</comment>
+        <uncertainty>
+          <lognormal meanValue="0.256" mu="-1.347" variance="0.0006" varianceWithPedigreeUncertainty="0.0007999999999999999"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f0846393-dda4-59cb-ac66-9508affd1f58" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.045" intermediateExchangeId="bd061b71-270b-4644-9e14-6c59b2e4090d" activityLinkId="df218915-0af9-53df-8664-231b66dbb8da">
+        <name xml:lang="en">transport, freight, lorry 3.5-7.5 metric ton, EURO2</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.      
+ 
+Production volume retrieved from the Brazilian National Logistic Plan -2025 (EPL, 2018), which reports the amount of 1,548 billion tonne.km of freight transported by lorries in 2015. The split among lorry size categories has been calculated according to fleet sizes, annual mileages and freight loads. The average annual mileage accounts for the annual mileage decay according to the fleet age of each size class (CETESB, 2019). Furthermore, the shares of emission regulation classes are estimated according to their respective fleet size reported for the state of São Paulo in 2018 (CETESB, 2019).
+
+References: 
+
+CETESB (2019). Companhia Ambiental do Estado de São Paulo (2019). Emissões Veiculares no Estado de São Paulo. Governo do Estado de São Paulo. Available at: cetesb.sp.gov.br/veicular/relatoriose-publicacoes/. [Accessed on 15/06/2020]
+
+EPL (2018). Plano Nacional de Logística. PNL -  2025. Relatório Executivo. Available at: epl.gov.br/transporte-inter-regional-de-carga-no-brasil-panorama-2015 [Accessed on 24/05/2021].</comment>
+        <uncertainty>
+          <lognormal meanValue="0.045" mu="-1.139" variance="0.0006" varianceWithPedigreeUncertainty="0.0007999999999999999"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="672b7178-660f-5c57-bd25-fb18a5538ef7" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.054" intermediateExchangeId="999d5179-2235-493a-8bd8-d805bb71eee8" activityLinkId="b4e39391-0d7a-5ef4-90b9-9d8725c8346b">
+        <name xml:lang="en">transport, freight, lorry 7.5-16 metric ton, EURO2</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.      
+ 
+Production volume retrieved from the Brazilian National Logistic Plan -2025 (EPL, 2018), which reports the amount of 1,548 billion tonne.km of freight transported by lorries in 2015. The split among lorry size categories has been calculated according to fleet sizes, annual mileages and freight loads. The average annual mileage accounts for the annual mileage decay according to the fleet age of each size class (CETESB, 2019). Furthermore, the shares of emission regulation classes are estimated according to their respective fleet size reported for the state of São Paulo in 2018 (CETESB, 2019).
+
+References: 
+
+CETESB (2019). Companhia Ambiental do Estado de São Paulo (2019). Emissões Veiculares no Estado de São Paulo. Governo do Estado de São Paulo. Available at: cetesb.sp.gov.br/veicular/relatoriose-publicacoes/. [Accessed on 15/06/2020]
+
+EPL (2018). Plano Nacional de Logística. PNL -  2025. Relatório Executivo. Available at: epl.gov.br/transporte-inter-regional-de-carga-no-brasil-panorama-2015 [Accessed on 24/05/2021]</comment>
+        <uncertainty>
+          <lognormal meanValue="0.054" mu="-1.966" variance="0.0006" varianceWithPedigreeUncertainty="0.0007999999999999999"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3a71c0e7-d277-59db-9411-d02f3080920e" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.645" intermediateExchangeId="3a40db23-1aed-4b82-8117-32251e039134" activityLinkId="09fdb4da-cc16-558c-860f-0871e3e9b982">
+        <name xml:lang="en">transport, freight, lorry &gt;32 metric ton, EURO2</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated from the production volumes.      
+ 
+Production volume retrieved from the Brazilian National Logistic Plan -2025 (EPL, 2018), which reports the amount of 1,548 billion tonne.km of freight transported by lorries in 2015. The split among lorry size categories has been calculated according to fleet sizes, annual mileages and freight loads. The average annual mileage accounts for the annual mileage decay according to the fleet age of each size class (CETESB, 2019). Furthermore, the shares of emission regulation classes are estimated according to their respective fleet size reported for the state of São Paulo in 2018 (CETESB, 2019).
+
+References: 
+
+CETESB (2019). Companhia Ambiental do Estado de São Paulo (2019). Emissões Veiculares no Estado de São Paulo. Governo do Estado de São Paulo. Available at: cetesb.sp.gov.br/veicular/relatoriose-publicacoes/. [Accessed on 15/06/2020]
+
+EPL (2018). Plano Nacional de Logística. PNL -  2025. Relatório Executivo. Available at: epl.gov.br/transporte-inter-regional-de-carga-no-brasil-panorama-2015 [Accessed on 24/05/2021]</comment>
+        <uncertainty>
+          <lognormal meanValue="0.645" mu="-1.273" variance="0.0006" varianceWithPedigreeUncertainty="0.0007999999999999999"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="10" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-06-15">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="10" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-06-15">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.02399'
+ - Input &lt; output by 0.02399 EUR2005 (100% of output)
+
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99.5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'transport, freight, lorry, unspecified', global (2019-2019) production volume 66331000000, sum of all non-global production volumes 66331000000. Local datasets used in calculation: ZA (2019-2019) PV: 64318600000, BR (2019-2019) PV: 2012400000
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-06-29">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-06-29">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.02399'
+ - Input &lt; output by 0.02399 EUR2005 (100% of output)
+
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99.5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'transport, freight, lorry, unspecified', global (2019-2019) production volume 66331000000, sum of all non-global production volumes 66331000000. Local datasets used in calculation: ZA (2019-2019) PV: 64318600000, BR (2019-2019) PV: 2012399999.99999
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-07-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-07-09">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.02399'
+ - Input &lt; output by 0.02399 EUR2005 (100% of output)
+
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99.5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'transport, freight, lorry, unspecified', global (2019-2019) production volume 154876600000, sum of all non-global production volumes 154422010000. Local datasets used in calculation: ZA (2019-2019) PV: 64318600000, BR (2019-2019) PV: 90103410000
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="e98986e8-51ee-468d-b4de-00f989a6dc7f" isActiveAuthor="false" personName="Nikolia Stoikou" personEmail="stoikou@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="e98986e8-51ee-468d-b4de-00f989a6dc7f" personName="Nikolia Stoikou" personEmail="stoikou@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2021-05-31T13:59:24" lastEditTimestamp="2021-07-09T14:54:51" fileGenerator="EcoEditor 3.12.6000.6006" fileTimestamp="2021-07-09T14:54:51" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

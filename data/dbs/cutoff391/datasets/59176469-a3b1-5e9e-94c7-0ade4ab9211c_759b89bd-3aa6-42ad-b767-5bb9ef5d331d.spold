@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="59176469-a3b1-5e9e-94c7-0ade4ab9211c" activityNameId="6c32576b-baaf-4719-a3ac-da24ccafb17f" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="d2510dc3-0648-5d06-a8f4-0bb048543160" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity voltage transformation from high to medium voltage</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts with the high voltage electricity arriving at the transformer station.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with 1kWh of high voltage electricity transformed to medium voltage. 
+
+This dataset includes the losses during voltage transformation.
+
+It doesn't include the transformer station itself as this is included in the dataset for the transmission network.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the transformation of electricity voltage from high to medium voltage. The losses are valid for the year 2018, based on electricity generation and trade statistics: IEA World Energy Statistics and Balances, ISSN: 16834240, https://doi.org/10.1787/enestats-data-en</text>
+          <text xml:lang="en" index="1">Definition of the voltage levels: </text>
+          <text xml:lang="en" index="2"> - High voltage level above 24 kV (large scale industry)</text>
+          <text xml:lang="en" index="3"> - Medium voltage level between 1 kV and 24 kV (medium to small scale industry, service sector</text>
+          <text xml:lang="en" index="4">and public buildings)</text>
+          <text xml:lang="en" index="5"> - Low voltage level below 1 kV (Households)</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="0eed3c64-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">JM</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">Transformers are essential components of the electricity grid. They connect the different voltage levels.</text>
+          <text xml:lang="en" index="1">Big power plants feed the electricity at a very high voltage to the electricity grid. Transformers between 600 MVA and 80 MVA can be found in substations, where the high transmission voltage is transformed to the medium distribution voltage. In an additional step the medium voltage is transformed to low voltage using transformers below 2.5 MVA. The small transformers below 2.5 MVA are allocated to the low voltage level, whereas all the other transformers are allocated to the medium voltage level.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2012-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="53bd9234-8b55-5781-b1f7-e122735ebe54" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" productionVolumeAmount="2128559922.03304">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated to be between the price of electricity, high voltage and electricity, low voltage.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Literature value/calculated value. For details on the modelling of the electricity volume along the voltage level chain please see the special documentation on ecoQuery.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dd07dd96-a3f1-54b2-ad7b-10ea872d7de3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0249800541074" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="d88d3b66-fed8-5097-97f7-2ef48d4e41fc">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value/estimation. This value compensates for the losses during transformation from high to medium voltage. The calculation is made based on total electricity losses between net electricity available at the busbar and the use of electricity calculated based on the IEA electricity information 2016, table 1.1, Electrity supply vs. transmission losses, data valid for the year 2014. These total losses over the whole chain are then allocated to the different voltage levels as well as transformation and transmission losses based on information in Itten et al. 2014. For details please see the documentation available on ecoQuery. IEA. 2016. Electricity Information 2016. International Energy Agency (IEA), Paris Cedex (FR). Itten R., Frischknecht R., Stucki M. 2014. Life Cycle Inventories of Electricity Mixes and Grid. Version 1.3. treeze, Uster, Switzerland</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <parameter parameterId="7d9a9c96-6f91-4627-a044-6816e91a2b64" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">electricity transformation losses</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+      <parameter parameterId="a5b1977a-ec47-4123-beac-51e2c634cfa3" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">total electricity losses within the country</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2017-06-26">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2017-06-27">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- An activity with a positive reference product can only have one material for treatment as an intermediate input (electricity, medium voltage | electricity, medium voltage | electricity, high voltage).</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-06-20">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-20">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:</text>
+          <text xml:lang="en" index="1">None</text>
+          <text xml:lang="en" index="2">- An activity with a positive reference product can only have one material for treatment as an intermediate input (electricity, high voltage | electricity, high voltage). For the location JM the exchanges electricity, high voltage | electricity, high voltage are considered materials for treatment because they are not being produced as reference products at electricity, high voltage | electricity, high voltage or within locations contained within. When determining the material for treatment state of an exchange for the location of the dataset only the current state of the database is taken into account. Other datasets submitted alongside the dataset currently being validated are not taken into account.</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,1'
+ - Input &lt; output by 0,1 EUR2005 (100% of output)
+
+
+- Specified amount (1) did not match amount calculated by uncertainty (0,0074) at exchange 'electricity, high voltage'
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, medium voltage', global (2012-2012) production volume 20500000000000, sum of all non-global production volumes 20607706557108,7. Local datasets used in calculation: CA-QC (2012-2015) PV: 135284092185, PL (2012-2012) PV: 147000000000, NPCC, US only (2012-2012) PV: 262000000000, RU (2012-2012) PV: 920000000000, TH (2012-2012) PV: 155000000000, SGCC (2012-2012) PV: 3670000000000, RFC (2012-2012) PV: 883000000000, SK (2012-2012) PV: 37300000000, SPP (2012-2012) PV: 114000000000, TRE (2012-2012) PV: 361000000000, PT (2012-2012) PV: 50900000000, RS (2012-2012) PV: 36100000000, ZA (2012-2012) PV: 230000000000, TW (2012-2012) PV: 217000000000, SA (2012-2012) PV: 233000000000, SI (2012-2012) PV: 20500000000, UA (2012-2012) PV: 171000000000, RO (2012-2012) PV: 54000000000, SERC (2012-2012) PV: 935000000000, TR (2012-2012) PV: 208000000000, WECC, US only (2012-2012) PV: 681000000000, TZ (2012-2012) PV: 4910000000, SE (2012-2012) PV: 159000000000, CA-YK (2012-2012) PV: 411000000, CA-NB (2012-2012) PV: 20800000000, CA-AB (2012-2012) PV: 67600000000, CA-ON (2012-2012) PV: 133000000000, CA-PE (2012-2012) PV: 1480000000, CA-BC (2012-2012) PV: 73800000000, CA-NF (2012-2012) PV: 39500000000, CA-SK (2012-2012) PV: 21700000000, CA-MB (2012-2012) PV: 33900000000, CA-NS (2012-2012) PV: 10200000000, CA-NU (2012-2012) PV: 88400000, CA-NT (2012-2012) PV: 697000000, IN-Southern grid (2012-2012) PV: 182170120048,54, IN-Western grid (2012-2012) PV: 273326884031,13, IN-Northern grid (2012-2012) PV: 243489172787,31, IN-North-eastern grid (2012-2012) PV: 9135601517,36, IN-Eastern grid (2012-2012) PV: 122680404186,38, TM (2012-2012) PV: 16883867731,6294, ZW (2012-2012) PV: 9429581735,11294, TT (2012-2012) PV: 8666252612,80168, ZM (2012-2012) PV: 12690586024,8447, TN (2012-2012) PV: 15677354223,1947, YE (2012-2012) PV: 5706451304,34783, VE (2012-2012) PV: 97821727436,8231, VN (2012-2012) PV: 125666570998,938, UY (2012-2012) PV: 28660915641,4763, XK (2012-2012) PV: 5405101129,32605, UZ (2012-2012) PV: 49261089033,2442, QA (2012-2012) PV: 3035989285,71429, OM (2012-2012) PV: 24702510716,302, NZ (2012-2012) PV: 38191888558,2386, PK (2012-2012) PV: 88546265127,048, PY (2012-2012) PV: 46156385316,4557, PA (2012-2012) PV: 8175367788,67102, PH (2012-2012) PV: 66530786212,1212, TG (2012-2012) PV: 1108075833,33333, SN (2012-2012) PV: 2692305691,05691, SY (2012-2012) PV: 19082151339,6128, SG (2012-2012) PV: 38084753849,3989, SD (2012-2012) PV: 9983406746,03175, TJ (2012-2012) PV: 17082380633,2454, SS (2012-2012) PV: 202364042,553191, SV (2012-2012) PV: 5396304249,20128, PE (2012-2017) PV: 39440308960, BR-Northern grid (2014-2017) PV: 41896450090, BR-Southern grid (2014-2017) PV: 92833466040, BR-North-eastern grid (2014-2017) PV: 97550374440, BR-Mid-western grid (2014-2017) PV: 42884469160, BR-South-eastern grid (2014-2017) PV: 298145592090, AR (2012-2017) PV: 120000000000, CO (2014-2017) PV: 53185000000, ME (2012-2012) PV: 3499346382,97872, MK (2012-2012) PV: 7260000000, MM (2012-2012) PV: 11942022146,8927, MN (2012-2012) PV: 5740652027,02703, MRO, US only (2012-2012) PV: 251000000000, MT (2012-2012) PV: 1900000000, MU (2012-2012) PV: 1023207645,05119, MX (2012-2012) PV: 252000000000, MY (2012-2012) PV: 125000000000, MZ (2012-2012) PV: 21993521631,016, NA (2012-2012) PV: 3961032000, NE (2012-2012) PV: 1152282589,28571, NG (2012-2012) PV: 20781376327,9133, NI (2012-2012) PV: 3240180211,26761, NL (2012-2012) PV: 120000000000, NO (2012-2012) PV: 138000000000, NP (2012-2012) PV: 4268108226,12086, AE (2012-2012) PV: 95637153970,2884, AL (2012-2012) PV: 7119220359,89717, AM (2012-2012) PV: 6777984363,05733, AO (2012-2012) PV: 7838244205,40541, ASCC (2012-2012) PV: 6130000000, AT (2012-2012) PV: 90800000000, AU (2012-2012) PV: 217000000000, AZ (2012-2012) PV: 19141951424,9037, BA (2012-2012) PV: 16200000000, BD (2012-2012) PV: 34047666345,9707, BE (2012-2012) PV: 86700000000, BG (2012-2012) PV: 41800000000, BH (2012-2012) PV: 14491914253,211, BJ (2012-2012) PV: 1087066666,66667, BN (2012-2012) PV: 3463447857,14286, BO (2012-2012) PV: 7445497745,3271, BR (2012-2012) PV: 518000000000, BW (2012-2012) PV: 3606641117,02128, BY (2012-2012) PV: 34351848055,2455, CD (2012-2012) PV: 8609610971,92225, CG (2012-2012) PV: 714003896,103896, CH (2012-2012) PV: 72700000000, CI (2012-2012) PV: 6877022600, CL (2012-2012) PV: 61800000000, CM (2012-2012) PV: 4922615105,34846, CR (2012-2012) PV: 9670179495,14563, CSG (2012-2012) PV: 747000000000, CU (2012-2012) PV: 15337670147,139, CW (2012-2012) PV: 347186172,839506, CY (2012-2012) PV: 4160000000, CZ (2012-2012) PV: 84400000000, DE (2012-2012) PV: 567000000000, DK (2012-2012) PV: 40700000000, DO (2012-2012) PV: 13108427067,0391, DZ (2012-2012) PV: 50004798260,8696, EC (2012-2012) PV: 17480979039,479, EE (2012-2012) PV: 12200000000, EG (2012-2012) PV: 146108948074,95, ER (2012-2012) PV: 298325714,285714, ES (2012-2012) PV: 259000000000, ET (2012-2012) PV: 8258692072,28916, FI (2012-2012) PV: 81400000000, FR (2012-2012) PV: 499000000000, FRCC (2012-2012) PV: 201000000000, GA (2012-2012) PV: 2138869513,10861, GB (2012-2012) PV: 332000000000, GE (2012-2012) PV: 10282439423,0769, GH (2012-2012) PV: 10821103021,7566, GI (2012-2012) PV: 172475789,473684, GR (2012-2012) PV: 55400000000, GT (2012-2012) PV: 9184983096,77419, HICC (2012-2012) PV: 9070000000, HK (2012-2012) PV: 43343719409,8428, HN (2012-2012) PV: 6663176830,14354, HR (2012-2012) PV: 21300000000, HT (2012-2012) PV: 616189411,764706, HU (2012-2012) PV: 45300000000, ID (2012-2012) PV: 171000000000, IE (2012-2012) PV: 25200000000, IL (2012-2012) PV: 50576823001,1115, IQ (2012-2012) PV: 58217512897,4588, IR (2012-2012) PV: 215000000000, IS (2012-2012) PV: 16300000000, IT (2012-2012) PV: 290000000000, JO (2012-2012) PV: 15551467795,1002, JP (2012-2012) PV: 923000000000, KE (2012-2012) PV: 7856925264,29342, KG (2012-2012) PV: 12538010977,9614, KH (2012-2012) PV: 4259111552,79503, KP (2012-2012) PV: 15428738093,7693, KR (2012-2012) PV: 453000000000, KW (2012-2012) PV: 54716740225,8905, KZ (2012-2012) PV: 92343008288,1598, LB (2012-2012) PV: 10682610171,3654, LK (2012-2012) PV: 9972320340,24896, LT (2012-2012) PV: 11900000000, LU (2012-2012) PV: 8230000000, LV (2012-2012) PV: 10100000000, LY (2012-2012) PV: 23075015111,5891, MA (2012-2012) PV: 29345352082,7222, MD (2012-2012) PV: 4946810920,13889, JM (2012-2012) PV: 1925560924,57421
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="1" publishedSourceId="7aa69239-cb09-4dcb-9b62-db8b52879e1e" publishedSourceYear="2014" publishedSourceFirstAuthor="Itten R." isCopyrightProtected="true" pageNumbers="chapter 4" companyIdOverwrittenByChild="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="6" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" lastEditTimestamp="2017-06-02T11:09:53" fileGenerator="EcoEditor 3.8.600.15134" fileTimestamp="2017-06-02T11:09:53" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

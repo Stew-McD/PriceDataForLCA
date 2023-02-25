@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="1d4733f9-41a8-5af1-8911-5f3eba32d858" activityNameId="85155f44-ad7a-41be-87a4-145d312a8cf8" parentActivityId="7e85873d-dd93-440c-ad9f-55737bad4702" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">treatment of waste emulsion paint, municipal incineration</activityName>
+        <synonym xml:lang="en">Siedlungsabfallverbrennung</synonym>
+        <synonym xml:lang="en">Kehrichtverbrennung</synonym>
+        <synonym xml:lang="en">municipal waste incineration</synonym>
+        <includedActivitiesStart xml:lang="en"> waste incineration from waste reception gate and delivery into waste bunker at incinerator plant site (without transports to the incinerator)</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en"> Waste-specific short-term emissions to water from leachate. Long-term emissions from landfill to ground water. </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the activity of waste disposal of waste emulsion paint in a municipal solid waste incinerator (MSWI)  //  Recommended use of this dataset: For small amounts of dried waste emulsion paint, which go to disposal as part of communal waste mixture, e.g. small leftovers or paint on other material. Larger amounts of waste paint, unused liquid paint or removed (stripped) paint are to be disposed in hazardous waste incinerator.  //    //  Waste composition (wet, in ppm): upper heating value 11.14 MJ/kg; lower heating value 10.51 MJ/kg; H2O n.a.; O 214760; H 31708; C 268330; S n.a.; N n.a.; P n.a.; B n.a.; Cl 86465; Br n.a.; F n.a.; I n.a.; Ag n.a.; As 0.44122; Ba n.a.; Cd 0.016849; Co n.a.; Cr 1.248; Cu n.a.; Hg 0.0085442; Mn n.a.; Mo n.a.; Ni 0.95527; Pb 0.64946; Sb n.a.; Se n.a.; Sn n.a.; V n.a.; Zn 6.5444; Be n.a.; Sc n.a.; Sr n.a.; Ti 135000; Tl n.a.; W n.a.; Si 149810; Fe n.a.; Ca 113920; Al n.a.; K n.a.; Mg n.a.; Na n.a.;   //  Share of carbon in waste that is biogenic 0%.  //  Share of metals in waste not oxidised and bulk-recyclable (exclude very small or thin parts) Iron: 0%; Alu: 0%; Copper: 0%.  //  One kg of this waste produces 0.7064 kg of slag and 0.1612 kg of residues, which are landfilled. Additional solidification with 0.06448 kg of cement.  //  Net energy production: 1.14MJ/kg electric energy and 2.51MJ/kg thermal energy.   //  Recovery of metal scrap to recycling: 0g iron scrap, 0g aluminium scrap, 0g copper scrap.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="9a63625a-358b-4c1d-bf95-50ba038a759b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3821:Treatment and disposal of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="f9221622-cc45-11de-98ed-0019e336be3a">
+        <shortname xml:lang="en">Europe without Switzerland</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">average Swiss MSWI plants in 2010 (grate incinerators) with electrostatic precipitator for fly ash (ESP), wet flue gas scrubber and 25%  SNCR , 42.77%  SCR-high dust , 32.68%  SCR-low dust -DeNOx facilities and 0% without Denox  (weighted according to mass of burnt waste, representing Swiss average). Efficiency of iron scrap separation from slag : 58%. Efficiency of non-ferrous scrap separation from slag : 31%. Gross electric efficiency technology mix 15.84% and Gross thermal efficiency technology mix 28.51% </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2006-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">Waste composition as given in literature reference, theoretical data or other source. Transfer coefficients for modern MSWI. </text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="7531e396-cfcb-5e1d-9972-c6fb62d15829" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" variableName="E_el_prod_MSWI" amount="1.0" mathematicalRelation="" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="106708082.481">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.3165" mu="-1.151" variance="0.17091" varianceWithPedigreeUncertainty="0.17091"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" mathematicalRelation="" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate 'true value' from</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">calculated in proportion to reference product waste input to incinerator</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce" percent="1.8">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2016-07-11">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="1" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2016-07-11">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0,27000820090636', Output='0,266902212912112'
+ - Input &gt; output by 0,00310598799424794 kg (1,16% of output)
+
+Property 'wet mass':
+ - Input='18,36197419831', Output='1,36842884125828'
+ - Input &gt; output by 16,9935453570517 kg (1241,83% of output)
+
+Property 'dry mass':
+ - Input='1,12551417831', Output='1,36842884125828'
+ - Input &lt; output by 0,242914662948278 kg (17,75% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='6,86185601197041E-07'
+ - Input &lt; output by 6,86185601197041E-07 kg (100% of output)
+
+Property 'water in wet mass':
+ - Input='17,23646002', Output='0'
+ - Input &gt; output by 17,23646002 kg
+
+Property 'price':
+ - Input='0', Output='0,05828162'
+ - Input &lt; output by 0,05828162 EUR2005 (100% of output)
+
+
+- Amount of property 'water content=0,010101010101' of exchange 'quicklime, milled, packed' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,0952062831867' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0,427024457774' of exchange 'NMVOC, non-methane volatile organic compounds, unspecified origin' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,427024457774' of exchange 'NMVOC, non-methane volatile organic compounds, unspecified origin' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'dry mass=0' of master data exchange was removed from exchange 'Water'.
+Property 'water in wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Amount of property 'carbon content, fossil=0,447651942384' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,42880501528' of exchange 'Carbon monoxide, fossil' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,92257895036' of exchange 'Particulates, &lt; 2.5 um' deviates from the default amount in the master file.
+Property 'wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Amount of property 'carbon content, fossil=0,92257895036' of exchange 'Particulates, &gt; 2.5 um, and &lt; 10um' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,270582169556' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,272916486782' of exchange 'Carbon dioxide, fossil' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Amount of property 'carbon content, fossil=0,748686634968' of exchange 'Methane, fossil' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,253056546371' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,912486710516' of exchange 'Toluene' deviates from the default amount in the master file.
+Property 'dry mass=0' of master data exchange was removed from exchange 'Water'.
+Property 'water in wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Amount of property 'carbon content, fossil=0,28787543725' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0,92257895036' of exchange 'Benzene' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'Oxygen'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'Oxygen'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'water content=0' of master data exchange was removed from exchange 'Oxygen'.
+
+- Specified amount (3,4562E-09) did not match amount calculated by uncertainty (3,456E-09) at exchange 'Arsenic'
+- The total water in wet mass of all input exchanges (17,23646002) and output exchanges (0) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): municipal waste incineration facility
+ -- Property(ies): true value relation=3,6, exergy=3,6, price=0,1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, true value relation=0,1842, exergy=0,1842, price=0,0106, carbon content, fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,0952062831867, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0,427024457774, carbon content, non-fossil=0,427024457774, water content=0, carbon content, fossil=0,447651942384, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0,42880501528, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1, dry mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0,92257895036, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0,92257895036, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0,270582169556, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, wet mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0,272916486782, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, water content=0, carbon content, fossil=0,748686634968, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0,253056546371, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, wet mass=1, carbon content, fossil=0,912486710516, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0,28787543725, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,92257895036, dry mass=1, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): municipal waste incineration facility
+ -- Property(ies): true value relation=3,6, exergy=3,6, price=0,1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, true value relation=0,1842, exergy=0,1842, price=0,0106, carbon content, fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,0952062831867, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0,427024457774, carbon content, non-fossil=0,427024457774, water content=0, carbon content, fossil=0,447651942384, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0,42880501528, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1, dry mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0,92257895036, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0,92257895036, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0,270582169556, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, wet mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0,272916486782, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, water content=0, carbon content, fossil=0,748686634968, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0,253056546371, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, wet mass=1, carbon content, fossil=0,912486710516, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0,28787543725, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0,92257895036, dry mass=1, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - waste emulsion paint
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2016-07-11">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='0.27000820090636', Output='0.266902212912112'
+ - Input &gt; output by 0.00310598799424794 kg (1.16% of output)
+
+Property 'wet mass':
+ - Input='18.36197419831', Output='1.36842884125828'
+ - Input &gt; output by 16.9935453570517 kg (1241.83% of output)
+
+Property 'dry mass':
+ - Input='1.12551417831', Output='1.36842884125828'
+ - Input &lt; output by 0.242914662948278 kg (17.75% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='6.86185601197041E-07'
+ - Input &lt; output by 6.86185601197041E-07 kg (100% of output)
+
+Property 'water in wet mass':
+ - Input='17.23646002', Output='0'
+ - Input &gt; output by 17.23646002 kg
+
+Property 'price':
+ - Input='0', Output='0.05828162'
+ - Input &lt; output by 0.05828162 EUR2005 (100% of output)
+
+
+- Amount of property 'water content=0.010101010101' of exchange 'quicklime, milled, packed' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.0952062831867' of exchange 'Benzo(a)pyrene' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0.427024457774' of exchange 'NMVOC, non-methane volatile organic compounds, unspecified origin' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.427024457774' of exchange 'NMVOC, non-methane volatile organic compounds, unspecified origin' deviates from the default amount in the master file.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'water in wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'dry mass=0' of master data exchange was removed from exchange 'Water'.
+Property 'wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Amount of property 'carbon content, fossil=0.447651942384' of exchange 'Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.42880501528' of exchange 'Carbon monoxide, fossil' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.92257895036' of exchange 'Particulates, &lt; 2.5 um' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Amount of property 'carbon content, fossil=0.92257895036' of exchange 'Particulates, &gt; 2.5 um, and &lt; 10um' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.270582169556' of exchange 'Phenol, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.272916486782' of exchange 'Carbon dioxide, fossil' deviates from the default amount in the master file.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Heat, waste'.
+Amount of property 'carbon content, fossil=0.748686634968' of exchange 'Methane, fossil' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.253056546371' of exchange 'Benzene, hexachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.912486710516' of exchange 'Toluene' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'water in wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'wet mass=1000' of master data exchange was removed from exchange 'Water'.
+Property 'dry mass=0' of master data exchange was removed from exchange 'Water'.
+Amount of property 'carbon content, fossil=0.28787543725' of exchange 'Benzene, pentachloro-' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.92257895036' of exchange 'Benzene' deviates from the default amount in the master file.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'water content=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Oxygen'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'Oxygen'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'Oxygen'.
+
+- Specified amount (3.4562E-09) did not match amount calculated by uncertainty (3.456E-09) at exchange 'Arsenic'
+- The total water in wet mass of all input exchanges (17.23646002) and output exchanges (0) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): municipal waste incineration facility
+ -- Property(ies): true value relation=3.6, exergy=3.6, price=0.1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, true value relation=0.1842, exergy=0.1842, price=0.0106, carbon content, fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.0952062831867, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0.427024457774, carbon content, non-fossil=0.427024457774, water content=0, carbon content, fossil=0.447651942384, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0.42880501528, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1, dry mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0.92257895036, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0.92257895036, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0.270582169556, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, wet mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0.272916486782, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, water content=0, carbon content, fossil=0.748686634968, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0.253056546371, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, wet mass=1, carbon content, fossil=0.912486710516, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0.28787543725, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.92257895036, dry mass=1, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): municipal waste incineration facility
+ -- Property(ies): true value relation=3.6, exergy=3.6, price=0.1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, wet mass=1, water in wet mass=0, true value relation=0.1842, exergy=0.1842, price=0.0106, carbon content, fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, water content=0, carbon content, fossil=0, dry mass=1, dry mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.0952062831867, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water in wet mass=0, dry mass=1, wet mass=1, wet mass=1, water in wet mass=0, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, dry mass=1, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, fossil=0.427024457774, carbon content, non-fossil=0.427024457774, water content=0, carbon content, fossil=0.447651942384, water content=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, fossil=0.42880501528, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, wet mass=1, dry mass=1, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0.92257895036, water in wet mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, water content=0, dry mass=1, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, water content=0, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, water in wet mass=0, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0.92257895036, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0.270582169556, dry mass=1, water content=0, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=1, water in wet mass=0, water content=0, wet mass=1, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, wet mass=1, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0.272916486782, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, wet mass=1, water content=0, carbon content, fossil=0.748686634968, water in wet mass=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0.253056546371, water content=0, water in wet mass=0, dry mass=1, water in wet mass=0, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, wet mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, dry mass=1, wet mass=1, carbon content, fossil=0.912486710516, water in wet mass=0, water content=0, carbon content, non-fossil=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, water content=0, carbon content, non-fossil=0, carbon content, fossil=0.28787543725, wet mass=1, water in wet mass=0, water content=0, dry mass=1, water in wet mass=0, water content=0, carbon content, fossil=0.92257895036, dry mass=1, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, water content=0, wet mass=1, water in wet mass=0, carbon content, fossil=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="true" personName="[System]" personEmail="support@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2011-11-25T18:38:24" lastEditTimestamp="2016-07-11T15:43:54" fileGenerator="EcoEditor 3.7.200.14428" fileTimestamp="2016-07-11T15:43:54" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

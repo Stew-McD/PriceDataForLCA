@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="1" id="e8f4ba47-d9fc-5846-9403-1b2271f14fd2" activityNameId="d5dbf2cc-a70e-4794-bd89-fc871cafb882" parentActivityId="b2180ad6-b8f2-4878-bd87-0424a9b04093" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">market for wheat grain</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts at the farm gate.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the whole wheat at the mill gate.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This is a market activity. Each market represents the consumption mix of a product in a given geography, connecting suppliers with consumers of the same product in the same geographical area. Markets group the producers and also the imports of the product (if relevant) within the same geographical area. They also account for transport to the consumer and for the losses during that process, when relevant.</text>
+          <text xml:lang="en" index="1">This is the market for  'wheat grain', in the geography of South Africa.</text>
+          <text xml:lang="en" index="2">This dataset represents the transport of 1 kg of wheat grain from the farm to the corresponding market, i.e. whole wheat processing facility (dry mill) . No losses are considered in this dataset.</text>
+          <text xml:lang="en" index="3">The product 'wheat grain' is a grain. It is an annual crop. The ecoinvent database also contains this product from organic and Swiss integrated production.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="e2e1f67d-3393-4182-86f6-1ada2f77c3e5">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0111:Growing of cereals (except rice), leguminous crops and oil seeds</classificationValue>
+      </classification>
+      <geography geographyId="12b21766-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">ZA</shortname>
+        <comment>
+          <text xml:lang="en" index="0">South African values: Not applicable worldwide.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="0">The data are intended to reflect current equipment and processes in South Africa.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2016-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">None</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="a213c9de-d3a3-5a26-9f61-96d6d8f5f086" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.0" intermediateExchangeId="0201ee86-f71b-4457-8fe8-79f3ed720b07" productionVolumeAmount="3325416000.0">
+        <name xml:lang="en">wheat grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.5492096073130298" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.39723379824681" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.464600933622" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="REF_PRODUCT_C_content_non_fossil" amount="0.464600933622" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.464600933622" mu="-0.77" variance="0.0" varianceWithPedigreeUncertainty="0.0188"/>
+            <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="3"/>
+          </uncertainty>
+          <comment xml:lang="en">Estimate not geography specific. Value and comment from "wheat production, GLO": biogene carbon content on a dry matter basis
+Composition data obtained from Wheat, soft red winter, in (http://www.nal.usda.gov/fnic/foodcomp/search/). First, composition data were refered to 1 kg dry mass. Then, C-contents were calculated considering a C-content/dry mass of 46% in carbohydrates (including fibres), 53% in proteins and 75% in fats. All data from 'Evolutionary and Biochemical Aspects', A.D. Kay and T. Vrede (in Global Ecology, 2010, Elsevier B.V., S.E. Jørgensen Ed.).</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.855" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.21999999999999997" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Literature value. Based on SAFEX price of R 3,727 per tonne, source: SAGIS, 2018. Retrieved from: http://www.sagis.org.za/safex_historic.html, accessed 28May2018</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.1268893876736024" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.169590643274854" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="REF_PRODUCT_WWM" amount="0.14499999999999996" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.145" mu="-1.93" variance="0.0" varianceWithPedigreeUncertainty="0.0"/>
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          </uncertainty>
+          <comment xml:lang="en">Grain is dried down to 14.8% moisture. Source: CRAAQ (2010). Séchage des grains - Données techniques. AGDEX 736, juin 2010, 6p. [Centre de Référence en Agriculture et Agroalimentaire du Québec].</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en"/>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d1dbcf4b-5e66-49bb-a507-62adb543291b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01112: Wheat, other</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0ba58e43-28ed-5333-bcd0-684d29c83567" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.4" intermediateExchangeId="0ace02fa-eca5-482d-a829-c18e46a52db4" activityLinkId="e520082b-fa1b-5d77-9b46-1a96f6ecb167">
+        <name xml:lang="en">transport, freight train</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Estimated value based on the breakdown of wheat production (DAFF, 2016; SAGIS, 2017a) and whole wheat processed (i.e. dry milling of wheat) (SAGIS, 2017a, SAGIS, 2017b). It was assumed that mills would source wheat grain from within the region first, which amounted to 36% of wheat grain processed. It was further assumed that wheat grain is transported an average distance of 100km within the province. For the remaining wheat grain to be transported to mills in Gauteng (GP), KwaZulu-Natal (KZN), Mpumalanga (MP) and Free State (FS) Provinces a weighted average distance was applied based on a breakdown of the surplus grain available in the other provinces, including imports, and the distance from these regions to the corresponding milling regions. It was assumed that the grain would be imported via Durban.The distances were estimated using Google Maps. Based on SAGIS (2017c), approximately 26% of wheat grain is transported via road, with the remainder being transported via rail. The component transported via conveyor is negligible. It was assumed that the transport within the region is predominantly road, with the longer distances accounted for by rail. Reference(s): DAFF (2016) Wheat Market Value Chain Profile 2016, Department of Agriculture, Forestry and Fisheries, Available at: http://www.nda.agric.za/doaDev/sideMenu/Marketing/Annual%20Publications/Commodity%20Profiles/field%20crops/Wheat%20Market%20Value%20Chain%20Profile%20%202016.pdf. (Accessed August 2017); SAGIS (2017a) Supply and Demand: Marketing Year October 2016 to September 2017, South African Grain Information System. Available at: http://www.sagis.org.za/sd_marketing_year.html. (Accessed April 2017); SAGIS (2017b) Processing per Province - May 2015 to April 2016, South African Grain Information System. Available at: http://www.sagis.org.za/processing-per-province.html (Accessed April 2017); Du Toit, C.J.L., Meissner, H.H. &amp; van Niekerk, W.A. (2013) Direct methane and nitrous oxide emissions of South African dairy and beef cattle, South African Journal of Animal Science (43) 320-339; SAGIS (2017c) Grain Transport by Component, South African Grain Information System. Available at: http://www.sagis.org.za/monthly-grain-transport.html. (Accessed October 2017).
+
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.4" mu="-0.9163" variance="0.12" varianceWithPedigreeUncertainty="0.1227"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3a7e1bd-527a-4941-905b-e2bea12a7944">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6512: Railway transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="17702de7-c088-51bb-b786-d90f8ef1ff34" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.026" intermediateExchangeId="cfbce515-3f54-4411-ad9d-3d26b7faa15a" activityLinkId="cd14598b-31f3-5b78-a2ac-f480481e3f2f">
+        <name xml:lang="en">transport, freight, lorry, unspecified</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Estimated value based on the breakdown of wheat production (DAFF, 2016; SAGIS, 2017a) and whole wheat processed (i.e. dry milling of wheat) (SAGIS, 2017a, SAGIS, 2017b). It was assumed that mills would source wheat grain from within the region first, which amounted to 36% of wheat grain processed. It was further assumed that wheat grain is transported an average distance of 100km within the province. For the remaining wheat grain to be transported to mills in Gauteng (GP), KwaZulu-Natal (KZN), Mpumalanga (MP) and Free State (FS) Provinces a weighted average distance was applied based on a breakdown of the surplus grain available in the other provinces, including imports, and the distance from these regions to the corresponding milling regions. It was assumed that the grain would be imported via Durban.The distances were estimated using Google Maps. Based on SAGIS (2017c), approximately 26% of wheat grain is transported via road, with the remainder being transported via rail. The component transported via conveyor is negligible. It was assumed that the transport within the region is predominantly road, with the longer distances accounted for by rail. Reference(s): DAFF (2016) Wheat Market Value Chain Profile 2016, Department of Agriculture, Forestry and Fisheries, Available at: http://www.nda.agric.za/doaDev/sideMenu/Marketing/Annual%20Publications/Commodity%20Profiles/field%20crops/Wheat%20Market%20Value%20Chain%20Profile%20%202016.pdf. (Accessed August 2017); SAGIS (2017a) Supply and Demand: Marketing Year October 2016 to September 2017, South African Grain Information System. Available at: http://www.sagis.org.za/sd_marketing_year.html. (Accessed April 2017); SAGIS (2017b) Processing per Province - May 2015 to April 2016, South African Grain Information System. Available at: http://www.sagis.org.za/processing-per-province.html (Accessed April 2017); Du Toit, C.J.L., Meissner, H.H. &amp; van Niekerk, W.A. (2013) Direct methane and nitrous oxide emissions of South African dairy and beef cattle, South African Journal of Animal Science (43) 320-339; SAGIS (2017c) Grain Transport by Component, South African Grain Information System. Available at: http://www.sagis.org.za/monthly-grain-transport.html. (Accessed October 2017).
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.026" mu="-1.766" variance="0.12" varianceWithPedigreeUncertainty="0.1227"/>
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+          <comment xml:lang="en">Default uncertainty and pedigree applied for all similar autogenerated amounts</comment>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3f2af72c-fe6c-5b52-8179-d8d1ae3c9252" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.57676994397092" intermediateExchangeId="0201ee86-f71b-4457-8fe8-79f3ed720b07" activityLinkId="72e65f84-23b1-50c8-afa7-e96fa56f664a">
+        <name xml:lang="en">wheat grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.9522160664819945" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.39723379824681" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.464600933622" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.464600933622" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.855" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.22" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.22" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.169590643274854" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.145" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d1dbcf4b-5e66-49bb-a507-62adb543291b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01112: Wheat, other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d768baaf-ba27-549d-b9d7-719e7747a866" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.42323005602908" intermediateExchangeId="0201ee86-f71b-4457-8fe8-79f3ed720b07" activityLinkId="c85a9d22-93ce-5ddc-ae67-8307af31a8f5">
+        <name xml:lang="en">wheat grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.39723379824681" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.464600933622" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.464600933622" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.855" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.22" isDefiningValue="false" isCalculatedAmount="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.169590643274854" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.145" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d1dbcf4b-5e66-49bb-a507-62adb543291b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01112: Wheat, other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">The data is primarily sourced from literature and statistics.</samplingProcedure>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="30" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-02-07">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="30" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-02-12">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Amount of property 'carbon content, non-fossil=0,464600933622' of exchange 'wheat grain' deviates from the default amount in the master file.
+Amount of property 'dry mass=0,855' of exchange 'wheat grain' deviates from the default amount in the master file.
+Amount of property 'water content=0,169590643274854' of exchange 'wheat grain' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,145' of exchange 'wheat grain' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (0,145) is unbalanced.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="847a56f5-d9e5-4a65-ab51-b056e0039130" isActiveAuthor="false" personName="Avraam Symeonidis" personEmail="Symeonidis@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="847a56f5-d9e5-4a65-ab51-b056e0039130" personName="Avraam Symeonidis" personEmail="Symeonidis@ecoinvent.org" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.11" defaultLanguage="en" creationTimestamp="2017-10-25T11:51:39" lastEditTimestamp="2018-02-09T15:07:12" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2018-02-09T15:07:12" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

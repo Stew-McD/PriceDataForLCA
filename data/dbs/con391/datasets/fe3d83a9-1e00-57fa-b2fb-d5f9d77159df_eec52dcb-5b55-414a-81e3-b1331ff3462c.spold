@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="fe3d83a9-1e00-57fa-b2fb-d5f9d77159df" activityNameId="0d8801ba-adc4-4e71-9ab8-f3bb61b07567" parentActivityId="d755bf63-e19d-45c4-abf9-bd5a7b9e1999" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">drying, sewage sludge</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the raw sewage sludge in a silo.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the dried sewage sludge ready to be shiped; infrastructure is disregarded.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">The dataset contains the drying of raw sludge with a dry matter content of 5% up to 92%. The drying includes  mechanical dewatering followed by thermal drying. Dried sewage sludge could be used as fertilizer  or as alternative fuel and raw material in the clinker production.</text>
+          <text xml:lang="en" index="1">The total heat demand for drying of mechanically dewatered sewage sludge (30% dry mass) to dried sewage sludge (92% dry mass) is 340.489 MJ per m3 raw sewage sludge input (5% dry mass). The heat demand is assumed to be covered to 50% by natural gas, 30% light fuel oil, 10% heat from borehole heat pump, and to 10% from waste heat. These values are based on calculation tool from ESU Services [ESU_SewageSludgeDrying.xls] which uses Vetter &amp; Burger, 2006 as reference for energy requirements.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="9a63625a-358b-4c1d-bf95-50ba038a759b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3821:Treatment and disposal of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+      </geography>
+      <technology technologyLevel="3"/>
+      <timePeriod startDate="2013-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="ff607e65-9235-596c-b6b5-3fdab18e7b71" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="m_sludge_raw" amount="-1.0" mathematicalRelation="-m_sludge_dried*(1-0.08)/(1-0.95)" intermediateExchangeId="eec52dcb-5b55-414a-81e3-b1331ff3462c" productionVolumeAmount="4832263646.09868" productionVolumeSourceId="3005cdfc-a1ba-44f8-896b-6ec731df9f92">
+        <name xml:lang="en">raw sewage sludge</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">scaling the reduction in water content of 95% to 8% to 1 kg output</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.02048" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.4096" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.4096" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.05" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="3.2" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of the treatment dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="19.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.95" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">extrapolated from Swiss production volumes via Global/Swiss GDP</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="493a33fc-9712-5ef0-902b-0665209f5cc9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00019255729253672433" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="000d8983-4247-5508-a2f9-a0b7f5d3212c">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f16d4e70-63a8-5a1d-a4ec-64b6cd07244e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00013340152728039614" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2207e144-ae17-5ac5-89d4-da222eea54df">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6ab5be40-8ce8-58ff-8883-7612b19288cc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.150238216785655E-06" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="90c7efdc-2dd9-59a0-a7ab-254f973fdd70">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7807ca61-a1a6-511c-9bed-55a2260c11c9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00019376704008751208" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a13a1acb-26a8-5d5e-aaa0-965d3a68c47c">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="996cbc6e-d69b-511b-be0d-750819380b89" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0015887257966257238" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b8b62460-6ab4-54c5-8b55-efaa3add54a7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9c11f19e-24c0-58ca-be17-f4f056bf38a1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.204559460605996E-06" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="bf0cfb6f-a122-56c9-a1ab-b3bed7a5a9f4">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dc86d96d-1bae-5b31-8f99-d0a40a87f20f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.565717460740903E-05" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c0ba74fe-5a78-513f-baf4-496ddf34fd08">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="31cac9a6-68b7-5134-8732-4a3c63769d6b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.153637118484275E-05" mathematicalRelation="(ABS(m_sludge_raw)-ABS(m_sludge_raw)*(1-0.95)/0.3)*2.7/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ffe90ee0-12ce-557d-a630-a2130a7ac322">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">The electricity demand represents the electricity requirements for mechanical dewatering of raw sewage sludge of 2.7 kWh/t of removed water, dewatered from 5% dry mass to 30% dry mass. This value is based on Vetter &amp; Burger (2006) as reference for energy requirements.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0414" mu="2.58" variance="0.3" varianceWithPedigreeUncertainty="0.47059999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="23251032-148d-5063-b9d8-47fd887ad096" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.016640775859041935" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="8e493847-bf5e-5a76-831e-659af92f2177">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ff54c0f2-2910-5070-a01d-9179007e9fe6" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.047054955622408016" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="d363f8d5-0acb-5a48-8868-c15b8fb952b8">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="edc4c1fd-417c-595b-aa7c-3fb8733c9d4d" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.10966839895333268" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="ef856080-7808-5451-9d80-8f61384df9b9">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c45f2bdf-b0c6-5b4f-8c9d-5ae8014f2d8f" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.14369001607193832" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="7859e2ec-d4cb-54a0-a7d9-eb7a0673f74f">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="09345cd3-5275-4440-8046-3ae837e4fcaf" amount="0.0" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">corresponding fuel use, propane, furnace &gt;100kW</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <undefined minValue="0.0" maxValue="0.0" standardDeviation95="0.0"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          </uncertainty>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output, taken directly from ecoinvent v3.0 dataset "heat production, natural gas, at industrial furnace &gt;100kW, GLO 2000".</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="503e7536-c41e-54ee-8f30-6e20fc73e854" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0002509084978969856" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="c7e2c41c-5e77-553c-a123-d5fc04bdb268">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="09345cd3-5275-4440-8046-3ae837e4fcaf" amount="0.0" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">corresponding fuel use, propane, furnace &gt;100kW</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <undefined minValue="0.0" maxValue="0.0" standardDeviation95="0.0"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          </uncertainty>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output, taken directly from ecoinvent v3.0 dataset "heat production, natural gas, at industrial furnace &gt;100kW, GLO 2000".</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="85b8683a-d8ac-5765-a541-51bb6ab74b32" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.02942320586494734" mathematicalRelation="(ABS(m_sludge_raw)*(1-0.95)/0.3-ABS(m_sludge_dried))*(1000+715)/2/1000*3.6*0.5" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="fec22188-3e72-5a35-bec9-d78aab9318bc">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heat required for the dewatering of mechanically dried sludge (dry matter content of 30%) to dried sewage sludge with a dry matter content of 95%. The heat requirement lies between 715 kWh and 1000 kWh per t of removed water, converted to MJ with 3.6 MJ/kWh. 50% of the required heat are covered with fuel oil, 50% with heat from composting gas and heat pumps.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.1899" mu="0.27" variance="0.3" varianceWithPedigreeUncertainty="0.34259999999999996"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="09345cd3-5275-4440-8046-3ae837e4fcaf" amount="0.0" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">corresponding fuel use, propane, furnace &gt;100kW</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <undefined minValue="0.0" maxValue="0.0" standardDeviation95="0.0"/>
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4"/>
+          </uncertainty>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output, taken directly from ecoinvent v3.0 dataset "heat production, natural gas, at industrial furnace &gt;100kW, GLO 2000".</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9aa3bead-bc02-58b0-b18f-57a763509498" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="m_sludge_dried" amount="-0.05434782608695653" intermediateExchangeId="3b01838a-28d0-43f5-8024-3fad9a5392c2" activityLinkId="a0994187-9b1c-5b27-8c52-e6f409084ae9">
+        <name xml:lang="en">sewage sludge, dried</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.37683200000000006" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.4096" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.4096" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.92" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="11.6" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Literature value</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0869565217391304" isDefiningValue="false" mathematicalRelation="wwm/dm" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="wwm" amount="0.08" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Conversion of the use of raw sludge in cement kilns by scaling down the input from a water content of 95% to 8%.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4acff19e-ab21-5b83-a0c4-6c865ea7c64c" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-0.0001819652997850183" mathematicalRelation="(ABS(m_sludge_raw)-m_sludge_dried)/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="5848677c-5c61-5066-9c76-0e8ec4cc1392">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">converting the difference in weight as water loss from kg to m3; the selected intermediate exchange is used as a proxy due to the lack of data on the process specific composition of the waste water.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.06729999999999985" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">extrapolated from Swiss production volumes via Global/Swiss GDP</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ece64483-322e-5d8e-9f1e-08f07c34391f" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-2.709369852602469E-06" mathematicalRelation="(ABS(m_sludge_raw)-m_sludge_dried)/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="65ce7c92-b75c-564a-b3ee-9e1f68914e99">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">converting the difference in weight as water loss from kg to m3; the selected intermediate exchange is used as a proxy due to the lack of data on the process specific composition of the waste water.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.06729999999999985" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">extrapolated from Swiss production volumes via Global/Swiss GDP</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cc7b648e-0d51-5d8e-ac6a-8108d445582c" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-0.0007609775042754227" mathematicalRelation="(ABS(m_sludge_raw)-m_sludge_dried)/1000" sourceId="9273754a-dd63-45af-afa4-6ae33fb0c92f" sourceYear="2006" sourceFirstAuthor="Vetter, H." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="6a783588-0131-5790-8678-e1139266f761">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">converting the difference in weight as water loss from kg to m3; the selected intermediate exchange is used as a proxy due to the lack of data on the process specific composition of the waste water.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.06729999999999985" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">extrapolated from Swiss production volumes via Global/Swiss GDP</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="dd7f13f5-0658-489c-a19c-f2ff8a00bdd9">
+        <systemModelName xml:lang="en">Substitution, consequential, long-term</systemModelName>
+        <samplingProcedure xml:lang="en">Literature</samplingProcedure>
+        <extrapolations xml:lang="en">none</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="18" reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2015-02-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="21" reviewerId="e8d6ebac-c6d1-4f98-b4db-6613e1520289" reviewerName="Gabor Doka" reviewerEmail="gabor@doka.ch" reviewDate="2015-02-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="18" reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2015-02-09">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="21" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-04-04">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'dry mass':
+ - Input='0,92', Output='0,926034959878063'
+ - Input &lt; output by 0,00603495987806257 kg (0,65% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0,376832', Output='0,37800302'
+ - Input &lt; output by 0,00117102000000008 kg (0,31% of output)
+
+
+- Amount of property 'dry mass=0,92' of exchange 'sewage sludge, dried' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,08' of exchange 'sewage sludge, dried' deviates from the default amount in the master file.
+Amount of property 'water content=0,0869565217391304' of exchange 'sewage sludge, dried' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0,4096' of exchange 'sewage sludge, dried' deviates from the default amount in the master file.
+
+- Specified amount (0) did not match amount calculated by uncertainty (1,05263157894737) at exchange property 'corresponding fuel use, propane, furnace &gt;100kW=0'
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0,194039401033427, dry mass=0,346836774601289, water content=2882,20060970917, water in wet mass=999,653163225399, dry mass=0,92, wet mass=1, water in wet mass=0,08, water content=0,0869565217391304, carbon content, fossil=0, carbon content, non-fossil=0,4096
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1000, carbon content, fossil=0, carbon content, non-fossil=0,194039401033427, dry mass=0,346836774601289, water content=2882,20060970917, water in wet mass=999,653163225399, dry mass=0,92, wet mass=1, water in wet mass=0,08, water content=0,0869565217391304, carbon content, fossil=0, carbon content, non-fossil=0,4096
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - raw sewage sludge
+
+- For by-products/wastes, a market activity (currently missing) that supplies the output 'sewage sludge, dried' must exist for a geographical area and time period including the location and time period of the activity. If the the market dataset is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market dataset has been accepted into the ecoinvent database.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="00c7a068-1730-48bf-a7b3-275340049de5" isActiveAuthor="true" personName="Frank Werner" personEmail="frank@frankwerner.ch"/>
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" dataPublishedIn="0" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2015-01-21T11:27:34" lastEditTimestamp="2015-04-04T19:19:54" fileGenerator="EcoEditor 3.6.120.14078" fileTimestamp="2015-04-04T19:19:54" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

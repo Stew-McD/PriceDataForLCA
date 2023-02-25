@@ -1,0 +1,850 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="913c2a05-d77e-5235-9fc2-6ac508c802f1" activityNameId="9abc3a4b-d5b2-430b-b98b-1f8af403a579" parentActivityId="c0b023d3-51f1-4948-b5d1-d5b68325e0b2" inheritanceDepth="-1" type="1" energyValues="0">
+        <activityName xml:lang="en">chicken production</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the arrival of the chick in the shed.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the end of the chicken's life in the shed for its slaughter.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset is a rough estimation for describing the production of a broiler chicken for meat production. The lifetime of a broiler is assumed 6 weeks before it is brought to the slaughter and its average weight is 2.35 kg. The inventory includes process emissions.   It is recommended to revise this dataset as soon as possible.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="f59d2975-3046-4dde-8cb9-887b4b9908e1">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0146:Raising of poultry</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">based on available literature on raising of poultry.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1994-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">date of publication of main literature sources</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="b5dc7ed0-5f47-5c75-8b11-3c91d998a611" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="chicken_RP" amount="1.0" intermediateExchangeId="2da20646-8adf-460b-bd65-c9fc35494b66" productionVolumeAmount="70200000000.0" productionVolumeSourceId="f84b18ff-db91-450b-9856-770451cecf8e">
+        <name xml:lang="en">chicken for slaughtering, live weight</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.8944709077149089" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.14875000000000002" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.4375" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.4375" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content in live meat was considered 43.75% (DM basis). Data from Weidema B.P., Wesnaes M., Hermansen J., Kristensen T., Halberg N. (2007a). Environmental Improvement Potentials of Meat and Dairy Products. Report to the European Commission, Institute for Prospective Technological Studies. In press. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.34" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="1.44" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on literature value (indexmundi.com, accessed 20121214) for year 2005.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1.44" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="1.94117647058824" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.66" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">http://www.fsis.usda.gov/Factsheets/Water_in_Meats/index.asp</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">based on FAO statistics for world production of chicken meat in 2005, namley 7.02E7 tonnes.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="adf8254b-2757-449d-9950-fc367b1c6910">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">02151: Chickens</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="51f3fc35-e283-5a38-8578-0aeb7fb1293e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.4780317286862826" mathematicalRelation="1.04/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="5fddd549-59c0-5173-8321-4aa178ea6f8e">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">for 1 broiler of 1.946 kg, the electricity input is 1.04 KWh and 0.6 MJ of heat (danish data, 2000)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.534429599177801" mu="-0.63" variance="0.0006" varianceWithPedigreeUncertainty="0.0446"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="79987a01-e3c5-5046-8714-fbe0d68d8f6b" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.11758932064165876" mathematicalRelation="((3200*0.0041868)*4.074/2.35* chicken_RP)*1.48" sourceId="ed58eeae-ef9c-449a-a749-a7b278bb4cfa" sourceYear="1994" sourceFirstAuthor="Kratzer et al." intermediateExchangeId="7cb72345-4338-4f2d-830f-65bba3530fdb" activityLinkId="17da5ffb-169e-5d00-8748-6190d175e324">
+        <name xml:lang="en">energy feed, gross</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">based on cumulative feed intake for a broiler after 6 weeks, and body weight of 2,355kg, namely 4,074 kg (FAO, 2010. URL:(http://www.fao.org/docrep/012/al175e/al175e.pdf)
+
+The gross energy is calculated based on the metabolisable energy requirements (in MJ/kg) for broilers, namely 3200 kcal/kg broiler for standard diets. (Nutrient Requirements of Poultry: Ninth Revised Edition, NATIONAL ACADEMY PRESS, Washington, 1994). The gross energy conversion is calculated with the average of wheat and barley gross energy-metabolisable energy ratio for broilers. This is 1.48 (Scott, TA, 1997)(http://ps.fass.org/content/77/3/449.full.pdf)</comment>
+        <uncertainty>
+          <lognormal meanValue="34.3753454788085" mu="3.8" variance="0.0006" varianceWithPedigreeUncertainty="0.050624999999999996"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">gross energy is the gross calorific value</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">gross energy is the gross calorific value</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dc055b48-7dfa-578c-b1e2-8191f08ec4c1" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="30.630157152801765" mathematicalRelation="((3200*0.0041868)*4.074/2.35* chicken_RP)*1.48" sourceId="ed58eeae-ef9c-449a-a749-a7b278bb4cfa" sourceYear="1994" sourceFirstAuthor="Kratzer et al." intermediateExchangeId="7cb72345-4338-4f2d-830f-65bba3530fdb" activityLinkId="bc5ef47c-7850-5321-af2e-fc7684767af1">
+        <name xml:lang="en">energy feed, gross</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">based on cumulative feed intake for a broiler after 6 weeks, and body weight of 2,355kg, namely 4,074 kg (FAO, 2010. URL:(http://www.fao.org/docrep/012/al175e/al175e.pdf)
+
+The gross energy is calculated based on the metabolisable energy requirements (in MJ/kg) for broilers, namely 3200 kcal/kg broiler for standard diets. (Nutrient Requirements of Poultry: Ninth Revised Edition, NATIONAL ACADEMY PRESS, Washington, 1994). The gross energy conversion is calculated with the average of wheat and barley gross energy-metabolisable energy ratio for broilers. This is 1.48 (Scott, TA, 1997)(http://ps.fass.org/content/77/3/449.full.pdf)</comment>
+        <uncertainty>
+          <lognormal meanValue="34.3753454788085" mu="3.8" variance="0.0006" varianceWithPedigreeUncertainty="0.050624999999999996"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">gross energy is the gross calorific value</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">gross energy is the gross calorific value</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ed73ad95-4888-52be-aacf-ef1e1df041fe" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.27578753578054704" mathematicalRelation="0.6/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="ec62cb97-1496-5597-9967-568e33e155cb">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">for 1 broiler of 1.946 kg, the electricity input is 1.04 KWh and 0.6 MJ of heat (danish data, 2000)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.308324768756423" mu="-1.18" variance="0.0006" varianceWithPedigreeUncertainty="0.0446"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6a871157-9074-5f60-8b1a-41c99dacc57b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.3147860081022126" mathematicalRelation="4.074*(20.3/100)/2.35 * chicken_RP" sourceId="ed58eeae-ef9c-449a-a749-a7b278bb4cfa" sourceYear="1994" sourceFirstAuthor="Kratzer et al." intermediateExchangeId="8b2dfb58-660d-44eb-b83f-5d9e28e467db" activityLinkId="c43c5744-efb6-530f-b2b2-24da4b737da1">
+        <name xml:lang="en">protein feed, 100% crude</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">based on cumulative feed intake for a broiler after 6 weeks, and body weight 2.35 kg, namely 4074 gr (FAO, 2010. URL:(http://www.fao.org/docrep/012/al175e/al175e.pdf)
+
+The crude protein (in % kg/kg feed) is based on the average crude protein needs of broilers during the starting, growth and finishing phases, namely 20.3% (Nutrient Requirements of Poultry: Ninth Revised Edition, NATIONAL ACADEMY PRESS, Washington, 1994)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.351924255319149" mu="-0.39" variance="0.0006" varianceWithPedigreeUncertainty="0.050624999999999996"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.53" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.53" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.53" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">considered pure protein (ecoinvent v2.2 report 17, pg 288). C-content in protein is estimated to be 53% ( from "Evolutionary and Biochemical Aspects", A.D. Kay and T. Vrede (in Global Ecology, 2010, Elsevier B.V., S.E. Jørgensen Ed.).</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">considered dried protein</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d3320296-8cc5-5ab2-936a-4d467fee09dc" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="4.7176735638972014E-08" mathematicalRelation="1/(0.79*50*60000*8)" sourceId="133ab8ac-afe1-4ee9-ac46-7e691f2e3f2f" sourceYear="2008" sourceFirstAuthor="Van Horne, PLM" intermediateExchangeId="24eb302a-2bd7-485c-be95-15a34af3311d" activityLinkId="5a440a96-e42e-5183-961d-4a1b492f87c5">
+        <name xml:lang="en">shed</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">The required amount of infrastructure (RA) is calculated as:
+
+RA (unit/kg reference product) = output units of reference product (kg) / (utilisation rate * lifetime capacity)
+
+The utilisation rate is the rate between the actual use and the theoretical use of the shade.The max, under certain conditions  stockage density for broilers is stated to be 42 kg/m2 (FAO, 2008 http://www.fao.org/AG/againfo/home/events/bangkok2007/docs/part2/2_5.pdf). It is assumed this is the max. value for space use. In the EU the regulation allows up to 33 kg/m2 under normal conditions (FAO, 2008. http://www.fao.org/AG/againfo/home/events/bangkok2007/docs/part2/2_5.pdf) . We assume this is the average utilisation of the space. The utilisation rate is then calculated as 0.79.
+
+The lifetime capacity is calculated with the lifetime of the shed (50 years) and the and the yearly capacity of the shed. LIterature review gives an average of 30,000 at the shed at one given time and the space given is 33 kg/m2. This makes 60,000 kg per unit during the lifetime of the chickens, which is 6 weeks. This makes 8 6-week periods in 1 year. The capacity is then calculated as 60,000*8.</comment>
+        <uncertainty>
+          <lognormal meanValue="5.27426160337553E-08" mu="-16.6" variance="0.0006" varianceWithPedigreeUncertainty="0.2092"/>
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="5"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="7334f6a6-0871-5d4b-9e04-550dac2f50de" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007664-41-7" amount="0.013099907949575992" isCalculatedAmount="false" mathematicalRelation="(28.50/1000)/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." elementaryExchangeId="0f440cc0-0f74-446d-99d6-8ff0e97a2444">
+        <name xml:lang="en">Ammonia</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">for 1 broiler of 1.946 kg, the ammonia emissions are 28.50gr.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0146454265159301" mu="-4.22" variance="0.0006" varianceWithPedigreeUncertainty="0.0446"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">azane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="46ee7c65-fc8f-52b6-b85a-ecc6a21bf246" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010024-97-2" amount="0.0009698528341615897" isCalculatedAmount="false" mathematicalRelation="(2.11/1000)/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." elementaryExchangeId="afd6d670-bbb0-4625-9730-04088a5b035e">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">for 1 broiler of 1.946 kg, the N2O emissions are 2.11gr.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00108427543679342" mu="-6.83" variance="0.0006" varianceWithPedigreeUncertainty="0.0446"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">nitrous oxide</synonym>
+        <synonym xml:lang="en">dinitrogen oxide</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="28dbcb11-f5b2-5de5-a35d-b6b6c1d4fcde" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000074-82-8" amount="0.0005102069411940125" isCalculatedAmount="false" mathematicalRelation="(1.11/1000)/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." elementaryExchangeId="57bdb443-d4a6-423d-8024-959b8261d02e">
+        <name xml:lang="en">Methane, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">for 1 broiler of 1.946 kg, the methane emissions are 1.11gr.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000570400822199383" mu="-7.47" variance="0.0006" varianceWithPedigreeUncertainty="0.0446"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Methane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.748686634968048" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="995c1350-d56f-5376-9055-afe0664c2aa3" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="0.0006950038952944842" isCalculatedAmount="false" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">calculated with water balance. The water that does not leave the system as chicken meat and as poultry manure, is assumed to be evaporated.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000777" mu="0.82" variance="0.0006" varianceWithPedigreeUncertainty="0.0492"/>
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="d2efbebc-9ec8-4ce3-aea4-f4353094f458" variableName="fraction_origin_fresh_water" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: fresh water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is fresh water.</comment>
+        </property>
+        <property propertyId="ed9ccf89-0acb-4097-8f74-867ed82f5fd0" variableName="fraction_origin_salt_water" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: salt water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is salt water.</comment>
+        </property>
+        <property propertyId="1f45c101-983d-43ff-a576-9601b15e0c65" variableName="fraction_origin_unspecified" amount="1.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: unspecified</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is unspecified. It can be either salt or fresh water.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b76b7779-d180-55b9-9543-b0b309cb8228" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="014797-55-8" amount="0.03691875812315594" isCalculatedAmount="false" mathematicalRelation="(80.32/1000)/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." elementaryExchangeId="7ce56135-2ca5-4fba-ad52-d62a34bfeb35">
+        <name xml:lang="en">Nitrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">producing 1 broiler of 1.946 kg emits 80.32gr nitrate into water</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0412744090441932" mu="-3.19" variance="0.04" varianceWithPedigreeUncertainty="0.084"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Nitrate ion</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="17e1de0d-1104-5826-a853-2edba05dd4c0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="014265-44-2" amount="0.00020224419290573465" isCalculatedAmount="false" mathematicalRelation="(0.44/1000)/1.946* chicken_RP" sourceId="84d32bca-86ca-4eef-af86-0c334b66cf01" sourceYear="2003" sourceFirstAuthor="Halberg, N." elementaryExchangeId="1727b41d-377e-43cd-bc01-9eaba946eccb">
+        <name xml:lang="en">Phosphate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">producing 1 broiler of 1.946 kg emits 0.44  gr. phosphate into water</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000226104830421377" mu="-8.39" variance="0.04" varianceWithPedigreeUncertainty="0.084"/>
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Phosphate ion</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="7077564f-2d9b-5305-8564-c48cc8b3f5e0" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_water_unspecified" casNumber="007732-18-5" amount="0.003938355406668744" isCalculatedAmount="false" mathematicalRelation="water_UNO_input*(1-fraction_PW_to_air)" elementaryExchangeId="2404b41a-2eed-4e9d-8ab6-783946fdf5d6">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.004403" mu="-5.43" variance="0.04" varianceWithPedigreeUncertainty="0.130025"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="d2efbebc-9ec8-4ce3-aea4-f4353094f458" variableName="fraction_origin_fresh_water_Ww" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: fresh water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is fresh water.</comment>
+        </property>
+        <property propertyId="ed9ccf89-0acb-4097-8f74-867ed82f5fd0" variableName="fraction_origin_salt_water_Ww" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: salt water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is salt water.</comment>
+        </property>
+        <property propertyId="1f45c101-983d-43ff-a576-9601b15e0c65" variableName="fraction_origin_unspecified_Ww" amount="1.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: unspecified</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is unspecified. It can be either salt or fresh water.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000.0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="96bd2162-8f05-5077-a8fa-770c15ee70af" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_UNO_input" casNumber="007732-18-5" amount="0.004633359301963228" isCalculatedAmount="false" mathematicalRelation="0.00518" sourceId="ed58eeae-ef9c-449a-a749-a7b278bb4cfa" sourceYear="1994" sourceFirstAuthor="Kratzer et al." elementaryExchangeId="831f249e-53f2-49cf-a93c-7cee105f048e">
+        <name xml:lang="en">Water, unspecified natural origin</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">based on cumulated water consumption of a broiler from week 1 to week 6, namely 5180 ml.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00518" mu="1.94" variance="0.0006" varianceWithPedigreeUncertainty="0.050624999999999996"/>
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">oxidane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0011486573821716322" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239022" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239022" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 4.8, calculated from bicarbonate content in river (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">TDS in an average river used as approximation. That is, 110.1 mg/L (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="daadf2d4-7bbb-4f69-8ab5-58df4c1685eb" amount="0.15" variableName="fraction_PW_to_air" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">fraction, process water, to air</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.15" mu="-1.9" variance="0.04" varianceWithPedigreeUncertainty="0.092025"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Literature value. In case when no industry/process specific data are available, default evaporation fraction value is used. This value is 15% and is based on literature (Statistics Canada, 2007 &amp; Shaffer, K.H., 2008, Consumptive water use in the Great Lakes Basin, USGS &amp; Shiklomanov, 2003, World Water Resources at the Beginning of the 21st Century) and has been approved by an expert.</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">this inventory is based on literature review</samplingProcedure>
+        <extrapolations xml:lang="en">the data is obtained from international litearature sources. The infrastructure is adapted from a shed used for sheep.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="22" reviewerId="9011fbce-fc4b-4755-890b-96728c23c4d3" reviewerName="Bo Weidema" reviewerEmail="bow@lca-net.com" reviewDate="2012-04-11">
+        <details>
+          <text xml:lang="en" index="0">This is a rather crude dataset, but the main inputs and outputs are included and balanced. For a furture update, the BREF document &lt;http://eippcb.jrc.es/reference/BREF/irpp_bref_0703.pdf&gt; may be of interest.</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="22" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-05-02">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='0,000427051472155464'
+ - Input &lt; output by 0,000427051472155464 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='0', Output='0,000427051472155464'
+ - Input &lt; output by 0,000427051472155464 kg (100% of output)
+
+Property 'dry mass':
+ - Input='0', Output='3,40141763792613'
+ - Input &lt; output by 3,40141763792613 kg (100% of output)
+
+Property 'wet mass':
+ - Input='0', Output='2,32780061664954'
+ - Input &lt; output by 2,32780061664954 kg (100% of output)
+
+
+- Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'shed'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'shed'.
+Property 'wet mass=0' of master data exchange was removed from exchange 'shed'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'shed'.
+Property 'water content=0' of master data exchange was removed from exchange 'shed'.
+Property 'dry mass=0' of master data exchange was removed from exchange 'shed'.
+Property 'water content=0' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'carbon content, non-fossil=0,53' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'protein feed, 100% crude'.
+Property 'water content=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'wet mass=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'dry mass=' of master data exchange was removed from exchange 'electricity, high voltage'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'dry mass=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'wet mass=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'water content=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'heat, district or industrial, other than natural gas'.
+Property 'carbon content, non-fossil=0,0104328554239022' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+Property 'water content=0,0104328554239022' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+Property 'water in wet mass=1000' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+Property 'wet mass=1000,1101' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+Property 'dry mass=0,1101' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water, unspecified natural origin'.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0,38, carbon content, non-fossil=0,748686634968048, water content=0, carbon content, fossil=0,748686634968048, dry mass=1, water in wet mass=0, wet mass=1, water in wet mass=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, water in wet mass=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0,38, carbon content, non-fossil=0,748686634968048, water content=0, carbon content, fossil=0,748686634968048, dry mass=1, water in wet mass=0, wet mass=1, water in wet mass=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, carbon content, non-fossil=0, wet mass=1, water content=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0, water in wet mass=0, wet mass=1, dry mass=1, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, wet mass=1, carbon content, non-fossil=0, dry mass=1, water content=0, carbon content, fossil=0
+
+- The input exchange 'energy feed, gross' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+- The input exchange 'protein feed, 100% crude' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1b11366d-47b7-40d4-b85d-7d7063b22209" isActiveAuthor="true" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="1b11366d-47b7-40d4-b85d-7d7063b22209" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-04-05T13:15:24" lastEditTimestamp="2012-05-02T15:09:43" fileGenerator="EcoEditor 2.4.58.7424" fileTimestamp="2012-05-02T15:09:43" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

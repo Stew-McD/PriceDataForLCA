@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="7901cfcb-6e76-503b-955a-58e2d0edde83" activityNameId="e80e53c8-7b59-419b-bd49-4f20a24ab02f" parentActivityId="76c637c5-dcc6-4e4a-9e4d-180235ecdf59" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electrolysis of magnesium chloride, from titanium sponge production</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts with the reception of magnesium chloride, obtained from the production of titanium sponge using the Kroll process.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the recovery of magnesium and chlorine.
+
+Infrastructure use is not included as this process is assumed to take place in the same facility as titanium spong production.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset models the electrolysis of 1 kg of magnesium chloride produced during the production of titanium sponge using the Kroll process, which is modelled by the following reaction: TiCl4+ 2Mg -&gt; Ti + 2MgCl2. The electrolysis of magnesium chloride separates the magnesium from the chlorine through the following reaction: MgCl2 -&gt; Mg + Cl2. The recovered Mg is fed back to the reduction and distillation process (which produces titanium sponge) and the chlorine is fed back to the chlorination and refining process (which produces titanium tetrachloride).</text>
+          <text xml:lang="en" index="1">Reference: </text>
+          <text xml:lang="en" index="2">Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="6fe7bc2b-4be4-48f7-92b0-f27dea9053ce">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2420:Manufacture of basic precious and other non-ferrous metals</classificationValue>
+      </classification>
+      <geography geographyId="0c40fa1e-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CN</shortname>
+        <comment>
+          <text xml:lang="en" index="0">Dataset valid for the entire corresponding region.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="0">The reduction and distillation step of the Kroll process produces titanium sponge and magnesium chloride as a byproduct based on the following stoichiometric equation: TiCl4 + 2Mg -&gt; Ti + 2MgCl2. The magnesium chloride is then separated via electrolysis in order to recover the magnesium and chlorine through the following reaction: MgCl2 -&gt; Mg + Cl2.</text>
+          <text xml:lang="en" index="1">After refining, the magnesium is recycled and serves again as input to the reduction and distillation process, while chlorine (after it is filtrated and purified) is recycled and sent back to the chlorination process as an input.</text>
+          <text xml:lang="en" index="2">According to Gao et al. (2018), the chlorination step (2TiO2 + 4Cl2 + 3C -&gt; 2TiCl4 + 2CO + CO2) requires 1620 kg of chlorine per metric ton of titanium sponge to compensate for the chlorine that is not recovered by the electrolysis of magnesium chloride. Based on stoichiometry, roughly 2962 kg of Cl2 are required to produce 1 metric ton of titanium sponge. This means the overall recovery rate of Cl is roughly 45%.</text>
+          <text xml:lang="en" index="3">Because 0.093 kg of MgCl2 is lost in the reduction and distillation step, this means that 3.885 kg of MgCl2 per kg Ti are sent to electrolysis, out of which 1.342 kg of Cl are recovered. The amount of Cl recovered per kg of MgCl2 entering the electrolysis step is therefore 0.3455 kg and corresponds to a recovery rate of 46.4% in this step.</text>
+          <text xml:lang="en" index="4">Based on the stoichiometric reaction of the reduction and distillation step, roughly 1.016 kg of Mg are required as input. Gao et al. (2018) report an input of 41 kg per metric ton of titanium sponge. The overall recovery rate of Mg is therefore approximately 96%.</text>
+          <text xml:lang="en" index="5">0.97 kg of Mg is recovered out of the 3.885 kg of MgCl2 that goes to electrolysis. The amount of Mg recovered per kg of MgCl2 entering the electrolysis step is therefore 0.2509 kg and corresponds to a recovery rate of 98.3% in this step.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2020-01-01" endDate="2024-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="0">Data are considered representative of current production practices. The data are assumed to be valid on average for 5 years after the publication of that article. </text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="40cf068b-28c3-561c-88cf-99ff21ac3d0c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="magnesium_amount" casNumber="007439-95-4" amount="1.0" mathematicalRelation="(1016 - 41)/1000/3.885" intermediateExchangeId="bef7d0b3-c9d9-46db-a67d-2c9e550f2c12" productionVolumeAmount="82875000.0">
+        <name xml:lang="en">magnesium, for reuse in titanium sponge production</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Value calculated based on value given Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018). Based on the stoichiometric reaction of the reduction and distillation step used for titanium sponge production (TiCl4 + 2Mg -&gt; Ti + 2MgCl2), roughly 1.016 kg of Mg are required as input. Gao et al. (2018) report an input of 41 kg per metric ton of titanium sponge to compensate for the amount of Mg that is not recycled. The overall recovery rate of Mg is therefore approximately 96%.
+
+Because 0.093 kg of MgCl2 is lost in the reduction and distillation step, this means that 3.885 kg of MgCl2 per kg Ti are sent to electrolysis. Out of that amount, 0.97 kg of Mg is recovered. The amount of Mg recovered per kg of MgCl2 entering the electrolysis step is therefore roughly 0.251 kg and corresponds to a recovery rate of 98.3% in this step.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.250965250965251" mu="-1.382" variance="0.0006" varianceWithPedigreeUncertainty="0.001225"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="9b14f020-ce8d-4929-a3b5-d6e44624e6bf" amount="0.8983041654052624" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">allocation factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="8aedc313-f49b-42cd-8d54-fc877ec03017" amount="1.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">magnesium content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">magnesium content on a dry matter basis</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="1.7994089" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">The price is set equal to that of the product "magnesium". Please refer to the price comment of that exchange for more information on how it was obtained.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.4515891061776063" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="0ff66513-6abd-45d9-9efc-906a8c304bdf">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41601: Tungsten, molybdenum, tantalum, magnesium, cobalt, cadmium, titanium, zirconium, beryllium, gallium, hafnium, […]</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="53a2fc13-19c9-5f8b-80af-8f1d4aca4318" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="13.359395280385943" mathematicalRelation="1.45E+04/1000/3.885" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2ba682a2-719f-51df-951f-eec02f61e0c5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Value from Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018). The amount of electricity consumed in the electrolysis process is 1.45E+04 kWh per metric ton of titanium sponge. This value was adjusted considering that for 1 kg of titanium sponge produced, 3.885 kg of MgCl2 is sent to the electrolysis step.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="3.73230373230373" mu="1.317" variance="0.0006" varianceWithPedigreeUncertainty="0.001225"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1986521b-e019-56c8-8197-b472b50a4e5c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="inert_waste_amount" amount="-1.504769116228874" mathematicalRelation="(ABS(RP_amount) + sulfuric_acid_amount) - (chlorine_amount + magnesium_amount + HCl_amount + HF_amount)" intermediateExchangeId="3a91cb7d-843b-495d-9973-33ba5efee877" activityLinkId="d5c26882-4930-5874-9983-5402b4d40e26">
+        <name xml:lang="en">inert waste</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Based on mass balance calculation. According to Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018), 1.62E-01 kg of "other residue" is produced in the electrolysis step per metric ton of titanium sponge. However, neither this amount nor the amount reported in the reduction and distillation step are large enough to account for the amounts of Mg and Cl that are not recovered by the electrolysis of MgCl2. Therefore, the amount of inert waste is calculated such that the mass of the inputs is equal to the mass of the outputs.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.420397425997426" mu="-0.8666" variance="0.0006" varianceWithPedigreeUncertainty="0.001225"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="91f26c38-f56f-4179-9862-3c94bcfb6677">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39: Wastes or scraps</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="40f386f3-9ad0-5fb9-8432-a923a8f06fce" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="RP_amount" casNumber="7786-30-3" amount="3.5793965975378907" intermediateExchangeId="27406b61-9f47-4647-bf10-c3f60c69ee91" activityLinkId="31fcf121-b70d-5a1c-bbf0-4659ff808d86">
+        <name xml:lang="en">magnesium chloride, from titanium sponge production</name>
+        <unitName xml:lang="en">kg</unitName>
+        <synonym xml:lang="en">magnesium;dichloride</synonym>
+        <synonym xml:lang="en">Magnesium dichloride</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="66d4c921-658a-4ba0-b190-c6e09e57d74a" amount="0.7447" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">chlorine content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">chlorine content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="8aedc313-f49b-42cd-8d54-fc877ec03017" amount="0.255299036" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">magnesium content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">magnesium content on a dry matter basis</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.09354711948964772" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Price calculated based on prices from wholesalers on alibaba.com (accessed on 2021-09-03). The average price based on 5 sellers is 139 $/Ton (assumed to be metric ton). This price was converted to EUR based on the annual exchange rates published by the European Central Bank (https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=120.EXR.A.USD.EUR.SP00.A), and then adjusted for inflation relative to 2005 by using the Harmonised Index of Consumer Prices (HICP) of the euro area, published by eurostat (https://ec.europa.eu/eurostat/databrowser/view/PRC_HICP_AIND/default/table).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Equal to the amount of magnesium chloride produced in titanium sponge production (GLO).</productionVolumeComment>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="a611a303-a730-4721-8385-b0fa926ece41">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">342: Basic inorganic chemicals n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="57cc0bc7-b1b8-5c6d-9e9c-28fa24011db4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="sulfuric_acid_amount" casNumber="007664-93-9" amount="0.06430936486696145" mathematicalRelation="6.98E+01/1000/3.885" intermediateExchangeId="9d63da75-8289-4b96-a900-67ec3bd40a16" activityLinkId="fb1122a1-b808-5ce3-a060-59080cf27209">
+        <name xml:lang="en">sulfuric acid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Value from Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018). The amount of sulfuric acid required in the electrolysis process is 6.98E+01 kg per metric ton of titanium sponge. This value was adjusted considering that for 1 kg of titanium sponge produced, 3.885 kg of MgCl2 is sent to the electrolysis step.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.017966537966538" mu="-4.019" variance="0.0006" varianceWithPedigreeUncertainty="0.001225"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2SO4</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2SO4</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3d4d040-0471-45ee-aef2-3c034a9de7b7">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34231: Chemical elements n.e.c.; inorganic acids except phosphoric, nitric and sulphonitric; inorganic oxygen compoun[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="42be6adc-3034-5848-b365-937a6b5011c6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="HCl_amount" casNumber="007647-01-0" amount="0.0036116434137319292" isCalculatedAmount="false" mathematicalRelation="3.92/1000/3.885" elementaryExchangeId="68e32537-beae-41c2-be72-74df4d273c11">
+        <name xml:lang="en">Hydrochloric acid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Value from Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018). An emission of HCl is reported to occur in the electrolysis process. It is assumed to be an emission to air. The reported amount is 3.92 kg per metric ton of titanium sponge. This value was adjusted considering that for 1 kg of titanium sponge produced, 3.885 kg of MgCl2 is sent to the electrolysis step.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00100900900900901" mu="-6.899" variance="0.04" varianceWithPedigreeUncertainty="0.040625"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">Hydrogen chloride</synonym>
+        <synonym xml:lang="en">Chlorane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="244bcb81-05a9-5eec-b81e-64f44ca10fdc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="HF_amount" casNumber="007664-39-3" amount="0.0005859707171258951" isCalculatedAmount="false" mathematicalRelation="6.36E-01/1000/3.885" elementaryExchangeId="8b7dc667-f04e-492c-a161-80b1482126b0">
+        <name xml:lang="en">Hydrogen fluoride</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Value from Table 2 (column "Electrolysis of MgCl2") in Gao et al. (2018). An emission of HF is reported to occur in the electrolysis process. It is assumed to be an emission to air. The reported amount is 6.36E-01 kg per metric ton of titanium sponge. This value was adjusted considering that for 1 kg of titanium sponge produced, 3.885 kg of MgCl2 is sent to the electrolysis step.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000163706563706564" mu="-8.717" variance="0.04" varianceWithPedigreeUncertainty="0.040625"/>
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <synonym xml:lang="en">fluorane</synonym>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">The individual exchanges have been taken from Table 2 (column "Electrolysis of MgCl2") of Gao et al. (2018). The amounts are based on those reported in that table while considering the stoichiometric reactions. The amounts have been scaled for 1 kg of MgCl2 that is fed to the electrolysis process (instead of 1 metric ton of titanium sponge as reported in Table 2 in Gao et al. (2018)). Additionally, the amounts take into account the fact that 0.093 kg of MgCl2 is assumed to be lost in the titanium sponge production step. This means that for one kg of titanium sponge produced, 3.885 kg of MgCl2 is sent to the electrolysis process.
+
+The individual emissions reported in Gao et al. (2018) (apart from HCl and HF) are all assumed to be related to energy production. Therefore they are not considered here because they are modelled in the ecoinvent dataset for electricity production.
+
+Reference:
+Gao, F., Nie, Z., Yang, D., Sun, B., Liu, Y., Gong, X., &amp; Wang, Z. (2018). Environmental impacts analysis of titanium sponge production using Kroll process in China. Journal of Cleaner Production, 174, 771-779. doi:https://doi.org/10.1016/j.jclepro.2017.09.240.</samplingProcedure>
+        <extrapolations xml:lang="en">According to the authors of the publication used as a source for this dataset, data were collected from titanium sponge manufacturing companies in the province of Sichuan and Shaanxi through surveys, but considering at the same time average national production statistics. Therefore, the data are assumed to represent the average production of titanium metal in China through the Kroll process.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="4" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2021-07-29">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="4" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-07-29">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, magnesium content=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, dry mass=1, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, wet mass=1, dry mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, dry mass=1, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, wet mass=1, water content=0, water in wet mass=0, carbon content, fossil=0, carbon content, non-fossil=0, magnesium content=1, water in wet mass=0, carbon content, non-fossil=0, water content=0, carbon content, fossil=0, dry mass=1, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, water in wet mass=0, wet mass=1, dry mass=1
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="44a0bdd8-6624-4a73-a661-7190ddf070b3" reviewerName="David FitzGerald" reviewerEmail="fitzgerald@ecoinvent.org" reviewDate="2022-09-17">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2022-09-17">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): magnesium content=1, carbon content, non-fossil=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, water content=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): magnesium content=1, carbon content, non-fossil=0, water in wet mass=0, water content=0, wet mass=1, dry mass=1, carbon content, fossil=0, water content=0, wet mass=1, water in wet mass=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, water in wet mass=0, dry mass=1, water content=0, carbon content, fossil=0, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=1, water content=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="44a0bdd8-6624-4a73-a661-7190ddf070b3" isActiveAuthor="false" personName="David FitzGerald" personEmail="fitzgerald@ecoinvent.org"/>
+      <dataGeneratorAndPublication personId="44a0bdd8-6624-4a73-a661-7190ddf070b3" personName="David FitzGerald" personEmail="fitzgerald@ecoinvent.org" dataPublishedIn="2" publishedSourceId="dd1fa56b-e449-4b99-aa03-d28fc2e1b149" publishedSourceYear="2018" publishedSourceFirstAuthor="Gao Feng" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2021-07-28T00:56:10" lastEditTimestamp="2022-09-17T18:10:11" fileGenerator="EcoEditor 3.13.5000.19341" fileTimestamp="2022-09-17T18:10:11" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

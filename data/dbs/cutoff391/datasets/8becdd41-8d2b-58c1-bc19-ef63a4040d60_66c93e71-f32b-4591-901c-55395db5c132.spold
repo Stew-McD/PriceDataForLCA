@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold02 ../../schemas/datasets/EcoSpold02.xsd http://www.EcoInvent.org/UsedUserMasterData ../../schemas/datasets/EcoSpold02UserMasterData.xsd">
+  <childActivityDataset>
+    <activityDescription>
+      <activity specialActivityType="0" id="8becdd41-8d2b-58c1-bc19-ef63a4040d60" activityNameId="2d9e8e52-e8ba-4770-a636-fe5003e31ad3" activityNameContextId="de659012-50c4-4e96-b54a-fc781bf987ab" parentActivityId="cea76611-d786-4f2d-8dd6-ca233c81db98" inheritanceDepth="-1" type="1">
+        <activityName xml:lang="en">electricity production, wind, &lt;1MW turbine, onshore</activityName>
+        <includedActivitiesStart xml:lang="en">From operation of the wind power plant to high voltage electricity at the plant. According to (European Communities 2001), electricity produced with wind turbines in a wind power plant is connected to medium voltage or high voltage systems, depending on the size of the windfarm. Normally, each wind turbine contains a transformer from low voltage to medium voltage. The network connection additionally transforms the electricity to high voltage electricity. It is assumed here, that there are no stand-alone grid-connected small wind turbines and that all electricity is connected to the network in form of high voltage electricity. 
+
+Source:
+European Communities. 2001. Wind Turbine Grid Connection and Interaction. Deutsches Windenergie-Institut /Tech-wise A/S /DM Energy, p. 7 Tab.2.1</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the production of 1kWh of high voltage electricity produced at the power plant and delivered to the grid.
+
+This dataset includes 
+ - the operation and maintenance of the wind power plant
+ - change of lubricating oil every year
+
+This dataset doesn"t include 
+ - raw materials extraction, decommissioning and waste treatment as these activities are already included in infrastructure datasets
+ - transformation of the electricity produced in order to deliver in to the grid as this is already included in the infrastructure datasets.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="0">This dataset represents the production of high voltage electricity at onshore grid-connected wind power plants with a capacity of less than 1 MW in Czech Republic in 2012. It includes operation and maintenance expenditures as well as infrastructure inputs. Wind load hours have been adapted to local conditions (see parameters).</text>
+          <text xml:lang="en" index="1">At the moment, the class of onshore &lt; 1MW wind turbines is approximated with a 0.8 MW onshore wind turbine consisting of the infrastructure datasets for "moving parts" and "fixed parts". Moving parts are the rotor, the nacelle, electronics, and the network connection. The tower and foundation are considered as fixed parts.</text>
+          <text xml:lang="en" index="2">According to The Wind Power Database (2014), total installed wind capacity on-and offshore in Czech Republic in the end of 2014 amounted to 311.36 MW. Out of it, 0% were installed offshore, which are modelled with a 2 MW wind turbine. Percentages of the three onshore wind power plant classes modelled in ecoinvent referring to the total installed capacity (63 windfarms by 12/2014): &lt;1MW 10.9%; 1-3MW 89.1%; &gt;3MW 0%  [Retreived from The Wind Power. 2014. Wind power and wind farms database. www.thewindpower.net, Status December 2014]. </text>
+          <text xml:lang="en" index="3">[This dataset is meant to replace the following datasets:]</text>
+        </generalComment>
+        <tag>wind power</tag>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <geography geographyId="0d45a5d6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CZ</shortname>
+      </geography>
+      <technology technologyLevel="2">
+        <comment>
+          <text xml:lang="en" index="0">Technology of a specific 800 kW wind power plant modelled with a dataset for fixed and moving parts each (the latter including the network connection). Moving parts are the rotor, the nacelle, electronics, and the network connection. The tower and foundation are considered as fixed parts.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2022-12-31" isDataValidForEntirePeriod="true"/>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="9b5efaa3-6f8e-5fb4-9f6e-4cc08f18676c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.0" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" productionVolumeAmount="51201131.27916718">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated value</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f673e444-1673-5080-a56f-0e6192ebc449" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="lubricating_oil" amount="4.97159090909091E-05" mathematicalRelation="lubricating_oil_maintenance*lifetime/(lifetime*(capacity_MW*1000)*wind_load_hours)" intermediateExchangeId="ea75b944-c676-4a13-85b8-2bea98f765a4" activityLinkId="809a7ce6-14e4-55fd-887d-6ff4460139f3">
+        <name xml:lang="en">lubricating oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Lubricating oil use for maintenance.</comment>
+        <uncertainty>
+          <lognormal meanValue="4.97159090909091E-05" mu="-9.92980486085" variance="0.0" varianceWithPedigreeUncertainty="0.002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. C-content/dry mass of fats and oils considered 75%, from: ecoinvent v2.2 report, n 15a, pg 40</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="40.2" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Literature value, Source: IPCC 2006, 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Prepared by the National Greenhouse Gas Inventories Programme, Eggleston H.S., Buendia L., Miwa K., Ngara T. and Tanabe K. (eds). Published: IGES, Japan</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="10ff9f76-486c-4c81-965e-4507d9adef0e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33380: Lubricants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0ea57552-b9b5-5456-80b4-a96b7fc7eccb" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="7.8465765610652E-12" mathematicalRelation="((lubricating_oil/1000)/2)*(distance*2*lifetime/(lifetime*(capacity_MW*1000)*wind_load_hours))" intermediateExchangeId="ae39ee61-d4d0-4cce-93b4-0745344da5fa" activityLinkId="0383cb70-910d-57b9-9083-dc8c56ab2b62">
+        <name xml:lang="en">transport, freight, lorry 7.5-16 metric ton, EURO3</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Calculated value. Two maintenance transports to the power plant with 200 km each. Once a year, the lubricating oil is transported and changed.</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="951f8f36-8fb0-47a1-b6f8-acb10713cca2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">6511: Road transport services of freight</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a7bff114-27eb-5c2c-8d75-92e0590d0974" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_min_oil_10" amount="-4.97159090909091E-05" mathematicalRelation="lubricating_oil" intermediateExchangeId="1b30b018-ac39-41f4-a9e0-92057eef8bb8" activityLinkId="3cc7b300-3205-5751-8227-97a168ef9b68">
+        <name xml:lang="en">waste mineral oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value</comment>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.7779999999996" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.864444444444" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.864444444444" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.6, ecoinvent v2.2 report 13_I.  C content has been calculated after data in the tables, and then referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.9" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="34.7" mathematicalRelation="" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Value taken from the general comment of the treatment dataset.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.111111111111" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.
+Due to reasons of the parent-child relationship, a safety amount of 400000kg waste mineral oil had to be added.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ccd4af3c-22e5-5cfe-b226-f84dc68808d1" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="3.94570707070707E-08" mathematicalRelation="1/(lifetime*(capacity_MW*1000)*wind_load_hours)" intermediateExchangeId="a7992562-3c34-4232-b599-315f568651bb" activityLinkId="723112d9-1a9b-5bc2-a255-b0f352c1064b">
+        <name xml:lang="en">wind power plant, 800kW, fixed parts</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Calculated value</comment>
+        <uncertainty>
+          <lognormal meanValue="3.94570707070707E-08" mu="-17.0686718608" variance="0.0" varianceWithPedigreeUncertainty="0.002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="4e6ff13b-7bfb-4e66-8255-6b0b7dcc6de8" amount="0.8" isDefiningValue="false" isCalculatedAmount="false" unitId="9dbdef14-e661-41e7-a878-e1f380b24d5a">
+          <name xml:lang="en">capacity [MW]</name>
+          <unitName xml:lang="en">MW</unitName>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" amount="20.0" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <comment xml:lang="en">Estimation/literature value. Today, wind turbine producers often use a lifetime of 20 years for all parts of the wind turbine in their financial calculataions, even if it can be assumed that the foundation could have a longer lifetime.</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="58c43590-9d63-402c-98e5-399314aa3fdf">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53262: Power plants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="64787fab-c3e1-5b3d-b452-674f7dea7d9a" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="3.94570707070707E-08" mathematicalRelation="1/(lifetime*(capacity_MW*1000)*wind_load_hours)" intermediateExchangeId="70491f84-cd91-4f4e-bf36-3938980cbf0d" activityLinkId="f6fbc7ae-5683-5dec-80a3-10fe2e723c8a">
+        <name xml:lang="en">wind power plant, 800kW, moving parts</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Calculated value</comment>
+        <uncertainty>
+          <lognormal meanValue="3.94570707070707E-08" mu="-17.0686718608" variance="0.0" varianceWithPedigreeUncertainty="0.002"/>
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="lifetime" amount="20.0" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <comment xml:lang="en">Estimation/literature value. Today, wind turbine producers often use a lifetime of 20 years for all parts of the wind turbine in their financial calculataions, even if it can be assumed that the foundation could have a longer lifetime.</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="58c43590-9d63-402c-98e5-399314aa3fdf">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53262: Power plants</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="c130b206-73ef-5bf2-84ef-0166d6db0a5a" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="3.87" isCalculatedAmount="false" elementaryExchangeId="57c71b25-4663-4fad-9167-7ce5be3e8268">
+        <name xml:lang="en">Energy, kinetic (in wind), converted</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <compartment subcompartmentId="45bb416c-a63b-429f-8754-b3f76a069c43">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in air</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="ef611365-46ec-4412-883a-62880c95e099" amount="260.0" variableName="capacity_installed" unitId="9dbdef14-e661-41e7-a878-e1f380b24d5a">
+        <name xml:lang="en">Installed capacity</name>
+        <unitName xml:lang="en">MW</unitName>
+        <uncertainty>
+          <lognormal meanValue="260.0" mu="5.56068163102" variance="0.0006" varianceWithPedigreeUncertainty="0.0012"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1"/>
+        </uncertainty>
+        <comment xml:lang="en">Literature value. Total installed capacity in 2012. NOTE: This is the installed capacity per the end of the year 2012 as given by WWEA, which is then set into relation with the amount of electricity produced in 2012. The value in the general comment represents the installed capacity per December 2014 as given by The Wind Power database and is used in relation to the installed capacity on-and offshore in each turbine size class.
+
+Source: WWEA. 2012. Annual Report - World Wind Energy Report 2012. The World Wind Energy Association. www.wwindea.org
+Installed capacity of a certain technology in a certain region/location.</comment>
+      </parameter>
+      <parameter parameterId="48483cc6-a1bd-4a2e-b3ae-fad67c561ca4" amount="0.108588129496" variableName="percentage_class_onshore" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">Percentage of onshore wind power plant class capacity on total</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.108588129496" mu="-2.22019318228" variance="0.001" varianceWithPedigreeUncertainty="0.0036999999999999997"/>
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">Literature value/calculated value. Percentage of installed capacity with onshore wind turbines &lt; 1MW on total installed wind capacity installed in this geography (see general comment for percentages in other size classes). 
+Source: 
+ The Wind Power. 2014. Windpower and wind farms database. www.thewindpower.net, Status December 2014
+Percentage of the wind power plant class energy production on total wind power production in a country. Classes: &lt;1MW, 1-3MW, &gt;3MW. Values for onshore wind power plants.</comment>
+      </parameter>
+      <parameter parameterId="fc93e227-7397-4099-a5c0-47a2bbe278b5" amount="1584.0" variableName="wind_load_hours" mathematicalRelation="( gross_electricity*(1- losses_gross_net))/(capacity_installed*1000)" unitId="e32b56ef-fa80-4487-9796-f3c1476c27b3">
+        <name xml:lang="en">Wind load hours</name>
+        <unitName xml:lang="en">hour</unitName>
+        <uncertainty>
+          <lognormal meanValue="1584.0" mu="7.38832785958" variance="0.002" varianceWithPedigreeUncertainty="0.050600000000000006"/>
+          <pedigreeMatrix reliability="5" completeness="3" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="3"/>
+        </uncertainty>
+        <comment xml:lang="en">Calculated value.
+nan</comment>
+      </parameter>
+      <parameter parameterId="9ce37bfe-cefc-4b71-af7b-feb870b5f8b9" amount="200.0" variableName="distance" unitId="ae252091-811b-461b-8e89-8f3075639eb1">
+        <name xml:lang="en">distance</name>
+        <unitName xml:lang="en">km</unitName>
+        <uncertainty>
+          <lognormal meanValue="200.0" mu="5.29831736655" variance="0.005" varianceWithPedigreeUncertainty="0.1016"/>
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Estimation. Maintenance transport to the power plant. One person travels two times per year over a distance of 200 km each time, one time for check only with a car, one time for change of the lubricating oil with a lorry.
+nan</comment>
+      </parameter>
+      <parameter parameterId="8ce7c260-eef4-467b-833a-7754240d2626" amount="416000000.0" variableName="gross_electricity" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc">
+        <name xml:lang="en">gross electricity production</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <uncertainty>
+          <lognormal meanValue="416000000.0" mu="19.8461958182" variance="0.001" varianceWithPedigreeUncertainty="0.002225"/>
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="2" furtherTechnologyCorrelation="2"/>
+        </uncertainty>
+        <comment xml:lang="en">Literature value. Total gross grid-connected wind electricity production. Gross value from the official OECD/IEA gross electricity production 2008 statistics, including data from 196 countries.
+Please consider data for the United States, the value for 2009 instead of 2008 was taken. 
+
+IEA/OECD. 2010. Electricity Information 2010. International Energy Agency (IEA), Paris Cedex (FR). Part IV. Detailed OECD Electricity And Heat Data.
+nan</comment>
+      </parameter>
+      <parameter parameterId="22325219-5239-4f09-a250-5b20c7fe50d2" amount="0.01" variableName="losses_gross_net" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+        <name xml:lang="en">losses from gross electricity production</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.01" mu="-4.60517018599" variance="0.0006" varianceWithPedigreeUncertainty="0.0113"/>
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="1" geographicalCorrelation="3" furtherTechnologyCorrelation="3"/>
+        </uncertainty>
+        <comment xml:lang="en">Estimation. The factor for the loss of electricity from gross to net electricity production is an assumption based on experiences, statistics and expertise (1% losses for wind).
+nan</comment>
+      </parameter>
+      <parameter parameterId="571b2a2b-79d8-442c-a8b5-2a0f8f5b4173" amount="63.0" variableName="lubricating_oil_maintenance" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+        <name xml:lang="en">use of lubricating oil for maintenance</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <lognormal meanValue="63.0" mu="4.14313472639" variance="0.0006" varianceWithPedigreeUncertainty="0.0912"/>
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="5" geographicalCorrelation="4" furtherTechnologyCorrelation="4"/>
+        </uncertainty>
+        <comment xml:lang="en">Literature value. 63kg of lubricating oil are changed every year.(Burger&amp;Bauer 2007, p.41)
+nan</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">Literature, calculations</samplingProcedure>
+        <extrapolations xml:lang="en">The turbine class &lt;1MW is  represented by a wind turbine with a capacity of 0.8 MW.</extrapolations>
+      </representativeness>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="14" reviewerId="9a963412-20a7-428b-8740-3582e217c4b6" reviewerName="Carl Vadenbo" reviewerEmail="vadenbo@ifu.baug.ethz.ch" reviewDate="2015-05-29">
+        <details>
+          <text xml:lang="en" index="0">The update of the whole electricity sector for the ecoinvent v3.2 database consist of hundreds of datasets. All these datasets have passed through a streamlined review processes where the underlying modelling of production volumes, technology shares and efficiencies was reviewed in detail prior to the datasets being submitted to the database.</text>
+        </details>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="14" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-05-29">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property "price":
+ - Input="0", Output="0,0977"
+ - Input &lt; output by 0,0977 EUR2005 (100% of output)
+
+Property "water in wet mass":
+ - Input="0", Output="4,97159090909091E-06"
+ - Input &lt; output by 4,97159090909091E-06 kg (100% of output)
+
+Property "dry mass":
+ - Input="4,97159090909091E-05", Output="4,47443181818182E-05"
+ - Input &gt; output by 4,97159090909091E-06 kg (11,11% of output)
+
+Property "carbon content, fossil":
+ - Input="3,72869318181818E-05", Output="3,86789772727074E-05"
+ - Input &lt; output by 1,39204545452556E-06 kg (3,6% of output)
+
+
+- Amount of property "water content=0,111111111111" of exchange "waste mineral oil" deviates from the default amount in the master file.
+Amount of property "carbon content, fossil=0,864444444444" of exchange "waste mineral oil" deviates from the default amount in the master file.
+
+- Specified amount (7,8465765610652E-12) did not match amount calculated by uncertainty (7,52957617522E-12) at exchange "transport, freight, lorry 7.5-16 metric ton, EURO3"
+- The total water in wet mass of all input exchanges (0) and output exchanges (4,97159090909091E-06) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water content=0,111111111111, water in wet mass=0,1, dry mass=0,9, carbon content, fossil=0,864444444444, wet mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water content=0,111111111111, water in wet mass=0,1, dry mass=0,9, carbon content, fossil=0,864444444444, wet mass=1
+
+</otherDetails>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="847a56f5-d9e5-4a65-ab51-b056e0039130" reviewerName="Avraam Symeonidis" reviewerEmail="Symeonidis@ecoinvent.org" reviewDate="2021-01-16">
+        <details>
+          <text xml:lang="en" index="0">None</text>
+        </details>
+        <otherDetails xml:lang="en"/>
+      </review>
+      <review reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="2" reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2021-01-16">
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Transport exchanges should not be added to non-market datasets.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0.0977'
+ - Input &lt; output by 0.0977 EUR2005 (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='3.72869318181818E-05', Output='3.86789772727074E-05'
+ - Input &lt; output by 1.39204545452556E-06 kg (3.6% of output)
+
+Property 'dry mass':
+ - Input='4.97159090909091E-05', Output='4.47443181818182E-05'
+ - Input &gt; output by 4.97159090909091E-06 kg (11.11% of output)
+
+Property 'water in wet mass':
+ - Input='0', Output='4.97159090909091E-06'
+ - Input &lt; output by 4.97159090909091E-06 kg (100% of output)
+
+
+- Amount of property 'water content=0.111111111111' of exchange 'waste mineral oil' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0.864444444444' of exchange 'waste mineral oil' deviates from the default amount in the master file.
+Property 'net heating value=0' of master data exchange was removed from exchange 'waste mineral oil'.
+
+- Specified amount (7.8465765610652E-12) did not match amount calculated by uncertainty (7.52957617522E-12) at exchange 'transport, freight, lorry 7.5-16 metric ton, EURO3'
+- The total water in wet mass of all input exchanges (0) and output exchanges (4.97159090909091E-06) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, carbon content, fossil=0.864444444444, price=0, water content=0.111111111111, dry mass=0.9, water in wet mass=0.1, carbon content, non-fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, carbon content, fossil=0.864444444444, price=0, water content=0.111111111111, dry mass=0.9, water in wet mass=0.1, carbon content, non-fossil=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch"/>
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="2" publishedSourceId="493a21d0-b6c4-49d7-93ab-eb1a4d6bd574" publishedSourceYear="2007" publishedSourceFirstAuthor="Burger, B." isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2015-05-22T11:24:18" lastEditTimestamp="2015-05-29T09:52:50" fileGenerator="EcoEditor 3.6.120.14104" fileTimestamp="2015-05-29T09:52:50" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>
