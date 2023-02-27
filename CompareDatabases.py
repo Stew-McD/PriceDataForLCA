@@ -19,4 +19,4 @@ for f in files:
 # save the results... 
 # (anything before ei39 is really quite bad < 25% complete)
 df = pd.DataFrame(prices)
-df.to_csv("data/number_of_price_data_by_database.csv", sep=";", index=False)
+df.to_csv("data/number_of_price_data_by_database.csv", sep=",", index=False)

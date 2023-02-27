@@ -4,8 +4,8 @@ import bw2data as bd
 from datetime import datetime
 
 # you can run all databases at once, if you have them in a similar format to the example here
-versions = ["391"] #"35", "38","39", 
-models = ['apos','con'] #"cutoff"]
+versions = ["391"] # ["391"] 
+models = ['con', "cutoff", 'apos']
 dbases = ["{}{}".format(x, y) for x in models for y in versions]
 projects = ["WasteFootprint_{}".format(x) for x in dbases]
 
@@ -19,7 +19,12 @@ for dbase in dbases:
     start1 = datetime.now()
 # set the bw2 project and database
     project = "WasteFootprint_{}".format(dbase)
-    bd.projects.set_current(project)
+    if project not in bd.projects:
+        print("Project {} not found".format(project))
+        continue 
+    else:
+        bd.projects.set_current(project)
+    
     db = bd.Database(dbase)
     print("Adding price information to database: {} in project {}".format(dbase, project))
     
@@ -55,7 +60,7 @@ for dbase in dbases:
     
 # write a log entry
     with open(data_dir+"AddPricesToDB_log.txt", "a") as f:
-        f.write("{} : Added {} prices to {} in project {}, which has {} activities, in {}\n".format(finish.strftime("%Y-%m-%d %H:%M:%S"), prices_added, dbase, project, acts_all.shape[0], str(duration).split(".")[0]))
+        f.write("{} : Added {} prices to {} in project {}, which has {} activities, in {}\n".format(finish1.strftime("%Y-%m-%d %H:%M:%S"), prices_added, dbase, project, acts_all.shape[0], str(duration).split(".")[0]))
     
 
 finish = datetime.now()
