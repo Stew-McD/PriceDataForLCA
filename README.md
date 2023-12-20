@@ -1,3 +1,5 @@
+This was useful for brightway2, but now thanks to bw25 this data is available (almost) directly. Look in the `activity._data` result or in the `exchange._data` result from the production exchange. If the data is not there, install the latest bw2io repo from github and reimport your ecoinvent database. Hopefully soon the other data, like CAS numbers will be there in a more consistent and easy to access format.  
+
 # Price data for LCA
 
 ## ExtractPriceData.py
